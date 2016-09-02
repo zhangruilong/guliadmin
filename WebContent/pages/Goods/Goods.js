@@ -409,20 +409,14 @@ Ext.onReady(function() {
 	        					commonImp(basePath + Goodsaction + "?method=impAll","导入",Goodsstore);
 	        				}
 	                    },{
-	                    	text : "后台导出",
+	                    	text : "导出",
 	        				iconCls : 'exp',
 	        				handler : function() {
 	        					Ext.Msg.confirm('请确认', '<b>提示:</b>请确认要导出当前数据？', function(btn, text) {
 	        						if (btn == 'yes') {
-	        							window.location.href = basePath + Goodsaction + "?method=expAll"; 
+	        							window.location.href = basePath + Goodsaction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryGoodsaction").getValue(); 
 	        						}
 	        					});
-	        				}
-	                    },{
-	                    	text : "前台导出",
-	        				iconCls : 'exp',
-	        				handler : function() {
-	        					commonExp(Goodsgrid);
 	        				}
 	                    },{
 	                    	text : "附件",
@@ -445,7 +439,7 @@ Ext.onReady(function() {
     						iconCls : 'select',
     						handler : function() {
     							Ext.getCmp("Goodsgoodsid").setEditable (true);
-    							createQueryWindow("筛选", GoodsdataForm, Goodsstore);
+    							createQueryWindow("筛选", GoodsdataForm, Goodsstore,Ext.getCmp("queryGoodsaction").getValue());
     						}
     					}]
 	                }
@@ -461,10 +455,15 @@ Ext.onReady(function() {
 					specialkey : function(field, e) {
 						if (e.getKey() == Ext.EventObject.ENTER) {
 							if ("" == Ext.getCmp("queryGoodsaction").getValue()) {
-								Goodsstore.load();
+								Goodsstore.load({
+									params : {
+										json : queryjson
+									}
+								});
 							} else {
 								Goodsstore.load({
 									params : {
+										json : queryjson,
 										query : Ext.getCmp("queryGoodsaction").getValue()
 									}
 								});
@@ -476,11 +475,6 @@ Ext.onReady(function() {
 		]
 	});
 	Goodsgrid.region = 'center';
-	Goodsstore.on("beforeload",function(){ 
-		Goodsstore.baseParams = {
-				query : Ext.getCmp("queryGoodsaction").getValue()
-		}; 
-	});
 	Goodsstore.load();//加载数据
 	var win = new Ext.Viewport({//只能有一个viewport
 		resizable : true,

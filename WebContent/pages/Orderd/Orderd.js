@@ -349,20 +349,14 @@ Ext.onReady(function() {
 	        					commonImp(basePath + Orderdaction + "?method=impAll","导入",Orderdstore);
 	        				}
 	                    },{
-	                    	text : "后台导出",
+	                    	text : "导出",
 	        				iconCls : 'exp',
 	        				handler : function() {
 	        					Ext.Msg.confirm('请确认', '<b>提示:</b>请确认要导出当前数据？', function(btn, text) {
 	        						if (btn == 'yes') {
-	        							window.location.href = basePath + Orderdaction + "?method=expAll"; 
+	        							window.location.href = basePath + Orderdaction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryOrderdaction").getValue(); 
 	        						}
 	        					});
-	        				}
-	                    },{
-	                    	text : "前台导出",
-	        				iconCls : 'exp',
-	        				handler : function() {
-	        					commonExp(Orderdgrid);
 	        				}
 	                    },{
 	                    	text : "附件",
@@ -385,7 +379,7 @@ Ext.onReady(function() {
     						iconCls : 'select',
     						handler : function() {
     							Ext.getCmp("Orderdorderdid").setEditable (true);
-    							createQueryWindow("筛选", OrderddataForm, Orderdstore);
+    							createQueryWindow("筛选", OrderddataForm, Orderdstore,Ext.getCmp("queryOrderdaction").getValue());
     						}
     					}]
 	                }
@@ -401,10 +395,15 @@ Ext.onReady(function() {
 					specialkey : function(field, e) {
 						if (e.getKey() == Ext.EventObject.ENTER) {
 							if ("" == Ext.getCmp("queryOrderdaction").getValue()) {
-								Orderdstore.load();
+								Orderdstore.load({
+									params : {
+										json : queryjson
+									}
+								});
 							} else {
 								Orderdstore.load({
 									params : {
+										json : queryjson,
 										query : Ext.getCmp("queryOrderdaction").getValue()
 									}
 								});
@@ -416,11 +415,6 @@ Ext.onReady(function() {
 		]
 	});
 	Orderdgrid.region = 'center';
-	Orderdstore.on("beforeload",function(){ 
-		Orderdstore.baseParams = {
-				query : Ext.getCmp("queryOrderdaction").getValue()
-		}; 
-	});
 	Orderdstore.load();//加载数据
 	var win = new Ext.Viewport({//只能有一个viewport
 		resizable : true,

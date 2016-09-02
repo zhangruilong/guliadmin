@@ -349,20 +349,14 @@ Ext.onReady(function() {
 	        					commonImp(basePath + Companyaction + "?method=impAll","导入",Companystore);
 	        				}
 	                    },{
-	                    	text : "后台导出",
+	                    	text : "导出",
 	        				iconCls : 'exp',
 	        				handler : function() {
 	        					Ext.Msg.confirm('请确认', '<b>提示:</b>请确认要导出当前数据？', function(btn, text) {
 	        						if (btn == 'yes') {
-	        							window.location.href = basePath + Companyaction + "?method=expAll"; 
+	        							window.location.href = basePath + Companyaction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryCompanyaction").getValue(); 
 	        						}
 	        					});
-	        				}
-	                    },{
-	                    	text : "前台导出",
-	        				iconCls : 'exp',
-	        				handler : function() {
-	        					commonExp(Companygrid);
 	        				}
 	                    },{
 	                    	text : "附件",
@@ -385,7 +379,7 @@ Ext.onReady(function() {
     						iconCls : 'select',
     						handler : function() {
     							Ext.getCmp("Companycompanyid").setEditable (true);
-    							createQueryWindow("筛选", CompanydataForm, Companystore);
+    							createQueryWindow("筛选", CompanydataForm, Companystore,Ext.getCmp("queryCompanyaction").getValue());
     						}
     					}]
 	                }
@@ -401,10 +395,15 @@ Ext.onReady(function() {
 					specialkey : function(field, e) {
 						if (e.getKey() == Ext.EventObject.ENTER) {
 							if ("" == Ext.getCmp("queryCompanyaction").getValue()) {
-								Companystore.load();
+								Companystore.load({
+									params : {
+										json : queryjson
+									}
+								});
 							} else {
 								Companystore.load({
 									params : {
+										json : queryjson,
 										query : Ext.getCmp("queryCompanyaction").getValue()
 									}
 								});
@@ -416,11 +415,6 @@ Ext.onReady(function() {
 		]
 	});
 	Companygrid.region = 'center';
-	Companystore.on("beforeload",function(){ 
-		Companystore.baseParams = {
-				query : Ext.getCmp("queryCompanyaction").getValue()
-		}; 
-	});
 	Companystore.load();//加载数据
 	var win = new Ext.Viewport({//只能有一个viewport
 		resizable : true,

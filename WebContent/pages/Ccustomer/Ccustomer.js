@@ -209,20 +209,14 @@ Ext.onReady(function() {
 	        					commonImp(basePath + Ccustomeraction + "?method=impAll","导入",Ccustomerstore);
 	        				}
 	                    },{
-	                    	text : "后台导出",
+	                    	text : "导出",
 	        				iconCls : 'exp',
 	        				handler : function() {
 	        					Ext.Msg.confirm('请确认', '<b>提示:</b>请确认要导出当前数据？', function(btn, text) {
 	        						if (btn == 'yes') {
-	        							window.location.href = basePath + Ccustomeraction + "?method=expAll"; 
+	        							window.location.href = basePath + Ccustomeraction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryCcustomeraction").getValue(); 
 	        						}
 	        					});
-	        				}
-	                    },{
-	                    	text : "前台导出",
-	        				iconCls : 'exp',
-	        				handler : function() {
-	        					commonExp(Ccustomergrid);
 	        				}
 	                    },{
 	                    	text : "附件",
@@ -245,7 +239,7 @@ Ext.onReady(function() {
     						iconCls : 'select',
     						handler : function() {
     							Ext.getCmp("Ccustomerccustomerid").setEditable (true);
-    							createQueryWindow("筛选", CcustomerdataForm, Ccustomerstore);
+    							createQueryWindow("筛选", CcustomerdataForm, Ccustomerstore,Ext.getCmp("queryCcustomeraction").getValue());
     						}
     					}]
 	                }
@@ -261,10 +255,15 @@ Ext.onReady(function() {
 					specialkey : function(field, e) {
 						if (e.getKey() == Ext.EventObject.ENTER) {
 							if ("" == Ext.getCmp("queryCcustomeraction").getValue()) {
-								Ccustomerstore.load();
+								Ccustomerstore.load({
+									params : {
+										json : queryjson
+									}
+								});
 							} else {
 								Ccustomerstore.load({
 									params : {
+										json : queryjson,
 										query : Ext.getCmp("queryCcustomeraction").getValue()
 									}
 								});
@@ -276,11 +275,6 @@ Ext.onReady(function() {
 		]
 	});
 	Ccustomergrid.region = 'center';
-	Ccustomerstore.on("beforeload",function(){ 
-		Ccustomerstore.baseParams = {
-				query : Ext.getCmp("queryCcustomeraction").getValue()
-		}; 
-	});
 	Ccustomerstore.load();//加载数据
 	var win = new Ext.Viewport({//只能有一个viewport
 		resizable : true,

@@ -250,7 +250,7 @@ function createTextWindow(url,title,_form,store) {
 	});
 	dataWindow.show();
 }
-function createQueryWindow(title,_form,store) {
+function createQueryWindow(title,_form,store,query) {
 	var dataWindow = new Ext.Window({
 		title : title, // 窗口标题
 		layout : 'fit', // 设置窗口布局模式
@@ -270,11 +270,12 @@ function createQueryWindow(title,_form,store) {
 					text : '提交',
 					iconCls : 'ok',
 					handler : function() {
-						var json = "[" + Ext.encode(_form.form.getValues(false)) + "]";
+						queryjson = "[" + Ext.encode(_form.form.getValues(false)) + "]";
 //						json = json.replace(/""/g,null);
-						store.reload({
+						store.load({
 							params : {
-								json : json
+								json : queryjson,
+								query : query
 							}
 						});
 						dataWindow.hide();

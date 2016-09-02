@@ -189,20 +189,14 @@ Ext.onReady(function() {
 	        					commonImp(basePath + Collectaction + "?method=impAll","导入",Collectstore);
 	        				}
 	                    },{
-	                    	text : "后台导出",
+	                    	text : "导出",
 	        				iconCls : 'exp',
 	        				handler : function() {
 	        					Ext.Msg.confirm('请确认', '<b>提示:</b>请确认要导出当前数据？', function(btn, text) {
 	        						if (btn == 'yes') {
-	        							window.location.href = basePath + Collectaction + "?method=expAll"; 
+	        							window.location.href = basePath + Collectaction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryCollectaction").getValue(); 
 	        						}
 	        					});
-	        				}
-	                    },{
-	                    	text : "前台导出",
-	        				iconCls : 'exp',
-	        				handler : function() {
-	        					commonExp(Collectgrid);
 	        				}
 	                    },{
 	                    	text : "附件",
@@ -225,7 +219,7 @@ Ext.onReady(function() {
     						iconCls : 'select',
     						handler : function() {
     							Ext.getCmp("Collectcollectid").setEditable (true);
-    							createQueryWindow("筛选", CollectdataForm, Collectstore);
+    							createQueryWindow("筛选", CollectdataForm, Collectstore,Ext.getCmp("queryCollectaction").getValue());
     						}
     					}]
 	                }
@@ -241,10 +235,15 @@ Ext.onReady(function() {
 					specialkey : function(field, e) {
 						if (e.getKey() == Ext.EventObject.ENTER) {
 							if ("" == Ext.getCmp("queryCollectaction").getValue()) {
-								Collectstore.load();
+								Collectstore.load({
+									params : {
+										json : queryjson
+									}
+								});
 							} else {
 								Collectstore.load({
 									params : {
+										json : queryjson,
 										query : Ext.getCmp("queryCollectaction").getValue()
 									}
 								});
@@ -256,11 +255,6 @@ Ext.onReady(function() {
 		]
 	});
 	Collectgrid.region = 'center';
-	Collectstore.on("beforeload",function(){ 
-		Collectstore.baseParams = {
-				query : Ext.getCmp("queryCollectaction").getValue()
-		}; 
-	});
 	Collectstore.load();//加载数据
 	var win = new Ext.Viewport({//只能有一个viewport
 		resizable : true,

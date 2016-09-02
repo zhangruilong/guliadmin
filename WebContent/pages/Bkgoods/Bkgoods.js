@@ -429,20 +429,14 @@ Ext.onReady(function() {
 	        					commonImp(basePath + Bkgoodsaction + "?method=impAll","导入",Bkgoodsstore);
 	        				}
 	                    },{
-	                    	text : "后台导出",
+	                    	text : "导出",
 	        				iconCls : 'exp',
 	        				handler : function() {
 	        					Ext.Msg.confirm('请确认', '<b>提示:</b>请确认要导出当前数据？', function(btn, text) {
 	        						if (btn == 'yes') {
-	        							window.location.href = basePath + Bkgoodsaction + "?method=expAll"; 
+	        							window.location.href = basePath + Bkgoodsaction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryBkgoodsaction").getValue(); 
 	        						}
 	        					});
-	        				}
-	                    },{
-	                    	text : "前台导出",
-	        				iconCls : 'exp',
-	        				handler : function() {
-	        					commonExp(Bkgoodsgrid);
 	        				}
 	                    },{
 	                    	text : "附件",
@@ -465,7 +459,7 @@ Ext.onReady(function() {
     						iconCls : 'select',
     						handler : function() {
     							Ext.getCmp("Bkgoodsbkgoodsid").setEditable (true);
-    							createQueryWindow("筛选", BkgoodsdataForm, Bkgoodsstore);
+    							createQueryWindow("筛选", BkgoodsdataForm, Bkgoodsstore,Ext.getCmp("queryBkgoodsaction").getValue());
     						}
     					}]
 	                }
@@ -481,10 +475,15 @@ Ext.onReady(function() {
 					specialkey : function(field, e) {
 						if (e.getKey() == Ext.EventObject.ENTER) {
 							if ("" == Ext.getCmp("queryBkgoodsaction").getValue()) {
-								Bkgoodsstore.load();
+								Bkgoodsstore.load({
+									params : {
+										json : queryjson
+									}
+								});
 							} else {
 								Bkgoodsstore.load({
 									params : {
+										json : queryjson,
 										query : Ext.getCmp("queryBkgoodsaction").getValue()
 									}
 								});
@@ -496,11 +495,6 @@ Ext.onReady(function() {
 		]
 	});
 	Bkgoodsgrid.region = 'center';
-	Bkgoodsstore.on("beforeload",function(){ 
-		Bkgoodsstore.baseParams = {
-				query : Ext.getCmp("queryBkgoodsaction").getValue()
-		}; 
-	});
 	Bkgoodsstore.load();//加载数据
 	var win = new Ext.Viewport({//只能有一个viewport
 		resizable : true,

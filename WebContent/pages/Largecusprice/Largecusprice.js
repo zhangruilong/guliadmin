@@ -309,20 +309,14 @@ Ext.onReady(function() {
 	        					commonImp(basePath + Largecuspriceaction + "?method=impAll","导入",Largecuspricestore);
 	        				}
 	                    },{
-	                    	text : "后台导出",
+	                    	text : "导出",
 	        				iconCls : 'exp',
 	        				handler : function() {
 	        					Ext.Msg.confirm('请确认', '<b>提示:</b>请确认要导出当前数据？', function(btn, text) {
 	        						if (btn == 'yes') {
-	        							window.location.href = basePath + Largecuspriceaction + "?method=expAll"; 
+	        							window.location.href = basePath + Largecuspriceaction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryLargecuspriceaction").getValue(); 
 	        						}
 	        					});
-	        				}
-	                    },{
-	                    	text : "前台导出",
-	        				iconCls : 'exp',
-	        				handler : function() {
-	        					commonExp(Largecuspricegrid);
 	        				}
 	                    },{
 	                    	text : "附件",
@@ -345,7 +339,7 @@ Ext.onReady(function() {
     						iconCls : 'select',
     						handler : function() {
     							Ext.getCmp("Largecuspriceid").setEditable (true);
-    							createQueryWindow("筛选", LargecuspricedataForm, Largecuspricestore);
+    							createQueryWindow("筛选", LargecuspricedataForm, Largecuspricestore,Ext.getCmp("queryLargecuspriceaction").getValue());
     						}
     					}]
 	                }
@@ -361,10 +355,15 @@ Ext.onReady(function() {
 					specialkey : function(field, e) {
 						if (e.getKey() == Ext.EventObject.ENTER) {
 							if ("" == Ext.getCmp("queryLargecuspriceaction").getValue()) {
-								Largecuspricestore.load();
+								Largecuspricestore.load({
+									params : {
+										json : queryjson
+									}
+								});
 							} else {
 								Largecuspricestore.load({
 									params : {
+										json : queryjson,
 										query : Ext.getCmp("queryLargecuspriceaction").getValue()
 									}
 								});
@@ -376,11 +375,6 @@ Ext.onReady(function() {
 		]
 	});
 	Largecuspricegrid.region = 'center';
-	Largecuspricestore.on("beforeload",function(){ 
-		Largecuspricestore.baseParams = {
-				query : Ext.getCmp("queryLargecuspriceaction").getValue()
-		}; 
-	});
 	Largecuspricestore.load();//加载数据
 	var win = new Ext.Viewport({//只能有一个viewport
 		resizable : true,

@@ -209,20 +209,14 @@ Ext.onReady(function() {
 	        					commonImp(basePath + Cityaction + "?method=impAll","导入",Citystore);
 	        				}
 	                    },{
-	                    	text : "后台导出",
+	                    	text : "导出",
 	        				iconCls : 'exp',
 	        				handler : function() {
 	        					Ext.Msg.confirm('请确认', '<b>提示:</b>请确认要导出当前数据？', function(btn, text) {
 	        						if (btn == 'yes') {
-	        							window.location.href = basePath + Cityaction + "?method=expAll"; 
+	        							window.location.href = basePath + Cityaction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryCityaction").getValue(); 
 	        						}
 	        					});
-	        				}
-	                    },{
-	                    	text : "前台导出",
-	        				iconCls : 'exp',
-	        				handler : function() {
-	        					commonExp(Citygrid);
 	        				}
 	                    },{
 	                    	text : "附件",
@@ -245,7 +239,7 @@ Ext.onReady(function() {
     						iconCls : 'select',
     						handler : function() {
     							Ext.getCmp("Citycityid").setEditable (true);
-    							createQueryWindow("筛选", CitydataForm, Citystore);
+    							createQueryWindow("筛选", CitydataForm, Citystore,Ext.getCmp("queryCityaction").getValue());
     						}
     					}]
 	                }
@@ -261,10 +255,15 @@ Ext.onReady(function() {
 					specialkey : function(field, e) {
 						if (e.getKey() == Ext.EventObject.ENTER) {
 							if ("" == Ext.getCmp("queryCityaction").getValue()) {
-								Citystore.load();
+								Citystore.load({
+									params : {
+										json : queryjson
+									}
+								});
 							} else {
 								Citystore.load({
 									params : {
+										json : queryjson,
 										query : Ext.getCmp("queryCityaction").getValue()
 									}
 								});
@@ -276,11 +275,6 @@ Ext.onReady(function() {
 		]
 	});
 	Citygrid.region = 'center';
-	Citystore.on("beforeload",function(){ 
-		Citystore.baseParams = {
-				query : Ext.getCmp("queryCityaction").getValue()
-		}; 
-	});
 	Citystore.load();//加载数据
 	var win = new Ext.Viewport({//只能有一个viewport
 		resizable : true,
