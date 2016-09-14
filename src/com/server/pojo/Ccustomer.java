@@ -20,15 +20,15 @@ public class Ccustomer
     */
    private String ccustomercustomer;   
    /**
-    * 客户等级
+    * 描述(关系等级)
     */
    private String ccustomerdetail;   
    /**
-    * 客户经理
+    * 创建时间(业务员名)
     */
    private String createtime;   
    /**
-    * 大客户
+    * 创建人(是否大客户:1是大客户)
     */
    private String creator;   
     //属性方法	    
@@ -84,7 +84,7 @@ public class Ccustomer
 	}	   
 
 	/**
-	 *设置"客户等级"属性
+	 *设置"描述(关系等级)"属性
 	 *@param ccustomerdetail 实体的Ccustomerdetail属性
 	 */
 	public void setCcustomerdetail(String ccustomerdetail)
@@ -93,7 +93,7 @@ public class Ccustomer
 	}
 	
 	/**
-	 *获取"客户等级"属性
+	 *获取"描述(关系等级)"属性
 	 */
 	public String getCcustomerdetail()
 	{
@@ -101,7 +101,7 @@ public class Ccustomer
 	}	   
 
 	/**
-	 *设置"客户经理"属性
+	 *设置"创建时间(业务员名)"属性
 	 *@param createtime 实体的Createtime属性
 	 */
 	public void setCreatetime(String createtime)
@@ -110,7 +110,7 @@ public class Ccustomer
 	}
 	
 	/**
-	 *获取"客户经理"属性
+	 *获取"创建时间(业务员名)"属性
 	 */
 	public String getCreatetime()
 	{
@@ -118,7 +118,7 @@ public class Ccustomer
 	}	   
 
 	/**
-	 *设置"大客户"属性
+	 *设置"创建人(是否大客户:1是大客户)"属性
 	 *@param creator 实体的Creator属性
 	 */
 	public void setCreator(String creator)
@@ -127,7 +127,7 @@ public class Ccustomer
 	}
 	
 	/**
-	 *获取"大客户"属性
+	 *获取"创建人(是否大客户:1是大客户)"属性
 	 */
 	public String getCreator()
 	{

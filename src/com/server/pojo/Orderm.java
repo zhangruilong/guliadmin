@@ -44,7 +44,7 @@ public class Orderm
     */
    private String ordermstatue;   
    /**
-    * 备注
+    * 备注(客户留言)
     */
    private String ordermdetail;   
    /**
@@ -72,7 +72,7 @@ public class Orderm
     */
    private String updor;   
    /**
-    * 业务员ID
+    * 业务员ID(订单源)
     */
    private String ordermemp;   
     //属性方法	    
@@ -230,7 +230,7 @@ public class Orderm
 	}	   
 
 	/**
-	 *设置"备注"属性
+	 *设置"备注(客户留言)"属性
 	 *@param ordermdetail 实体的Ordermdetail属性
 	 */
 	public void setOrdermdetail(String ordermdetail)
@@ -239,7 +239,7 @@ public class Orderm
 	}
 	
 	/**
-	 *获取"备注"属性
+	 *获取"备注(客户留言)"属性
 	 */
 	public String getOrdermdetail()
 	{
@@ -349,7 +349,7 @@ public class Orderm
 	}	   
 
 	/**
-	 *设置"业务员ID"属性
+	 *设置"业务员ID(订单源)"属性
 	 *@param ordermemp 实体的Ordermemp属性
 	 */
 	public void setOrdermemp(String ordermemp)
@@ -358,7 +358,7 @@ public class Orderm
 	}
 	
 	/**
-	 *获取"业务员ID"属性
+	 *获取"业务员ID(订单源)"属性
 	 */
 	public String getOrdermemp()
 	{

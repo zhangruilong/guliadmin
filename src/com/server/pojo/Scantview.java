@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 标品库 实体类
+ * scantview 实体类
  *@author ZhangRuiLong
  */
 public class Scantview
@@ -35,6 +35,14 @@ public class Scantview
     * scantimage
     */
    private String scantimage;   
+   /**
+    * scantbrand
+    */
+   private String scantbrand;   
+   /**
+    * scanttype
+    */
+   private String scanttype;   
    /**
     * scantstatue
     */
@@ -184,6 +192,40 @@ public class Scantview
 	}	   
 
 	/**
+	 *设置"scantbrand"属性
+	 *@param scantbrand 实体的Scantbrand属性
+	 */
+	public void setScantbrand(String scantbrand)
+	{
+		this.scantbrand = scantbrand;
+	}
+	
+	/**
+	 *获取"scantbrand"属性
+	 */
+	public String getScantbrand()
+	{
+		return this.scantbrand;
+	}	   
+
+	/**
+	 *设置"scanttype"属性
+	 *@param scanttype 实体的Scanttype属性
+	 */
+	public void setScanttype(String scanttype)
+	{
+		this.scanttype = scanttype;
+	}
+	
+	/**
+	 *获取"scanttype"属性
+	 */
+	public String getScanttype()
+	{
+		return this.scanttype;
+	}	   
+
+	/**
 	 *设置"scantstatue"属性
 	 *@param scantstatue 实体的Scantstatue属性
 	 */
@@ -313,6 +355,8 @@ public class Scantview
 	 	,String scantunits
 	 	,String scantclass
 	 	,String scantimage
+	 	,String scantbrand
+	 	,String scanttype
 	 	,String scantstatue
 	 	,String goodsclassid
 	 	,String goodsclasscode
@@ -329,6 +373,8 @@ public class Scantview
 	 	this.scantunits = scantunits;
 	 	this.scantclass = scantclass;
 	 	this.scantimage = scantimage;
+	 	this.scantbrand = scantbrand;
+	 	this.scanttype = scanttype;
 	 	this.scantstatue = scantstatue;
 	 	this.goodsclassid = goodsclassid;
 	 	this.goodsclasscode = goodsclasscode;

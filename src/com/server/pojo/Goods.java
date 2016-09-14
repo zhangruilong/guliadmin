@@ -64,7 +64,7 @@ public class Goods
     */
    private String goodsbrand;   
    /**
-    * 种类
+    * 种类(用来搜索用,有时候陪在小类里面.比如 裸价商品)
     */
    private String goodstype;   
    /**
@@ -311,7 +311,7 @@ public class Goods
 	}	   
 
 	/**
-	 *设置"种类"属性
+	 *设置"种类(用来搜索用,有时候陪在小类里面.比如 裸价商品)"属性
 	 *@param goodstype 实体的Goodstype属性
 	 */
 	public void setGoodstype(String goodstype)
@@ -320,7 +320,7 @@ public class Goods
 	}
 	
 	/**
-	 *获取"种类"属性
+	 *获取"种类(用来搜索用,有时候陪在小类里面.比如 裸价商品)"属性
 	 */
 	public String getGoodstype()
 	{

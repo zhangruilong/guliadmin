@@ -38,15 +38,15 @@ public class Timegoodsview
    /**
     * timegoodsprice
     */
-   private String timegoodsprice;   
+   private Float timegoodsprice;   
    /**
     * timegoodsorgprice
     */
-   private String timegoodsorgprice;   
+   private Float timegoodsorgprice;   
    /**
     * timegoodsnum
     */
-   private int timegoodsnum;   
+   private Integer timegoodsnum;   
    /**
     * timegoodsclass
     */
@@ -70,15 +70,15 @@ public class Timegoodsview
    /**
     * allnum
     */
-   private int allnum;   
+   private Integer allnum;   
    /**
     * surplusnum
     */
-   private int surplusnum;   
+   private Integer surplusnum;   
    /**
     * timegoodsseq
     */
-   private int timegoodsseq;   
+   private Integer timegoodsseq;   
    /**
     * timegoodsscope
     */
@@ -263,7 +263,7 @@ public class Timegoodsview
 	 *设置"timegoodsprice"属性
 	 *@param timegoodsprice 实体的Timegoodsprice属性
 	 */
-	public void setTimegoodsprice(String timegoodsprice)
+	public void setTimegoodsprice(Float timegoodsprice)
 	{
 		this.timegoodsprice = timegoodsprice;
 	}
@@ -271,7 +271,7 @@ public class Timegoodsview
 	/**
 	 *获取"timegoodsprice"属性
 	 */
-	public String getTimegoodsprice()
+	public Float getTimegoodsprice()
 	{
 		return this.timegoodsprice;
 	}	   
@@ -280,7 +280,7 @@ public class Timegoodsview
 	 *设置"timegoodsorgprice"属性
 	 *@param timegoodsorgprice 实体的Timegoodsorgprice属性
 	 */
-	public void setTimegoodsorgprice(String timegoodsorgprice)
+	public void setTimegoodsorgprice(Float timegoodsorgprice)
 	{
 		this.timegoodsorgprice = timegoodsorgprice;
 	}
@@ -288,7 +288,7 @@ public class Timegoodsview
 	/**
 	 *获取"timegoodsorgprice"属性
 	 */
-	public String getTimegoodsorgprice()
+	public Float getTimegoodsorgprice()
 	{
 		return this.timegoodsorgprice;
 	}	   
@@ -297,7 +297,7 @@ public class Timegoodsview
 	 *设置"timegoodsnum"属性
 	 *@param timegoodsnum 实体的Timegoodsnum属性
 	 */
-	public void setTimegoodsnum(int timegoodsnum)
+	public void setTimegoodsnum(Integer timegoodsnum)
 	{
 		this.timegoodsnum = timegoodsnum;
 	}
@@ -305,7 +305,7 @@ public class Timegoodsview
 	/**
 	 *获取"timegoodsnum"属性
 	 */
-	public int getTimegoodsnum()
+	public Integer getTimegoodsnum()
 	{
 		return this.timegoodsnum;
 	}	   
@@ -399,7 +399,7 @@ public class Timegoodsview
 	 *设置"allnum"属性
 	 *@param allnum 实体的Allnum属性
 	 */
-	public void setAllnum(int allnum)
+	public void setAllnum(Integer allnum)
 	{
 		this.allnum = allnum;
 	}
@@ -407,7 +407,7 @@ public class Timegoodsview
 	/**
 	 *获取"allnum"属性
 	 */
-	public int getAllnum()
+	public Integer getAllnum()
 	{
 		return this.allnum;
 	}	   
@@ -416,7 +416,7 @@ public class Timegoodsview
 	 *设置"surplusnum"属性
 	 *@param surplusnum 实体的Surplusnum属性
 	 */
-	public void setSurplusnum(int surplusnum)
+	public void setSurplusnum(Integer surplusnum)
 	{
 		this.surplusnum = surplusnum;
 	}
@@ -424,7 +424,7 @@ public class Timegoodsview
 	/**
 	 *获取"surplusnum"属性
 	 */
-	public int getSurplusnum()
+	public Integer getSurplusnum()
 	{
 		return this.surplusnum;
 	}	   
@@ -433,7 +433,7 @@ public class Timegoodsview
 	 *设置"timegoodsseq"属性
 	 *@param timegoodsseq 实体的Timegoodsseq属性
 	 */
-	public void setTimegoodsseq(int timegoodsseq)
+	public void setTimegoodsseq(Integer timegoodsseq)
 	{
 		this.timegoodsseq = timegoodsseq;
 	}
@@ -441,7 +441,7 @@ public class Timegoodsview
 	/**
 	 *获取"timegoodsseq"属性
 	 */
-	public int getTimegoodsseq()
+	public Integer getTimegoodsseq()
 	{
 		return this.timegoodsseq;
 	}	   
@@ -712,17 +712,17 @@ public class Timegoodsview
 	 	,String timegoodsdetail
 	 	,String timegoodsunits
 	 	,String timegoodsunit
-	 	,String timegoodsprice
-	 	,String timegoodsorgprice
-	 	,int timegoodsnum
+	 	,Float timegoodsprice
+	 	,Float timegoodsorgprice
+	 	,Integer timegoodsnum
 	 	,String timegoodsclass
 	 	,String timegoodsimage
 	 	,String timegoodsstatue
 	 	,String createtime
 	 	,String creator
-	 	,int allnum
-	 	,int surplusnum
-	 	,int timegoodsseq
+	 	,Integer allnum
+	 	,Integer surplusnum
+	 	,Integer timegoodsseq
 	 	,String timegoodsscope
 	 	,String companycode
 	 	,String username

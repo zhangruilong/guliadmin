@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 标品库 实体类的常量
+ * scantview 实体类的常量
  *@author ZhangRuiLong
  */
 public class ScantviewPoco
@@ -9,7 +9,7 @@ public class ScantviewPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "标品库";
+   public static String NAME = "scantview";
    /**
     * 实体表名
     */
@@ -29,6 +29,8 @@ public class ScantviewPoco
 	 	"scantunits",
 	 	"scantclass",
 	 	"scantimage",
+	 	"scantbrand",
+	 	"scanttype",
 	 	"scantstatue",
 	 	"goodsclassid",
 	 	"goodsclasscode",
@@ -48,6 +50,8 @@ public class ScantviewPoco
 	 	"scantunits",
 	 	"scantclass",
 	 	"scantimage",
+	 	"scantbrand",
+	 	"scanttype",
 	 	"scantstatue",
 	 	"goodsclassid",
 	 	"goodsclasscode",
@@ -71,6 +75,8 @@ public class ScantviewPoco
 	 	"scantunits",
 	 	"scantclass",
 	 	"scantimage",
+	 	"scantbrand",
+	 	"scanttype",
 	 	"scantstatue",
 	 	"goodsclassid",
 	 	"goodsclasscode",

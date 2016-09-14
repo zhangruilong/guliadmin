@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 订单 实体类
+ * ORDERMVIEW 实体类
  *@author ZhangRuiLong
  */
 public class Ordermview
@@ -26,15 +26,15 @@ public class Ordermview
    /**
     * ordermnum
     */
-   private int ordermnum;   
+   private Integer ordermnum;   
    /**
     * ordermmoney
     */
-   private String ordermmoney;   
+   private Float ordermmoney;   
    /**
     * ordermrightmoney
     */
-   private String ordermrightmoney;   
+   private Float ordermrightmoney;   
    /**
     * ordermway
     */
@@ -164,7 +164,7 @@ public class Ordermview
 	 *设置"ordermnum"属性
 	 *@param ordermnum 实体的Ordermnum属性
 	 */
-	public void setOrdermnum(int ordermnum)
+	public void setOrdermnum(Integer ordermnum)
 	{
 		this.ordermnum = ordermnum;
 	}
@@ -172,7 +172,7 @@ public class Ordermview
 	/**
 	 *获取"ordermnum"属性
 	 */
-	public int getOrdermnum()
+	public Integer getOrdermnum()
 	{
 		return this.ordermnum;
 	}	   
@@ -181,7 +181,7 @@ public class Ordermview
 	 *设置"ordermmoney"属性
 	 *@param ordermmoney 实体的Ordermmoney属性
 	 */
-	public void setOrdermmoney(String ordermmoney)
+	public void setOrdermmoney(Float ordermmoney)
 	{
 		this.ordermmoney = ordermmoney;
 	}
@@ -189,7 +189,7 @@ public class Ordermview
 	/**
 	 *获取"ordermmoney"属性
 	 */
-	public String getOrdermmoney()
+	public Float getOrdermmoney()
 	{
 		return this.ordermmoney;
 	}	   
@@ -198,7 +198,7 @@ public class Ordermview
 	 *设置"ordermrightmoney"属性
 	 *@param ordermrightmoney 实体的Ordermrightmoney属性
 	 */
-	public void setOrdermrightmoney(String ordermrightmoney)
+	public void setOrdermrightmoney(Float ordermrightmoney)
 	{
 		this.ordermrightmoney = ordermrightmoney;
 	}
@@ -206,7 +206,7 @@ public class Ordermview
 	/**
 	 *获取"ordermrightmoney"属性
 	 */
-	public String getOrdermrightmoney()
+	public Float getOrdermrightmoney()
 	{
 		return this.ordermrightmoney;
 	}	   
@@ -457,9 +457,9 @@ public class Ordermview
 	 	,String ordermcustomer
 	 	,String ordermcompany
 	 	,String ordermcode
-	 	,int ordermnum
-	 	,String ordermmoney
-	 	,String ordermrightmoney
+	 	,Integer ordermnum
+	 	,Float ordermmoney
+	 	,Float ordermrightmoney
 	 	,String ordermway
 	 	,String ordermstatue
 	 	,String ordermdetail

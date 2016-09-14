@@ -52,7 +52,7 @@ public class Company
     */
    private String password;   
    /**
-    * 创建时间
+    * 创建时间(服务区域)
     */
    private String createtime;   
    /**
@@ -248,7 +248,7 @@ public class Company
 	}	   
 
 	/**
-	 *设置"创建时间"属性
+	 *设置"创建时间(服务区域)"属性
 	 *@param createtime 实体的Createtime属性
 	 */
 	public void setCreatetime(String createtime)
@@ -257,7 +257,7 @@ public class Company
 	}
 	
 	/**
-	 *获取"创建时间"属性
+	 *获取"创建时间(服务区域)"属性
 	 */
 	public String getCreatetime()
 	{

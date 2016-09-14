@@ -38,11 +38,11 @@ public class Givegoodsview
    /**
     * givegoodsprice
     */
-   private String givegoodsprice;   
+   private Float givegoodsprice;   
    /**
     * givegoodsnum
     */
-   private int givegoodsnum;   
+   private Integer givegoodsnum;   
    /**
     * givegoodsclass
     */
@@ -66,7 +66,7 @@ public class Givegoodsview
    /**
     * givegoodsseq
     */
-   private int givegoodsseq;   
+   private Integer givegoodsseq;   
    /**
     * givegoodsscope
     */
@@ -251,7 +251,7 @@ public class Givegoodsview
 	 *设置"givegoodsprice"属性
 	 *@param givegoodsprice 实体的Givegoodsprice属性
 	 */
-	public void setGivegoodsprice(String givegoodsprice)
+	public void setGivegoodsprice(Float givegoodsprice)
 	{
 		this.givegoodsprice = givegoodsprice;
 	}
@@ -259,7 +259,7 @@ public class Givegoodsview
 	/**
 	 *获取"givegoodsprice"属性
 	 */
-	public String getGivegoodsprice()
+	public Float getGivegoodsprice()
 	{
 		return this.givegoodsprice;
 	}	   
@@ -268,7 +268,7 @@ public class Givegoodsview
 	 *设置"givegoodsnum"属性
 	 *@param givegoodsnum 实体的Givegoodsnum属性
 	 */
-	public void setGivegoodsnum(int givegoodsnum)
+	public void setGivegoodsnum(Integer givegoodsnum)
 	{
 		this.givegoodsnum = givegoodsnum;
 	}
@@ -276,7 +276,7 @@ public class Givegoodsview
 	/**
 	 *获取"givegoodsnum"属性
 	 */
-	public int getGivegoodsnum()
+	public Integer getGivegoodsnum()
 	{
 		return this.givegoodsnum;
 	}	   
@@ -370,7 +370,7 @@ public class Givegoodsview
 	 *设置"givegoodsseq"属性
 	 *@param givegoodsseq 实体的Givegoodsseq属性
 	 */
-	public void setGivegoodsseq(int givegoodsseq)
+	public void setGivegoodsseq(Integer givegoodsseq)
 	{
 		this.givegoodsseq = givegoodsseq;
 	}
@@ -378,7 +378,7 @@ public class Givegoodsview
 	/**
 	 *获取"givegoodsseq"属性
 	 */
-	public int getGivegoodsseq()
+	public Integer getGivegoodsseq()
 	{
 		return this.givegoodsseq;
 	}	   
@@ -649,14 +649,14 @@ public class Givegoodsview
 	 	,String givegoodsdetail
 	 	,String givegoodsunits
 	 	,String givegoodsunit
-	 	,String givegoodsprice
-	 	,int givegoodsnum
+	 	,Float givegoodsprice
+	 	,Integer givegoodsnum
 	 	,String givegoodsclass
 	 	,String givegoodsimage
 	 	,String givegoodsstatue
 	 	,String createtime
 	 	,String creator
-	 	,int givegoodsseq
+	 	,Integer givegoodsseq
 	 	,String givegoodsscope
 	 	,String companycode
 	 	,String username

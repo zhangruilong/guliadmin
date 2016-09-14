@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 订单 实体类的常量
+ * ORDERMVIEW 实体类的常量
  *@author ZhangRuiLong
  */
 public class OrdermviewPoco
@@ -9,7 +9,7 @@ public class OrdermviewPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "订单";
+   public static String NAME = "ORDERMVIEW";
    /**
     * 实体表名
     */
