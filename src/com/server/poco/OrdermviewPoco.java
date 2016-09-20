@@ -43,6 +43,7 @@ public class OrdermviewPoco
 	 	"companyphone",
 	 	"companydetail",
 	 	"openid",
+	 	"customershop",
 	};
 	/**
 	 * 实体英文字段
@@ -69,6 +70,7 @@ public class OrdermviewPoco
 	 	"companyphone",
 	 	"companydetail",
 	 	"openid",
+	 	"customershop",
    };
    /**
     * 实体排序
@@ -99,6 +101,7 @@ public class OrdermviewPoco
 	 	"companyphone",
 	 	"companydetail",
 	 	"openid",
+	 	"customershop",
    };
 }
 

@@ -91,6 +91,10 @@ public class Ordermview
     * openid
     */
    private String openid;   
+   /**
+    * customershop
+    */
+   private String customershop;   
     //属性方法	    
      /**
 	 *设置主键"ordermid"属性
@@ -448,6 +452,23 @@ public class Ordermview
 	{
 		return this.openid;
 	}	   
+
+	/**
+	 *设置"customershop"属性
+	 *@param customershop 实体的Customershop属性
+	 */
+	public void setCustomershop(String customershop)
+	{
+		this.customershop = customershop;
+	}
+	
+	/**
+	 *获取"customershop"属性
+	 */
+	public String getCustomershop()
+	{
+		return this.customershop;
+	}	   
 	public Ordermview() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -474,6 +495,7 @@ public class Ordermview
 	 	,String companyphone
 	 	,String companydetail
 	 	,String openid
+	 	,String customershop
 		 ){
 		super();
 		this.ordermid = ordermid;
@@ -497,6 +519,7 @@ public class Ordermview
 	 	this.companyphone = companyphone;
 	 	this.companydetail = companydetail;
 	 	this.openid = openid;
+	 	this.customershop = customershop;
 	}
 }
 
