@@ -8,6 +8,9 @@ Ext.onReady(function() {
 	        			    ,'goodsclassparent' 
 	        			    ,'goodsclassdetail' 
 	        			    ,'goodsclassstatue' 
+	        			    ,'goodsclasscity' 
+	        			    ,'goodsclassorder' 
+	        			    ,'goodsclasscompany' 
 	        			      ];// 全部字段
 	var Goodsclasskeycolumn = [ 'goodsclassid' ];// 主键
 	var Goodsclassstore = dataStore(Goodsclassfields, basePath + Goodsclassaction + "?method=selAll");// 定义Goodsclassstore
@@ -65,7 +68,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '描述',
+				fieldLabel : '图标',
 				id : 'Goodsclassgoodsclassdetail',
 				name : 'goodsclassdetail',
 				maxLength : 100
@@ -79,6 +82,39 @@ Ext.onReady(function() {
 				fieldLabel : '状态',
 				id : 'Goodsclassgoodsclassstatue',
 				name : 'goodsclassstatue',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '城市(用逗号分开)',
+				id : 'Goodsclassgoodsclasscity',
+				name : 'goodsclasscity',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '顺序',
+				id : 'Goodsclassgoodsclassorder',
+				name : 'goodsclassorder',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '经销商(用逗号分开)',
+				id : 'Goodsclassgoodsclasscompany',
+				name : 'goodsclasscompany',
 				maxLength : 100
 			} ]
 		}
@@ -134,7 +170,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '描述',
+			header : '图标',
 			dataIndex : 'goodsclassdetail',
 			sortable : true,  
 			editor: {
@@ -144,6 +180,30 @@ Ext.onReady(function() {
 		, {
 			header : '状态',
 			dataIndex : 'goodsclassstatue',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '城市(用逗号分开)',
+			dataIndex : 'goodsclasscity',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '顺序',
+			dataIndex : 'goodsclassorder',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '经销商(用逗号分开)',
+			dataIndex : 'goodsclasscompany',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'

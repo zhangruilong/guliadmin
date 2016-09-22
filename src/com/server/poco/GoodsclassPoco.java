@@ -26,8 +26,11 @@ public class GoodsclassPoco
 	 	"编码",
 	 	"名称",
 	 	"父类",
-	 	"描述",
+	 	"图标",
 	 	"状态",
+	 	"城市(用逗号分开)",
+	 	"顺序",
+	 	"经销商(用逗号分开)",
 	};
 	/**
 	 * 实体英文字段
@@ -39,6 +42,9 @@ public class GoodsclassPoco
 	 	"goodsclassparent",
 	 	"goodsclassdetail",
 	 	"goodsclassstatue",
+	 	"goodsclasscity",
+	 	"goodsclassorder",
+	 	"goodsclasscompany",
    };
    /**
     * 实体排序
@@ -54,6 +60,9 @@ public class GoodsclassPoco
 	 	"goodsclassparent",
 	 	"goodsclassdetail",
 	 	"goodsclassstatue",
+	 	"goodsclasscity",
+	 	"goodsclassorder",
+	 	"goodsclasscompany",
    };
 }
 
