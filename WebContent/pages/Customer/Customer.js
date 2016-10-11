@@ -403,6 +403,17 @@ Ext.onReady(function() {
 	        					commonDelete(basePath + Customeraction + "?method=delAll",selections,Customerstore,Customerkeycolumn);
 	        				}
 	                    },{
+	                    	text : "短信",
+	        				iconCls : 'delete',
+	        				handler : function() {
+	        					var selections = Customergrid.getSelection();
+	        					if (Ext.isEmpty(selections)) {
+	        						Ext.Msg.alert('提示', '请至少选择一条数据！');
+	        						return;
+	        					}
+	        					commonSend(selections);
+	        				}
+	                    },{
 	                    	text : "导入",
 	        				iconCls : 'imp',
 	        				handler : function() {
