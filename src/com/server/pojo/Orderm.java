@@ -75,6 +75,18 @@ public class Orderm
     * 业务员ID(订单源)
     */
    private String ordermemp;   
+   /**
+    * 店铺名称
+    */
+   private String ordermcusshop;   
+   /**
+    * 客户等级
+    */
+   private String ordermcuslevel;   
+   /**
+    * 客户类型
+    */
+   private String ordermcustype;   
     //属性方法	    
      /**
 	 *设置主键"订单ID"属性
@@ -364,6 +376,57 @@ public class Orderm
 	{
 		return this.ordermemp;
 	}	   
+
+	/**
+	 *设置"店铺名称"属性
+	 *@param ordermcusshop 实体的Ordermcusshop属性
+	 */
+	public void setOrdermcusshop(String ordermcusshop)
+	{
+		this.ordermcusshop = ordermcusshop;
+	}
+	
+	/**
+	 *获取"店铺名称"属性
+	 */
+	public String getOrdermcusshop()
+	{
+		return this.ordermcusshop;
+	}	   
+
+	/**
+	 *设置"客户等级"属性
+	 *@param ordermcuslevel 实体的Ordermcuslevel属性
+	 */
+	public void setOrdermcuslevel(String ordermcuslevel)
+	{
+		this.ordermcuslevel = ordermcuslevel;
+	}
+	
+	/**
+	 *获取"客户等级"属性
+	 */
+	public String getOrdermcuslevel()
+	{
+		return this.ordermcuslevel;
+	}	   
+
+	/**
+	 *设置"客户类型"属性
+	 *@param ordermcustype 实体的Ordermcustype属性
+	 */
+	public void setOrdermcustype(String ordermcustype)
+	{
+		this.ordermcustype = ordermcustype;
+	}
+	
+	/**
+	 *获取"客户类型"属性
+	 */
+	public String getOrdermcustype()
+	{
+		return this.ordermcustype;
+	}	   
 	public Orderm() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -386,6 +449,9 @@ public class Orderm
 	 	,String updtime
 	 	,String updor
 	 	,String ordermemp
+	 	,String ordermcusshop
+	 	,String ordermcuslevel
+	 	,String ordermcustype
 		 ){
 		super();
 		this.ordermid = ordermid;
@@ -405,6 +471,9 @@ public class Orderm
 	 	this.updtime = updtime;
 	 	this.updor = updor;
 	 	this.ordermemp = ordermemp;
+	 	this.ordermcusshop = ordermcusshop;
+	 	this.ordermcuslevel = ordermcuslevel;
+	 	this.ordermcustype = ordermcustype;
 	}
 }
 

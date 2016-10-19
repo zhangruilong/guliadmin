@@ -71,6 +71,10 @@ public class Givegoods
     * 客户范围
     */
    private String givegoodsscope;   
+   /**
+    * 重量
+    */
+   private String givegoodsweight;   
     //属性方法	    
      /**
 	 *设置主键"买赠ID"属性
@@ -343,6 +347,23 @@ public class Givegoods
 	{
 		return this.givegoodsscope;
 	}	   
+
+	/**
+	 *设置"重量"属性
+	 *@param givegoodsweight 实体的Givegoodsweight属性
+	 */
+	public void setGivegoodsweight(String givegoodsweight)
+	{
+		this.givegoodsweight = givegoodsweight;
+	}
+	
+	/**
+	 *获取"重量"属性
+	 */
+	public String getGivegoodsweight()
+	{
+		return this.givegoodsweight;
+	}	   
 	public Givegoods() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -364,6 +385,7 @@ public class Givegoods
 	 	,String creator
 	 	,Integer givegoodsseq
 	 	,String givegoodsscope
+	 	,String givegoodsweight
 		 ){
 		super();
 		this.givegoodsid = givegoodsid;
@@ -382,6 +404,7 @@ public class Givegoods
 	 	this.creator = creator;
 	 	this.givegoodsseq = givegoodsseq;
 	 	this.givegoodsscope = givegoodsscope;
+	 	this.givegoodsweight = givegoodsweight;
 	}
 }
 

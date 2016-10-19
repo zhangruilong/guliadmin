@@ -59,6 +59,18 @@ public class Orderd
     * 实际金额
     */
    private Float orderdrightmoney;   
+   /**
+    * 重量
+    */
+   private String orderdweight;   
+   /**
+    * 商品id
+    */
+   private String orderdgoods;   
+   /**
+    * 订单备注
+    */
+   private String orderdnote;   
     //属性方法	    
      /**
 	 *设置主键"订单详细ID"属性
@@ -280,6 +292,57 @@ public class Orderd
 	{
 		return this.orderdrightmoney;
 	}	   
+
+	/**
+	 *设置"重量"属性
+	 *@param orderdweight 实体的Orderdweight属性
+	 */
+	public void setOrderdweight(String orderdweight)
+	{
+		this.orderdweight = orderdweight;
+	}
+	
+	/**
+	 *获取"重量"属性
+	 */
+	public String getOrderdweight()
+	{
+		return this.orderdweight;
+	}	   
+
+	/**
+	 *设置"商品id"属性
+	 *@param orderdgoods 实体的Orderdgoods属性
+	 */
+	public void setOrderdgoods(String orderdgoods)
+	{
+		this.orderdgoods = orderdgoods;
+	}
+	
+	/**
+	 *获取"商品id"属性
+	 */
+	public String getOrderdgoods()
+	{
+		return this.orderdgoods;
+	}	   
+
+	/**
+	 *设置"订单备注"属性
+	 *@param orderdnote 实体的Orderdnote属性
+	 */
+	public void setOrderdnote(String orderdnote)
+	{
+		this.orderdnote = orderdnote;
+	}
+	
+	/**
+	 *获取"订单备注"属性
+	 */
+	public String getOrderdnote()
+	{
+		return this.orderdnote;
+	}	   
 	public Orderd() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -298,6 +361,9 @@ public class Orderd
 	 	,Integer orderdnum
 	 	,Float orderdmoney
 	 	,Float orderdrightmoney
+	 	,String orderdweight
+	 	,String orderdgoods
+	 	,String orderdnote
 		 ){
 		super();
 		this.orderdid = orderdid;
@@ -313,6 +379,9 @@ public class Orderd
 	 	this.orderdnum = orderdnum;
 	 	this.orderdmoney = orderdmoney;
 	 	this.orderdrightmoney = orderdrightmoney;
+	 	this.orderdweight = orderdweight;
+	 	this.orderdgoods = orderdgoods;
+	 	this.orderdnote = orderdnote;
 	}
 }
 

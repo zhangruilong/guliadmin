@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 秒杀商品 实体类
+ * timegoodsview 实体类
  *@author ZhangRuiLong
  */
 public class Timegoodsview
@@ -83,6 +83,10 @@ public class Timegoodsview
     * timegoodsscope
     */
    private String timegoodsscope;   
+   /**
+    * timegoodsweight
+    */
+   private String timegoodsweight;   
    /**
     * companycode
     */
@@ -464,6 +468,23 @@ public class Timegoodsview
 	}	   
 
 	/**
+	 *设置"timegoodsweight"属性
+	 *@param timegoodsweight 实体的Timegoodsweight属性
+	 */
+	public void setTimegoodsweight(String timegoodsweight)
+	{
+		this.timegoodsweight = timegoodsweight;
+	}
+	
+	/**
+	 *获取"timegoodsweight"属性
+	 */
+	public String getTimegoodsweight()
+	{
+		return this.timegoodsweight;
+	}	   
+
+	/**
 	 *设置"companycode"属性
 	 *@param companycode 实体的Companycode属性
 	 */
@@ -724,6 +745,7 @@ public class Timegoodsview
 	 	,Integer surplusnum
 	 	,Integer timegoodsseq
 	 	,String timegoodsscope
+	 	,String timegoodsweight
 	 	,String companycode
 	 	,String username
 	 	,String companyphone
@@ -759,6 +781,7 @@ public class Timegoodsview
 	 	this.surplusnum = surplusnum;
 	 	this.timegoodsseq = timegoodsseq;
 	 	this.timegoodsscope = timegoodsscope;
+	 	this.timegoodsweight = timegoodsweight;
 	 	this.companycode = companycode;
 	 	this.username = username;
 	 	this.companyphone = companyphone;

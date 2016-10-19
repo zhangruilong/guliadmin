@@ -71,6 +71,18 @@ public class Scantview
     * goodsclassstatue
     */
    private String goodsclassstatue;   
+   /**
+    * goodsclasscity
+    */
+   private String goodsclasscity;   
+   /**
+    * goodsclassorder
+    */
+   private String goodsclassorder;   
+   /**
+    * goodsclasscompany
+    */
+   private String goodsclasscompany;   
     //属性方法	    
      /**
 	 *设置主键"scantid"属性
@@ -343,6 +355,57 @@ public class Scantview
 	{
 		return this.goodsclassstatue;
 	}	   
+
+	/**
+	 *设置"goodsclasscity"属性
+	 *@param goodsclasscity 实体的Goodsclasscity属性
+	 */
+	public void setGoodsclasscity(String goodsclasscity)
+	{
+		this.goodsclasscity = goodsclasscity;
+	}
+	
+	/**
+	 *获取"goodsclasscity"属性
+	 */
+	public String getGoodsclasscity()
+	{
+		return this.goodsclasscity;
+	}	   
+
+	/**
+	 *设置"goodsclassorder"属性
+	 *@param goodsclassorder 实体的Goodsclassorder属性
+	 */
+	public void setGoodsclassorder(String goodsclassorder)
+	{
+		this.goodsclassorder = goodsclassorder;
+	}
+	
+	/**
+	 *获取"goodsclassorder"属性
+	 */
+	public String getGoodsclassorder()
+	{
+		return this.goodsclassorder;
+	}	   
+
+	/**
+	 *设置"goodsclasscompany"属性
+	 *@param goodsclasscompany 实体的Goodsclasscompany属性
+	 */
+	public void setGoodsclasscompany(String goodsclasscompany)
+	{
+		this.goodsclasscompany = goodsclasscompany;
+	}
+	
+	/**
+	 *获取"goodsclasscompany"属性
+	 */
+	public String getGoodsclasscompany()
+	{
+		return this.goodsclasscompany;
+	}	   
 	public Scantview() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -364,6 +427,9 @@ public class Scantview
 	 	,String goodsclassparent
 	 	,String goodsclassdetail
 	 	,String goodsclassstatue
+	 	,String goodsclasscity
+	 	,String goodsclassorder
+	 	,String goodsclasscompany
 		 ){
 		super();
 		this.scantid = scantid;
@@ -382,6 +448,9 @@ public class Scantview
 	 	this.goodsclassparent = goodsclassparent;
 	 	this.goodsclassdetail = goodsclassdetail;
 	 	this.goodsclassstatue = goodsclassstatue;
+	 	this.goodsclasscity = goodsclasscity;
+	 	this.goodsclassorder = goodsclassorder;
+	 	this.goodsclasscompany = goodsclasscompany;
 	}
 }
 

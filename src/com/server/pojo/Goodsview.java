@@ -72,6 +72,10 @@ public class Goodsview
     */
    private Integer goodsorder;   
    /**
+    * goodsweight
+    */
+   private String goodsweight;   
+   /**
     * goodsclassid
     */
    private String goodsclassid;   
@@ -95,6 +99,18 @@ public class Goodsview
     * goodsclassstatue
     */
    private String goodsclassstatue;   
+   /**
+    * goodsclasscity
+    */
+   private String goodsclasscity;   
+   /**
+    * goodsclassorder
+    */
+   private String goodsclassorder;   
+   /**
+    * goodsclasscompany
+    */
+   private String goodsclasscompany;   
    /**
     * companyshop
     */
@@ -417,6 +433,23 @@ public class Goodsview
 	}	   
 
 	/**
+	 *设置"goodsweight"属性
+	 *@param goodsweight 实体的Goodsweight属性
+	 */
+	public void setGoodsweight(String goodsweight)
+	{
+		this.goodsweight = goodsweight;
+	}
+	
+	/**
+	 *获取"goodsweight"属性
+	 */
+	public String getGoodsweight()
+	{
+		return this.goodsweight;
+	}	   
+
+	/**
 	 *设置"goodsclassid"属性
 	 *@param goodsclassid 实体的Goodsclassid属性
 	 */
@@ -516,6 +549,57 @@ public class Goodsview
 	public String getGoodsclassstatue()
 	{
 		return this.goodsclassstatue;
+	}	   
+
+	/**
+	 *设置"goodsclasscity"属性
+	 *@param goodsclasscity 实体的Goodsclasscity属性
+	 */
+	public void setGoodsclasscity(String goodsclasscity)
+	{
+		this.goodsclasscity = goodsclasscity;
+	}
+	
+	/**
+	 *获取"goodsclasscity"属性
+	 */
+	public String getGoodsclasscity()
+	{
+		return this.goodsclasscity;
+	}	   
+
+	/**
+	 *设置"goodsclassorder"属性
+	 *@param goodsclassorder 实体的Goodsclassorder属性
+	 */
+	public void setGoodsclassorder(String goodsclassorder)
+	{
+		this.goodsclassorder = goodsclassorder;
+	}
+	
+	/**
+	 *获取"goodsclassorder"属性
+	 */
+	public String getGoodsclassorder()
+	{
+		return this.goodsclassorder;
+	}	   
+
+	/**
+	 *设置"goodsclasscompany"属性
+	 *@param goodsclasscompany 实体的Goodsclasscompany属性
+	 */
+	public void setGoodsclasscompany(String goodsclasscompany)
+	{
+		this.goodsclasscompany = goodsclasscompany;
+	}
+	
+	/**
+	 *获取"goodsclasscompany"属性
+	 */
+	public String getGoodsclasscompany()
+	{
+		return this.goodsclasscompany;
 	}	   
 
 	/**
@@ -742,12 +826,16 @@ public class Goodsview
 	 	,String goodsbrand
 	 	,String goodstype
 	 	,Integer goodsorder
+	 	,String goodsweight
 	 	,String goodsclassid
 	 	,String goodsclasscode
 	 	,String goodsclassname
 	 	,String goodsclassparent
 	 	,String goodsclassdetail
 	 	,String goodsclassstatue
+	 	,String goodsclasscity
+	 	,String goodsclassorder
+	 	,String goodsclasscompany
 	 	,String companyshop
 	 	,String companycity
 	 	,String companyaddress
@@ -778,12 +866,16 @@ public class Goodsview
 	 	this.goodsbrand = goodsbrand;
 	 	this.goodstype = goodstype;
 	 	this.goodsorder = goodsorder;
+	 	this.goodsweight = goodsweight;
 	 	this.goodsclassid = goodsclassid;
 	 	this.goodsclasscode = goodsclasscode;
 	 	this.goodsclassname = goodsclassname;
 	 	this.goodsclassparent = goodsclassparent;
 	 	this.goodsclassdetail = goodsclassdetail;
 	 	this.goodsclassstatue = goodsclassstatue;
+	 	this.goodsclasscity = goodsclasscity;
+	 	this.goodsclassorder = goodsclassorder;
+	 	this.goodsclasscompany = goodsclasscompany;
 	 	this.companyshop = companyshop;
 	 	this.companycity = companycity;
 	 	this.companyaddress = companyaddress;

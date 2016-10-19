@@ -71,6 +71,10 @@ public class Goods
     * 顺序
     */
    private Integer goodsorder;   
+   /**
+    * 重量
+    */
+   private String goodsweight;   
     //属性方法	    
      /**
 	 *设置主键"商品ID"属性
@@ -343,6 +347,23 @@ public class Goods
 	{
 		return this.goodsorder;
 	}	   
+
+	/**
+	 *设置"重量"属性
+	 *@param goodsweight 实体的Goodsweight属性
+	 */
+	public void setGoodsweight(String goodsweight)
+	{
+		this.goodsweight = goodsweight;
+	}
+	
+	/**
+	 *获取"重量"属性
+	 */
+	public String getGoodsweight()
+	{
+		return this.goodsweight;
+	}	   
 	public Goods() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -364,6 +385,7 @@ public class Goods
 	 	,String goodsbrand
 	 	,String goodstype
 	 	,Integer goodsorder
+	 	,String goodsweight
 		 ){
 		super();
 		this.goodsid = goodsid;
@@ -382,6 +404,7 @@ public class Goods
 	 	this.goodsbrand = goodsbrand;
 	 	this.goodstype = goodstype;
 	 	this.goodsorder = goodsorder;
+	 	this.goodsweight = goodsweight;
 	}
 }
 

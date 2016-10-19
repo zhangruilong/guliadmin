@@ -2,25 +2,25 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 大客户关系 实体类
+ * largecusprice 实体类
  *@author ZhangRuiLong
  */
 public class Largecusprice
 {
    /**
-    * ID,主键
+    * 供应商大客户商品价格id,主键
     */
-   private String id; 
+   private String largecuspriceid; 
    /**
-    * 供应商
+    * 供应商id
     */
    private String largecuspricecompany;   
    /**
-    * 客户
+    * 客户id
     */
    private String largecuspricecustomer;   
    /**
-    * 商品
+    * 商品id
     */
    private String largecuspricegoods;   
    /**
@@ -28,7 +28,7 @@ public class Largecusprice
     */
    private String largecuspriceprice;   
    /**
-    * 描述
+    * 供应商大客户商品价格描述
     */
    private String largecuspricedetail;   
    /**
@@ -36,7 +36,7 @@ public class Largecusprice
     */
    private String largecuspricecreatetime;   
    /**
-    * 创建人
+    * 修改时间
     */
    private String largecuspricecreator;   
    /**
@@ -44,33 +44,33 @@ public class Largecusprice
     */
    private String largecuspriceprice2;   
    /**
-    * 单品价单位
+    * 单品单位
     */
    private String largecuspriceunit;   
    /**
-    * 套装价单位
+    * 套装单位
     */
    private String largecuspriceunit2;   
     //属性方法	    
      /**
-	 *设置主键"ID"属性
-	 *@param id 实体的Id属性
+	 *设置主键"供应商大客户商品价格id"属性
+	 *@param largecuspriceid 实体的Largecuspriceid属性
 	 */
-	public void setId(String id)
+	public void setLargecuspriceid(String largecuspriceid)
 	{
-		this.id = id;
+		this.largecuspriceid = largecuspriceid;
 	}
 	
 	/**
-	 *获取主键"ID"属性
+	 *获取主键"供应商大客户商品价格id"属性
 	 */
-	public String getId()
+	public String getLargecuspriceid()
 	{
-		return this.id;
+		return this.largecuspriceid;
 	}
 
 	/**
-	 *设置"供应商"属性
+	 *设置"供应商id"属性
 	 *@param largecuspricecompany 实体的Largecuspricecompany属性
 	 */
 	public void setLargecuspricecompany(String largecuspricecompany)
@@ -79,7 +79,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"供应商"属性
+	 *获取"供应商id"属性
 	 */
 	public String getLargecuspricecompany()
 	{
@@ -87,7 +87,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"客户"属性
+	 *设置"客户id"属性
 	 *@param largecuspricecustomer 实体的Largecuspricecustomer属性
 	 */
 	public void setLargecuspricecustomer(String largecuspricecustomer)
@@ -96,7 +96,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"客户"属性
+	 *获取"客户id"属性
 	 */
 	public String getLargecuspricecustomer()
 	{
@@ -104,7 +104,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"商品"属性
+	 *设置"商品id"属性
 	 *@param largecuspricegoods 实体的Largecuspricegoods属性
 	 */
 	public void setLargecuspricegoods(String largecuspricegoods)
@@ -113,7 +113,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"商品"属性
+	 *获取"商品id"属性
 	 */
 	public String getLargecuspricegoods()
 	{
@@ -138,7 +138,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"描述"属性
+	 *设置"供应商大客户商品价格描述"属性
 	 *@param largecuspricedetail 实体的Largecuspricedetail属性
 	 */
 	public void setLargecuspricedetail(String largecuspricedetail)
@@ -147,7 +147,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"描述"属性
+	 *获取"供应商大客户商品价格描述"属性
 	 */
 	public String getLargecuspricedetail()
 	{
@@ -172,7 +172,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"创建人"属性
+	 *设置"修改时间"属性
 	 *@param largecuspricecreator 实体的Largecuspricecreator属性
 	 */
 	public void setLargecuspricecreator(String largecuspricecreator)
@@ -181,7 +181,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"创建人"属性
+	 *获取"修改时间"属性
 	 */
 	public String getLargecuspricecreator()
 	{
@@ -206,7 +206,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"单品价单位"属性
+	 *设置"单品单位"属性
 	 *@param largecuspriceunit 实体的Largecuspriceunit属性
 	 */
 	public void setLargecuspriceunit(String largecuspriceunit)
@@ -215,7 +215,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"单品价单位"属性
+	 *获取"单品单位"属性
 	 */
 	public String getLargecuspriceunit()
 	{
@@ -223,7 +223,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"套装价单位"属性
+	 *设置"套装单位"属性
 	 *@param largecuspriceunit2 实体的Largecuspriceunit2属性
 	 */
 	public void setLargecuspriceunit2(String largecuspriceunit2)
@@ -232,7 +232,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"套装价单位"属性
+	 *获取"套装单位"属性
 	 */
 	public String getLargecuspriceunit2()
 	{
@@ -243,7 +243,7 @@ public class Largecusprice
 		// TODO Auto-generated constructor stub
 	}
 	public Largecusprice(
-		String id
+		String largecuspriceid
 	 	,String largecuspricecompany
 	 	,String largecuspricecustomer
 	 	,String largecuspricegoods
@@ -256,7 +256,7 @@ public class Largecusprice
 	 	,String largecuspriceunit2
 		 ){
 		super();
-		this.id = id;
+		this.largecuspriceid = largecuspriceid;
 	 	this.largecuspricecompany = largecuspricecompany;
 	 	this.largecuspricecustomer = largecuspricecustomer;
 	 	this.largecuspricegoods = largecuspricegoods;

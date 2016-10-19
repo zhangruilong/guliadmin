@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * ORDERMVIEW 实体类
+ * ordermview 实体类
  *@author ZhangRuiLong
  */
 public class Ordermview
@@ -75,6 +75,18 @@ public class Ordermview
     * ordermemp
     */
    private String ordermemp;   
+   /**
+    * ordermcusshop
+    */
+   private String ordermcusshop;   
+   /**
+    * ordermcuslevel
+    */
+   private String ordermcuslevel;   
+   /**
+    * ordermcustype
+    */
+   private String ordermcustype;   
    /**
     * companyshop
     */
@@ -386,6 +398,57 @@ public class Ordermview
 	}	   
 
 	/**
+	 *设置"ordermcusshop"属性
+	 *@param ordermcusshop 实体的Ordermcusshop属性
+	 */
+	public void setOrdermcusshop(String ordermcusshop)
+	{
+		this.ordermcusshop = ordermcusshop;
+	}
+	
+	/**
+	 *获取"ordermcusshop"属性
+	 */
+	public String getOrdermcusshop()
+	{
+		return this.ordermcusshop;
+	}	   
+
+	/**
+	 *设置"ordermcuslevel"属性
+	 *@param ordermcuslevel 实体的Ordermcuslevel属性
+	 */
+	public void setOrdermcuslevel(String ordermcuslevel)
+	{
+		this.ordermcuslevel = ordermcuslevel;
+	}
+	
+	/**
+	 *获取"ordermcuslevel"属性
+	 */
+	public String getOrdermcuslevel()
+	{
+		return this.ordermcuslevel;
+	}	   
+
+	/**
+	 *设置"ordermcustype"属性
+	 *@param ordermcustype 实体的Ordermcustype属性
+	 */
+	public void setOrdermcustype(String ordermcustype)
+	{
+		this.ordermcustype = ordermcustype;
+	}
+	
+	/**
+	 *获取"ordermcustype"属性
+	 */
+	public String getOrdermcustype()
+	{
+		return this.ordermcustype;
+	}	   
+
+	/**
 	 *设置"companyshop"属性
 	 *@param companyshop 实体的Companyshop属性
 	 */
@@ -491,6 +554,9 @@ public class Ordermview
 	 	,String updtime
 	 	,String updor
 	 	,String ordermemp
+	 	,String ordermcusshop
+	 	,String ordermcuslevel
+	 	,String ordermcustype
 	 	,String companyshop
 	 	,String companyphone
 	 	,String companydetail
@@ -515,6 +581,9 @@ public class Ordermview
 	 	this.updtime = updtime;
 	 	this.updor = updor;
 	 	this.ordermemp = ordermemp;
+	 	this.ordermcusshop = ordermcusshop;
+	 	this.ordermcuslevel = ordermcuslevel;
+	 	this.ordermcustype = ordermcustype;
 	 	this.companyshop = companyshop;
 	 	this.companyphone = companyphone;
 	 	this.companydetail = companydetail;

@@ -26,10 +26,11 @@ public class OrdermviewAction extends BaseActionDao {
 	public Type TYPE = new TypeToken<ArrayList<Ordermview>>() {}.getType();
 
 	//导出
+	@SuppressWarnings("unchecked")
 	public void expAll(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		Queryinfo queryinfo = getQueryinfo(request, Ordermview.class, OrdermviewPoco.QUERYFIELDNAME, OrdermviewPoco.ORDER, TYPE);
 		cuss = (ArrayList<Ordermview>) selAll(queryinfo);
-		FileUtil.expExcel(response,cuss,OrdermviewPoco.CHINESENAME,OrdermviewPoco.NAME);
+		FileUtil.expExcel(response,cuss,OrdermviewPoco.CHINESENAME,"订单报表");
 	}
 	//查询所有
 	public void selAll(HttpServletRequest request, HttpServletResponse response){

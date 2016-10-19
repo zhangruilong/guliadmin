@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 大客户关系 逻辑层
+ * largecusprice 逻辑层
  *@author ZhangRuiLong
  */
 public class LargecuspriceAction extends BaseActionDao {
@@ -32,8 +32,8 @@ public class LargecuspriceAction extends BaseActionDao {
 		json = json.replace("\"\"", "null");
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Largecusprice temp:cuss){
-			if(CommonUtil.isNull(temp.getId()))
-				temp.setId(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getLargecuspriceid()))
+				temp.setLargecuspriceid(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);
@@ -64,8 +64,8 @@ public class LargecuspriceAction extends BaseActionDao {
 		String json = FileUtil.impExcel(fileinfo.getPath(),LargecuspricePoco.FIELDNAME); 
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Largecusprice temp:cuss){
-			if(CommonUtil.isNull(temp.getId()))
-				temp.setId(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getLargecuspriceid()))
+				temp.setLargecuspriceid(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);

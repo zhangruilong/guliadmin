@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 买赠商品 实体类
+ * givegoodsview 实体类
  *@author ZhangRuiLong
  */
 public class Givegoodsview
@@ -71,6 +71,10 @@ public class Givegoodsview
     * givegoodsscope
     */
    private String givegoodsscope;   
+   /**
+    * givegoodsweight
+    */
+   private String givegoodsweight;   
    /**
     * companycode
     */
@@ -401,6 +405,23 @@ public class Givegoodsview
 	}	   
 
 	/**
+	 *设置"givegoodsweight"属性
+	 *@param givegoodsweight 实体的Givegoodsweight属性
+	 */
+	public void setGivegoodsweight(String givegoodsweight)
+	{
+		this.givegoodsweight = givegoodsweight;
+	}
+	
+	/**
+	 *获取"givegoodsweight"属性
+	 */
+	public String getGivegoodsweight()
+	{
+		return this.givegoodsweight;
+	}	   
+
+	/**
 	 *设置"companycode"属性
 	 *@param companycode 实体的Companycode属性
 	 */
@@ -658,6 +679,7 @@ public class Givegoodsview
 	 	,String creator
 	 	,Integer givegoodsseq
 	 	,String givegoodsscope
+	 	,String givegoodsweight
 	 	,String companycode
 	 	,String username
 	 	,String companyphone
@@ -690,6 +712,7 @@ public class Givegoodsview
 	 	this.creator = creator;
 	 	this.givegoodsseq = givegoodsseq;
 	 	this.givegoodsscope = givegoodsscope;
+	 	this.givegoodsweight = givegoodsweight;
 	 	this.companycode = companycode;
 	 	this.username = username;
 	 	this.companyphone = companyphone;
