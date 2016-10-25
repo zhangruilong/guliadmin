@@ -10,6 +10,7 @@
 	<bean id="System_roleuserAction" class="com.system.action.System_roleuserAction" />
 	<bean id="System_roleuserviewAction" class="com.system.action.System_roleuserviewAction" />
 	<bean id="System_statusAction" class="com.system.action.System_statusAction" />
+	<bean id="System_tempruleAction" class="com.system.action.System_tempruleAction" />
 	<bean id="System_attachAction" class="com.system.action.more.System_attachAction" />
 	<bean id="Om_treeviewAction" class="com.om.action.Om_treeviewAction" />
 	<bean id="Om_positionAction" class="com.om.action.Om_positionAction" />
