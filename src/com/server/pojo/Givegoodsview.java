@@ -76,6 +76,10 @@ public class Givegoodsview
     */
    private String givegoodsweight;   
    /**
+    * givegoodsbrand
+    */
+   private String givegoodsbrand;   
+   /**
     * companycode
     */
    private String companycode;   
@@ -422,6 +426,23 @@ public class Givegoodsview
 	}	   
 
 	/**
+	 *设置"givegoodsbrand"属性
+	 *@param givegoodsbrand 实体的Givegoodsbrand属性
+	 */
+	public void setGivegoodsbrand(String givegoodsbrand)
+	{
+		this.givegoodsbrand = givegoodsbrand;
+	}
+	
+	/**
+	 *获取"givegoodsbrand"属性
+	 */
+	public String getGivegoodsbrand()
+	{
+		return this.givegoodsbrand;
+	}	   
+
+	/**
 	 *设置"companycode"属性
 	 *@param companycode 实体的Companycode属性
 	 */
@@ -680,6 +701,7 @@ public class Givegoodsview
 	 	,Integer givegoodsseq
 	 	,String givegoodsscope
 	 	,String givegoodsweight
+	 	,String givegoodsbrand
 	 	,String companycode
 	 	,String username
 	 	,String companyphone
@@ -713,6 +735,7 @@ public class Givegoodsview
 	 	this.givegoodsseq = givegoodsseq;
 	 	this.givegoodsscope = givegoodsscope;
 	 	this.givegoodsweight = givegoodsweight;
+	 	this.givegoodsbrand = givegoodsbrand;
 	 	this.companycode = companycode;
 	 	this.username = username;
 	 	this.companyphone = companyphone;

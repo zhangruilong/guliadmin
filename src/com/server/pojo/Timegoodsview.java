@@ -88,6 +88,10 @@ public class Timegoodsview
     */
    private String timegoodsweight;   
    /**
+    * timegoodsbrand
+    */
+   private String timegoodsbrand;   
+   /**
     * companycode
     */
    private String companycode;   
@@ -485,6 +489,23 @@ public class Timegoodsview
 	}	   
 
 	/**
+	 *设置"timegoodsbrand"属性
+	 *@param timegoodsbrand 实体的Timegoodsbrand属性
+	 */
+	public void setTimegoodsbrand(String timegoodsbrand)
+	{
+		this.timegoodsbrand = timegoodsbrand;
+	}
+	
+	/**
+	 *获取"timegoodsbrand"属性
+	 */
+	public String getTimegoodsbrand()
+	{
+		return this.timegoodsbrand;
+	}	   
+
+	/**
 	 *设置"companycode"属性
 	 *@param companycode 实体的Companycode属性
 	 */
@@ -746,6 +767,7 @@ public class Timegoodsview
 	 	,Integer timegoodsseq
 	 	,String timegoodsscope
 	 	,String timegoodsweight
+	 	,String timegoodsbrand
 	 	,String companycode
 	 	,String username
 	 	,String companyphone
@@ -782,6 +804,7 @@ public class Timegoodsview
 	 	this.timegoodsseq = timegoodsseq;
 	 	this.timegoodsscope = timegoodsscope;
 	 	this.timegoodsweight = timegoodsweight;
+	 	this.timegoodsbrand = timegoodsbrand;
 	 	this.companycode = companycode;
 	 	this.username = username;
 	 	this.companyphone = companyphone;

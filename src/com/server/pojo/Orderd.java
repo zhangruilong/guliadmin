@@ -71,6 +71,10 @@ public class Orderd
     * 订单备注
     */
    private String orderdnote;   
+   /**
+    * 订单商品品牌
+    */
+   private String orderdbrand;   
     //属性方法	    
      /**
 	 *设置主键"订单详细ID"属性
@@ -343,6 +347,23 @@ public class Orderd
 	{
 		return this.orderdnote;
 	}	   
+
+	/**
+	 *设置"订单商品品牌"属性
+	 *@param orderdbrand 实体的Orderdbrand属性
+	 */
+	public void setOrderdbrand(String orderdbrand)
+	{
+		this.orderdbrand = orderdbrand;
+	}
+	
+	/**
+	 *获取"订单商品品牌"属性
+	 */
+	public String getOrderdbrand()
+	{
+		return this.orderdbrand;
+	}	   
 	public Orderd() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -364,6 +385,7 @@ public class Orderd
 	 	,String orderdweight
 	 	,String orderdgoods
 	 	,String orderdnote
+	 	,String orderdbrand
 		 ){
 		super();
 		this.orderdid = orderdid;
@@ -382,6 +404,7 @@ public class Orderd
 	 	this.orderdweight = orderdweight;
 	 	this.orderdgoods = orderdgoods;
 	 	this.orderdnote = orderdnote;
+	 	this.orderdbrand = orderdbrand;
 	}
 }
 

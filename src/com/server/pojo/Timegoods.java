@@ -87,6 +87,10 @@ public class Timegoods
     * 重量
     */
    private String timegoodsweight;   
+   /**
+    * 品牌
+    */
+   private String timegoodsbrand;   
     //属性方法	    
      /**
 	 *设置主键"促销品ID"属性
@@ -427,6 +431,23 @@ public class Timegoods
 	{
 		return this.timegoodsweight;
 	}	   
+
+	/**
+	 *设置"品牌"属性
+	 *@param timegoodsbrand 实体的Timegoodsbrand属性
+	 */
+	public void setTimegoodsbrand(String timegoodsbrand)
+	{
+		this.timegoodsbrand = timegoodsbrand;
+	}
+	
+	/**
+	 *获取"品牌"属性
+	 */
+	public String getTimegoodsbrand()
+	{
+		return this.timegoodsbrand;
+	}	   
 	public Timegoods() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -452,6 +473,7 @@ public class Timegoods
 	 	,Integer timegoodsseq
 	 	,String timegoodsscope
 	 	,String timegoodsweight
+	 	,String timegoodsbrand
 		 ){
 		super();
 		this.timegoodsid = timegoodsid;
@@ -474,6 +496,7 @@ public class Timegoods
 	 	this.timegoodsseq = timegoodsseq;
 	 	this.timegoodsscope = timegoodsscope;
 	 	this.timegoodsweight = timegoodsweight;
+	 	this.timegoodsbrand = timegoodsbrand;
 	}
 }
 
