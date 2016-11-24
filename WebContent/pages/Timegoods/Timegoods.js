@@ -21,12 +21,15 @@ Ext.onReady(function() {
 	        			    ,'surplusnum' 
 	        			    ,'timegoodsseq' 
 	        			    ,'timegoodsscope' 
+	        			    ,'timegoodsweight' 
+	        			    ,'timegoodsbrand' 
 	        			      ];// 全部字段
 	var Timegoodskeycolumn = [ 'timegoodsid' ];// 主键
 	var Timegoodsstore = dataStore(Timegoodsfields, basePath + Timegoodsaction + "?method=selAll");// 定义Timegoodsstore
 	var TimegoodsdataForm = Ext.create('Ext.form.Panel', {// 定义新增和修改的FormPanel
 		id:'TimegoodsdataForm',
 		labelAlign : 'right',
+		scrollable : true,
 		frame : true,
 		layout : 'column',
 		items : [ {
@@ -238,6 +241,28 @@ Ext.onReady(function() {
 				maxLength : 100
 			} ]
 		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '重量',
+				id : 'Timegoodstimegoodsweight',
+				name : 'timegoodsweight',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '品牌',
+				id : 'Timegoodstimegoodsbrand',
+				name : 'timegoodsbrand',
+				maxLength : 100
+			} ]
+		}
 		]
 	});
 	
@@ -404,6 +429,22 @@ Ext.onReady(function() {
 		, {
 			header : '客户范围',
 			dataIndex : 'timegoodsscope',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '重量',
+			dataIndex : 'timegoodsweight',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '品牌',
+			dataIndex : 'timegoodsbrand',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'

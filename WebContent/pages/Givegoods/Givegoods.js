@@ -18,12 +18,15 @@ Ext.onReady(function() {
 	        			    ,'creator' 
 	        			    ,'givegoodsseq' 
 	        			    ,'givegoodsscope' 
+	        			    ,'givegoodsweight' 
+	        			    ,'givegoodsbrand' 
 	        			      ];// 全部字段
 	var Givegoodskeycolumn = [ 'givegoodsid' ];// 主键
 	var Givegoodsstore = dataStore(Givegoodsfields, basePath + Givegoodsaction + "?method=selAll");// 定义Givegoodsstore
 	var GivegoodsdataForm = Ext.create('Ext.form.Panel', {// 定义新增和修改的FormPanel
 		id:'GivegoodsdataForm',
 		labelAlign : 'right',
+		scrollable : true,
 		frame : true,
 		layout : 'column',
 		items : [ {
@@ -202,6 +205,28 @@ Ext.onReady(function() {
 				maxLength : 100
 			} ]
 		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '重量',
+				id : 'Givegoodsgivegoodsweight',
+				name : 'givegoodsweight',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '品牌',
+				id : 'Givegoodsgivegoodsbrand',
+				name : 'givegoodsbrand',
+				maxLength : 100
+			} ]
+		}
 		]
 	});
 	
@@ -344,6 +369,22 @@ Ext.onReady(function() {
 		, {
 			header : '客户范围',
 			dataIndex : 'givegoodsscope',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '重量',
+			dataIndex : 'givegoodsweight',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '品牌',
+			dataIndex : 'givegoodsbrand',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'

@@ -11,7 +11,7 @@
 	<bean id="System_roleuserviewAction" class="com.system.action.System_roleuserviewAction" />
 	<bean id="System_statusAction" class="com.system.action.System_statusAction" />
 	<bean id="System_tempruleAction" class="com.system.action.System_tempruleAction" />
-	<bean id="System_attachAction" class="com.system.action.more.System_attachAction" />
+	<bean id="System_attachAction" class="com.system.action.System_attachAction" />
 	<bean id="Om_treeviewAction" class="com.om.action.Om_treeviewAction" />
 	<bean id="Om_positionAction" class="com.om.action.Om_positionAction" />
 	<bean id="Om_posiorgviewAction" class="com.om.action.Om_posiorgviewAction" />
@@ -27,11 +27,6 @@
 	<bean id="Om_empgroupAction" class="com.om.action.Om_empgroupAction" />
 	<bean id="Om_dutyAction" class="com.om.action.Om_dutyAction" />
 	<bean id="Om_busiorgAction" class="com.om.action.Om_busiorgAction" />
-	<bean id="Cms_seoAction" class="com.cms.action.Cms_seoAction" />
-	<bean id="Cms_applycAction" class="com.cms.action.Cms_applycAction" />
-	<bean id="Cms_intentioncAction" class="com.cms.action.Cms_intentioncAction" />
-	<bean id="Cms_jobpublishAction" class="com.cms.action.Cms_jobpublishAction" />
-	<bean id="Cms_contentAction" class="com.cms.action.more.Cms_contentAction" />
 
 
 	<bean id="AddressAction" class="com.server.action.AddressAction" />
