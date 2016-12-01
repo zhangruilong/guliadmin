@@ -38,6 +38,8 @@ public class GivegoodsPoco
 	 	"创建人",
 	 	"顺序",
 	 	"客户范围",
+	 	"重量",
+	 	"品牌",
 	};
 	/**
 	 * 实体英文字段
@@ -59,6 +61,8 @@ public class GivegoodsPoco
 	 	"creator",
 	 	"givegoodsseq",
 	 	"givegoodsscope",
+	 	"givegoodsweight",
+	 	"givegoodsbrand",
    };
    /**
     * 实体排序
@@ -84,6 +88,8 @@ public class GivegoodsPoco
 	 	"creator",
 	 	"givegoodsseq",
 	 	"givegoodsscope",
+	 	"givegoodsweight",
+	 	"givegoodsbrand",
    };
 }
 

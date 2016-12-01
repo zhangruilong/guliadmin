@@ -18,6 +18,7 @@ Ext.onReady(function() {
 	        			    ,'goodsbrand' 
 	        			    ,'goodstype' 
 	        			    ,'goodsorder' 
+	        			    ,'goodsweight' 
 	        			      ];// 全部字段
 	var Goodskeycolumn = [ 'goodsid' ];// 主键
 	var Goodsstore = dataStore(Goodsfields, basePath + Goodsaction + "?method=selAll");// 定义Goodsstore
@@ -202,6 +203,18 @@ Ext.onReady(function() {
 				maxLength : 100
 			} ]
 		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '重量',
+				id : 'Goodsgoodsweight',
+				name : 'goodsweight',
+				maxLength : 100,
+				value : 0
+			} ]
+		}
 		]
 	});
 	
@@ -344,6 +357,14 @@ Ext.onReady(function() {
 		, {
 			header : '顺序',
 			dataIndex : 'goodsorder',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '重量',
+			dataIndex : 'goodsweight',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'

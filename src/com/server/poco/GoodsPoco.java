@@ -38,6 +38,7 @@ public class GoodsPoco
 	 	"品牌",
 	 	"种类(用来搜索用,有时候陪在小类里面.比如 裸价商品)",
 	 	"顺序",
+	 	"重量",
 	};
 	/**
 	 * 实体英文字段
@@ -59,6 +60,7 @@ public class GoodsPoco
 	 	"goodsbrand",
 	 	"goodstype",
 	 	"goodsorder",
+	 	"goodsweight",
    };
    /**
     * 实体排序
@@ -84,6 +86,7 @@ public class GoodsPoco
 	 	"goodsbrand",
 	 	"goodstype",
 	 	"goodsorder",
+	 	"goodsweight",
    };
 }
 

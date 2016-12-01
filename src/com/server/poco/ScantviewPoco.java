@@ -38,6 +38,9 @@ public class ScantviewPoco
 	 	"goodsclassparent",
 	 	"goodsclassdetail",
 	 	"goodsclassstatue",
+	 	"goodsclasscity",
+	 	"goodsclassorder",
+	 	"goodsclasscompany",
 	};
 	/**
 	 * 实体英文字段
@@ -59,6 +62,9 @@ public class ScantviewPoco
 	 	"goodsclassparent",
 	 	"goodsclassdetail",
 	 	"goodsclassstatue",
+	 	"goodsclasscity",
+	 	"goodsclassorder",
+	 	"goodsclasscompany",
    };
    /**
     * 实体排序
@@ -84,6 +90,9 @@ public class ScantviewPoco
 	 	"goodsclassparent",
 	 	"goodsclassdetail",
 	 	"goodsclassstatue",
+	 	"goodsclasscity",
+	 	"goodsclassorder",
+	 	"goodsclasscompany",
    };
 }
 

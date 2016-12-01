@@ -35,6 +35,10 @@ public class OrderdPoco
 	 	"数量",
 	 	"下单金额",
 	 	"实际金额",
+	 	"重量",
+	 	"商品id",
+	 	"订单备注",
+	 	"订单商品品牌",
 	};
 	/**
 	 * 实体英文字段
@@ -53,6 +57,10 @@ public class OrderdPoco
 	 	"orderdnum",
 	 	"orderdmoney",
 	 	"orderdrightmoney",
+	 	"orderdweight",
+	 	"orderdgoods",
+	 	"orderdnote",
+	 	"orderdbrand",
    };
    /**
     * 实体排序
@@ -75,6 +83,10 @@ public class OrderdPoco
 	 	"orderdnum",
 	 	"orderdmoney",
 	 	"orderdrightmoney",
+	 	"orderdweight",
+	 	"orderdgoods",
+	 	"orderdnote",
+	 	"orderdbrand",
    };
 }
 

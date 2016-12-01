@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 大客户关系 实体类的常量
+ * largecusprice 实体类的常量
  *@author ZhangRuiLong
  */
 public class LargecuspricePoco
@@ -9,7 +9,7 @@ public class LargecuspricePoco
    /**
     * 实体中文名
     */
-   public static String NAME = "大客户关系";
+   public static String NAME = "largecusprice";
    /**
     * 实体表名
     */
@@ -17,28 +17,28 @@ public class LargecuspricePoco
    /**
     * 实体主键
     */
-   public static String[] KEYCOLUMN = {"id"};
+   public static String[] KEYCOLUMN = {"largecuspriceid"};
    /**
     * 实体中文字段
     */
    public static String[] CHINESENAME = {
-   		"ID",
-	 	"供应商",
-	 	"客户",
-	 	"商品",
+   		"供应商大客户商品价格id",
+	 	"供应商id",
+	 	"客户id",
+	 	"商品id",
 	 	"单品价",
-	 	"描述",
+	 	"供应商大客户商品价格描述",
 	 	"创建时间",
-	 	"创建人",
+	 	"修改时间",
 	 	"套装价",
-	 	"单品价单位",
-	 	"套装价单位",
+	 	"单品单位",
+	 	"套装单位",
 	};
 	/**
 	 * 实体英文字段
 	 */
    public static final String[] FIELDNAME = {
-   		"id",
+   		"largecuspriceid",
 	 	"largecuspricecompany",
 	 	"largecuspricecustomer",
 	 	"largecuspricegoods",
@@ -53,12 +53,12 @@ public class LargecuspricePoco
    /**
     * 实体排序
     */
-   public static final String ORDER = " id desc ";
+   public static final String ORDER = " largecuspriceid desc ";
    /**
 	 * 要模糊查询字段
 	 */
    public static final String[] QUERYFIELDNAME = {
-   		"id",
+   		"largecuspriceid",
 	 	"largecuspricecompany",
 	 	"largecuspricecustomer",
 	 	"largecuspricegoods",

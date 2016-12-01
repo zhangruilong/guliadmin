@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 秒杀商品 实体类的常量
+ * timegoodsview 实体类的常量
  *@author ZhangRuiLong
  */
 public class TimegoodsviewPoco
@@ -9,7 +9,7 @@ public class TimegoodsviewPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "秒杀商品";
+   public static String NAME = "timegoodsview";
    /**
     * 实体表名
     */
@@ -41,6 +41,8 @@ public class TimegoodsviewPoco
 	 	"surplusnum",
 	 	"timegoodsseq",
 	 	"timegoodsscope",
+	 	"timegoodsweight",
+	 	"timegoodsbrand",
 	 	"companycode",
 	 	"username",
 	 	"companyphone",
@@ -79,6 +81,8 @@ public class TimegoodsviewPoco
 	 	"surplusnum",
 	 	"timegoodsseq",
 	 	"timegoodsscope",
+	 	"timegoodsweight",
+	 	"timegoodsbrand",
 	 	"companycode",
 	 	"username",
 	 	"companyphone",
@@ -121,6 +125,8 @@ public class TimegoodsviewPoco
 	 	"surplusnum",
 	 	"timegoodsseq",
 	 	"timegoodsscope",
+	 	"timegoodsweight",
+	 	"timegoodsbrand",
 	 	"companycode",
 	 	"username",
 	 	"companyphone",

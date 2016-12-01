@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * ORDERMVIEW 实体类的常量
+ * ordermview 实体类的常量
  *@author ZhangRuiLong
  */
 public class OrdermviewPoco
@@ -9,7 +9,7 @@ public class OrdermviewPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "ORDERMVIEW";
+   public static String NAME = "ordermview";
    /**
     * 实体表名
     */
@@ -39,6 +39,9 @@ public class OrdermviewPoco
 	 	"updtime",
 	 	"updor",
 	 	"ordermemp",
+	 	"ordermcusshop",
+	 	"ordermcuslevel",
+	 	"ordermcustype",
 	 	"companyshop",
 	 	"companyphone",
 	 	"companydetail",
@@ -66,6 +69,9 @@ public class OrdermviewPoco
 	 	"updtime",
 	 	"updor",
 	 	"ordermemp",
+	 	"ordermcusshop",
+	 	"ordermcuslevel",
+	 	"ordermcustype",
 	 	"companyshop",
 	 	"companyphone",
 	 	"companydetail",
@@ -97,6 +103,9 @@ public class OrdermviewPoco
 	 	"updtime",
 	 	"updor",
 	 	"ordermemp",
+	 	"ordermcusshop",
+	 	"ordermcuslevel",
+	 	"ordermcustype",
 	 	"companyshop",
 	 	"companyphone",
 	 	"companydetail",

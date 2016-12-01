@@ -41,6 +41,8 @@ public class TimegoodsPoco
 	 	"剩余数量",
 	 	"顺序",
 	 	"客户范围",
+	 	"重量",
+	 	"品牌",
 	};
 	/**
 	 * 实体英文字段
@@ -65,6 +67,8 @@ public class TimegoodsPoco
 	 	"surplusnum",
 	 	"timegoodsseq",
 	 	"timegoodsscope",
+	 	"timegoodsweight",
+	 	"timegoodsbrand",
    };
    /**
     * 实体排序
@@ -93,6 +97,8 @@ public class TimegoodsPoco
 	 	"surplusnum",
 	 	"timegoodsseq",
 	 	"timegoodsscope",
+	 	"timegoodsweight",
+	 	"timegoodsbrand",
    };
 }
 

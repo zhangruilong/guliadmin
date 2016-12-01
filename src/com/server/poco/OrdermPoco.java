@@ -39,6 +39,9 @@ public class OrdermPoco
 	 	"修改时间",
 	 	"修改人",
 	 	"业务员ID(订单源)",
+	 	"店铺名称",
+	 	"客户等级",
+	 	"客户类型",
 	};
 	/**
 	 * 实体英文字段
@@ -61,6 +64,9 @@ public class OrdermPoco
 	 	"updtime",
 	 	"updor",
 	 	"ordermemp",
+	 	"ordermcusshop",
+	 	"ordermcuslevel",
+	 	"ordermcustype",
    };
    /**
     * 实体排序
@@ -87,6 +93,9 @@ public class OrdermPoco
 	 	"updtime",
 	 	"updor",
 	 	"ordermemp",
+	 	"ordermcusshop",
+	 	"ordermcuslevel",
+	 	"ordermcustype",
    };
 }
 

@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 收藏 实体类的常量
+ * collectview 实体类的常量
  *@author ZhangRuiLong
  */
 public class CollectviewPoco
@@ -9,7 +9,7 @@ public class CollectviewPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "收藏";
+   public static String NAME = "collectview";
    /**
     * 实体表名
     */
@@ -42,12 +42,16 @@ public class CollectviewPoco
 	 	"goodsbrand",
 	 	"goodstype",
 	 	"goodsorder",
+	 	"goodsweight",
 	 	"goodsclassid",
 	 	"goodsclasscode",
 	 	"goodsclassname",
 	 	"goodsclassparent",
 	 	"goodsclassdetail",
 	 	"goodsclassstatue",
+	 	"goodsclasscity",
+	 	"goodsclassorder",
+	 	"goodsclasscompany",
 	 	"companyshop",
 	 	"companycity",
 	 	"companyaddress",
@@ -85,12 +89,16 @@ public class CollectviewPoco
 	 	"goodsbrand",
 	 	"goodstype",
 	 	"goodsorder",
+	 	"goodsweight",
 	 	"goodsclassid",
 	 	"goodsclasscode",
 	 	"goodsclassname",
 	 	"goodsclassparent",
 	 	"goodsclassdetail",
 	 	"goodsclassstatue",
+	 	"goodsclasscity",
+	 	"goodsclassorder",
+	 	"goodsclasscompany",
 	 	"companyshop",
 	 	"companycity",
 	 	"companyaddress",
@@ -132,12 +140,16 @@ public class CollectviewPoco
 	 	"goodsbrand",
 	 	"goodstype",
 	 	"goodsorder",
+	 	"goodsweight",
 	 	"goodsclassid",
 	 	"goodsclasscode",
 	 	"goodsclassname",
 	 	"goodsclassparent",
 	 	"goodsclassdetail",
 	 	"goodsclassstatue",
+	 	"goodsclasscity",
+	 	"goodsclassorder",
+	 	"goodsclasscompany",
 	 	"companyshop",
 	 	"companycity",
 	 	"companyaddress",
