@@ -25,6 +25,51 @@ public class ScantviewAction extends BaseActionDao {
 	public ArrayList<Scantview> cuss = null;
 	public Type TYPE = new TypeToken<ArrayList<Scantview>>() {}.getType();
 
+	//新增
+	public void insAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		json = json.replace("\"\"", "null");
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Scantview temp:cuss){
+			if(CommonUtil.isNull(temp.getScantid()))
+				temp.setScantid(CommonUtil.getNewId());
+			result = insSingle(temp);
+		}
+		responsePW(response, result);
+	}
+	//删除
+	public void delAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Scantview temp:cuss){
+			result = delSingle(temp,ScantviewPoco.KEYCOLUMN);
+		}
+		responsePW(response, result);
+	}
+	//修改
+	public void updAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Scantview temp:cuss){
+			result = updSingle(temp,ScantviewPoco.KEYCOLUMN);
+		}
+		responsePW(response, result);
+	}
+	//导入
+	public void impAll(HttpServletRequest request, HttpServletResponse response){
+		Fileinfo fileinfo = FileUtil.upload(request,0,null,ScantviewPoco.NAME,"impAll");
+		String json = FileUtil.impExcel(fileinfo.getPath(),ScantviewPoco.FIELDNAME); 
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Scantview temp:cuss){
+			if(CommonUtil.isNull(temp.getScantid()))
+				temp.setScantid(CommonUtil.getNewId());
+			result = insSingle(temp);
+		}
+		responsePW(response, result);
+	}
 	//导出
 	public void expAll(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		Queryinfo queryinfo = getQueryinfo(request, Scantview.class, ScantviewPoco.QUERYFIELDNAME, ScantviewPoco.ORDER, TYPE);

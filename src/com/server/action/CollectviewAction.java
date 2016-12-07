@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 收藏 逻辑层
+ * collectview 逻辑层
  *@author ZhangRuiLong
  */
 public class CollectviewAction extends BaseActionDao {
@@ -25,6 +25,51 @@ public class CollectviewAction extends BaseActionDao {
 	public ArrayList<Collectview> cuss = null;
 	public Type TYPE = new TypeToken<ArrayList<Collectview>>() {}.getType();
 
+	//新增
+	public void insAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		json = json.replace("\"\"", "null");
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Collectview temp:cuss){
+			if(CommonUtil.isNull(temp.getCollectid()))
+				temp.setCollectid(CommonUtil.getNewId());
+			result = insSingle(temp);
+		}
+		responsePW(response, result);
+	}
+	//删除
+	public void delAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Collectview temp:cuss){
+			result = delSingle(temp,CollectviewPoco.KEYCOLUMN);
+		}
+		responsePW(response, result);
+	}
+	//修改
+	public void updAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Collectview temp:cuss){
+			result = updSingle(temp,CollectviewPoco.KEYCOLUMN);
+		}
+		responsePW(response, result);
+	}
+	//导入
+	public void impAll(HttpServletRequest request, HttpServletResponse response){
+		Fileinfo fileinfo = FileUtil.upload(request,0,null,CollectviewPoco.NAME,"impAll");
+		String json = FileUtil.impExcel(fileinfo.getPath(),CollectviewPoco.FIELDNAME); 
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Collectview temp:cuss){
+			if(CommonUtil.isNull(temp.getCollectid()))
+				temp.setCollectid(CommonUtil.getNewId());
+			result = insSingle(temp);
+		}
+		responsePW(response, result);
+	}
 	//导出
 	public void expAll(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		Queryinfo queryinfo = getQueryinfo(request, Collectview.class, CollectviewPoco.QUERYFIELDNAME, CollectviewPoco.ORDER, TYPE);

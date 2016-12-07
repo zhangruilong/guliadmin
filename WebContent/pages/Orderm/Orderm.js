@@ -19,6 +19,9 @@ Ext.onReady(function() {
 	        			    ,'updtime' 
 	        			    ,'updor' 
 	        			    ,'ordermemp' 
+	        			    ,'ordermcusshop' 
+	        			    ,'ordermcuslevel' 
+	        			    ,'ordermcustype' 
 	        			      ];// 全部字段
 	var Ordermkeycolumn = [ 'ordermid' ];// 主键
 	var Ordermstore = dataStore(Ordermfields, basePath + Ordermaction + "?method=selAll");// 定义Ordermstore
@@ -214,6 +217,39 @@ Ext.onReady(function() {
 				maxLength : 100
 			} ]
 		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '店铺名称',
+				id : 'Ordermordermcusshop',
+				name : 'ordermcusshop',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '客户等级',
+				id : 'Ordermordermcuslevel',
+				name : 'ordermcuslevel',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '客户类型',
+				id : 'Ordermordermcustype',
+				name : 'ordermcustype',
+				maxLength : 100
+			} ]
+		}
 		]
 	});
 	
@@ -364,6 +400,30 @@ Ext.onReady(function() {
 		, {
 			header : '业务员ID(订单源)',
 			dataIndex : 'ordermemp',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '店铺名称',
+			dataIndex : 'ordermcusshop',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '客户等级',
+			dataIndex : 'ordermcuslevel',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '客户类型',
+			dataIndex : 'ordermcustype',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'

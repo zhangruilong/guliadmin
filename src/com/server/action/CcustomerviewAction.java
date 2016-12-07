@@ -25,6 +25,51 @@ public class CcustomerviewAction extends BaseActionDao {
 	public ArrayList<Ccustomerview> cuss = null;
 	public Type TYPE = new TypeToken<ArrayList<Ccustomerview>>() {}.getType();
 
+	//新增
+	public void insAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		json = json.replace("\"\"", "null");
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Ccustomerview temp:cuss){
+			if(CommonUtil.isNull(temp.getCcustomerid()))
+				temp.setCcustomerid(CommonUtil.getNewId());
+			result = insSingle(temp);
+		}
+		responsePW(response, result);
+	}
+	//删除
+	public void delAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Ccustomerview temp:cuss){
+			result = delSingle(temp,CcustomerviewPoco.KEYCOLUMN);
+		}
+		responsePW(response, result);
+	}
+	//修改
+	public void updAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Ccustomerview temp:cuss){
+			result = updSingle(temp,CcustomerviewPoco.KEYCOLUMN);
+		}
+		responsePW(response, result);
+	}
+	//导入
+	public void impAll(HttpServletRequest request, HttpServletResponse response){
+		Fileinfo fileinfo = FileUtil.upload(request,0,null,CcustomerviewPoco.NAME,"impAll");
+		String json = FileUtil.impExcel(fileinfo.getPath(),CcustomerviewPoco.FIELDNAME); 
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Ccustomerview temp:cuss){
+			if(CommonUtil.isNull(temp.getCcustomerid()))
+				temp.setCcustomerid(CommonUtil.getNewId());
+			result = insSingle(temp);
+		}
+		responsePW(response, result);
+	}
 	//导出
 	public void expAll(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		Queryinfo queryinfo = getQueryinfo(request, Ccustomerview.class, CcustomerviewPoco.QUERYFIELDNAME, CcustomerviewPoco.ORDER, TYPE);

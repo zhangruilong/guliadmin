@@ -26,7 +26,6 @@ Ext.onReady(function() {
 	var GivegoodsdataForm = Ext.create('Ext.form.Panel', {// 定义新增和修改的FormPanel
 		id:'GivegoodsdataForm',
 		labelAlign : 'right',
-		scrollable : true,
 		frame : true,
 		layout : 'column',
 		items : [ {

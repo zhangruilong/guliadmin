@@ -3,29 +3,28 @@ Ext.onReady(function() {
 	var Orderdtitle = "当前位置:业务管理》" + Orderdclassify;
 	var Orderdaction = "OrderdAction.do";
 	var Orderdfields = ['orderdid'
-        			    ,'orderdorderm' 
-        			    ,'orderdcode' 
-        			    ,'orderdtype' 
-        			    ,'orderdname' 
-        			    ,'orderddetail' 
-        			    ,'orderdunits' 
-        			    ,'orderdprice' 
-        			    ,'orderdunit' 
-        			    ,'orderdclass' 
-        			    ,'orderdnum' 
-        			    ,'orderdmoney' 
-        			    ,'orderdrightmoney' 
-        			    ,'orderdweight' 
-        			    ,'orderdgoods' 
-        			    ,'orderdnote' 
-        			    ,'orderdbrand' 
-        			      ];// 全部字段
+	        			    ,'orderdorderm' 
+	        			    ,'orderdcode' 
+	        			    ,'orderdtype' 
+	        			    ,'orderdname' 
+	        			    ,'orderddetail' 
+	        			    ,'orderdunits' 
+	        			    ,'orderdprice' 
+	        			    ,'orderdunit' 
+	        			    ,'orderdclass' 
+	        			    ,'orderdnum' 
+	        			    ,'orderdmoney' 
+	        			    ,'orderdrightmoney' 
+	        			    ,'orderdweight' 
+	        			    ,'orderdgoods' 
+	        			    ,'orderdnote' 
+	        			    ,'orderdbrand' 
+	        			      ];// 全部字段
 	var Orderdkeycolumn = [ 'orderdid' ];// 主键
 	var Orderdstore = dataStore(Orderdfields, basePath + Orderdaction + "?method=selAll");// 定义Orderdstore
 	var OrderddataForm = Ext.create('Ext.form.Panel', {// 定义新增和修改的FormPanel
 		id:'OrderddataForm',
 		labelAlign : 'right',
-		scrollable : true,
 		frame : true,
 		layout : 'column',
 		items : [ {
@@ -232,144 +231,144 @@ Ext.onReady(function() {
 	         ptype: 'cellediting',
 	         clicksToEdit: 1
 	    },
-	    columns : [{xtype: 'rownumberer',width:50}, 
-	       		{// 改
-	       			header : '订单详细ID',
-	       			dataIndex : 'orderdid',
-	       			sortable : true, 
-	       			editor: {
-	                       xtype: 'textfield',
-	                       editable: false
-	                   }
-	       		}
-	       		, {
-	       			header : '订单ID',
-	       			dataIndex : 'orderdorderm',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '商品编码',
-	       			dataIndex : 'orderdcode',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '商品类型',
-	       			dataIndex : 'orderdtype',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '名称',
-	       			dataIndex : 'orderdname',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '描述',
-	       			dataIndex : 'orderddetail',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '规格',
-	       			dataIndex : 'orderdunits',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '价格',
-	       			dataIndex : 'orderdprice',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '单位',
-	       			dataIndex : 'orderdunit',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '小类',
-	       			dataIndex : 'orderdclass',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '数量',
-	       			dataIndex : 'orderdnum',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '下单金额',
-	       			dataIndex : 'orderdmoney',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '实际金额',
-	       			dataIndex : 'orderdrightmoney',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '重量',
-	       			dataIndex : 'orderdweight',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '商品id',
-	       			dataIndex : 'orderdgoods',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '订单备注',
-	       			dataIndex : 'orderdnote',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
-	       		, {
-	       			header : '订单商品品牌',
-	       			dataIndex : 'orderdbrand',
-	       			sortable : true,  
-	       			editor: {
-	                       xtype: 'textfield'
-	                   }
-	       		}
+		columns : [{xtype: 'rownumberer',width:50}, 
+		{// 改
+			header : '订单详细ID',
+			dataIndex : 'orderdid',
+			sortable : true, 
+			editor: {
+                xtype: 'textfield',
+                editable: false
+            }
+		}
+		, {
+			header : '订单ID',
+			dataIndex : 'orderdorderm',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '商品编码',
+			dataIndex : 'orderdcode',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '商品类型',
+			dataIndex : 'orderdtype',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '名称',
+			dataIndex : 'orderdname',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '描述',
+			dataIndex : 'orderddetail',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '规格',
+			dataIndex : 'orderdunits',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '价格',
+			dataIndex : 'orderdprice',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '单位',
+			dataIndex : 'orderdunit',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '小类',
+			dataIndex : 'orderdclass',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '数量',
+			dataIndex : 'orderdnum',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '下单金额',
+			dataIndex : 'orderdmoney',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '实际金额',
+			dataIndex : 'orderdrightmoney',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '重量',
+			dataIndex : 'orderdweight',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '商品id',
+			dataIndex : 'orderdgoods',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '订单备注',
+			dataIndex : 'orderdnote',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '订单商品品牌',
+			dataIndex : 'orderdbrand',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
 		],
 		tbar : [{
 				text : Ext.os.deviceType === 'Phone' ? null : "新增",

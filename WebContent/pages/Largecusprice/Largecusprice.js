@@ -1,8 +1,8 @@
 Ext.onReady(function() {
-	var Largecuspriceclassify = "大客户关系";
+	var Largecuspriceclassify = "largecusprice";
 	var Largecuspricetitle = "当前位置:业务管理》" + Largecuspriceclassify;
 	var Largecuspriceaction = "LargecuspriceAction.do";
-	var Largecuspricefields = ['id'
+	var Largecuspricefields = ['largecuspriceid'
 	        			    ,'largecuspricecompany' 
 	        			    ,'largecuspricecustomer' 
 	        			    ,'largecuspricegoods' 
@@ -14,7 +14,7 @@ Ext.onReady(function() {
 	        			    ,'largecuspriceunit' 
 	        			    ,'largecuspriceunit2' 
 	        			      ];// 全部字段
-	var Largecuspricekeycolumn = [ 'id' ];// 主键
+	var Largecuspricekeycolumn = [ 'largecuspriceid' ];// 主键
 	var Largecuspricestore = dataStore(Largecuspricefields, basePath + Largecuspriceaction + "?method=selAll");// 定义Largecuspricestore
 	var LargecuspricedataForm = Ext.create('Ext.form.Panel', {// 定义新增和修改的FormPanel
 		id:'LargecuspricedataForm',
@@ -26,9 +26,9 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : 'ID',
-				id : 'Largecuspriceid',
-				name : 'id',
+				fieldLabel : '供应商大客户商品价格id',
+				id : 'Largecuspricelargecuspriceid',
+				name : 'largecuspriceid',
 				maxLength : 100
 			} ]
 		}
@@ -37,7 +37,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '供应商',
+				fieldLabel : '供应商id',
 				id : 'Largecuspricelargecuspricecompany',
 				name : 'largecuspricecompany',
 				maxLength : 100
@@ -48,7 +48,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '客户',
+				fieldLabel : '客户id',
 				id : 'Largecuspricelargecuspricecustomer',
 				name : 'largecuspricecustomer',
 				maxLength : 100
@@ -59,7 +59,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '商品',
+				fieldLabel : '商品id',
 				id : 'Largecuspricelargecuspricegoods',
 				name : 'largecuspricegoods',
 				maxLength : 100
@@ -81,7 +81,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '描述',
+				fieldLabel : '供应商大客户商品价格描述',
 				id : 'Largecuspricelargecuspricedetail',
 				name : 'largecuspricedetail',
 				maxLength : 100
@@ -103,7 +103,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '创建人',
+				fieldLabel : '修改时间',
 				id : 'Largecuspricelargecuspricecreator',
 				name : 'largecuspricecreator',
 				maxLength : 100
@@ -125,7 +125,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '单品价单位',
+				fieldLabel : '单品单位',
 				id : 'Largecuspricelargecuspriceunit',
 				name : 'largecuspriceunit',
 				maxLength : 100
@@ -136,7 +136,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '套装价单位',
+				fieldLabel : '套装单位',
 				id : 'Largecuspricelargecuspriceunit2',
 				name : 'largecuspriceunit2',
 				maxLength : 100
@@ -161,8 +161,8 @@ Ext.onReady(function() {
 	    },
 		columns : [{xtype: 'rownumberer',width:50}, 
 		{// 改
-			header : 'ID',
-			dataIndex : 'id',
+			header : '供应商大客户商品价格id',
+			dataIndex : 'largecuspriceid',
 			sortable : true, 
 			editor: {
                 xtype: 'textfield',
@@ -170,7 +170,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '供应商',
+			header : '供应商id',
 			dataIndex : 'largecuspricecompany',
 			sortable : true,  
 			editor: {
@@ -178,7 +178,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '客户',
+			header : '客户id',
 			dataIndex : 'largecuspricecustomer',
 			sortable : true,  
 			editor: {
@@ -186,7 +186,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '商品',
+			header : '商品id',
 			dataIndex : 'largecuspricegoods',
 			sortable : true,  
 			editor: {
@@ -202,7 +202,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '描述',
+			header : '供应商大客户商品价格描述',
 			dataIndex : 'largecuspricedetail',
 			sortable : true,  
 			editor: {
@@ -218,7 +218,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '创建人',
+			header : '修改时间',
 			dataIndex : 'largecuspricecreator',
 			sortable : true,  
 			editor: {
@@ -234,7 +234,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '单品价单位',
+			header : '单品单位',
 			dataIndex : 'largecuspriceunit',
 			sortable : true,  
 			editor: {
@@ -242,7 +242,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '套装价单位',
+			header : '套装单位',
 			dataIndex : 'largecuspriceunit2',
 			sortable : true,  
 			editor: {
@@ -255,7 +255,7 @@ Ext.onReady(function() {
 				iconCls : 'add',
 				handler : function() {
 					LargecuspricedataForm.form.reset();
-					Ext.getCmp("Largecuspriceid").setEditable (true);
+					Ext.getCmp("Largecuspricelargecuspriceid").setEditable (true);
 					createTextWindow(basePath + Largecuspriceaction + "?method=insAll", "新增", LargecuspricedataForm, Largecuspricestore);
 				}
 			},'-',{
@@ -280,7 +280,7 @@ Ext.onReady(function() {
 						return;
 					}
 					LargecuspricedataForm.form.reset();
-					Ext.getCmp("Largecuspriceid").setEditable (false);
+					Ext.getCmp("Largecuspricelargecuspriceid").setEditable (false);
 					createTextWindow(basePath + Largecuspriceaction + "?method=updAll", "修改", LargecuspricedataForm, Largecuspricestore);
 					LargecuspricedataForm.form.loadRecord(selections[0]);
 				}
@@ -338,7 +338,7 @@ Ext.onReady(function() {
 	        				text : "筛选",
     						iconCls : 'select',
     						handler : function() {
-    							Ext.getCmp("Largecuspriceid").setEditable (true);
+    							Ext.getCmp("Largecuspricelargecuspriceid").setEditable (true);
     							createQueryWindow("筛选", LargecuspricedataForm, Largecuspricestore,Ext.getCmp("queryLargecuspriceaction").getValue());
     						}
     					}]

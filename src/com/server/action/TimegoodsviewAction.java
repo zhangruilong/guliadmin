@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 秒杀商品 逻辑层
+ * timegoodsview 逻辑层
  *@author ZhangRuiLong
  */
 public class TimegoodsviewAction extends BaseActionDao {
@@ -25,6 +25,51 @@ public class TimegoodsviewAction extends BaseActionDao {
 	public ArrayList<Timegoodsview> cuss = null;
 	public Type TYPE = new TypeToken<ArrayList<Timegoodsview>>() {}.getType();
 
+	//新增
+	public void insAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		json = json.replace("\"\"", "null");
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Timegoodsview temp:cuss){
+			if(CommonUtil.isNull(temp.getTimegoodsid()))
+				temp.setTimegoodsid(CommonUtil.getNewId());
+			result = insSingle(temp);
+		}
+		responsePW(response, result);
+	}
+	//删除
+	public void delAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Timegoodsview temp:cuss){
+			result = delSingle(temp,TimegoodsviewPoco.KEYCOLUMN);
+		}
+		responsePW(response, result);
+	}
+	//修改
+	public void updAll(HttpServletRequest request, HttpServletResponse response){
+		String json = request.getParameter("json");
+		System.out.println("json : " + json);
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Timegoodsview temp:cuss){
+			result = updSingle(temp,TimegoodsviewPoco.KEYCOLUMN);
+		}
+		responsePW(response, result);
+	}
+	//导入
+	public void impAll(HttpServletRequest request, HttpServletResponse response){
+		Fileinfo fileinfo = FileUtil.upload(request,0,null,TimegoodsviewPoco.NAME,"impAll");
+		String json = FileUtil.impExcel(fileinfo.getPath(),TimegoodsviewPoco.FIELDNAME); 
+		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
+		for(Timegoodsview temp:cuss){
+			if(CommonUtil.isNull(temp.getTimegoodsid()))
+				temp.setTimegoodsid(CommonUtil.getNewId());
+			result = insSingle(temp);
+		}
+		responsePW(response, result);
+	}
 	//导出
 	public void expAll(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		Queryinfo queryinfo = getQueryinfo(request, Timegoodsview.class, TimegoodsviewPoco.QUERYFIELDNAME, TimegoodsviewPoco.ORDER, TYPE);

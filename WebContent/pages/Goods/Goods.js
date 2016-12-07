@@ -211,8 +211,7 @@ Ext.onReady(function() {
 				fieldLabel : '重量',
 				id : 'Goodsgoodsweight',
 				name : 'goodsweight',
-				maxLength : 100,
-				value : 0
+				maxLength : 100
 			} ]
 		}
 		]

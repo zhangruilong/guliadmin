@@ -29,7 +29,6 @@ Ext.onReady(function() {
 	var TimegoodsdataForm = Ext.create('Ext.form.Panel', {// 定义新增和修改的FormPanel
 		id:'TimegoodsdataForm',
 		labelAlign : 'right',
-		scrollable : true,
 		frame : true,
 		layout : 'column',
 		items : [ {

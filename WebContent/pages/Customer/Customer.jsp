@@ -2,8 +2,6 @@
 <html>
   <head>
 	<%@ include file="/zrlextpages/common/common.jsp" %>
-	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="Sendmessage.js"></script>
 	<script type="text/javascript" src="Customer.js"></script>
   </head>
 </html>
