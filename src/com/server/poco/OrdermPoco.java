@@ -42,6 +42,7 @@ public class OrdermPoco
 	 	"店铺名称",
 	 	"客户等级",
 	 	"客户类型",
+	 	"打印次数",
 	};
 	/**
 	 * 实体英文字段
@@ -67,6 +68,7 @@ public class OrdermPoco
 	 	"ordermcusshop",
 	 	"ordermcuslevel",
 	 	"ordermcustype",
+	 	"ordermprinttimes",
    };
    /**
     * 实体排序
@@ -96,6 +98,7 @@ public class OrdermPoco
 	 	"ordermcusshop",
 	 	"ordermcuslevel",
 	 	"ordermcustype",
+	 	"ordermprinttimes",
    };
 }
 

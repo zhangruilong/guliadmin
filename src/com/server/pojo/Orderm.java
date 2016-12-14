@@ -87,6 +87,10 @@ public class Orderm
     * 客户类型
     */
    private String ordermcustype;   
+   /**
+    * 打印次数
+    */
+   private String ordermprinttimes;   
     //属性方法	    
      /**
 	 *设置主键"订单ID"属性
@@ -427,6 +431,23 @@ public class Orderm
 	{
 		return this.ordermcustype;
 	}	   
+
+	/**
+	 *设置"打印次数"属性
+	 *@param ordermprinttimes 实体的Ordermprinttimes属性
+	 */
+	public void setOrdermprinttimes(String ordermprinttimes)
+	{
+		this.ordermprinttimes = ordermprinttimes;
+	}
+	
+	/**
+	 *获取"打印次数"属性
+	 */
+	public String getOrdermprinttimes()
+	{
+		return this.ordermprinttimes;
+	}	   
 	public Orderm() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -452,6 +473,7 @@ public class Orderm
 	 	,String ordermcusshop
 	 	,String ordermcuslevel
 	 	,String ordermcustype
+	 	,String ordermprinttimes
 		 ){
 		super();
 		this.ordermid = ordermid;
@@ -474,6 +496,7 @@ public class Orderm
 	 	this.ordermcusshop = ordermcusshop;
 	 	this.ordermcuslevel = ordermcuslevel;
 	 	this.ordermcustype = ordermcustype;
+	 	this.ordermprinttimes = ordermprinttimes;
 	}
 }
 

@@ -22,6 +22,7 @@ Ext.onReady(function() {
 	        			    ,'ordermcusshop' 
 	        			    ,'ordermcuslevel' 
 	        			    ,'ordermcustype' 
+	        			    ,'ordermprinttimes' 
 	        			      ];// 全部字段
 	var Ordermkeycolumn = [ 'ordermid' ];// 主键
 	var Ordermstore = dataStore(Ordermfields, basePath + Ordermaction + "?method=selAll");// 定义Ordermstore
@@ -250,6 +251,17 @@ Ext.onReady(function() {
 				maxLength : 100
 			} ]
 		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '打印次数',
+				id : 'Ordermordermprinttimes',
+				name : 'ordermprinttimes',
+				maxLength : 100
+			} ]
+		}
 		]
 	});
 	
@@ -424,6 +436,14 @@ Ext.onReady(function() {
 		, {
 			header : '客户类型',
 			dataIndex : 'ordermcustype',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '打印次数',
+			dataIndex : 'ordermprinttimes',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'

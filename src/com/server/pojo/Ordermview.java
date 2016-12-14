@@ -88,6 +88,10 @@ public class Ordermview
     */
    private String ordermcustype;   
    /**
+    * ordermprinttimes
+    */
+   private String ordermprinttimes;   
+   /**
     * companyshop
     */
    private String companyshop;   
@@ -449,6 +453,23 @@ public class Ordermview
 	}	   
 
 	/**
+	 *设置"ordermprinttimes"属性
+	 *@param ordermprinttimes 实体的Ordermprinttimes属性
+	 */
+	public void setOrdermprinttimes(String ordermprinttimes)
+	{
+		this.ordermprinttimes = ordermprinttimes;
+	}
+	
+	/**
+	 *获取"ordermprinttimes"属性
+	 */
+	public String getOrdermprinttimes()
+	{
+		return this.ordermprinttimes;
+	}	   
+
+	/**
 	 *设置"companyshop"属性
 	 *@param companyshop 实体的Companyshop属性
 	 */
@@ -557,6 +578,7 @@ public class Ordermview
 	 	,String ordermcusshop
 	 	,String ordermcuslevel
 	 	,String ordermcustype
+	 	,String ordermprinttimes
 	 	,String companyshop
 	 	,String companyphone
 	 	,String companydetail
@@ -584,6 +606,7 @@ public class Ordermview
 	 	this.ordermcusshop = ordermcusshop;
 	 	this.ordermcuslevel = ordermcuslevel;
 	 	this.ordermcustype = ordermcustype;
+	 	this.ordermprinttimes = ordermprinttimes;
 	 	this.companyshop = companyshop;
 	 	this.companyphone = companyphone;
 	 	this.companydetail = companydetail;
