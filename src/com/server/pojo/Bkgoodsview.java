@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 预定商品 实体类
+ * bkgoodsview 实体类
  *@author ZhangRuiLong
  */
 public class Bkgoodsview
@@ -75,6 +75,26 @@ public class Bkgoodsview
     * bkgoodsscope
     */
    private String bkgoodsscope;   
+   /**
+    * bkgoodsbrand
+    */
+   private String bkgoodsbrand;   
+   /**
+    * bkgoodsallnum
+    */
+   private Integer bkgoodsallnum;   
+   /**
+    * bkgoodssurplus
+    */
+   private Integer bkgoodssurplus;   
+   /**
+    * bkgoodsweight
+    */
+   private String bkgoodsweight;   
+   /**
+    * bkgoodstype
+    */
+   private String bkgoodstype;   
    /**
     * companycode
     */
@@ -422,6 +442,91 @@ public class Bkgoodsview
 	}	   
 
 	/**
+	 *设置"bkgoodsbrand"属性
+	 *@param bkgoodsbrand 实体的Bkgoodsbrand属性
+	 */
+	public void setBkgoodsbrand(String bkgoodsbrand)
+	{
+		this.bkgoodsbrand = bkgoodsbrand;
+	}
+	
+	/**
+	 *获取"bkgoodsbrand"属性
+	 */
+	public String getBkgoodsbrand()
+	{
+		return this.bkgoodsbrand;
+	}	   
+
+	/**
+	 *设置"bkgoodsallnum"属性
+	 *@param bkgoodsallnum 实体的Bkgoodsallnum属性
+	 */
+	public void setBkgoodsallnum(Integer bkgoodsallnum)
+	{
+		this.bkgoodsallnum = bkgoodsallnum;
+	}
+	
+	/**
+	 *获取"bkgoodsallnum"属性
+	 */
+	public Integer getBkgoodsallnum()
+	{
+		return this.bkgoodsallnum;
+	}	   
+
+	/**
+	 *设置"bkgoodssurplus"属性
+	 *@param bkgoodssurplus 实体的Bkgoodssurplus属性
+	 */
+	public void setBkgoodssurplus(Integer bkgoodssurplus)
+	{
+		this.bkgoodssurplus = bkgoodssurplus;
+	}
+	
+	/**
+	 *获取"bkgoodssurplus"属性
+	 */
+	public Integer getBkgoodssurplus()
+	{
+		return this.bkgoodssurplus;
+	}	   
+
+	/**
+	 *设置"bkgoodsweight"属性
+	 *@param bkgoodsweight 实体的Bkgoodsweight属性
+	 */
+	public void setBkgoodsweight(String bkgoodsweight)
+	{
+		this.bkgoodsweight = bkgoodsweight;
+	}
+	
+	/**
+	 *获取"bkgoodsweight"属性
+	 */
+	public String getBkgoodsweight()
+	{
+		return this.bkgoodsweight;
+	}	   
+
+	/**
+	 *设置"bkgoodstype"属性
+	 *@param bkgoodstype 实体的Bkgoodstype属性
+	 */
+	public void setBkgoodstype(String bkgoodstype)
+	{
+		this.bkgoodstype = bkgoodstype;
+	}
+	
+	/**
+	 *获取"bkgoodstype"属性
+	 */
+	public String getBkgoodstype()
+	{
+		return this.bkgoodstype;
+	}	   
+
+	/**
 	 *设置"companycode"属性
 	 *@param companycode 实体的Companycode属性
 	 */
@@ -680,6 +785,11 @@ public class Bkgoodsview
 	 	,String bkcreator
 	 	,Integer bkgoodsseq
 	 	,String bkgoodsscope
+	 	,String bkgoodsbrand
+	 	,Integer bkgoodsallnum
+	 	,Integer bkgoodssurplus
+	 	,String bkgoodsweight
+	 	,String bkgoodstype
 	 	,String companycode
 	 	,String username
 	 	,String companyphone
@@ -713,6 +823,11 @@ public class Bkgoodsview
 	 	this.bkcreator = bkcreator;
 	 	this.bkgoodsseq = bkgoodsseq;
 	 	this.bkgoodsscope = bkgoodsscope;
+	 	this.bkgoodsbrand = bkgoodsbrand;
+	 	this.bkgoodsallnum = bkgoodsallnum;
+	 	this.bkgoodssurplus = bkgoodssurplus;
+	 	this.bkgoodsweight = bkgoodsweight;
+	 	this.bkgoodstype = bkgoodstype;
 	 	this.companycode = companycode;
 	 	this.username = username;
 	 	this.companyphone = companyphone;

@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 预定 实体类的常量
+ * 年货和组合商品 实体类的常量
  *@author ZhangRuiLong
  */
 public class BkgoodsPoco
@@ -9,7 +9,7 @@ public class BkgoodsPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "预定";
+   public static String NAME = "年货和组合商品";
    /**
     * 实体表名
     */
@@ -39,6 +39,11 @@ public class BkgoodsPoco
 	 	"创建人",
 	 	"顺序",
 	 	"客户范围",
+	 	"品牌",
+	 	"总限购",
+	 	"剩余数量",
+	 	"重量",
+	 	"分类",
 	};
 	/**
 	 * 实体英文字段
@@ -61,6 +66,11 @@ public class BkgoodsPoco
 	 	"bkcreator",
 	 	"bkgoodsseq",
 	 	"bkgoodsscope",
+	 	"bkgoodsbrand",
+	 	"bkgoodsallnum",
+	 	"bkgoodssurplus",
+	 	"bkgoodsweight",
+	 	"bkgoodstype",
    };
    /**
     * 实体排序
@@ -87,6 +97,11 @@ public class BkgoodsPoco
 	 	"bkcreator",
 	 	"bkgoodsseq",
 	 	"bkgoodsscope",
+	 	"bkgoodsbrand",
+	 	"bkgoodsallnum",
+	 	"bkgoodssurplus",
+	 	"bkgoodsweight",
+	 	"bkgoodstype",
    };
 }
 

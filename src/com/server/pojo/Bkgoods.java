@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 预定 实体类
+ * 年货和组合商品 实体类
  *@author ZhangRuiLong
  */
 public class Bkgoods
@@ -75,6 +75,26 @@ public class Bkgoods
     * 客户范围
     */
    private String bkgoodsscope;   
+   /**
+    * 品牌
+    */
+   private String bkgoodsbrand;   
+   /**
+    * 总限购
+    */
+   private Integer bkgoodsallnum;   
+   /**
+    * 剩余数量
+    */
+   private Integer bkgoodssurplus;   
+   /**
+    * 重量
+    */
+   private String bkgoodsweight;   
+   /**
+    * 分类
+    */
+   private String bkgoodstype;   
     //属性方法	    
      /**
 	 *设置主键"促销品ID"属性
@@ -364,6 +384,91 @@ public class Bkgoods
 	{
 		return this.bkgoodsscope;
 	}	   
+
+	/**
+	 *设置"品牌"属性
+	 *@param bkgoodsbrand 实体的Bkgoodsbrand属性
+	 */
+	public void setBkgoodsbrand(String bkgoodsbrand)
+	{
+		this.bkgoodsbrand = bkgoodsbrand;
+	}
+	
+	/**
+	 *获取"品牌"属性
+	 */
+	public String getBkgoodsbrand()
+	{
+		return this.bkgoodsbrand;
+	}	   
+
+	/**
+	 *设置"总限购"属性
+	 *@param bkgoodsallnum 实体的Bkgoodsallnum属性
+	 */
+	public void setBkgoodsallnum(Integer bkgoodsallnum)
+	{
+		this.bkgoodsallnum = bkgoodsallnum;
+	}
+	
+	/**
+	 *获取"总限购"属性
+	 */
+	public Integer getBkgoodsallnum()
+	{
+		return this.bkgoodsallnum;
+	}	   
+
+	/**
+	 *设置"剩余数量"属性
+	 *@param bkgoodssurplus 实体的Bkgoodssurplus属性
+	 */
+	public void setBkgoodssurplus(Integer bkgoodssurplus)
+	{
+		this.bkgoodssurplus = bkgoodssurplus;
+	}
+	
+	/**
+	 *获取"剩余数量"属性
+	 */
+	public Integer getBkgoodssurplus()
+	{
+		return this.bkgoodssurplus;
+	}	   
+
+	/**
+	 *设置"重量"属性
+	 *@param bkgoodsweight 实体的Bkgoodsweight属性
+	 */
+	public void setBkgoodsweight(String bkgoodsweight)
+	{
+		this.bkgoodsweight = bkgoodsweight;
+	}
+	
+	/**
+	 *获取"重量"属性
+	 */
+	public String getBkgoodsweight()
+	{
+		return this.bkgoodsweight;
+	}	   
+
+	/**
+	 *设置"分类"属性
+	 *@param bkgoodstype 实体的Bkgoodstype属性
+	 */
+	public void setBkgoodstype(String bkgoodstype)
+	{
+		this.bkgoodstype = bkgoodstype;
+	}
+	
+	/**
+	 *获取"分类"属性
+	 */
+	public String getBkgoodstype()
+	{
+		return this.bkgoodstype;
+	}	   
 	public Bkgoods() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -386,6 +491,11 @@ public class Bkgoods
 	 	,String bkcreator
 	 	,Integer bkgoodsseq
 	 	,String bkgoodsscope
+	 	,String bkgoodsbrand
+	 	,Integer bkgoodsallnum
+	 	,Integer bkgoodssurplus
+	 	,String bkgoodsweight
+	 	,String bkgoodstype
 		 ){
 		super();
 		this.bkgoodsid = bkgoodsid;
@@ -405,6 +515,11 @@ public class Bkgoods
 	 	this.bkcreator = bkcreator;
 	 	this.bkgoodsseq = bkgoodsseq;
 	 	this.bkgoodsscope = bkgoodsscope;
+	 	this.bkgoodsbrand = bkgoodsbrand;
+	 	this.bkgoodsallnum = bkgoodsallnum;
+	 	this.bkgoodssurplus = bkgoodssurplus;
+	 	this.bkgoodsweight = bkgoodsweight;
+	 	this.bkgoodstype = bkgoodstype;
 	}
 }
 
