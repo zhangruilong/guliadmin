@@ -44,6 +44,8 @@ public class BkgoodsPoco
 	 	"剩余数量",
 	 	"重量",
 	 	"分类",
+	 	"修改时间",
+	 	"修改人",
 	};
 	/**
 	 * 实体英文字段
@@ -71,6 +73,8 @@ public class BkgoodsPoco
 	 	"bkgoodssurplus",
 	 	"bkgoodsweight",
 	 	"bkgoodstype",
+	 	"bkgoodsupdtime",
+	 	"bkgoodsupdor",
    };
    /**
     * 实体排序
@@ -102,6 +106,8 @@ public class BkgoodsPoco
 	 	"bkgoodssurplus",
 	 	"bkgoodsweight",
 	 	"bkgoodstype",
+	 	"bkgoodsupdtime",
+	 	"bkgoodsupdor",
    };
 }
 
