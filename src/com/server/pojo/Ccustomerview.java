@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * CCUSTOMERVIEW 实体类
+ * ccustomerview 实体类
  *@author ZhangRuiLong
  */
 public class Ccustomerview

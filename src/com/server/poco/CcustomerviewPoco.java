@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * CCUSTOMERVIEW 实体类的常量
+ * ccustomerview 实体类的常量
  *@author ZhangRuiLong
  */
 public class CcustomerviewPoco
@@ -9,7 +9,7 @@ public class CcustomerviewPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "CCUSTOMERVIEW";
+   public static String NAME = "ccustomerview";
    /**
     * 实体表名
     */

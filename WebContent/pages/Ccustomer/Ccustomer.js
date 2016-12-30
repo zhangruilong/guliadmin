@@ -8,6 +8,8 @@ Ext.onReady(function() {
 	        			    ,'ccustomerdetail' 
 	        			    ,'createtime' 
 	        			    ,'creator' 
+	        			    ,'ccustomerupdtime' 
+	        			    ,'ccustomerupdor' 
 	        			      ];// 全部字段
 	var Ccustomerkeycolumn = [ 'ccustomerid' ];// 主键
 	var Ccustomerstore = dataStore(Ccustomerfields, basePath + Ccustomeraction + "?method=selAll");// 定义Ccustomerstore
@@ -82,6 +84,28 @@ Ext.onReady(function() {
 				maxLength : 100
 			} ]
 		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '修改时间',
+				id : 'Ccustomerccustomerupdtime',
+				name : 'ccustomerupdtime',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '修改人',
+				id : 'Ccustomerccustomerupdor',
+				name : 'ccustomerupdor',
+				maxLength : 100
+			} ]
+		}
 		]
 	});
 	
@@ -144,6 +168,22 @@ Ext.onReady(function() {
 		, {
 			header : '创建人(是否大客户:1是大客户)',
 			dataIndex : 'creator',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '修改时间',
+			dataIndex : 'ccustomerupdtime',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '修改人',
+			dataIndex : 'ccustomerupdor',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'

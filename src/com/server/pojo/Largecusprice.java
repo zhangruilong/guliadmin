@@ -36,7 +36,7 @@ public class Largecusprice
     */
    private String largecuspricecreatetime;   
    /**
-    * 修改时间
+    * 创建人
     */
    private String largecuspricecreator;   
    /**
@@ -51,6 +51,14 @@ public class Largecusprice
     * 套装单位
     */
    private String largecuspriceunit2;   
+   /**
+    * 修改时间
+    */
+   private String largecusupdtime;   
+   /**
+    * 修改人
+    */
+   private String largecusupdor;   
     //属性方法	    
      /**
 	 *设置主键"供应商大客户商品价格id"属性
@@ -172,7 +180,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"修改时间"属性
+	 *设置"创建人"属性
 	 *@param largecuspricecreator 实体的Largecuspricecreator属性
 	 */
 	public void setLargecuspricecreator(String largecuspricecreator)
@@ -181,7 +189,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"修改时间"属性
+	 *获取"创建人"属性
 	 */
 	public String getLargecuspricecreator()
 	{
@@ -238,6 +246,40 @@ public class Largecusprice
 	{
 		return this.largecuspriceunit2;
 	}	   
+
+	/**
+	 *设置"修改时间"属性
+	 *@param largecusupdtime 实体的Largecusupdtime属性
+	 */
+	public void setLargecusupdtime(String largecusupdtime)
+	{
+		this.largecusupdtime = largecusupdtime;
+	}
+	
+	/**
+	 *获取"修改时间"属性
+	 */
+	public String getLargecusupdtime()
+	{
+		return this.largecusupdtime;
+	}	   
+
+	/**
+	 *设置"修改人"属性
+	 *@param largecusupdor 实体的Largecusupdor属性
+	 */
+	public void setLargecusupdor(String largecusupdor)
+	{
+		this.largecusupdor = largecusupdor;
+	}
+	
+	/**
+	 *获取"修改人"属性
+	 */
+	public String getLargecusupdor()
+	{
+		return this.largecusupdor;
+	}	   
 	public Largecusprice() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -254,6 +296,8 @@ public class Largecusprice
 	 	,String largecuspriceprice2
 	 	,String largecuspriceunit
 	 	,String largecuspriceunit2
+	 	,String largecusupdtime
+	 	,String largecusupdor
 		 ){
 		super();
 		this.largecuspriceid = largecuspriceid;
@@ -267,6 +311,8 @@ public class Largecusprice
 	 	this.largecuspriceprice2 = largecuspriceprice2;
 	 	this.largecuspriceunit = largecuspriceunit;
 	 	this.largecuspriceunit2 = largecuspriceunit2;
+	 	this.largecusupdtime = largecusupdtime;
+	 	this.largecusupdor = largecusupdor;
 	}
 }
 

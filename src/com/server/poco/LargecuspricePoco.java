@@ -29,10 +29,12 @@ public class LargecuspricePoco
 	 	"单品价",
 	 	"供应商大客户商品价格描述",
 	 	"创建时间",
-	 	"修改时间",
+	 	"创建人",
 	 	"套装价",
 	 	"单品单位",
 	 	"套装单位",
+	 	"修改时间",
+	 	"修改人",
 	};
 	/**
 	 * 实体英文字段
@@ -49,6 +51,8 @@ public class LargecuspricePoco
 	 	"largecuspriceprice2",
 	 	"largecuspriceunit",
 	 	"largecuspriceunit2",
+	 	"largecusupdtime",
+	 	"largecusupdor",
    };
    /**
     * 实体排序
@@ -69,6 +73,8 @@ public class LargecuspricePoco
 	 	"largecuspriceprice2",
 	 	"largecuspriceunit",
 	 	"largecuspriceunit2",
+	 	"largecusupdtime",
+	 	"largecusupdor",
    };
 }
 
