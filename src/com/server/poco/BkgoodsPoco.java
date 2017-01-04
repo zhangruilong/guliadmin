@@ -9,7 +9,7 @@ public class BkgoodsPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "年货和组合商品";
+   public static String NAME = "促销区商品";
    /**
     * 实体表名
     */

@@ -1,5 +1,5 @@
 Ext.onReady(function() {
-	var Bkgoodsclassify = "年货和组合商品";
+	var Bkgoodsclassify = "促销区商品";
 	var Bkgoodstitle = "当前位置:业务管理》" + Bkgoodsclassify;
 	var Bkgoodsaction = "BkgoodsAction.do";
 	var Bkgoodsfields = ['bkgoodsid'
@@ -138,7 +138,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '限量',
+				fieldLabel : '个人限量',
 				id : 'Bkgoodsbkgoodsnum',
 				name : 'bkgoodsnum',
 				maxLength : 100
