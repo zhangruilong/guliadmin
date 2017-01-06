@@ -28,6 +28,8 @@ public class CcustomerPoco
 	 	"描述(关系等级)",
 	 	"创建时间(业务员名)",
 	 	"创建人(是否大客户:1是大客户)",
+	 	"修改时间",
+	 	"修改人",
 	};
 	/**
 	 * 实体英文字段
@@ -39,6 +41,8 @@ public class CcustomerPoco
 	 	"ccustomerdetail",
 	 	"createtime",
 	 	"creator",
+	 	"ccustomerupdtime",
+	 	"ccustomerupdor",
    };
    /**
     * 实体排序
@@ -54,6 +58,8 @@ public class CcustomerPoco
 	 	"ccustomerdetail",
 	 	"createtime",
 	 	"creator",
+	 	"ccustomerupdtime",
+	 	"ccustomerupdor",
    };
 }
 

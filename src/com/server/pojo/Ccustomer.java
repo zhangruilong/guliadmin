@@ -31,6 +31,14 @@ public class Ccustomer
     * 创建人(是否大客户:1是大客户)
     */
    private String creator;   
+   /**
+    * 修改时间
+    */
+   private String ccustomerupdtime;   
+   /**
+    * 修改人
+    */
+   private String ccustomerupdor;   
     //属性方法	    
      /**
 	 *设置主键"经销商和客户ID"属性
@@ -133,6 +141,40 @@ public class Ccustomer
 	{
 		return this.creator;
 	}	   
+
+	/**
+	 *设置"修改时间"属性
+	 *@param ccustomerupdtime 实体的Ccustomerupdtime属性
+	 */
+	public void setCcustomerupdtime(String ccustomerupdtime)
+	{
+		this.ccustomerupdtime = ccustomerupdtime;
+	}
+	
+	/**
+	 *获取"修改时间"属性
+	 */
+	public String getCcustomerupdtime()
+	{
+		return this.ccustomerupdtime;
+	}	   
+
+	/**
+	 *设置"修改人"属性
+	 *@param ccustomerupdor 实体的Ccustomerupdor属性
+	 */
+	public void setCcustomerupdor(String ccustomerupdor)
+	{
+		this.ccustomerupdor = ccustomerupdor;
+	}
+	
+	/**
+	 *获取"修改人"属性
+	 */
+	public String getCcustomerupdor()
+	{
+		return this.ccustomerupdor;
+	}	   
 	public Ccustomer() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -144,6 +186,8 @@ public class Ccustomer
 	 	,String ccustomerdetail
 	 	,String createtime
 	 	,String creator
+	 	,String ccustomerupdtime
+	 	,String ccustomerupdor
 		 ){
 		super();
 		this.ccustomerid = ccustomerid;
@@ -152,6 +196,8 @@ public class Ccustomer
 	 	this.ccustomerdetail = ccustomerdetail;
 	 	this.createtime = createtime;
 	 	this.creator = creator;
+	 	this.ccustomerupdtime = ccustomerupdtime;
+	 	this.ccustomerupdor = ccustomerupdor;
 	}
 }
 

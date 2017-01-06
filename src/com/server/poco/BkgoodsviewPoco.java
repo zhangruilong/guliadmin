@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 预定商品 实体类的常量
+ * bkgoodsview 实体类的常量
  *@author ZhangRuiLong
  */
 public class BkgoodsviewPoco
@@ -9,7 +9,7 @@ public class BkgoodsviewPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "预定商品";
+   public static String NAME = "bkgoodsview";
    /**
     * 实体表名
     */
@@ -39,6 +39,13 @@ public class BkgoodsviewPoco
 	 	"bkcreator",
 	 	"bkgoodsseq",
 	 	"bkgoodsscope",
+	 	"bkgoodsbrand",
+	 	"bkgoodsallnum",
+	 	"bkgoodssurplus",
+	 	"bkgoodsweight",
+	 	"bkgoodstype",
+	 	"bkgoodsupdtime",
+	 	"bkgoodsupdor",
 	 	"companycode",
 	 	"username",
 	 	"companyphone",
@@ -75,6 +82,13 @@ public class BkgoodsviewPoco
 	 	"bkcreator",
 	 	"bkgoodsseq",
 	 	"bkgoodsscope",
+	 	"bkgoodsbrand",
+	 	"bkgoodsallnum",
+	 	"bkgoodssurplus",
+	 	"bkgoodsweight",
+	 	"bkgoodstype",
+	 	"bkgoodsupdtime",
+	 	"bkgoodsupdor",
 	 	"companycode",
 	 	"username",
 	 	"companyphone",
@@ -115,6 +129,13 @@ public class BkgoodsviewPoco
 	 	"bkcreator",
 	 	"bkgoodsseq",
 	 	"bkgoodsscope",
+	 	"bkgoodsbrand",
+	 	"bkgoodsallnum",
+	 	"bkgoodssurplus",
+	 	"bkgoodsweight",
+	 	"bkgoodstype",
+	 	"bkgoodsupdtime",
+	 	"bkgoodsupdor",
 	 	"companycode",
 	 	"username",
 	 	"companyphone",

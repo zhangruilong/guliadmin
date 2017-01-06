@@ -13,6 +13,8 @@ Ext.onReady(function() {
 	        			    ,'largecuspriceprice2' 
 	        			    ,'largecuspriceunit' 
 	        			    ,'largecuspriceunit2' 
+	        			    ,'largecusupdtime' 
+	        			    ,'largecusupdor' 
 	        			      ];// 全部字段
 	var Largecuspricekeycolumn = [ 'largecuspriceid' ];// 主键
 	var Largecuspricestore = dataStore(Largecuspricefields, basePath + Largecuspriceaction + "?method=selAll");// 定义Largecuspricestore
@@ -103,7 +105,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '修改时间',
+				fieldLabel : '创建人',
 				id : 'Largecuspricelargecuspricecreator',
 				name : 'largecuspricecreator',
 				maxLength : 100
@@ -139,6 +141,28 @@ Ext.onReady(function() {
 				fieldLabel : '套装单位',
 				id : 'Largecuspricelargecuspriceunit2',
 				name : 'largecuspriceunit2',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '修改时间',
+				id : 'Largecuspricelargecusupdtime',
+				name : 'largecusupdtime',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '修改人',
+				id : 'Largecuspricelargecusupdor',
+				name : 'largecusupdor',
 				maxLength : 100
 			} ]
 		}
@@ -218,7 +242,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '修改时间',
+			header : '创建人',
 			dataIndex : 'largecuspricecreator',
 			sortable : true,  
 			editor: {
@@ -244,6 +268,22 @@ Ext.onReady(function() {
 		, {
 			header : '套装单位',
 			dataIndex : 'largecuspriceunit2',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '修改时间',
+			dataIndex : 'largecusupdtime',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '修改人',
+			dataIndex : 'largecusupdor',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'

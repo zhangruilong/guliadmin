@@ -1,5 +1,5 @@
 Ext.onReady(function() {
-	var Bkgoodsclassify = "预定";
+	var Bkgoodsclassify = "促销区商品";
 	var Bkgoodstitle = "当前位置:业务管理》" + Bkgoodsclassify;
 	var Bkgoodsaction = "BkgoodsAction.do";
 	var Bkgoodsfields = ['bkgoodsid'
@@ -19,6 +19,13 @@ Ext.onReady(function() {
 	        			    ,'bkcreator' 
 	        			    ,'bkgoodsseq' 
 	        			    ,'bkgoodsscope' 
+	        			    ,'bkgoodsbrand' 
+	        			    ,'bkgoodsallnum' 
+	        			    ,'bkgoodssurplus' 
+	        			    ,'bkgoodsweight' 
+	        			    ,'bkgoodstype' 
+	        			    ,'bkgoodsupdtime' 
+	        			    ,'bkgoodsupdor' 
 	        			      ];// 全部字段
 	var Bkgoodskeycolumn = [ 'bkgoodsid' ];// 主键
 	var Bkgoodsstore = dataStore(Bkgoodsfields, basePath + Bkgoodsaction + "?method=selAll");// 定义Bkgoodsstore
@@ -131,7 +138,7 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '限量',
+				fieldLabel : '个人限量',
 				id : 'Bkgoodsbkgoodsnum',
 				name : 'bkgoodsnum',
 				maxLength : 100
@@ -211,6 +218,83 @@ Ext.onReady(function() {
 				fieldLabel : '客户范围',
 				id : 'Bkgoodsbkgoodsscope',
 				name : 'bkgoodsscope',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '品牌',
+				id : 'Bkgoodsbkgoodsbrand',
+				name : 'bkgoodsbrand',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '总限购',
+				id : 'Bkgoodsbkgoodsallnum',
+				name : 'bkgoodsallnum',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '剩余数量',
+				id : 'Bkgoodsbkgoodssurplus',
+				name : 'bkgoodssurplus',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '重量',
+				id : 'Bkgoodsbkgoodsweight',
+				name : 'bkgoodsweight',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '分类',
+				id : 'Bkgoodsbkgoodstype',
+				name : 'bkgoodstype',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '修改时间',
+				id : 'Bkgoodsbkgoodsupdtime',
+				name : 'bkgoodsupdtime',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '修改人',
+				id : 'Bkgoodsbkgoodsupdor',
+				name : 'bkgoodsupdor',
 				maxLength : 100
 			} ]
 		}
@@ -364,6 +448,62 @@ Ext.onReady(function() {
 		, {
 			header : '客户范围',
 			dataIndex : 'bkgoodsscope',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '品牌',
+			dataIndex : 'bkgoodsbrand',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '总限购',
+			dataIndex : 'bkgoodsallnum',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '剩余数量',
+			dataIndex : 'bkgoodssurplus',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '重量',
+			dataIndex : 'bkgoodsweight',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '分类',
+			dataIndex : 'bkgoodstype',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '修改时间',
+			dataIndex : 'bkgoodsupdtime',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '修改人',
+			dataIndex : 'bkgoodsupdor',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'

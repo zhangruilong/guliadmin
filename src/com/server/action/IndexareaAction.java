@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.server.pojo.Bkgoodsview;
-import com.server.poco.BkgoodsviewPoco;
+import com.server.pojo.Indexarea;
+import com.server.poco.IndexareaPoco;
 import com.system.tools.CommonConst;
 import com.system.tools.base.BaseActionDao;
 import com.system.tools.pojo.Fileinfo;
@@ -17,13 +17,13 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * bkgoodsview 逻辑层
+ * 微信首页区表 逻辑层
  *@author ZhangRuiLong
  */
-public class BkgoodsviewAction extends BaseActionDao {
+public class IndexareaAction extends BaseActionDao {
 	public String result = CommonConst.FAILURE;
-	public ArrayList<Bkgoodsview> cuss = null;
-	public Type TYPE = new TypeToken<ArrayList<Bkgoodsview>>() {}.getType();
+	public ArrayList<Indexarea> cuss = null;
+	public Type TYPE = new TypeToken<ArrayList<Indexarea>>() {}.getType();
 
 	//新增
 	public void insAll(HttpServletRequest request, HttpServletResponse response){
@@ -31,9 +31,9 @@ public class BkgoodsviewAction extends BaseActionDao {
 		System.out.println("json : " + json);
 		json = json.replace("\"\"", "null");
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
-		for(Bkgoodsview temp:cuss){
-			if(CommonUtil.isNull(temp.getBkgoodsid()))
-				temp.setBkgoodsid(CommonUtil.getNewId());
+		for(Indexarea temp:cuss){
+			if(CommonUtil.isNull(temp.getIndexareaid()))
+				temp.setIndexareaid(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);
@@ -43,8 +43,8 @@ public class BkgoodsviewAction extends BaseActionDao {
 		String json = request.getParameter("json");
 		System.out.println("json : " + json);
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
-		for(Bkgoodsview temp:cuss){
-			result = delSingle(temp,BkgoodsviewPoco.KEYCOLUMN);
+		for(Indexarea temp:cuss){
+			result = delSingle(temp,IndexareaPoco.KEYCOLUMN);
 		}
 		responsePW(response, result);
 	}
@@ -53,39 +53,39 @@ public class BkgoodsviewAction extends BaseActionDao {
 		String json = request.getParameter("json");
 		System.out.println("json : " + json);
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
-		for(Bkgoodsview temp:cuss){
-			result = updSingle(temp,BkgoodsviewPoco.KEYCOLUMN);
+		for(Indexarea temp:cuss){
+			result = updSingle(temp,IndexareaPoco.KEYCOLUMN);
 		}
 		responsePW(response, result);
 	}
 	//导入
 	public void impAll(HttpServletRequest request, HttpServletResponse response){
-		Fileinfo fileinfo = FileUtil.upload(request,0,null,BkgoodsviewPoco.NAME,"impAll");
-		String json = FileUtil.impExcel(fileinfo.getPath(),BkgoodsviewPoco.FIELDNAME); 
+		Fileinfo fileinfo = FileUtil.upload(request,0,null,IndexareaPoco.NAME,"impAll");
+		String json = FileUtil.impExcel(fileinfo.getPath(),IndexareaPoco.FIELDNAME); 
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
-		for(Bkgoodsview temp:cuss){
-			if(CommonUtil.isNull(temp.getBkgoodsid()))
-				temp.setBkgoodsid(CommonUtil.getNewId());
+		for(Indexarea temp:cuss){
+			if(CommonUtil.isNull(temp.getIndexareaid()))
+				temp.setIndexareaid(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);
 	}
 	//导出
 	public void expAll(HttpServletRequest request, HttpServletResponse response) throws Exception{
-		Queryinfo queryinfo = getQueryinfo(request, Bkgoodsview.class, BkgoodsviewPoco.QUERYFIELDNAME, BkgoodsviewPoco.ORDER, TYPE);
-		cuss = (ArrayList<Bkgoodsview>) selAll(queryinfo);
-		FileUtil.expExcel(response,cuss,BkgoodsviewPoco.CHINESENAME,BkgoodsviewPoco.NAME);
+		Queryinfo queryinfo = getQueryinfo(request, Indexarea.class, IndexareaPoco.QUERYFIELDNAME, IndexareaPoco.ORDER, TYPE);
+		cuss = (ArrayList<Indexarea>) selAll(queryinfo);
+		FileUtil.expExcel(response,cuss,IndexareaPoco.CHINESENAME,IndexareaPoco.NAME);
 	}
 	//查询所有
 	public void selAll(HttpServletRequest request, HttpServletResponse response){
-		Queryinfo queryinfo = getQueryinfo(request, Bkgoodsview.class, BkgoodsviewPoco.QUERYFIELDNAME, BkgoodsviewPoco.ORDER, TYPE);
+		Queryinfo queryinfo = getQueryinfo(request, Indexarea.class, IndexareaPoco.QUERYFIELDNAME, IndexareaPoco.ORDER, TYPE);
 		Pageinfo pageinfo = new Pageinfo(0, selAll(queryinfo));
 		result = CommonConst.GSON.toJson(pageinfo);
 		responsePW(response, result);
 	}
 	//分页查询
 	public void selQuery(HttpServletRequest request, HttpServletResponse response){
-		Queryinfo queryinfo = getQueryinfo(request, Bkgoodsview.class, BkgoodsviewPoco.QUERYFIELDNAME, BkgoodsviewPoco.ORDER, TYPE);
+		Queryinfo queryinfo = getQueryinfo(request, Indexarea.class, IndexareaPoco.QUERYFIELDNAME, IndexareaPoco.ORDER, TYPE);
 		Pageinfo pageinfo = new Pageinfo(getTotal(queryinfo), selQuery(queryinfo));
 		result = CommonConst.GSON.toJson(pageinfo);
 		responsePW(response, result);

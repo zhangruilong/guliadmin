@@ -1,20 +1,21 @@
 Ext.onReady(function() {
-	var Ccustomerclassify = "经销商和客户";
-	var Ccustomertitle = "当前位置:业务管理》" + Ccustomerclassify;
-	var Ccustomeraction = "CcustomerAction.do";
-	var Ccustomerfields = ['ccustomerid'
-	        			    ,'ccustomercompany' 
-	        			    ,'ccustomercustomer' 
-	        			    ,'ccustomerdetail' 
-	        			    ,'createtime' 
-	        			    ,'creator' 
-	        			    ,'ccustomerupdtime' 
-	        			    ,'ccustomerupdor' 
+	var Indexareaclassify = "微信首页区表";
+	var Indexareatitle = "当前位置:业务管理》" + Indexareaclassify;
+	var Indexareaaction = "IndexareaAction.do";
+	var Indexareafields = ['indexareaid'
+	        			    ,'indexareacode' 
+	        			    ,'indexareaname' 
+	        			    ,'indexareadetail' 
+	        			    ,'indexareastatue' 
+	        			    ,'indexareacompany' 
+	        			    ,'indexareaorder' 
+	        			    ,'indexareaimage' 
+	        			    ,'indexareaurl' 
 	        			      ];// 全部字段
-	var Ccustomerkeycolumn = [ 'ccustomerid' ];// 主键
-	var Ccustomerstore = dataStore(Ccustomerfields, basePath + Ccustomeraction + "?method=selAll");// 定义Ccustomerstore
-	var CcustomerdataForm = Ext.create('Ext.form.Panel', {// 定义新增和修改的FormPanel
-		id:'CcustomerdataForm',
+	var Indexareakeycolumn = [ 'indexareaid' ];// 主键
+	var Indexareastore = dataStore(Indexareafields, basePath + Indexareaaction + "?method=selAll");// 定义Indexareastore
+	var IndexareadataForm = Ext.create('Ext.form.Panel', {// 定义新增和修改的FormPanel
+		id:'IndexareadataForm',
 		labelAlign : 'right',
 		frame : true,
 		layout : 'column',
@@ -23,9 +24,9 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '经销商和客户ID',
-				id : 'Ccustomerccustomerid',
-				name : 'ccustomerid',
+				fieldLabel : 'id',
+				id : 'Indexareaindexareaid',
+				name : 'indexareaid',
 				maxLength : 100
 			} ]
 		}
@@ -34,9 +35,9 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '经销商ID',
-				id : 'Ccustomerccustomercompany',
-				name : 'ccustomercompany',
+				fieldLabel : '编码',
+				id : 'Indexareaindexareacode',
+				name : 'indexareacode',
 				maxLength : 100
 			} ]
 		}
@@ -45,9 +46,9 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '客户ID',
-				id : 'Ccustomerccustomercustomer',
-				name : 'ccustomercustomer',
+				fieldLabel : '名称',
+				id : 'Indexareaindexareaname',
+				name : 'indexareaname',
 				maxLength : 100
 			} ]
 		}
@@ -56,9 +57,9 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '描述(关系等级)',
-				id : 'Ccustomerccustomerdetail',
-				name : 'ccustomerdetail',
+				fieldLabel : '描述',
+				id : 'Indexareaindexareadetail',
+				name : 'indexareadetail',
 				maxLength : 100
 			} ]
 		}
@@ -67,9 +68,9 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '创建时间(业务员名)',
-				id : 'Ccustomercreatetime',
-				name : 'createtime',
+				fieldLabel : '状态',
+				id : 'Indexareaindexareastatue',
+				name : 'indexareastatue',
 				maxLength : 100
 			} ]
 		}
@@ -78,9 +79,9 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '创建人(是否大客户:1是大客户)',
-				id : 'Ccustomercreator',
-				name : 'creator',
+				fieldLabel : '供应商id',
+				id : 'Indexareaindexareacompany',
+				name : 'indexareacompany',
 				maxLength : 100
 			} ]
 		}
@@ -89,9 +90,9 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '修改时间',
-				id : 'Ccustomerccustomerupdtime',
-				name : 'ccustomerupdtime',
+				fieldLabel : '顺序',
+				id : 'Indexareaindexareaorder',
+				name : 'indexareaorder',
 				maxLength : 100
 			} ]
 		}
@@ -100,22 +101,33 @@ Ext.onReady(function() {
 			layout : 'form',
 			items : [ {
 				xtype : 'textfield',
-				fieldLabel : '修改人',
-				id : 'Ccustomerccustomerupdor',
-				name : 'ccustomerupdor',
+				fieldLabel : '图片',
+				id : 'Indexareaindexareaimage',
+				name : 'indexareaimage',
+				maxLength : 100
+			} ]
+		}
+		, {
+			columnWidth : 1,
+			layout : 'form',
+			items : [ {
+				xtype : 'textfield',
+				fieldLabel : '路径',
+				id : 'Indexareaindexareaurl',
+				name : 'indexareaurl',
 				maxLength : 100
 			} ]
 		}
 		]
 	});
 	
-	//var Ccustomerbbar = pagesizebar(Ccustomerstore);//定义分页
-	var Ccustomergrid =  Ext.create('Ext.grid.Panel', {
+	//var Indexareabbar = pagesizebar(Indexareastore);//定义分页
+	var Indexareagrid =  Ext.create('Ext.grid.Panel', {
 		height : document.documentElement.clientHeight - 4,
 		width : '100%',
-		//title : Ccustomertitle,
-		store : Ccustomerstore,
-		//bbar : Ccustomerbbar,
+		//title : Indexareatitle,
+		store : Indexareastore,
+		//bbar : Indexareabbar,
 	    selModel: {
 	        type: 'checkboxmodel'
 	    },
@@ -125,8 +137,8 @@ Ext.onReady(function() {
 	    },
 		columns : [{xtype: 'rownumberer',width:50}, 
 		{// 改
-			header : '经销商和客户ID',
-			dataIndex : 'ccustomerid',
+			header : 'id',
+			dataIndex : 'indexareaid',
 			sortable : true, 
 			editor: {
                 xtype: 'textfield',
@@ -134,56 +146,64 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '经销商ID',
-			dataIndex : 'ccustomercompany',
+			header : '编码',
+			dataIndex : 'indexareacode',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'
             }
 		}
 		, {
-			header : '客户ID',
-			dataIndex : 'ccustomercustomer',
+			header : '名称',
+			dataIndex : 'indexareaname',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'
             }
 		}
 		, {
-			header : '描述(关系等级)',
-			dataIndex : 'ccustomerdetail',
+			header : '描述',
+			dataIndex : 'indexareadetail',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'
             }
 		}
 		, {
-			header : '创建时间(业务员名)',
-			dataIndex : 'createtime',
+			header : '状态',
+			dataIndex : 'indexareastatue',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'
             }
 		}
 		, {
-			header : '创建人(是否大客户:1是大客户)',
-			dataIndex : 'creator',
+			header : '供应商id',
+			dataIndex : 'indexareacompany',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'
             }
 		}
 		, {
-			header : '修改时间',
-			dataIndex : 'ccustomerupdtime',
+			header : '顺序',
+			dataIndex : 'indexareaorder',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'
             }
 		}
 		, {
-			header : '修改人',
-			dataIndex : 'ccustomerupdor',
+			header : '图片',
+			dataIndex : 'indexareaimage',
+			sortable : true,  
+			editor: {
+                xtype: 'textfield'
+            }
+		}
+		, {
+			header : '路径',
+			dataIndex : 'indexareaurl',
 			sortable : true,  
 			editor: {
                 xtype: 'textfield'
@@ -194,35 +214,35 @@ Ext.onReady(function() {
 				text : Ext.os.deviceType === 'Phone' ? null : "新增",
 				iconCls : 'add',
 				handler : function() {
-					CcustomerdataForm.form.reset();
-					Ext.getCmp("Ccustomerccustomerid").setEditable (true);
-					createTextWindow(basePath + Ccustomeraction + "?method=insAll", "新增", CcustomerdataForm, Ccustomerstore);
+					IndexareadataForm.form.reset();
+					Ext.getCmp("Indexareaindexareaid").setEditable (true);
+					createTextWindow(basePath + Indexareaaction + "?method=insAll", "新增", IndexareadataForm, Indexareastore);
 				}
 			},'-',{
 				text : Ext.os.deviceType === 'Phone' ? null : "保存",
 				iconCls : 'ok',
 				handler : function() {
-					var selections = Ccustomergrid.getSelection();
+					var selections = Indexareagrid.getSelection();
 					if (Ext.isEmpty(selections)) {
 						Ext.Msg.alert('提示', '请至少选择一条数据！');
 						return;
 					}
-					commonSave(basePath + Ccustomeraction + "?method=updAll",selections);
+					commonSave(basePath + Indexareaaction + "?method=updAll",selections);
 				}
 			},'-',{
 				text : Ext.os.deviceType === 'Phone' ? null : "修改",
 				iconCls : 'edit',
 				handler : function() {
-					var selections = Ccustomergrid.getSelection();
+					var selections = Indexareagrid.getSelection();
 					if (selections.length != 1) {
 						Ext.Msg.alert('提示', '请选择一条数据！', function() {
 						});
 						return;
 					}
-					CcustomerdataForm.form.reset();
-					Ext.getCmp("Ccustomerccustomerid").setEditable (false);
-					createTextWindow(basePath + Ccustomeraction + "?method=updAll", "修改", CcustomerdataForm, Ccustomerstore);
-					CcustomerdataForm.form.loadRecord(selections[0]);
+					IndexareadataForm.form.reset();
+					Ext.getCmp("Indexareaindexareaid").setEditable (false);
+					createTextWindow(basePath + Indexareaaction + "?method=updAll", "修改", IndexareadataForm, Indexareastore);
+					IndexareadataForm.form.loadRecord(selections[0]);
 				}
 			},'-',{
 	            text: '操作',
@@ -235,18 +255,18 @@ Ext.onReady(function() {
 	                    	text : "删除",
 	        				iconCls : 'delete',
 	        				handler : function() {
-	        					var selections = Ccustomergrid.getSelection();
+	        					var selections = Indexareagrid.getSelection();
 	        					if (Ext.isEmpty(selections)) {
 	        						Ext.Msg.alert('提示', '请至少选择一条数据！');
 	        						return;
 	        					}
-	        					commonDelete(basePath + Ccustomeraction + "?method=delAll",selections,Ccustomerstore,Ccustomerkeycolumn);
+	        					commonDelete(basePath + Indexareaaction + "?method=delAll",selections,Indexareastore,Indexareakeycolumn);
 	        				}
 	                    },{
 	                    	text : "导入",
 	        				iconCls : 'imp',
 	        				handler : function() {
-	        					commonImp(basePath + Ccustomeraction + "?method=impAll","导入",Ccustomerstore);
+	        					commonImp(basePath + Indexareaaction + "?method=impAll","导入",Indexareastore);
 	        				}
 	                    },{
 	                    	text : "导出",
@@ -254,7 +274,7 @@ Ext.onReady(function() {
 	        				handler : function() {
 	        					Ext.Msg.confirm('请确认', '<b>提示:</b>请确认要导出当前数据？', function(btn, text) {
 	        						if (btn == 'yes') {
-	        							window.location.href = basePath + Ccustomeraction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryCcustomeraction").getValue(); 
+	        							window.location.href = basePath + Indexareaaction + "?method=expAll&json="+queryjson+"&query="+Ext.getCmp("queryIndexareaaction").getValue(); 
 	        						}
 	        					});
 	        				}
@@ -262,31 +282,31 @@ Ext.onReady(function() {
 	                    	text : "附件",
 	        				iconCls : 'attach',
 	        				handler : function() {
-	        					var selections = Ccustomergrid.getSelection();
+	        					var selections = Indexareagrid.getSelection();
 	        					if (selections.length != 1) {
 	        						Ext.Msg.alert('提示', '请选择一条数据！', function() {
 	        						});
 	        						return;
 	        					}
 	        					var fid = '';
-	        					for (var i=0;i<Ccustomerkeycolumn.length;i++){
-	        						fid += selections[0].data[Ccustomerkeycolumn[i]] + ","
+	        					for (var i=0;i<Indexareakeycolumn.length;i++){
+	        						fid += selections[0].data[Indexareakeycolumn[i]] + ","
 	        					}
-	        					commonAttach(fid, Ccustomerclassify);
+	        					commonAttach(fid, Indexareaclassify);
 	        				}
 	                    },{
 	        				text : "筛选",
     						iconCls : 'select',
     						handler : function() {
-    							Ext.getCmp("Ccustomerccustomerid").setEditable (true);
-    							createQueryWindow("筛选", CcustomerdataForm, Ccustomerstore,Ext.getCmp("queryCcustomeraction").getValue());
+    							Ext.getCmp("Indexareaindexareaid").setEditable (true);
+    							createQueryWindow("筛选", IndexareadataForm, Indexareastore,Ext.getCmp("queryIndexareaaction").getValue());
     						}
     					}]
 	                }
 	            }
 			},'->',{
 				xtype : 'textfield',
-				id : 'queryCcustomeraction',
+				id : 'queryIndexareaaction',
 				name : 'query',
 				emptyText : '模糊匹配',
 				width : 100,
@@ -294,17 +314,17 @@ Ext.onReady(function() {
 				listeners : {
 					specialkey : function(field, e) {
 						if (e.getKey() == Ext.EventObject.ENTER) {
-							if ("" == Ext.getCmp("queryCcustomeraction").getValue()) {
-								Ccustomerstore.load({
+							if ("" == Ext.getCmp("queryIndexareaaction").getValue()) {
+								Indexareastore.load({
 									params : {
 										json : queryjson
 									}
 								});
 							} else {
-								Ccustomerstore.load({
+								Indexareastore.load({
 									params : {
 										json : queryjson,
-										query : Ext.getCmp("queryCcustomeraction").getValue()
+										query : Ext.getCmp("queryIndexareaaction").getValue()
 									}
 								});
 							}
@@ -314,12 +334,12 @@ Ext.onReady(function() {
 			}
 		]
 	});
-	Ccustomergrid.region = 'center';
-	Ccustomerstore.load();//加载数据
+	Indexareagrid.region = 'center';
+	Indexareastore.load();//加载数据
 	var win = new Ext.Viewport({//只能有一个viewport
 		resizable : true,
 		layout : 'border',
 		bodyStyle : 'padding:0px;',
-		items : [ Ccustomergrid ]
+		items : [ Indexareagrid ]
 	});
 })

@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 预定 逻辑层
+ * 年货和组合商品 逻辑层
  *@author ZhangRuiLong
  */
 public class BkgoodsAction extends BaseActionDao {
