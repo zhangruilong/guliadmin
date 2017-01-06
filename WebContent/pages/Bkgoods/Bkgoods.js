@@ -390,7 +390,7 @@ Ext.onReady(function() {
             }
 		}
 		, {
-			header : '限量',
+			header : '个人限量',
 			dataIndex : 'bkgoodsnum',
 			sortable : true,  
 			editor: {
