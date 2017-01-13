@@ -28,6 +28,14 @@ public class Ccustomerview
     */
    private String creator;   
    /**
+    * ccustomerupdtime
+    */
+   private String ccustomerupdtime;   
+   /**
+    * ccustomerupdor
+    */
+   private String ccustomerupdor;   
+   /**
     * customerid
     */
    private String customerid;   
@@ -175,6 +183,40 @@ public class Ccustomerview
 	public String getCreator()
 	{
 		return this.creator;
+	}	   
+
+	/**
+	 *设置"ccustomerupdtime"属性
+	 *@param ccustomerupdtime 实体的Ccustomerupdtime属性
+	 */
+	public void setCcustomerupdtime(String ccustomerupdtime)
+	{
+		this.ccustomerupdtime = ccustomerupdtime;
+	}
+	
+	/**
+	 *获取"ccustomerupdtime"属性
+	 */
+	public String getCcustomerupdtime()
+	{
+		return this.ccustomerupdtime;
+	}	   
+
+	/**
+	 *设置"ccustomerupdor"属性
+	 *@param ccustomerupdor 实体的Ccustomerupdor属性
+	 */
+	public void setCcustomerupdor(String ccustomerupdor)
+	{
+		this.ccustomerupdor = ccustomerupdor;
+	}
+	
+	/**
+	 *获取"ccustomerupdor"属性
+	 */
+	public String getCcustomerupdor()
+	{
+		return this.ccustomerupdor;
 	}	   
 
 	/**
@@ -458,6 +500,8 @@ public class Ccustomerview
 	 	,String ccustomerdetail
 	 	,String createtime
 	 	,String creator
+	 	,String ccustomerupdtime
+	 	,String ccustomerupdor
 	 	,String customerid
 	 	,String customercode
 	 	,String customername
@@ -481,6 +525,8 @@ public class Ccustomerview
 	 	this.ccustomerdetail = ccustomerdetail;
 	 	this.createtime = createtime;
 	 	this.creator = creator;
+	 	this.ccustomerupdtime = ccustomerupdtime;
+	 	this.ccustomerupdor = ccustomerupdor;
 	 	this.customerid = customerid;
 	 	this.customercode = customercode;
 	 	this.customername = customername;
