@@ -16,47 +16,23 @@ public class Ccustomerview
     */
    private String ccustomercompany;   
    /**
-    * ccustomerdetail
-    */
-   private String ccustomerdetail;   
-   /**
-    * createtime
-    */
-   private String createtime;   
-   /**
-    * creator
-    */
-   private String creator;   
-   /**
-    * ccustomerupdtime
-    */
-   private String ccustomerupdtime;   
-   /**
-    * ccustomerupdor
-    */
-   private String ccustomerupdor;   
-   /**
-    * customerid
-    */
-   private String customerid;   
-   /**
-    * customercode
+    * 客户编码
     */
    private String customercode;   
    /**
-    * customername
+    * 客户姓名
     */
    private String customername;   
    /**
-    * customerphone
+    * 手机
     */
    private String customerphone;   
    /**
-    * customerpsw
+    * 客户经理
     */
-   private String customerpsw;   
+   private String createtime;   
    /**
-    * customershop
+    * 客户名称
     */
    private String customershop;   
    /**
@@ -72,11 +48,39 @@ public class Ccustomerview
     */
    private String customeraddress;   
    /**
-    * customertype
+    * 客户类型
     */
    private String customertype;   
    /**
-    * customerlevel
+    * 关系等级
+    */
+   private String ccustomerdetail;   
+   /**
+    * 修改人
+    */
+   private String ccustomerupdor;   
+   /**
+    * 修改时间
+    */
+   private String ccustomerupdtime;   
+   /**
+    * 创建时间
+    */
+   private String cuscreatetime;   
+   /**
+    * 是否大客户
+    */
+   private String creator;   
+   /**
+    * customerid
+    */
+   private String customerid;   
+   /**
+    * customerpsw
+    */
+   private String customerpsw;   
+   /**
+    * 客户等级
     */
    private Integer customerlevel;   
    /**
@@ -91,10 +95,6 @@ public class Ccustomerview
     * customerstatue
     */
    private String customerstatue;   
-   /**
-    * cuscreatetime
-    */
-   private String cuscreatetime;   
    /**
     * updtime
     */
