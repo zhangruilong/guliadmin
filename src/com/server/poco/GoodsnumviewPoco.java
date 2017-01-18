@@ -43,14 +43,7 @@ public class GoodsnumviewPoco
 	 	"种类",
 	 	"顺序",
 	 	"大小类ID",
-	 	"编码",
 	 	"名称",
-	 	"父类",
-	 	"图标",
-	 	"状态",
-	 	"城市(用逗号分开)",
-	 	"顺序",
-	 	"经销商(用逗号分开)",
 	};
 	/**
 	 * 实体英文字段
@@ -77,14 +70,7 @@ public class GoodsnumviewPoco
 	 	"gOODSTYPE",
 	 	"gOODSORDER",
 	 	"gOODSCLASSID",
-	 	"gOODSCLASSCODE",
 	 	"gOODSCLASSNAME",
-	 	"gOODSCLASSPARENT",
-	 	"gOODSCLASSDETAIL",
-	 	"gOODSCLASSSTATUE",
-	 	"gOODSCLASSCITY",
-	 	"gOODSCLASSORDER",
-	 	"gOODSCLASSCOMPANY",
    };
    /**
     * 实体排序
@@ -115,14 +101,7 @@ public class GoodsnumviewPoco
 	 	"gOODSTYPE",
 	 	"gOODSORDER",
 	 	"gOODSCLASSID",
-	 	"gOODSCLASSCODE",
 	 	"gOODSCLASSNAME",
-	 	"gOODSCLASSPARENT",
-	 	"gOODSCLASSDETAIL",
-	 	"gOODSCLASSSTATUE",
-	 	"gOODSCLASSCITY",
-	 	"gOODSCLASSORDER",
-	 	"gOODSCLASSCOMPANY",
    };
 }
 

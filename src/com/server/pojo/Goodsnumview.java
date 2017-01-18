@@ -92,37 +92,9 @@ public class Goodsnumview
     */
    private String gOODSCLASSID;   
    /**
-    * 编码
-    */
-   private String gOODSCLASSCODE;   
-   /**
     * 名称
     */
    private String gOODSCLASSNAME;   
-   /**
-    * 父类
-    */
-   private String gOODSCLASSPARENT;   
-   /**
-    * 图标
-    */
-   private String gOODSCLASSDETAIL;   
-   /**
-    * 状态
-    */
-   private String gOODSCLASSSTATUE;   
-   /**
-    * 城市(用逗号分开)
-    */
-   private String gOODSCLASSCITY;   
-   /**
-    * 顺序
-    */
-   private String gOODSCLASSORDER;   
-   /**
-    * 经销商(用逗号分开)
-    */
-   private String gOODSCLASSCOMPANY;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -482,23 +454,6 @@ public class Goodsnumview
 	}	   
 
 	/**
-	 *设置"编码"属性
-	 *@param gOODSCLASSCODE 实体的GOODSCLASSCODE属性
-	 */
-	public void setGOODSCLASSCODE(String gOODSCLASSCODE)
-	{
-		this.gOODSCLASSCODE = gOODSCLASSCODE;
-	}
-	
-	/**
-	 *获取"编码"属性
-	 */
-	public String getGOODSCLASSCODE()
-	{
-		return this.gOODSCLASSCODE;
-	}	   
-
-	/**
 	 *设置"名称"属性
 	 *@param gOODSCLASSNAME 实体的GOODSCLASSNAME属性
 	 */
@@ -513,108 +468,6 @@ public class Goodsnumview
 	public String getGOODSCLASSNAME()
 	{
 		return this.gOODSCLASSNAME;
-	}	   
-
-	/**
-	 *设置"父类"属性
-	 *@param gOODSCLASSPARENT 实体的GOODSCLASSPARENT属性
-	 */
-	public void setGOODSCLASSPARENT(String gOODSCLASSPARENT)
-	{
-		this.gOODSCLASSPARENT = gOODSCLASSPARENT;
-	}
-	
-	/**
-	 *获取"父类"属性
-	 */
-	public String getGOODSCLASSPARENT()
-	{
-		return this.gOODSCLASSPARENT;
-	}	   
-
-	/**
-	 *设置"图标"属性
-	 *@param gOODSCLASSDETAIL 实体的GOODSCLASSDETAIL属性
-	 */
-	public void setGOODSCLASSDETAIL(String gOODSCLASSDETAIL)
-	{
-		this.gOODSCLASSDETAIL = gOODSCLASSDETAIL;
-	}
-	
-	/**
-	 *获取"图标"属性
-	 */
-	public String getGOODSCLASSDETAIL()
-	{
-		return this.gOODSCLASSDETAIL;
-	}	   
-
-	/**
-	 *设置"状态"属性
-	 *@param gOODSCLASSSTATUE 实体的GOODSCLASSSTATUE属性
-	 */
-	public void setGOODSCLASSSTATUE(String gOODSCLASSSTATUE)
-	{
-		this.gOODSCLASSSTATUE = gOODSCLASSSTATUE;
-	}
-	
-	/**
-	 *获取"状态"属性
-	 */
-	public String getGOODSCLASSSTATUE()
-	{
-		return this.gOODSCLASSSTATUE;
-	}	   
-
-	/**
-	 *设置"城市(用逗号分开)"属性
-	 *@param gOODSCLASSCITY 实体的GOODSCLASSCITY属性
-	 */
-	public void setGOODSCLASSCITY(String gOODSCLASSCITY)
-	{
-		this.gOODSCLASSCITY = gOODSCLASSCITY;
-	}
-	
-	/**
-	 *获取"城市(用逗号分开)"属性
-	 */
-	public String getGOODSCLASSCITY()
-	{
-		return this.gOODSCLASSCITY;
-	}	   
-
-	/**
-	 *设置"顺序"属性
-	 *@param gOODSCLASSORDER 实体的GOODSCLASSORDER属性
-	 */
-	public void setGOODSCLASSORDER(String gOODSCLASSORDER)
-	{
-		this.gOODSCLASSORDER = gOODSCLASSORDER;
-	}
-	
-	/**
-	 *获取"顺序"属性
-	 */
-	public String getGOODSCLASSORDER()
-	{
-		return this.gOODSCLASSORDER;
-	}	   
-
-	/**
-	 *设置"经销商(用逗号分开)"属性
-	 *@param gOODSCLASSCOMPANY 实体的GOODSCLASSCOMPANY属性
-	 */
-	public void setGOODSCLASSCOMPANY(String gOODSCLASSCOMPANY)
-	{
-		this.gOODSCLASSCOMPANY = gOODSCLASSCOMPANY;
-	}
-	
-	/**
-	 *获取"经销商(用逗号分开)"属性
-	 */
-	public String getGOODSCLASSCOMPANY()
-	{
-		return this.gOODSCLASSCOMPANY;
 	}	   
 	public Goodsnumview() {
 		super();
@@ -642,14 +495,7 @@ public class Goodsnumview
 	 	,String gOODSTYPE
 	 	,String gOODSORDER
 	 	,String gOODSCLASSID
-	 	,String gOODSCLASSCODE
 	 	,String gOODSCLASSNAME
-	 	,String gOODSCLASSPARENT
-	 	,String gOODSCLASSDETAIL
-	 	,String gOODSCLASSSTATUE
-	 	,String gOODSCLASSCITY
-	 	,String gOODSCLASSORDER
-	 	,String gOODSCLASSCOMPANY
 		 ){
 		super();
 		this.idgoodsnum = idgoodsnum;
@@ -673,14 +519,7 @@ public class Goodsnumview
 	 	this.gOODSTYPE = gOODSTYPE;
 	 	this.gOODSORDER = gOODSORDER;
 	 	this.gOODSCLASSID = gOODSCLASSID;
-	 	this.gOODSCLASSCODE = gOODSCLASSCODE;
 	 	this.gOODSCLASSNAME = gOODSCLASSNAME;
-	 	this.gOODSCLASSPARENT = gOODSCLASSPARENT;
-	 	this.gOODSCLASSDETAIL = gOODSCLASSDETAIL;
-	 	this.gOODSCLASSSTATUE = gOODSCLASSSTATUE;
-	 	this.gOODSCLASSCITY = gOODSCLASSCITY;
-	 	this.gOODSCLASSORDER = gOODSCLASSORDER;
-	 	this.gOODSCLASSCOMPANY = gOODSCLASSCOMPANY;
 	}
 }
 
