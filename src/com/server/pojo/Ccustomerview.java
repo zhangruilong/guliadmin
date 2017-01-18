@@ -8,19 +8,43 @@ import java.sql.Date;
 public class Ccustomerview
 {
    /**
-    * ccustomerid,主键
+    * 经销商和客户ID,主键
     */
    private String ccustomerid; 
    /**
-    * ccustomercompany
+    * 经销商ID
     */
    private String ccustomercompany;   
    /**
-    * 客户编码
+    * 客户等级
+    */
+   private String ccustomerdetail;   
+   /**
+    * 客户经理
+    */
+   private String createtime;   
+   /**
+    * 大客户
+    */
+   private String creator;   
+   /**
+    * 修改时间
+    */
+   private String ccustomerupdtime;   
+   /**
+    * 修改人
+    */
+   private String ccustomerupdor;   
+   /**
+    * 客户ID
+    */
+   private String customerid;   
+   /**
+    * 编码
     */
    private String customercode;   
    /**
-    * 客户姓名
+    * 姓名
     */
    private String customername;   
    /**
@@ -28,80 +52,56 @@ public class Ccustomerview
     */
    private String customerphone;   
    /**
-    * 客户经理
-    */
-   private String createtime;   
-   /**
-    * 客户名称
-    */
-   private String customershop;   
-   /**
-    * customercity
-    */
-   private String customercity;   
-   /**
-    * customerxian
-    */
-   private String customerxian;   
-   /**
-    * customeraddress
-    */
-   private String customeraddress;   
-   /**
-    * 客户类型
-    */
-   private String customertype;   
-   /**
-    * 关系等级
-    */
-   private String ccustomerdetail;   
-   /**
-    * 修改人
-    */
-   private String ccustomerupdor;   
-   /**
-    * 修改时间
-    */
-   private String ccustomerupdtime;   
-   /**
-    * 创建时间
-    */
-   private String cuscreatetime;   
-   /**
-    * 是否大客户
-    */
-   private String creator;   
-   /**
-    * customerid
-    */
-   private String customerid;   
-   /**
-    * customerpsw
+    * 密码
     */
    private String customerpsw;   
    /**
-    * 客户等级
+    * 店铺
     */
-   private Integer customerlevel;   
+   private String customershop;   
+   /**
+    * 城市
+    */
+   private String customercity;   
+   /**
+    * 县
+    */
+   private String customerxian;   
+   /**
+    * 街道地址
+    */
+   private String customeraddress;   
+   /**
+    * 类型
+    */
+   private String customertype;   
+   /**
+    * 等级
+    */
+   private String customerlevel;   
    /**
     * openid
     */
    private String openid;   
    /**
-    * customerdetail
+    * 描述
     */
    private String customerdetail;   
    /**
-    * customerstatue
+    * 状态
     */
    private String customerstatue;   
    /**
-    * updtime
+    * 创建时间
+    */
+   private String cuscreatetime;   
+   /**
+    * 修改时间
     */
    private String updtime;   
     //属性方法	    
      /**
-	 *设置主键"ccustomerid"属性
+	 *设置主键"经销商和客户ID"属性
 	 *@param ccustomerid 实体的Ccustomerid属性
 	 */
 	public void setCcustomerid(String ccustomerid)
@@ -110,7 +110,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取主键"ccustomerid"属性
+	 *获取主键"经销商和客户ID"属性
 	 */
 	public String getCcustomerid()
 	{
@@ -118,7 +118,7 @@ public class Ccustomerview
 	}
 
 	/**
-	 *设置"ccustomercompany"属性
+	 *设置"经销商ID"属性
 	 *@param ccustomercompany 实体的Ccustomercompany属性
 	 */
 	public void setCcustomercompany(String ccustomercompany)
@@ -127,7 +127,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"ccustomercompany"属性
+	 *获取"经销商ID"属性
 	 */
 	public String getCcustomercompany()
 	{
@@ -135,7 +135,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"ccustomerdetail"属性
+	 *设置"客户等级"属性
 	 *@param ccustomerdetail 实体的Ccustomerdetail属性
 	 */
 	public void setCcustomerdetail(String ccustomerdetail)
@@ -144,7 +144,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"ccustomerdetail"属性
+	 *获取"客户等级"属性
 	 */
 	public String getCcustomerdetail()
 	{
@@ -152,7 +152,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"createtime"属性
+	 *设置"客户经理"属性
 	 *@param createtime 实体的Createtime属性
 	 */
 	public void setCreatetime(String createtime)
@@ -161,7 +161,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"createtime"属性
+	 *获取"客户经理"属性
 	 */
 	public String getCreatetime()
 	{
@@ -169,7 +169,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"creator"属性
+	 *设置"大客户"属性
 	 *@param creator 实体的Creator属性
 	 */
 	public void setCreator(String creator)
@@ -178,7 +178,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"creator"属性
+	 *获取"大客户"属性
 	 */
 	public String getCreator()
 	{
@@ -186,7 +186,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"ccustomerupdtime"属性
+	 *设置"修改时间"属性
 	 *@param ccustomerupdtime 实体的Ccustomerupdtime属性
 	 */
 	public void setCcustomerupdtime(String ccustomerupdtime)
@@ -195,7 +195,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"ccustomerupdtime"属性
+	 *获取"修改时间"属性
 	 */
 	public String getCcustomerupdtime()
 	{
@@ -203,7 +203,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"ccustomerupdor"属性
+	 *设置"修改人"属性
 	 *@param ccustomerupdor 实体的Ccustomerupdor属性
 	 */
 	public void setCcustomerupdor(String ccustomerupdor)
@@ -212,7 +212,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"ccustomerupdor"属性
+	 *获取"修改人"属性
 	 */
 	public String getCcustomerupdor()
 	{
@@ -220,7 +220,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customerid"属性
+	 *设置"客户ID"属性
 	 *@param customerid 实体的Customerid属性
 	 */
 	public void setCustomerid(String customerid)
@@ -229,7 +229,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customerid"属性
+	 *获取"客户ID"属性
 	 */
 	public String getCustomerid()
 	{
@@ -237,7 +237,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customercode"属性
+	 *设置"编码"属性
 	 *@param customercode 实体的Customercode属性
 	 */
 	public void setCustomercode(String customercode)
@@ -246,7 +246,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customercode"属性
+	 *获取"编码"属性
 	 */
 	public String getCustomercode()
 	{
@@ -254,7 +254,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customername"属性
+	 *设置"姓名"属性
 	 *@param customername 实体的Customername属性
 	 */
 	public void setCustomername(String customername)
@@ -263,7 +263,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customername"属性
+	 *获取"姓名"属性
 	 */
 	public String getCustomername()
 	{
@@ -271,7 +271,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customerphone"属性
+	 *设置"手机"属性
 	 *@param customerphone 实体的Customerphone属性
 	 */
 	public void setCustomerphone(String customerphone)
@@ -280,7 +280,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customerphone"属性
+	 *获取"手机"属性
 	 */
 	public String getCustomerphone()
 	{
@@ -288,7 +288,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customerpsw"属性
+	 *设置"密码"属性
 	 *@param customerpsw 实体的Customerpsw属性
 	 */
 	public void setCustomerpsw(String customerpsw)
@@ -297,7 +297,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customerpsw"属性
+	 *获取"密码"属性
 	 */
 	public String getCustomerpsw()
 	{
@@ -305,7 +305,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customershop"属性
+	 *设置"店铺"属性
 	 *@param customershop 实体的Customershop属性
 	 */
 	public void setCustomershop(String customershop)
@@ -314,7 +314,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customershop"属性
+	 *获取"店铺"属性
 	 */
 	public String getCustomershop()
 	{
@@ -322,7 +322,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customercity"属性
+	 *设置"城市"属性
 	 *@param customercity 实体的Customercity属性
 	 */
 	public void setCustomercity(String customercity)
@@ -331,7 +331,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customercity"属性
+	 *获取"城市"属性
 	 */
 	public String getCustomercity()
 	{
@@ -339,7 +339,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customerxian"属性
+	 *设置"县"属性
 	 *@param customerxian 实体的Customerxian属性
 	 */
 	public void setCustomerxian(String customerxian)
@@ -348,7 +348,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customerxian"属性
+	 *获取"县"属性
 	 */
 	public String getCustomerxian()
 	{
@@ -356,7 +356,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customeraddress"属性
+	 *设置"街道地址"属性
 	 *@param customeraddress 实体的Customeraddress属性
 	 */
 	public void setCustomeraddress(String customeraddress)
@@ -365,7 +365,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customeraddress"属性
+	 *获取"街道地址"属性
 	 */
 	public String getCustomeraddress()
 	{
@@ -373,7 +373,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customertype"属性
+	 *设置"类型"属性
 	 *@param customertype 实体的Customertype属性
 	 */
 	public void setCustomertype(String customertype)
@@ -382,7 +382,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customertype"属性
+	 *获取"类型"属性
 	 */
 	public String getCustomertype()
 	{
@@ -390,18 +390,18 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customerlevel"属性
+	 *设置"等级"属性
 	 *@param customerlevel 实体的Customerlevel属性
 	 */
-	public void setCustomerlevel(Integer customerlevel)
+	public void setCustomerlevel(String customerlevel)
 	{
 		this.customerlevel = customerlevel;
 	}
 	
 	/**
-	 *获取"customerlevel"属性
+	 *获取"等级"属性
 	 */
-	public Integer getCustomerlevel()
+	public String getCustomerlevel()
 	{
 		return this.customerlevel;
 	}	   
@@ -424,7 +424,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customerdetail"属性
+	 *设置"描述"属性
 	 *@param customerdetail 实体的Customerdetail属性
 	 */
 	public void setCustomerdetail(String customerdetail)
@@ -433,7 +433,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customerdetail"属性
+	 *获取"描述"属性
 	 */
 	public String getCustomerdetail()
 	{
@@ -441,7 +441,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"customerstatue"属性
+	 *设置"状态"属性
 	 *@param customerstatue 实体的Customerstatue属性
 	 */
 	public void setCustomerstatue(String customerstatue)
@@ -450,7 +450,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"customerstatue"属性
+	 *获取"状态"属性
 	 */
 	public String getCustomerstatue()
 	{
@@ -458,7 +458,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"cuscreatetime"属性
+	 *设置"创建时间"属性
 	 *@param cuscreatetime 实体的Cuscreatetime属性
 	 */
 	public void setCuscreatetime(String cuscreatetime)
@@ -467,7 +467,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"cuscreatetime"属性
+	 *获取"创建时间"属性
 	 */
 	public String getCuscreatetime()
 	{
@@ -475,7 +475,7 @@ public class Ccustomerview
 	}	   
 
 	/**
-	 *设置"updtime"属性
+	 *设置"修改时间"属性
 	 *@param updtime 实体的Updtime属性
 	 */
 	public void setUpdtime(String updtime)
@@ -484,7 +484,7 @@ public class Ccustomerview
 	}
 	
 	/**
-	 *获取"updtime"属性
+	 *获取"修改时间"属性
 	 */
 	public String getUpdtime()
 	{
@@ -512,7 +512,7 @@ public class Ccustomerview
 	 	,String customerxian
 	 	,String customeraddress
 	 	,String customertype
-	 	,Integer customerlevel
+	 	,String customerlevel
 	 	,String openid
 	 	,String customerdetail
 	 	,String customerstatue

@@ -8,568 +8,568 @@ import java.sql.Date;
 public class Bkgoodsview
 {
    /**
-    * bkgoodsid,主键
+    * 促销品ID,主键
     */
-   private String bkgoodsid; 
+   private String bKGOODSID; 
    /**
-    * bkgoodscompany
+    * 经销商ID
     */
-   private String bkgoodscompany;   
+   private String bKGOODSCOMPANY;   
    /**
-    * bkgoodscode
+    * 编码
     */
-   private String bkgoodscode;   
+   private String bKGOODSCODE;   
    /**
-    * bkgoodsname
+    * 名称
     */
-   private String bkgoodsname;   
+   private String bKGOODSNAME;   
    /**
-    * bkgoodsdetail
+    * 描述
     */
-   private String bkgoodsdetail;   
+   private String bKGOODSDETAIL;   
    /**
-    * bkgoodsunits
+    * 规格
     */
-   private String bkgoodsunits;   
+   private String bKGOODSUNITS;   
    /**
-    * bkgoodsunit
+    * 单位
     */
-   private String bkgoodsunit;   
+   private String bKGOODSUNIT;   
    /**
-    * bkgoodsprice
+    * 原价
     */
-   private Float bkgoodsprice;   
+   private Float bKGOODSPRICE;   
    /**
-    * bkgoodsorgprice
+    * 现价
     */
-   private Float bkgoodsorgprice;   
+   private Float bKGOODSORGPRICE;   
    /**
-    * bkgoodsnum
+    * 限量
     */
-   private Integer bkgoodsnum;   
+   private String bKGOODSNUM;   
    /**
-    * bkgoodsclass
+    * 小类名称
     */
-   private String bkgoodsclass;   
+   private String bKGOODSCLASS;   
    /**
-    * bkgoodsimage
+    * 图片
     */
-   private String bkgoodsimage;   
+   private String bKGOODSIMAGE;   
    /**
-    * bkgoodsstatue
+    * 状态
     */
-   private String bkgoodsstatue;   
+   private String bKGOODSSTATUE;   
    /**
-    * bkcreatetime
+    * 创建时间
     */
-   private String bkcreatetime;   
+   private String bKCREATETIME;   
    /**
-    * bkcreator
+    * 创建人
     */
-   private String bkcreator;   
+   private String bKCREATOR;   
    /**
-    * bkgoodsseq
+    * 顺序
     */
-   private Integer bkgoodsseq;   
+   private String bKGOODSSEQ;   
    /**
-    * bkgoodsscope
+    * 客户范围
     */
-   private String bkgoodsscope;   
+   private String bKGOODSSCOPE;   
    /**
-    * bkgoodsbrand
+    * 品牌
     */
-   private String bkgoodsbrand;   
+   private String bKGOODSBRAND;   
    /**
-    * bkgoodsallnum
+    * 全部限量
     */
-   private Integer bkgoodsallnum;   
+   private String bKGOODSALLNUM;   
    /**
-    * bkgoodssurplus
+    * 剩余数量
     */
-   private Integer bkgoodssurplus;   
+   private String bKGOODSSURPLUS;   
    /**
-    * bkgoodsweight
+    * 重量
     */
-   private String bkgoodsweight;   
+   private String bKGOODSWEIGHT;   
    /**
-    * bkgoodstype
+    * 类型(秒杀,买赠等)
     */
-   private String bkgoodstype;   
+   private String bKGOODSTYPE;   
    /**
-    * bkgoodsupdtime
+    * 修改时间
     */
-   private String bkgoodsupdtime;   
+   private String bKGOODSUPDTIME;   
    /**
-    * bkgoodsupdor
+    * 修改人
     */
-   private String bkgoodsupdor;   
+   private String bKGOODSUPDOR;   
    /**
-    * companycode
+    * 编码
     */
    private String companycode;   
    /**
-    * username
+    * 姓名
     */
    private String username;   
    /**
-    * companyphone
+    * 手机
     */
    private String companyphone;   
    /**
-    * companyshop
+    * 店铺
     */
    private String companyshop;   
    /**
-    * companyaddress
+    * 街道地址
     */
    private String companyaddress;   
    /**
-    * companycity
+    * 城市和县ID
     */
    private String companycity;   
    /**
-    * companydetail
+    * 描述
     */
    private String companydetail;   
    /**
-    * loginname
+    * 账号
     */
    private String loginname;   
    /**
-    * companystatue
+    * 状态
     */
    private String companystatue;   
    /**
-    * citycode
+    * 编码
     */
    private String citycode;   
    /**
-    * cityname
+    * 名称
     */
    private String cityname;   
    /**
-    * cityparent
+    * 父类
     */
    private String cityparent;   
    /**
-    * citydetail
+    * 描述
     */
    private String citydetail;   
    /**
-    * citystatue
+    * 状态
     */
    private String citystatue;   
     //属性方法	    
      /**
-	 *设置主键"bkgoodsid"属性
-	 *@param bkgoodsid 实体的Bkgoodsid属性
+	 *设置主键"促销品ID"属性
+	 *@param bKGOODSID 实体的BKGOODSID属性
 	 */
-	public void setBkgoodsid(String bkgoodsid)
+	public void setBKGOODSID(String bKGOODSID)
 	{
-		this.bkgoodsid = bkgoodsid;
+		this.bKGOODSID = bKGOODSID;
 	}
 	
 	/**
-	 *获取主键"bkgoodsid"属性
+	 *获取主键"促销品ID"属性
 	 */
-	public String getBkgoodsid()
+	public String getBKGOODSID()
 	{
-		return this.bkgoodsid;
+		return this.bKGOODSID;
 	}
 
 	/**
-	 *设置"bkgoodscompany"属性
-	 *@param bkgoodscompany 实体的Bkgoodscompany属性
+	 *设置"经销商ID"属性
+	 *@param bKGOODSCOMPANY 实体的BKGOODSCOMPANY属性
 	 */
-	public void setBkgoodscompany(String bkgoodscompany)
+	public void setBKGOODSCOMPANY(String bKGOODSCOMPANY)
 	{
-		this.bkgoodscompany = bkgoodscompany;
+		this.bKGOODSCOMPANY = bKGOODSCOMPANY;
 	}
 	
 	/**
-	 *获取"bkgoodscompany"属性
+	 *获取"经销商ID"属性
 	 */
-	public String getBkgoodscompany()
+	public String getBKGOODSCOMPANY()
 	{
-		return this.bkgoodscompany;
+		return this.bKGOODSCOMPANY;
 	}	   
 
 	/**
-	 *设置"bkgoodscode"属性
-	 *@param bkgoodscode 实体的Bkgoodscode属性
+	 *设置"编码"属性
+	 *@param bKGOODSCODE 实体的BKGOODSCODE属性
 	 */
-	public void setBkgoodscode(String bkgoodscode)
+	public void setBKGOODSCODE(String bKGOODSCODE)
 	{
-		this.bkgoodscode = bkgoodscode;
+		this.bKGOODSCODE = bKGOODSCODE;
 	}
 	
 	/**
-	 *获取"bkgoodscode"属性
+	 *获取"编码"属性
 	 */
-	public String getBkgoodscode()
+	public String getBKGOODSCODE()
 	{
-		return this.bkgoodscode;
+		return this.bKGOODSCODE;
 	}	   
 
 	/**
-	 *设置"bkgoodsname"属性
-	 *@param bkgoodsname 实体的Bkgoodsname属性
+	 *设置"名称"属性
+	 *@param bKGOODSNAME 实体的BKGOODSNAME属性
 	 */
-	public void setBkgoodsname(String bkgoodsname)
+	public void setBKGOODSNAME(String bKGOODSNAME)
 	{
-		this.bkgoodsname = bkgoodsname;
+		this.bKGOODSNAME = bKGOODSNAME;
 	}
 	
 	/**
-	 *获取"bkgoodsname"属性
+	 *获取"名称"属性
 	 */
-	public String getBkgoodsname()
+	public String getBKGOODSNAME()
 	{
-		return this.bkgoodsname;
+		return this.bKGOODSNAME;
 	}	   
 
 	/**
-	 *设置"bkgoodsdetail"属性
-	 *@param bkgoodsdetail 实体的Bkgoodsdetail属性
+	 *设置"描述"属性
+	 *@param bKGOODSDETAIL 实体的BKGOODSDETAIL属性
 	 */
-	public void setBkgoodsdetail(String bkgoodsdetail)
+	public void setBKGOODSDETAIL(String bKGOODSDETAIL)
 	{
-		this.bkgoodsdetail = bkgoodsdetail;
+		this.bKGOODSDETAIL = bKGOODSDETAIL;
 	}
 	
 	/**
-	 *获取"bkgoodsdetail"属性
+	 *获取"描述"属性
 	 */
-	public String getBkgoodsdetail()
+	public String getBKGOODSDETAIL()
 	{
-		return this.bkgoodsdetail;
+		return this.bKGOODSDETAIL;
 	}	   
 
 	/**
-	 *设置"bkgoodsunits"属性
-	 *@param bkgoodsunits 实体的Bkgoodsunits属性
+	 *设置"规格"属性
+	 *@param bKGOODSUNITS 实体的BKGOODSUNITS属性
 	 */
-	public void setBkgoodsunits(String bkgoodsunits)
+	public void setBKGOODSUNITS(String bKGOODSUNITS)
 	{
-		this.bkgoodsunits = bkgoodsunits;
+		this.bKGOODSUNITS = bKGOODSUNITS;
 	}
 	
 	/**
-	 *获取"bkgoodsunits"属性
+	 *获取"规格"属性
 	 */
-	public String getBkgoodsunits()
+	public String getBKGOODSUNITS()
 	{
-		return this.bkgoodsunits;
+		return this.bKGOODSUNITS;
 	}	   
 
 	/**
-	 *设置"bkgoodsunit"属性
-	 *@param bkgoodsunit 实体的Bkgoodsunit属性
+	 *设置"单位"属性
+	 *@param bKGOODSUNIT 实体的BKGOODSUNIT属性
 	 */
-	public void setBkgoodsunit(String bkgoodsunit)
+	public void setBKGOODSUNIT(String bKGOODSUNIT)
 	{
-		this.bkgoodsunit = bkgoodsunit;
+		this.bKGOODSUNIT = bKGOODSUNIT;
 	}
 	
 	/**
-	 *获取"bkgoodsunit"属性
+	 *获取"单位"属性
 	 */
-	public String getBkgoodsunit()
+	public String getBKGOODSUNIT()
 	{
-		return this.bkgoodsunit;
+		return this.bKGOODSUNIT;
 	}	   
 
 	/**
-	 *设置"bkgoodsprice"属性
-	 *@param bkgoodsprice 实体的Bkgoodsprice属性
+	 *设置"原价"属性
+	 *@param bKGOODSPRICE 实体的BKGOODSPRICE属性
 	 */
-	public void setBkgoodsprice(Float bkgoodsprice)
+	public void setBKGOODSPRICE(Float bKGOODSPRICE)
 	{
-		this.bkgoodsprice = bkgoodsprice;
+		this.bKGOODSPRICE = bKGOODSPRICE;
 	}
 	
 	/**
-	 *获取"bkgoodsprice"属性
+	 *获取"原价"属性
 	 */
-	public Float getBkgoodsprice()
+	public Float getBKGOODSPRICE()
 	{
-		return this.bkgoodsprice;
+		return this.bKGOODSPRICE;
 	}	   
 
 	/**
-	 *设置"bkgoodsorgprice"属性
-	 *@param bkgoodsorgprice 实体的Bkgoodsorgprice属性
+	 *设置"现价"属性
+	 *@param bKGOODSORGPRICE 实体的BKGOODSORGPRICE属性
 	 */
-	public void setBkgoodsorgprice(Float bkgoodsorgprice)
+	public void setBKGOODSORGPRICE(Float bKGOODSORGPRICE)
 	{
-		this.bkgoodsorgprice = bkgoodsorgprice;
+		this.bKGOODSORGPRICE = bKGOODSORGPRICE;
 	}
 	
 	/**
-	 *获取"bkgoodsorgprice"属性
+	 *获取"现价"属性
 	 */
-	public Float getBkgoodsorgprice()
+	public Float getBKGOODSORGPRICE()
 	{
-		return this.bkgoodsorgprice;
+		return this.bKGOODSORGPRICE;
 	}	   
 
 	/**
-	 *设置"bkgoodsnum"属性
-	 *@param bkgoodsnum 实体的Bkgoodsnum属性
+	 *设置"限量"属性
+	 *@param bKGOODSNUM 实体的BKGOODSNUM属性
 	 */
-	public void setBkgoodsnum(Integer bkgoodsnum)
+	public void setBKGOODSNUM(String bKGOODSNUM)
 	{
-		this.bkgoodsnum = bkgoodsnum;
+		this.bKGOODSNUM = bKGOODSNUM;
 	}
 	
 	/**
-	 *获取"bkgoodsnum"属性
+	 *获取"限量"属性
 	 */
-	public Integer getBkgoodsnum()
+	public String getBKGOODSNUM()
 	{
-		return this.bkgoodsnum;
+		return this.bKGOODSNUM;
 	}	   
 
 	/**
-	 *设置"bkgoodsclass"属性
-	 *@param bkgoodsclass 实体的Bkgoodsclass属性
+	 *设置"小类名称"属性
+	 *@param bKGOODSCLASS 实体的BKGOODSCLASS属性
 	 */
-	public void setBkgoodsclass(String bkgoodsclass)
+	public void setBKGOODSCLASS(String bKGOODSCLASS)
 	{
-		this.bkgoodsclass = bkgoodsclass;
+		this.bKGOODSCLASS = bKGOODSCLASS;
 	}
 	
 	/**
-	 *获取"bkgoodsclass"属性
+	 *获取"小类名称"属性
 	 */
-	public String getBkgoodsclass()
+	public String getBKGOODSCLASS()
 	{
-		return this.bkgoodsclass;
+		return this.bKGOODSCLASS;
 	}	   
 
 	/**
-	 *设置"bkgoodsimage"属性
-	 *@param bkgoodsimage 实体的Bkgoodsimage属性
+	 *设置"图片"属性
+	 *@param bKGOODSIMAGE 实体的BKGOODSIMAGE属性
 	 */
-	public void setBkgoodsimage(String bkgoodsimage)
+	public void setBKGOODSIMAGE(String bKGOODSIMAGE)
 	{
-		this.bkgoodsimage = bkgoodsimage;
+		this.bKGOODSIMAGE = bKGOODSIMAGE;
 	}
 	
 	/**
-	 *获取"bkgoodsimage"属性
+	 *获取"图片"属性
 	 */
-	public String getBkgoodsimage()
+	public String getBKGOODSIMAGE()
 	{
-		return this.bkgoodsimage;
+		return this.bKGOODSIMAGE;
 	}	   
 
 	/**
-	 *设置"bkgoodsstatue"属性
-	 *@param bkgoodsstatue 实体的Bkgoodsstatue属性
+	 *设置"状态"属性
+	 *@param bKGOODSSTATUE 实体的BKGOODSSTATUE属性
 	 */
-	public void setBkgoodsstatue(String bkgoodsstatue)
+	public void setBKGOODSSTATUE(String bKGOODSSTATUE)
 	{
-		this.bkgoodsstatue = bkgoodsstatue;
+		this.bKGOODSSTATUE = bKGOODSSTATUE;
 	}
 	
 	/**
-	 *获取"bkgoodsstatue"属性
+	 *获取"状态"属性
 	 */
-	public String getBkgoodsstatue()
+	public String getBKGOODSSTATUE()
 	{
-		return this.bkgoodsstatue;
+		return this.bKGOODSSTATUE;
 	}	   
 
 	/**
-	 *设置"bkcreatetime"属性
-	 *@param bkcreatetime 实体的Bkcreatetime属性
+	 *设置"创建时间"属性
+	 *@param bKCREATETIME 实体的BKCREATETIME属性
 	 */
-	public void setBkcreatetime(String bkcreatetime)
+	public void setBKCREATETIME(String bKCREATETIME)
 	{
-		this.bkcreatetime = bkcreatetime;
+		this.bKCREATETIME = bKCREATETIME;
 	}
 	
 	/**
-	 *获取"bkcreatetime"属性
+	 *获取"创建时间"属性
 	 */
-	public String getBkcreatetime()
+	public String getBKCREATETIME()
 	{
-		return this.bkcreatetime;
+		return this.bKCREATETIME;
 	}	   
 
 	/**
-	 *设置"bkcreator"属性
-	 *@param bkcreator 实体的Bkcreator属性
+	 *设置"创建人"属性
+	 *@param bKCREATOR 实体的BKCREATOR属性
 	 */
-	public void setBkcreator(String bkcreator)
+	public void setBKCREATOR(String bKCREATOR)
 	{
-		this.bkcreator = bkcreator;
+		this.bKCREATOR = bKCREATOR;
 	}
 	
 	/**
-	 *获取"bkcreator"属性
+	 *获取"创建人"属性
 	 */
-	public String getBkcreator()
+	public String getBKCREATOR()
 	{
-		return this.bkcreator;
+		return this.bKCREATOR;
 	}	   
 
 	/**
-	 *设置"bkgoodsseq"属性
-	 *@param bkgoodsseq 实体的Bkgoodsseq属性
+	 *设置"顺序"属性
+	 *@param bKGOODSSEQ 实体的BKGOODSSEQ属性
 	 */
-	public void setBkgoodsseq(Integer bkgoodsseq)
+	public void setBKGOODSSEQ(String bKGOODSSEQ)
 	{
-		this.bkgoodsseq = bkgoodsseq;
+		this.bKGOODSSEQ = bKGOODSSEQ;
 	}
 	
 	/**
-	 *获取"bkgoodsseq"属性
+	 *获取"顺序"属性
 	 */
-	public Integer getBkgoodsseq()
+	public String getBKGOODSSEQ()
 	{
-		return this.bkgoodsseq;
+		return this.bKGOODSSEQ;
 	}	   
 
 	/**
-	 *设置"bkgoodsscope"属性
-	 *@param bkgoodsscope 实体的Bkgoodsscope属性
+	 *设置"客户范围"属性
+	 *@param bKGOODSSCOPE 实体的BKGOODSSCOPE属性
 	 */
-	public void setBkgoodsscope(String bkgoodsscope)
+	public void setBKGOODSSCOPE(String bKGOODSSCOPE)
 	{
-		this.bkgoodsscope = bkgoodsscope;
+		this.bKGOODSSCOPE = bKGOODSSCOPE;
 	}
 	
 	/**
-	 *获取"bkgoodsscope"属性
+	 *获取"客户范围"属性
 	 */
-	public String getBkgoodsscope()
+	public String getBKGOODSSCOPE()
 	{
-		return this.bkgoodsscope;
+		return this.bKGOODSSCOPE;
 	}	   
 
 	/**
-	 *设置"bkgoodsbrand"属性
-	 *@param bkgoodsbrand 实体的Bkgoodsbrand属性
+	 *设置"品牌"属性
+	 *@param bKGOODSBRAND 实体的BKGOODSBRAND属性
 	 */
-	public void setBkgoodsbrand(String bkgoodsbrand)
+	public void setBKGOODSBRAND(String bKGOODSBRAND)
 	{
-		this.bkgoodsbrand = bkgoodsbrand;
+		this.bKGOODSBRAND = bKGOODSBRAND;
 	}
 	
 	/**
-	 *获取"bkgoodsbrand"属性
+	 *获取"品牌"属性
 	 */
-	public String getBkgoodsbrand()
+	public String getBKGOODSBRAND()
 	{
-		return this.bkgoodsbrand;
+		return this.bKGOODSBRAND;
 	}	   
 
 	/**
-	 *设置"bkgoodsallnum"属性
-	 *@param bkgoodsallnum 实体的Bkgoodsallnum属性
+	 *设置"全部限量"属性
+	 *@param bKGOODSALLNUM 实体的BKGOODSALLNUM属性
 	 */
-	public void setBkgoodsallnum(Integer bkgoodsallnum)
+	public void setBKGOODSALLNUM(String bKGOODSALLNUM)
 	{
-		this.bkgoodsallnum = bkgoodsallnum;
+		this.bKGOODSALLNUM = bKGOODSALLNUM;
 	}
 	
 	/**
-	 *获取"bkgoodsallnum"属性
+	 *获取"全部限量"属性
 	 */
-	public Integer getBkgoodsallnum()
+	public String getBKGOODSALLNUM()
 	{
-		return this.bkgoodsallnum;
+		return this.bKGOODSALLNUM;
 	}	   
 
 	/**
-	 *设置"bkgoodssurplus"属性
-	 *@param bkgoodssurplus 实体的Bkgoodssurplus属性
+	 *设置"剩余数量"属性
+	 *@param bKGOODSSURPLUS 实体的BKGOODSSURPLUS属性
 	 */
-	public void setBkgoodssurplus(Integer bkgoodssurplus)
+	public void setBKGOODSSURPLUS(String bKGOODSSURPLUS)
 	{
-		this.bkgoodssurplus = bkgoodssurplus;
+		this.bKGOODSSURPLUS = bKGOODSSURPLUS;
 	}
 	
 	/**
-	 *获取"bkgoodssurplus"属性
+	 *获取"剩余数量"属性
 	 */
-	public Integer getBkgoodssurplus()
+	public String getBKGOODSSURPLUS()
 	{
-		return this.bkgoodssurplus;
+		return this.bKGOODSSURPLUS;
 	}	   
 
 	/**
-	 *设置"bkgoodsweight"属性
-	 *@param bkgoodsweight 实体的Bkgoodsweight属性
+	 *设置"重量"属性
+	 *@param bKGOODSWEIGHT 实体的BKGOODSWEIGHT属性
 	 */
-	public void setBkgoodsweight(String bkgoodsweight)
+	public void setBKGOODSWEIGHT(String bKGOODSWEIGHT)
 	{
-		this.bkgoodsweight = bkgoodsweight;
+		this.bKGOODSWEIGHT = bKGOODSWEIGHT;
 	}
 	
 	/**
-	 *获取"bkgoodsweight"属性
+	 *获取"重量"属性
 	 */
-	public String getBkgoodsweight()
+	public String getBKGOODSWEIGHT()
 	{
-		return this.bkgoodsweight;
+		return this.bKGOODSWEIGHT;
 	}	   
 
 	/**
-	 *设置"bkgoodstype"属性
-	 *@param bkgoodstype 实体的Bkgoodstype属性
+	 *设置"类型(秒杀,买赠等)"属性
+	 *@param bKGOODSTYPE 实体的BKGOODSTYPE属性
 	 */
-	public void setBkgoodstype(String bkgoodstype)
+	public void setBKGOODSTYPE(String bKGOODSTYPE)
 	{
-		this.bkgoodstype = bkgoodstype;
+		this.bKGOODSTYPE = bKGOODSTYPE;
 	}
 	
 	/**
-	 *获取"bkgoodstype"属性
+	 *获取"类型(秒杀,买赠等)"属性
 	 */
-	public String getBkgoodstype()
+	public String getBKGOODSTYPE()
 	{
-		return this.bkgoodstype;
+		return this.bKGOODSTYPE;
 	}	   
 
 	/**
-	 *设置"bkgoodsupdtime"属性
-	 *@param bkgoodsupdtime 实体的Bkgoodsupdtime属性
+	 *设置"修改时间"属性
+	 *@param bKGOODSUPDTIME 实体的BKGOODSUPDTIME属性
 	 */
-	public void setBkgoodsupdtime(String bkgoodsupdtime)
+	public void setBKGOODSUPDTIME(String bKGOODSUPDTIME)
 	{
-		this.bkgoodsupdtime = bkgoodsupdtime;
+		this.bKGOODSUPDTIME = bKGOODSUPDTIME;
 	}
 	
 	/**
-	 *获取"bkgoodsupdtime"属性
+	 *获取"修改时间"属性
 	 */
-	public String getBkgoodsupdtime()
+	public String getBKGOODSUPDTIME()
 	{
-		return this.bkgoodsupdtime;
+		return this.bKGOODSUPDTIME;
 	}	   
 
 	/**
-	 *设置"bkgoodsupdor"属性
-	 *@param bkgoodsupdor 实体的Bkgoodsupdor属性
+	 *设置"修改人"属性
+	 *@param bKGOODSUPDOR 实体的BKGOODSUPDOR属性
 	 */
-	public void setBkgoodsupdor(String bkgoodsupdor)
+	public void setBKGOODSUPDOR(String bKGOODSUPDOR)
 	{
-		this.bkgoodsupdor = bkgoodsupdor;
+		this.bKGOODSUPDOR = bKGOODSUPDOR;
 	}
 	
 	/**
-	 *获取"bkgoodsupdor"属性
+	 *获取"修改人"属性
 	 */
-	public String getBkgoodsupdor()
+	public String getBKGOODSUPDOR()
 	{
-		return this.bkgoodsupdor;
+		return this.bKGOODSUPDOR;
 	}	   
 
 	/**
-	 *设置"companycode"属性
+	 *设置"编码"属性
 	 *@param companycode 实体的Companycode属性
 	 */
 	public void setCompanycode(String companycode)
@@ -578,7 +578,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"companycode"属性
+	 *获取"编码"属性
 	 */
 	public String getCompanycode()
 	{
@@ -586,7 +586,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"username"属性
+	 *设置"姓名"属性
 	 *@param username 实体的Username属性
 	 */
 	public void setUsername(String username)
@@ -595,7 +595,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"username"属性
+	 *获取"姓名"属性
 	 */
 	public String getUsername()
 	{
@@ -603,7 +603,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"companyphone"属性
+	 *设置"手机"属性
 	 *@param companyphone 实体的Companyphone属性
 	 */
 	public void setCompanyphone(String companyphone)
@@ -612,7 +612,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"companyphone"属性
+	 *获取"手机"属性
 	 */
 	public String getCompanyphone()
 	{
@@ -620,7 +620,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"companyshop"属性
+	 *设置"店铺"属性
 	 *@param companyshop 实体的Companyshop属性
 	 */
 	public void setCompanyshop(String companyshop)
@@ -629,7 +629,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"companyshop"属性
+	 *获取"店铺"属性
 	 */
 	public String getCompanyshop()
 	{
@@ -637,7 +637,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"companyaddress"属性
+	 *设置"街道地址"属性
 	 *@param companyaddress 实体的Companyaddress属性
 	 */
 	public void setCompanyaddress(String companyaddress)
@@ -646,7 +646,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"companyaddress"属性
+	 *获取"街道地址"属性
 	 */
 	public String getCompanyaddress()
 	{
@@ -654,7 +654,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"companycity"属性
+	 *设置"城市和县ID"属性
 	 *@param companycity 实体的Companycity属性
 	 */
 	public void setCompanycity(String companycity)
@@ -663,7 +663,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"companycity"属性
+	 *获取"城市和县ID"属性
 	 */
 	public String getCompanycity()
 	{
@@ -671,7 +671,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"companydetail"属性
+	 *设置"描述"属性
 	 *@param companydetail 实体的Companydetail属性
 	 */
 	public void setCompanydetail(String companydetail)
@@ -680,7 +680,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"companydetail"属性
+	 *获取"描述"属性
 	 */
 	public String getCompanydetail()
 	{
@@ -688,7 +688,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"loginname"属性
+	 *设置"账号"属性
 	 *@param loginname 实体的Loginname属性
 	 */
 	public void setLoginname(String loginname)
@@ -697,7 +697,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"loginname"属性
+	 *获取"账号"属性
 	 */
 	public String getLoginname()
 	{
@@ -705,7 +705,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"companystatue"属性
+	 *设置"状态"属性
 	 *@param companystatue 实体的Companystatue属性
 	 */
 	public void setCompanystatue(String companystatue)
@@ -714,7 +714,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"companystatue"属性
+	 *获取"状态"属性
 	 */
 	public String getCompanystatue()
 	{
@@ -722,7 +722,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"citycode"属性
+	 *设置"编码"属性
 	 *@param citycode 实体的Citycode属性
 	 */
 	public void setCitycode(String citycode)
@@ -731,7 +731,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"citycode"属性
+	 *获取"编码"属性
 	 */
 	public String getCitycode()
 	{
@@ -739,7 +739,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"cityname"属性
+	 *设置"名称"属性
 	 *@param cityname 实体的Cityname属性
 	 */
 	public void setCityname(String cityname)
@@ -748,7 +748,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"cityname"属性
+	 *获取"名称"属性
 	 */
 	public String getCityname()
 	{
@@ -756,7 +756,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"cityparent"属性
+	 *设置"父类"属性
 	 *@param cityparent 实体的Cityparent属性
 	 */
 	public void setCityparent(String cityparent)
@@ -765,7 +765,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"cityparent"属性
+	 *获取"父类"属性
 	 */
 	public String getCityparent()
 	{
@@ -773,7 +773,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"citydetail"属性
+	 *设置"描述"属性
 	 *@param citydetail 实体的Citydetail属性
 	 */
 	public void setCitydetail(String citydetail)
@@ -782,7 +782,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"citydetail"属性
+	 *获取"描述"属性
 	 */
 	public String getCitydetail()
 	{
@@ -790,7 +790,7 @@ public class Bkgoodsview
 	}	   
 
 	/**
-	 *设置"citystatue"属性
+	 *设置"状态"属性
 	 *@param citystatue 实体的Citystatue属性
 	 */
 	public void setCitystatue(String citystatue)
@@ -799,7 +799,7 @@ public class Bkgoodsview
 	}
 	
 	/**
-	 *获取"citystatue"属性
+	 *获取"状态"属性
 	 */
 	public String getCitystatue()
 	{
@@ -810,30 +810,30 @@ public class Bkgoodsview
 		// TODO Auto-generated constructor stub
 	}
 	public Bkgoodsview(
-		String bkgoodsid
-	 	,String bkgoodscompany
-	 	,String bkgoodscode
-	 	,String bkgoodsname
-	 	,String bkgoodsdetail
-	 	,String bkgoodsunits
-	 	,String bkgoodsunit
-	 	,Float bkgoodsprice
-	 	,Float bkgoodsorgprice
-	 	,Integer bkgoodsnum
-	 	,String bkgoodsclass
-	 	,String bkgoodsimage
-	 	,String bkgoodsstatue
-	 	,String bkcreatetime
-	 	,String bkcreator
-	 	,Integer bkgoodsseq
-	 	,String bkgoodsscope
-	 	,String bkgoodsbrand
-	 	,Integer bkgoodsallnum
-	 	,Integer bkgoodssurplus
-	 	,String bkgoodsweight
-	 	,String bkgoodstype
-	 	,String bkgoodsupdtime
-	 	,String bkgoodsupdor
+		String bKGOODSID
+	 	,String bKGOODSCOMPANY
+	 	,String bKGOODSCODE
+	 	,String bKGOODSNAME
+	 	,String bKGOODSDETAIL
+	 	,String bKGOODSUNITS
+	 	,String bKGOODSUNIT
+	 	,Float bKGOODSPRICE
+	 	,Float bKGOODSORGPRICE
+	 	,String bKGOODSNUM
+	 	,String bKGOODSCLASS
+	 	,String bKGOODSIMAGE
+	 	,String bKGOODSSTATUE
+	 	,String bKCREATETIME
+	 	,String bKCREATOR
+	 	,String bKGOODSSEQ
+	 	,String bKGOODSSCOPE
+	 	,String bKGOODSBRAND
+	 	,String bKGOODSALLNUM
+	 	,String bKGOODSSURPLUS
+	 	,String bKGOODSWEIGHT
+	 	,String bKGOODSTYPE
+	 	,String bKGOODSUPDTIME
+	 	,String bKGOODSUPDOR
 	 	,String companycode
 	 	,String username
 	 	,String companyphone
@@ -850,30 +850,30 @@ public class Bkgoodsview
 	 	,String citystatue
 		 ){
 		super();
-		this.bkgoodsid = bkgoodsid;
-	 	this.bkgoodscompany = bkgoodscompany;
-	 	this.bkgoodscode = bkgoodscode;
-	 	this.bkgoodsname = bkgoodsname;
-	 	this.bkgoodsdetail = bkgoodsdetail;
-	 	this.bkgoodsunits = bkgoodsunits;
-	 	this.bkgoodsunit = bkgoodsunit;
-	 	this.bkgoodsprice = bkgoodsprice;
-	 	this.bkgoodsorgprice = bkgoodsorgprice;
-	 	this.bkgoodsnum = bkgoodsnum;
-	 	this.bkgoodsclass = bkgoodsclass;
-	 	this.bkgoodsimage = bkgoodsimage;
-	 	this.bkgoodsstatue = bkgoodsstatue;
-	 	this.bkcreatetime = bkcreatetime;
-	 	this.bkcreator = bkcreator;
-	 	this.bkgoodsseq = bkgoodsseq;
-	 	this.bkgoodsscope = bkgoodsscope;
-	 	this.bkgoodsbrand = bkgoodsbrand;
-	 	this.bkgoodsallnum = bkgoodsallnum;
-	 	this.bkgoodssurplus = bkgoodssurplus;
-	 	this.bkgoodsweight = bkgoodsweight;
-	 	this.bkgoodstype = bkgoodstype;
-	 	this.bkgoodsupdtime = bkgoodsupdtime;
-	 	this.bkgoodsupdor = bkgoodsupdor;
+		this.bKGOODSID = bKGOODSID;
+	 	this.bKGOODSCOMPANY = bKGOODSCOMPANY;
+	 	this.bKGOODSCODE = bKGOODSCODE;
+	 	this.bKGOODSNAME = bKGOODSNAME;
+	 	this.bKGOODSDETAIL = bKGOODSDETAIL;
+	 	this.bKGOODSUNITS = bKGOODSUNITS;
+	 	this.bKGOODSUNIT = bKGOODSUNIT;
+	 	this.bKGOODSPRICE = bKGOODSPRICE;
+	 	this.bKGOODSORGPRICE = bKGOODSORGPRICE;
+	 	this.bKGOODSNUM = bKGOODSNUM;
+	 	this.bKGOODSCLASS = bKGOODSCLASS;
+	 	this.bKGOODSIMAGE = bKGOODSIMAGE;
+	 	this.bKGOODSSTATUE = bKGOODSSTATUE;
+	 	this.bKCREATETIME = bKCREATETIME;
+	 	this.bKCREATOR = bKCREATOR;
+	 	this.bKGOODSSEQ = bKGOODSSEQ;
+	 	this.bKGOODSSCOPE = bKGOODSSCOPE;
+	 	this.bKGOODSBRAND = bKGOODSBRAND;
+	 	this.bKGOODSALLNUM = bKGOODSALLNUM;
+	 	this.bKGOODSSURPLUS = bKGOODSSURPLUS;
+	 	this.bKGOODSWEIGHT = bKGOODSWEIGHT;
+	 	this.bKGOODSTYPE = bKGOODSTYPE;
+	 	this.bKGOODSUPDTIME = bKGOODSUPDTIME;
+	 	this.bKGOODSUPDOR = bKGOODSUPDOR;
 	 	this.companycode = companycode;
 	 	this.username = username;
 	 	this.companyphone = companyphone;

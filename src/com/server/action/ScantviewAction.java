@@ -32,8 +32,8 @@ public class ScantviewAction extends BaseActionDao {
 		json = json.replace("\"\"", "null");
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Scantview temp:cuss){
-			if(CommonUtil.isNull(temp.getScantid()))
-				temp.setScantid(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getSCANTID()))
+				temp.setSCANTID(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);
@@ -64,8 +64,8 @@ public class ScantviewAction extends BaseActionDao {
 		String json = FileUtil.impExcel(fileinfo.getPath(),ScantviewPoco.FIELDNAME); 
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Scantview temp:cuss){
-			if(CommonUtil.isNull(temp.getScantid()))
-				temp.setScantid(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getSCANTID()))
+				temp.setSCANTID(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);

@@ -8,72 +8,72 @@ import java.sql.Date;
 public class Largecuspriceview
 {
    /**
-    * largecuspriceid,主键
+    * ID,主键
     */
    private String largecuspriceid; 
    /**
-    * largecuspricecompany
+    * 供应商
     */
    private String largecuspricecompany;   
    /**
-    * largecuspriceprice
+    * 单品价
     */
    private String largecuspriceprice;   
    /**
-    * largecuspriceunit
+    * 单品价单位
     */
    private String largecuspriceunit;   
    /**
-    * largecuspricedetail
+    * 描述
     */
    private String largecuspricedetail;   
    /**
-    * largecuspricecreatetime
+    * 创建时间
     */
    private String largecuspricecreatetime;   
    /**
-    * largecuspricecreator
+    * 创建人
     */
    private String largecuspricecreator;   
    /**
-    * largecusupdtime
+    * 
     */
    private String largecusupdtime;   
    /**
-    * largecusupdor
+    * 
     */
    private String largecusupdor;   
    /**
-    * largecuspricecustomer
+    * 客户
     */
    private String largecuspricecustomer;   
    /**
-    * goodsid
+    * 商品ID
     */
    private String goodsid;   
    /**
-    * goodscompany
+    * 经销商ID
     */
    private String goodscompany;   
    /**
-    * goodscode
+    * 编码
     */
    private String goodscode;   
    /**
-    * goodsname
+    * 名称
     */
    private String goodsname;   
    /**
-    * goodsunits
+    * 规格
     */
    private String goodsunits;   
    /**
-    * goodsclassname
+    * 名称
     */
    private String goodsclassname;   
     //属性方法	    
      /**
-	 *设置主键"largecuspriceid"属性
+	 *设置主键"ID"属性
 	 *@param largecuspriceid 实体的Largecuspriceid属性
 	 */
 	public void setLargecuspriceid(String largecuspriceid)
@@ -82,7 +82,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取主键"largecuspriceid"属性
+	 *获取主键"ID"属性
 	 */
 	public String getLargecuspriceid()
 	{
@@ -90,7 +90,7 @@ public class Largecuspriceview
 	}
 
 	/**
-	 *设置"largecuspricecompany"属性
+	 *设置"供应商"属性
 	 *@param largecuspricecompany 实体的Largecuspricecompany属性
 	 */
 	public void setLargecuspricecompany(String largecuspricecompany)
@@ -99,7 +99,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"largecuspricecompany"属性
+	 *获取"供应商"属性
 	 */
 	public String getLargecuspricecompany()
 	{
@@ -107,7 +107,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"largecuspriceprice"属性
+	 *设置"单品价"属性
 	 *@param largecuspriceprice 实体的Largecuspriceprice属性
 	 */
 	public void setLargecuspriceprice(String largecuspriceprice)
@@ -116,7 +116,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"largecuspriceprice"属性
+	 *获取"单品价"属性
 	 */
 	public String getLargecuspriceprice()
 	{
@@ -124,7 +124,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"largecuspriceunit"属性
+	 *设置"单品价单位"属性
 	 *@param largecuspriceunit 实体的Largecuspriceunit属性
 	 */
 	public void setLargecuspriceunit(String largecuspriceunit)
@@ -133,7 +133,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"largecuspriceunit"属性
+	 *获取"单品价单位"属性
 	 */
 	public String getLargecuspriceunit()
 	{
@@ -141,7 +141,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"largecuspricedetail"属性
+	 *设置"描述"属性
 	 *@param largecuspricedetail 实体的Largecuspricedetail属性
 	 */
 	public void setLargecuspricedetail(String largecuspricedetail)
@@ -150,7 +150,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"largecuspricedetail"属性
+	 *获取"描述"属性
 	 */
 	public String getLargecuspricedetail()
 	{
@@ -158,7 +158,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"largecuspricecreatetime"属性
+	 *设置"创建时间"属性
 	 *@param largecuspricecreatetime 实体的Largecuspricecreatetime属性
 	 */
 	public void setLargecuspricecreatetime(String largecuspricecreatetime)
@@ -167,7 +167,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"largecuspricecreatetime"属性
+	 *获取"创建时间"属性
 	 */
 	public String getLargecuspricecreatetime()
 	{
@@ -175,7 +175,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"largecuspricecreator"属性
+	 *设置"创建人"属性
 	 *@param largecuspricecreator 实体的Largecuspricecreator属性
 	 */
 	public void setLargecuspricecreator(String largecuspricecreator)
@@ -184,7 +184,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"largecuspricecreator"属性
+	 *获取"创建人"属性
 	 */
 	public String getLargecuspricecreator()
 	{
@@ -192,7 +192,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"largecusupdtime"属性
+	 *设置""属性
 	 *@param largecusupdtime 实体的Largecusupdtime属性
 	 */
 	public void setLargecusupdtime(String largecusupdtime)
@@ -201,7 +201,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"largecusupdtime"属性
+	 *获取""属性
 	 */
 	public String getLargecusupdtime()
 	{
@@ -209,7 +209,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"largecusupdor"属性
+	 *设置""属性
 	 *@param largecusupdor 实体的Largecusupdor属性
 	 */
 	public void setLargecusupdor(String largecusupdor)
@@ -218,7 +218,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"largecusupdor"属性
+	 *获取""属性
 	 */
 	public String getLargecusupdor()
 	{
@@ -226,7 +226,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"largecuspricecustomer"属性
+	 *设置"客户"属性
 	 *@param largecuspricecustomer 实体的Largecuspricecustomer属性
 	 */
 	public void setLargecuspricecustomer(String largecuspricecustomer)
@@ -235,7 +235,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"largecuspricecustomer"属性
+	 *获取"客户"属性
 	 */
 	public String getLargecuspricecustomer()
 	{
@@ -243,7 +243,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"goodsid"属性
+	 *设置"商品ID"属性
 	 *@param goodsid 实体的Goodsid属性
 	 */
 	public void setGoodsid(String goodsid)
@@ -252,7 +252,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"goodsid"属性
+	 *获取"商品ID"属性
 	 */
 	public String getGoodsid()
 	{
@@ -260,7 +260,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"goodscompany"属性
+	 *设置"经销商ID"属性
 	 *@param goodscompany 实体的Goodscompany属性
 	 */
 	public void setGoodscompany(String goodscompany)
@@ -269,7 +269,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"goodscompany"属性
+	 *获取"经销商ID"属性
 	 */
 	public String getGoodscompany()
 	{
@@ -277,7 +277,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"goodscode"属性
+	 *设置"编码"属性
 	 *@param goodscode 实体的Goodscode属性
 	 */
 	public void setGoodscode(String goodscode)
@@ -286,7 +286,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"goodscode"属性
+	 *获取"编码"属性
 	 */
 	public String getGoodscode()
 	{
@@ -294,7 +294,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"goodsname"属性
+	 *设置"名称"属性
 	 *@param goodsname 实体的Goodsname属性
 	 */
 	public void setGoodsname(String goodsname)
@@ -303,7 +303,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"goodsname"属性
+	 *获取"名称"属性
 	 */
 	public String getGoodsname()
 	{
@@ -311,7 +311,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"goodsunits"属性
+	 *设置"规格"属性
 	 *@param goodsunits 实体的Goodsunits属性
 	 */
 	public void setGoodsunits(String goodsunits)
@@ -320,7 +320,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"goodsunits"属性
+	 *获取"规格"属性
 	 */
 	public String getGoodsunits()
 	{
@@ -328,7 +328,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置"goodsclassname"属性
+	 *设置"名称"属性
 	 *@param goodsclassname 实体的Goodsclassname属性
 	 */
 	public void setGoodsclassname(String goodsclassname)
@@ -337,7 +337,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取"goodsclassname"属性
+	 *获取"名称"属性
 	 */
 	public String getGoodsclassname()
 	{

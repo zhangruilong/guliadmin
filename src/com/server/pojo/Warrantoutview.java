@@ -44,11 +44,11 @@ public class Warrantoutview
     */
    private String warrantoutinswho;   
    /**
-    * 更新时间
+    * 修改时间
     */
    private String warrantoutupdwhen;   
    /**
-    * 更新人
+    * 修改人
     */
    private String warrantoutupdwho;   
    /**
@@ -116,7 +116,7 @@ public class Warrantoutview
     */
    private String gOODSORDER;   
    /**
-    * 
+    * 重量
     */
    private String gOODSWEIGHT;   
    /**
@@ -278,7 +278,7 @@ public class Warrantoutview
 	}	   
 
 	/**
-	 *设置"更新时间"属性
+	 *设置"修改时间"属性
 	 *@param warrantoutupdwhen 实体的Warrantoutupdwhen属性
 	 */
 	public void setWarrantoutupdwhen(String warrantoutupdwhen)
@@ -287,7 +287,7 @@ public class Warrantoutview
 	}
 	
 	/**
-	 *获取"更新时间"属性
+	 *获取"修改时间"属性
 	 */
 	public String getWarrantoutupdwhen()
 	{
@@ -295,7 +295,7 @@ public class Warrantoutview
 	}	   
 
 	/**
-	 *设置"更新人"属性
+	 *设置"修改人"属性
 	 *@param warrantoutupdwho 实体的Warrantoutupdwho属性
 	 */
 	public void setWarrantoutupdwho(String warrantoutupdwho)
@@ -304,7 +304,7 @@ public class Warrantoutview
 	}
 	
 	/**
-	 *获取"更新人"属性
+	 *获取"修改人"属性
 	 */
 	public String getWarrantoutupdwho()
 	{
@@ -584,7 +584,7 @@ public class Warrantoutview
 	}	   
 
 	/**
-	 *设置""属性
+	 *设置"重量"属性
 	 *@param gOODSWEIGHT 实体的GOODSWEIGHT属性
 	 */
 	public void setGOODSWEIGHT(String gOODSWEIGHT)
@@ -593,7 +593,7 @@ public class Warrantoutview
 	}
 	
 	/**
-	 *获取""属性
+	 *获取"重量"属性
 	 */
 	public String getGOODSWEIGHT()
 	{

@@ -32,8 +32,8 @@ public class CompanyviewAction extends BaseActionDao {
 		json = json.replace("\"\"", "null");
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Companyview temp:cuss){
-			if(CommonUtil.isNull(temp.getCompanyid()))
-				temp.setCompanyid(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getCOMPANYID()))
+				temp.setCOMPANYID(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);
@@ -64,8 +64,8 @@ public class CompanyviewAction extends BaseActionDao {
 		String json = FileUtil.impExcel(fileinfo.getPath(),CompanyviewPoco.FIELDNAME); 
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Companyview temp:cuss){
-			if(CommonUtil.isNull(temp.getCompanyid()))
-				temp.setCompanyid(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getCOMPANYID()))
+				temp.setCOMPANYID(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);
