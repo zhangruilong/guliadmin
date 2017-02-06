@@ -86,7 +86,7 @@ public class Collectview
    /**
     * 顺序
     */
-   private String gOODSORDER;   
+   private Integer gOODSORDER;   
    /**
     * 大小类ID
     */
@@ -154,7 +154,7 @@ public class Collectview
    /**
     * 等级
     */
-   private String priceslevel;   
+   private Integer priceslevel;   
    /**
     * 单品价
     */
@@ -499,7 +499,7 @@ public class Collectview
 	 *设置"顺序"属性
 	 *@param gOODSORDER 实体的GOODSORDER属性
 	 */
-	public void setGOODSORDER(String gOODSORDER)
+	public void setGOODSORDER(Integer gOODSORDER)
 	{
 		this.gOODSORDER = gOODSORDER;
 	}
@@ -507,7 +507,7 @@ public class Collectview
 	/**
 	 *获取"顺序"属性
 	 */
-	public String getGOODSORDER()
+	public Integer getGOODSORDER()
 	{
 		return this.gOODSORDER;
 	}	   
@@ -788,7 +788,7 @@ public class Collectview
 	 *设置"等级"属性
 	 *@param priceslevel 实体的Priceslevel属性
 	 */
-	public void setPriceslevel(String priceslevel)
+	public void setPriceslevel(Integer priceslevel)
 	{
 		this.priceslevel = priceslevel;
 	}
@@ -796,7 +796,7 @@ public class Collectview
 	/**
 	 *获取"等级"属性
 	 */
-	public String getPriceslevel()
+	public Integer getPriceslevel()
 	{
 		return this.priceslevel;
 	}	   
@@ -892,7 +892,7 @@ public class Collectview
 	 	,String uPDOR
 	 	,String gOODSBRAND
 	 	,String gOODSTYPE
-	 	,String gOODSORDER
+	 	,Integer gOODSORDER
 	 	,String gOODSCLASSID
 	 	,String gOODSCLASSCODE
 	 	,String gOODSCLASSNAME
@@ -909,7 +909,7 @@ public class Collectview
 	 	,String companystatue
 	 	,String pricesid
 	 	,String pricesclass
-	 	,String priceslevel
+	 	,Integer priceslevel
 	 	,Float pricesprice
 	 	,String pricesunit
 	 	,Float pricesprice2

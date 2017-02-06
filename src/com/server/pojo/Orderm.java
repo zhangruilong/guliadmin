@@ -26,7 +26,7 @@ public class Orderm
    /**
     * 种类数
     */
-   private String ordermnum;   
+   private Integer ordermnum;   
    /**
     * 下单金额
     */
@@ -164,7 +164,7 @@ public class Orderm
 	 *设置"种类数"属性
 	 *@param ordermnum 实体的Ordermnum属性
 	 */
-	public void setOrdermnum(String ordermnum)
+	public void setOrdermnum(Integer ordermnum)
 	{
 		this.ordermnum = ordermnum;
 	}
@@ -172,7 +172,7 @@ public class Orderm
 	/**
 	 *获取"种类数"属性
 	 */
-	public String getOrdermnum()
+	public Integer getOrdermnum()
 	{
 		return this.ordermnum;
 	}	   
@@ -457,7 +457,7 @@ public class Orderm
 	 	,String ordermcustomer
 	 	,String ordermcompany
 	 	,String ordermcode
-	 	,String ordermnum
+	 	,Integer ordermnum
 	 	,Float ordermmoney
 	 	,Float ordermrightmoney
 	 	,String ordermway

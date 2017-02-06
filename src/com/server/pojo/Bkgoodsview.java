@@ -46,7 +46,7 @@ public class Bkgoodsview
    /**
     * 限量
     */
-   private String bkgoodsnum;   
+   private Integer bkgoodsnum;   
    /**
     * 小类名称
     */
@@ -70,7 +70,7 @@ public class Bkgoodsview
    /**
     * 顺序
     */
-   private String bkgoodsseq;   
+   private Integer bkgoodsseq;   
    /**
     * 客户范围
     */
@@ -82,11 +82,11 @@ public class Bkgoodsview
    /**
     * 全部限量
     */
-   private String bkgoodsallnum;   
+   private Integer bkgoodsallnum;   
    /**
     * 剩余数量
     */
-   private String bkgoodssurplus;   
+   private Integer bkgoodssurplus;   
    /**
     * 重量
     */
@@ -317,7 +317,7 @@ public class Bkgoodsview
 	 *设置"限量"属性
 	 *@param bkgoodsnum 实体的Bkgoodsnum属性
 	 */
-	public void setBkgoodsnum(String bkgoodsnum)
+	public void setBkgoodsnum(Integer bkgoodsnum)
 	{
 		this.bkgoodsnum = bkgoodsnum;
 	}
@@ -325,7 +325,7 @@ public class Bkgoodsview
 	/**
 	 *获取"限量"属性
 	 */
-	public String getBkgoodsnum()
+	public Integer getBkgoodsnum()
 	{
 		return this.bkgoodsnum;
 	}	   
@@ -419,7 +419,7 @@ public class Bkgoodsview
 	 *设置"顺序"属性
 	 *@param bkgoodsseq 实体的Bkgoodsseq属性
 	 */
-	public void setBkgoodsseq(String bkgoodsseq)
+	public void setBkgoodsseq(Integer bkgoodsseq)
 	{
 		this.bkgoodsseq = bkgoodsseq;
 	}
@@ -427,7 +427,7 @@ public class Bkgoodsview
 	/**
 	 *获取"顺序"属性
 	 */
-	public String getBkgoodsseq()
+	public Integer getBkgoodsseq()
 	{
 		return this.bkgoodsseq;
 	}	   
@@ -470,7 +470,7 @@ public class Bkgoodsview
 	 *设置"全部限量"属性
 	 *@param bkgoodsallnum 实体的Bkgoodsallnum属性
 	 */
-	public void setBkgoodsallnum(String bkgoodsallnum)
+	public void setBkgoodsallnum(Integer bkgoodsallnum)
 	{
 		this.bkgoodsallnum = bkgoodsallnum;
 	}
@@ -478,7 +478,7 @@ public class Bkgoodsview
 	/**
 	 *获取"全部限量"属性
 	 */
-	public String getBkgoodsallnum()
+	public Integer getBkgoodsallnum()
 	{
 		return this.bkgoodsallnum;
 	}	   
@@ -487,7 +487,7 @@ public class Bkgoodsview
 	 *设置"剩余数量"属性
 	 *@param bkgoodssurplus 实体的Bkgoodssurplus属性
 	 */
-	public void setBkgoodssurplus(String bkgoodssurplus)
+	public void setBkgoodssurplus(Integer bkgoodssurplus)
 	{
 		this.bkgoodssurplus = bkgoodssurplus;
 	}
@@ -495,7 +495,7 @@ public class Bkgoodsview
 	/**
 	 *获取"剩余数量"属性
 	 */
-	public String getBkgoodssurplus()
+	public Integer getBkgoodssurplus()
 	{
 		return this.bkgoodssurplus;
 	}	   
@@ -819,17 +819,17 @@ public class Bkgoodsview
 	 	,String bkgoodsunit
 	 	,Float bkgoodsprice
 	 	,Float bkgoodsorgprice
-	 	,String bkgoodsnum
+	 	,Integer bkgoodsnum
 	 	,String bkgoodsclass
 	 	,String bkgoodsimage
 	 	,String bkgoodsstatue
 	 	,String bkcreatetime
 	 	,String bkcreator
-	 	,String bkgoodsseq
+	 	,Integer bkgoodsseq
 	 	,String bkgoodsscope
 	 	,String bkgoodsbrand
-	 	,String bkgoodsallnum
-	 	,String bkgoodssurplus
+	 	,Integer bkgoodsallnum
+	 	,Integer bkgoodssurplus
 	 	,String bkgoodsweight
 	 	,String bkgoodstype
 	 	,String bkgoodsupdtime

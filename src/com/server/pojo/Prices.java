@@ -22,7 +22,7 @@ public class Prices
    /**
     * 等级
     */
-   private String priceslevel;   
+   private Integer priceslevel;   
    /**
     * 单品价
     */
@@ -111,7 +111,7 @@ public class Prices
 	 *设置"等级"属性
 	 *@param priceslevel 实体的Priceslevel属性
 	 */
-	public void setPriceslevel(String priceslevel)
+	public void setPriceslevel(Integer priceslevel)
 	{
 		this.priceslevel = priceslevel;
 	}
@@ -119,7 +119,7 @@ public class Prices
 	/**
 	 *获取"等级"属性
 	 */
-	public String getPriceslevel()
+	public Integer getPriceslevel()
 	{
 		return this.priceslevel;
 	}	   
@@ -267,7 +267,7 @@ public class Prices
 		String pricesid
 	 	,String pricesgoods
 	 	,String pricesclass
-	 	,String priceslevel
+	 	,Integer priceslevel
 	 	,Float pricesprice
 	 	,String pricesunit
 	 	,Float pricesprice2

@@ -86,7 +86,7 @@ public class Goodsnumview
    /**
     * 顺序
     */
-   private String goodsorder;   
+   private Integer goodsorder;   
    /**
     * 大小类ID
     */
@@ -423,7 +423,7 @@ public class Goodsnumview
 	 *设置"顺序"属性
 	 *@param goodsorder 实体的Goodsorder属性
 	 */
-	public void setGoodsorder(String goodsorder)
+	public void setGoodsorder(Integer goodsorder)
 	{
 		this.goodsorder = goodsorder;
 	}
@@ -431,7 +431,7 @@ public class Goodsnumview
 	/**
 	 *获取"顺序"属性
 	 */
-	public String getGoodsorder()
+	public Integer getGoodsorder()
 	{
 		return this.goodsorder;
 	}	   
@@ -493,7 +493,7 @@ public class Goodsnumview
 	 	,String updor
 	 	,String goodsbrand
 	 	,String goodstype
-	 	,String goodsorder
+	 	,Integer goodsorder
 	 	,String goodsclassid
 	 	,String goodsclassname
 		 ){

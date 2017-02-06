@@ -114,7 +114,7 @@ public class Warrantcheckview
    /**
     * 顺序
     */
-   private String goodsorder;   
+   private Integer goodsorder;   
    /**
     * 重量
     */
@@ -570,7 +570,7 @@ public class Warrantcheckview
 	 *设置"顺序"属性
 	 *@param goodsorder 实体的Goodsorder属性
 	 */
-	public void setGoodsorder(String goodsorder)
+	public void setGoodsorder(Integer goodsorder)
 	{
 		this.goodsorder = goodsorder;
 	}
@@ -578,7 +578,7 @@ public class Warrantcheckview
 	/**
 	 *获取"顺序"属性
 	 */
-	public String getGoodsorder()
+	public Integer getGoodsorder()
 	{
 		return this.goodsorder;
 	}	   
@@ -647,7 +647,7 @@ public class Warrantcheckview
 	 	,String updor
 	 	,String goodsbrand
 	 	,String goodstype
-	 	,String goodsorder
+	 	,Integer goodsorder
 	 	,String goodsweight
 	 	,String goodsclassname
 		 ){

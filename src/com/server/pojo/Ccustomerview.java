@@ -78,7 +78,7 @@ public class Ccustomerview
    /**
     * 等级
     */
-   private String customerlevel;   
+   private Integer customerlevel;   
    /**
     * openid
     */
@@ -393,7 +393,7 @@ public class Ccustomerview
 	 *设置"等级"属性
 	 *@param customerlevel 实体的Customerlevel属性
 	 */
-	public void setCustomerlevel(String customerlevel)
+	public void setCustomerlevel(Integer customerlevel)
 	{
 		this.customerlevel = customerlevel;
 	}
@@ -401,7 +401,7 @@ public class Ccustomerview
 	/**
 	 *获取"等级"属性
 	 */
-	public String getCustomerlevel()
+	public Integer getCustomerlevel()
 	{
 		return this.customerlevel;
 	}	   
@@ -512,7 +512,7 @@ public class Ccustomerview
 	 	,String customerxian
 	 	,String customeraddress
 	 	,String customertype
-	 	,String customerlevel
+	 	,Integer customerlevel
 	 	,String openid
 	 	,String customerdetail
 	 	,String customerstatue

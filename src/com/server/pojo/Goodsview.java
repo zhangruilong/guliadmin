@@ -70,7 +70,7 @@ public class Goodsview
    /**
     * 顺序
     */
-   private String goodsorder;   
+   private Integer goodsorder;   
    /**
     * 大小类ID
     */
@@ -138,7 +138,7 @@ public class Goodsview
    /**
     * 等级
     */
-   private String priceslevel;   
+   private Integer priceslevel;   
    /**
     * 单品价
     */
@@ -415,7 +415,7 @@ public class Goodsview
 	 *设置"顺序"属性
 	 *@param goodsorder 实体的Goodsorder属性
 	 */
-	public void setGoodsorder(String goodsorder)
+	public void setGoodsorder(Integer goodsorder)
 	{
 		this.goodsorder = goodsorder;
 	}
@@ -423,7 +423,7 @@ public class Goodsview
 	/**
 	 *获取"顺序"属性
 	 */
-	public String getGoodsorder()
+	public Integer getGoodsorder()
 	{
 		return this.goodsorder;
 	}	   
@@ -704,7 +704,7 @@ public class Goodsview
 	 *设置"等级"属性
 	 *@param priceslevel 实体的Priceslevel属性
 	 */
-	public void setPriceslevel(String priceslevel)
+	public void setPriceslevel(Integer priceslevel)
 	{
 		this.priceslevel = priceslevel;
 	}
@@ -712,7 +712,7 @@ public class Goodsview
 	/**
 	 *获取"等级"属性
 	 */
-	public String getPriceslevel()
+	public Integer getPriceslevel()
 	{
 		return this.priceslevel;
 	}	   
@@ -804,7 +804,7 @@ public class Goodsview
 	 	,String updor
 	 	,String goodsbrand
 	 	,String goodstype
-	 	,String goodsorder
+	 	,Integer goodsorder
 	 	,String goodsclassid
 	 	,String goodsclasscode
 	 	,String goodsclassname
@@ -821,7 +821,7 @@ public class Goodsview
 	 	,String companystatue
 	 	,String pricesid
 	 	,String pricesclass
-	 	,String priceslevel
+	 	,Integer priceslevel
 	 	,Float pricesprice
 	 	,String pricesunit
 	 	,Float pricesprice2
