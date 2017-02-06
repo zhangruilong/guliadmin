@@ -32,8 +32,8 @@ public class BkgoodsviewAction extends BaseActionDao {
 		json = json.replace("\"\"", "null");
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Bkgoodsview temp:cuss){
-			if(CommonUtil.isNull(temp.getBKGOODSID()))
-				temp.setBKGOODSID(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getBkgoodsid()))
+				temp.setBkgoodsid(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);
@@ -64,8 +64,8 @@ public class BkgoodsviewAction extends BaseActionDao {
 		String json = FileUtil.impExcel(fileinfo.getPath(),BkgoodsviewPoco.FIELDNAME); 
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Bkgoodsview temp:cuss){
-			if(CommonUtil.isNull(temp.getBKGOODSID()))
-				temp.setBKGOODSID(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getBkgoodsid()))
+				temp.setBkgoodsid(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);

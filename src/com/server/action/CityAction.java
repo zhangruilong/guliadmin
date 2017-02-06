@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 城市和县及街道 逻辑层
+ * city 逻辑层
  *@author ZhangRuiLong
  */
 public class CityAction extends BaseActionDao {

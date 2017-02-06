@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 订单详细 实体类的常量
+ * orderd 实体类的常量
  *@author ZhangRuiLong
  */
 public class OrderdPoco
@@ -9,7 +9,7 @@ public class OrderdPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "订单详细";
+   public static String NAME = "orderd";
    /**
     * 实体表名
     */
@@ -35,10 +35,10 @@ public class OrderdPoco
 	 	"数量",
 	 	"下单金额",
 	 	"实际金额",
-	 	"重量",
-	 	"商品id",
-	 	"订单备注",
-	 	"订单商品品牌",
+	 	"",
+	 	"",
+	 	"",
+	 	"",
 	};
 	/**
 	 * 实体英文字段

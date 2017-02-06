@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 客户反馈意见 逻辑层
+ * feedback 逻辑层
  *@author ZhangRuiLong
  */
 public class FeedbackAction extends BaseActionDao {

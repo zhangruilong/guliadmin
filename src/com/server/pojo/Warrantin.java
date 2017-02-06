@@ -52,11 +52,11 @@ public class Warrantin
     */
    private String warrantininswho;   
    /**
-    * 更新时间
+    * 修改时间
     */
    private String warrantinupdwhen;   
    /**
-    * 更新人
+    * 修改人
     */
    private String warrantinupdwho;   
     //属性方法	    
@@ -248,7 +248,7 @@ public class Warrantin
 	}	   
 
 	/**
-	 *设置"更新时间"属性
+	 *设置"修改时间"属性
 	 *@param warrantinupdwhen 实体的Warrantinupdwhen属性
 	 */
 	public void setWarrantinupdwhen(String warrantinupdwhen)
@@ -257,7 +257,7 @@ public class Warrantin
 	}
 	
 	/**
-	 *获取"更新时间"属性
+	 *获取"修改时间"属性
 	 */
 	public String getWarrantinupdwhen()
 	{
@@ -265,7 +265,7 @@ public class Warrantin
 	}	   
 
 	/**
-	 *设置"更新人"属性
+	 *设置"修改人"属性
 	 *@param warrantinupdwho 实体的Warrantinupdwho属性
 	 */
 	public void setWarrantinupdwho(String warrantinupdwho)
@@ -274,7 +274,7 @@ public class Warrantin
 	}
 	
 	/**
-	 *获取"更新人"属性
+	 *获取"修改人"属性
 	 */
 	public String getWarrantinupdwho()
 	{

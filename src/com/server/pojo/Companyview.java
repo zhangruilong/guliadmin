@@ -10,79 +10,79 @@ public class Companyview
    /**
     * 经销商ID,主键
     */
-   private String cOMPANYID; 
+   private String companyid; 
    /**
     * 编码
     */
-   private String cOMPANYCODE;   
+   private String companycode;   
    /**
     * 姓名
     */
-   private String uSERNAME;   
+   private String username;   
    /**
     * 手机
     */
-   private String cOMPANYPHONE;   
+   private String companyphone;   
    /**
     * 店铺
     */
-   private String cOMPANYSHOP;   
+   private String companyshop;   
    /**
     * 城市和县ID
     */
-   private String cOMPANYCITY;   
+   private String companycity;   
    /**
     * 街道地址
     */
-   private String cOMPANYADDRESS;   
+   private String companyaddress;   
    /**
     * 描述
     */
-   private String cOMPANYDETAIL;   
+   private String companydetail;   
    /**
     * 状态
     */
-   private String cOMPANYSTATUE;   
+   private String companystatue;   
    /**
     * 账号
     */
-   private String lOGINNAME;   
+   private String loginname;   
    /**
     * 密码
     */
-   private String pASSWORD;   
+   private String password;   
    /**
     * 创建时间
     */
-   private String cREATETIME;   
+   private String createtime;   
    /**
     * 修改时间
     */
-   private String uPDTIME;   
+   private String updtime;   
    /**
     * 城市ID
     */
-   private String cITYID;   
+   private String cityid;   
    /**
     * 编码
     */
-   private String cITYCODE;   
+   private String citycode;   
    /**
     * 名称
     */
-   private String cITYNAME;   
+   private String cityname;   
    /**
     * 父类
     */
-   private String cITYPARENT;   
+   private String cityparent;   
    /**
     * 描述
     */
-   private String cITYDETAIL;   
+   private String citydetail;   
    /**
     * 状态
     */
-   private String cITYSTATUE;   
+   private String citystatue;   
    /**
     * 名称
     */
@@ -90,325 +90,325 @@ public class Companyview
     //属性方法	    
      /**
 	 *设置主键"经销商ID"属性
-	 *@param cOMPANYID 实体的COMPANYID属性
+	 *@param companyid 实体的Companyid属性
 	 */
-	public void setCOMPANYID(String cOMPANYID)
+	public void setCompanyid(String companyid)
 	{
-		this.cOMPANYID = cOMPANYID;
+		this.companyid = companyid;
 	}
 	
 	/**
 	 *获取主键"经销商ID"属性
 	 */
-	public String getCOMPANYID()
+	public String getCompanyid()
 	{
-		return this.cOMPANYID;
+		return this.companyid;
 	}
 
 	/**
 	 *设置"编码"属性
-	 *@param cOMPANYCODE 实体的COMPANYCODE属性
+	 *@param companycode 实体的Companycode属性
 	 */
-	public void setCOMPANYCODE(String cOMPANYCODE)
+	public void setCompanycode(String companycode)
 	{
-		this.cOMPANYCODE = cOMPANYCODE;
+		this.companycode = companycode;
 	}
 	
 	/**
 	 *获取"编码"属性
 	 */
-	public String getCOMPANYCODE()
+	public String getCompanycode()
 	{
-		return this.cOMPANYCODE;
+		return this.companycode;
 	}	   
 
 	/**
 	 *设置"姓名"属性
-	 *@param uSERNAME 实体的USERNAME属性
+	 *@param username 实体的Username属性
 	 */
-	public void setUSERNAME(String uSERNAME)
+	public void setUsername(String username)
 	{
-		this.uSERNAME = uSERNAME;
+		this.username = username;
 	}
 	
 	/**
 	 *获取"姓名"属性
 	 */
-	public String getUSERNAME()
+	public String getUsername()
 	{
-		return this.uSERNAME;
+		return this.username;
 	}	   
 
 	/**
 	 *设置"手机"属性
-	 *@param cOMPANYPHONE 实体的COMPANYPHONE属性
+	 *@param companyphone 实体的Companyphone属性
 	 */
-	public void setCOMPANYPHONE(String cOMPANYPHONE)
+	public void setCompanyphone(String companyphone)
 	{
-		this.cOMPANYPHONE = cOMPANYPHONE;
+		this.companyphone = companyphone;
 	}
 	
 	/**
 	 *获取"手机"属性
 	 */
-	public String getCOMPANYPHONE()
+	public String getCompanyphone()
 	{
-		return this.cOMPANYPHONE;
+		return this.companyphone;
 	}	   
 
 	/**
 	 *设置"店铺"属性
-	 *@param cOMPANYSHOP 实体的COMPANYSHOP属性
+	 *@param companyshop 实体的Companyshop属性
 	 */
-	public void setCOMPANYSHOP(String cOMPANYSHOP)
+	public void setCompanyshop(String companyshop)
 	{
-		this.cOMPANYSHOP = cOMPANYSHOP;
+		this.companyshop = companyshop;
 	}
 	
 	/**
 	 *获取"店铺"属性
 	 */
-	public String getCOMPANYSHOP()
+	public String getCompanyshop()
 	{
-		return this.cOMPANYSHOP;
+		return this.companyshop;
 	}	   
 
 	/**
 	 *设置"城市和县ID"属性
-	 *@param cOMPANYCITY 实体的COMPANYCITY属性
+	 *@param companycity 实体的Companycity属性
 	 */
-	public void setCOMPANYCITY(String cOMPANYCITY)
+	public void setCompanycity(String companycity)
 	{
-		this.cOMPANYCITY = cOMPANYCITY;
+		this.companycity = companycity;
 	}
 	
 	/**
 	 *获取"城市和县ID"属性
 	 */
-	public String getCOMPANYCITY()
+	public String getCompanycity()
 	{
-		return this.cOMPANYCITY;
+		return this.companycity;
 	}	   
 
 	/**
 	 *设置"街道地址"属性
-	 *@param cOMPANYADDRESS 实体的COMPANYADDRESS属性
+	 *@param companyaddress 实体的Companyaddress属性
 	 */
-	public void setCOMPANYADDRESS(String cOMPANYADDRESS)
+	public void setCompanyaddress(String companyaddress)
 	{
-		this.cOMPANYADDRESS = cOMPANYADDRESS;
+		this.companyaddress = companyaddress;
 	}
 	
 	/**
 	 *获取"街道地址"属性
 	 */
-	public String getCOMPANYADDRESS()
+	public String getCompanyaddress()
 	{
-		return this.cOMPANYADDRESS;
+		return this.companyaddress;
 	}	   
 
 	/**
 	 *设置"描述"属性
-	 *@param cOMPANYDETAIL 实体的COMPANYDETAIL属性
+	 *@param companydetail 实体的Companydetail属性
 	 */
-	public void setCOMPANYDETAIL(String cOMPANYDETAIL)
+	public void setCompanydetail(String companydetail)
 	{
-		this.cOMPANYDETAIL = cOMPANYDETAIL;
+		this.companydetail = companydetail;
 	}
 	
 	/**
 	 *获取"描述"属性
 	 */
-	public String getCOMPANYDETAIL()
+	public String getCompanydetail()
 	{
-		return this.cOMPANYDETAIL;
+		return this.companydetail;
 	}	   
 
 	/**
 	 *设置"状态"属性
-	 *@param cOMPANYSTATUE 实体的COMPANYSTATUE属性
+	 *@param companystatue 实体的Companystatue属性
 	 */
-	public void setCOMPANYSTATUE(String cOMPANYSTATUE)
+	public void setCompanystatue(String companystatue)
 	{
-		this.cOMPANYSTATUE = cOMPANYSTATUE;
+		this.companystatue = companystatue;
 	}
 	
 	/**
 	 *获取"状态"属性
 	 */
-	public String getCOMPANYSTATUE()
+	public String getCompanystatue()
 	{
-		return this.cOMPANYSTATUE;
+		return this.companystatue;
 	}	   
 
 	/**
 	 *设置"账号"属性
-	 *@param lOGINNAME 实体的LOGINNAME属性
+	 *@param loginname 实体的Loginname属性
 	 */
-	public void setLOGINNAME(String lOGINNAME)
+	public void setLoginname(String loginname)
 	{
-		this.lOGINNAME = lOGINNAME;
+		this.loginname = loginname;
 	}
 	
 	/**
 	 *获取"账号"属性
 	 */
-	public String getLOGINNAME()
+	public String getLoginname()
 	{
-		return this.lOGINNAME;
+		return this.loginname;
 	}	   
 
 	/**
 	 *设置"密码"属性
-	 *@param pASSWORD 实体的PASSWORD属性
+	 *@param password 实体的Password属性
 	 */
-	public void setPASSWORD(String pASSWORD)
+	public void setPassword(String password)
 	{
-		this.pASSWORD = pASSWORD;
+		this.password = password;
 	}
 	
 	/**
 	 *获取"密码"属性
 	 */
-	public String getPASSWORD()
+	public String getPassword()
 	{
-		return this.pASSWORD;
+		return this.password;
 	}	   
 
 	/**
 	 *设置"创建时间"属性
-	 *@param cREATETIME 实体的CREATETIME属性
+	 *@param createtime 实体的Createtime属性
 	 */
-	public void setCREATETIME(String cREATETIME)
+	public void setCreatetime(String createtime)
 	{
-		this.cREATETIME = cREATETIME;
+		this.createtime = createtime;
 	}
 	
 	/**
 	 *获取"创建时间"属性
 	 */
-	public String getCREATETIME()
+	public String getCreatetime()
 	{
-		return this.cREATETIME;
+		return this.createtime;
 	}	   
 
 	/**
 	 *设置"修改时间"属性
-	 *@param uPDTIME 实体的UPDTIME属性
+	 *@param updtime 实体的Updtime属性
 	 */
-	public void setUPDTIME(String uPDTIME)
+	public void setUpdtime(String updtime)
 	{
-		this.uPDTIME = uPDTIME;
+		this.updtime = updtime;
 	}
 	
 	/**
 	 *获取"修改时间"属性
 	 */
-	public String getUPDTIME()
+	public String getUpdtime()
 	{
-		return this.uPDTIME;
+		return this.updtime;
 	}	   
 
 	/**
 	 *设置"城市ID"属性
-	 *@param cITYID 实体的CITYID属性
+	 *@param cityid 实体的Cityid属性
 	 */
-	public void setCITYID(String cITYID)
+	public void setCityid(String cityid)
 	{
-		this.cITYID = cITYID;
+		this.cityid = cityid;
 	}
 	
 	/**
 	 *获取"城市ID"属性
 	 */
-	public String getCITYID()
+	public String getCityid()
 	{
-		return this.cITYID;
+		return this.cityid;
 	}	   
 
 	/**
 	 *设置"编码"属性
-	 *@param cITYCODE 实体的CITYCODE属性
+	 *@param citycode 实体的Citycode属性
 	 */
-	public void setCITYCODE(String cITYCODE)
+	public void setCitycode(String citycode)
 	{
-		this.cITYCODE = cITYCODE;
+		this.citycode = citycode;
 	}
 	
 	/**
 	 *获取"编码"属性
 	 */
-	public String getCITYCODE()
+	public String getCitycode()
 	{
-		return this.cITYCODE;
+		return this.citycode;
 	}	   
 
 	/**
 	 *设置"名称"属性
-	 *@param cITYNAME 实体的CITYNAME属性
+	 *@param cityname 实体的Cityname属性
 	 */
-	public void setCITYNAME(String cITYNAME)
+	public void setCityname(String cityname)
 	{
-		this.cITYNAME = cITYNAME;
+		this.cityname = cityname;
 	}
 	
 	/**
 	 *获取"名称"属性
 	 */
-	public String getCITYNAME()
+	public String getCityname()
 	{
-		return this.cITYNAME;
+		return this.cityname;
 	}	   
 
 	/**
 	 *设置"父类"属性
-	 *@param cITYPARENT 实体的CITYPARENT属性
+	 *@param cityparent 实体的Cityparent属性
 	 */
-	public void setCITYPARENT(String cITYPARENT)
+	public void setCityparent(String cityparent)
 	{
-		this.cITYPARENT = cITYPARENT;
+		this.cityparent = cityparent;
 	}
 	
 	/**
 	 *获取"父类"属性
 	 */
-	public String getCITYPARENT()
+	public String getCityparent()
 	{
-		return this.cITYPARENT;
+		return this.cityparent;
 	}	   
 
 	/**
 	 *设置"描述"属性
-	 *@param cITYDETAIL 实体的CITYDETAIL属性
+	 *@param citydetail 实体的Citydetail属性
 	 */
-	public void setCITYDETAIL(String cITYDETAIL)
+	public void setCitydetail(String citydetail)
 	{
-		this.cITYDETAIL = cITYDETAIL;
+		this.citydetail = citydetail;
 	}
 	
 	/**
 	 *获取"描述"属性
 	 */
-	public String getCITYDETAIL()
+	public String getCitydetail()
 	{
-		return this.cITYDETAIL;
+		return this.citydetail;
 	}	   
 
 	/**
 	 *设置"状态"属性
-	 *@param cITYSTATUE 实体的CITYSTATUE属性
+	 *@param citystatue 实体的Citystatue属性
 	 */
-	public void setCITYSTATUE(String cITYSTATUE)
+	public void setCitystatue(String citystatue)
 	{
-		this.cITYSTATUE = cITYSTATUE;
+		this.citystatue = citystatue;
 	}
 	
 	/**
 	 *获取"状态"属性
 	 */
-	public String getCITYSTATUE()
+	public String getCitystatue()
 	{
-		return this.cITYSTATUE;
+		return this.citystatue;
 	}	   
 
 	/**
@@ -432,47 +432,47 @@ public class Companyview
 		// TODO Auto-generated constructor stub
 	}
 	public Companyview(
-		String cOMPANYID
-	 	,String cOMPANYCODE
-	 	,String uSERNAME
-	 	,String cOMPANYPHONE
-	 	,String cOMPANYSHOP
-	 	,String cOMPANYCITY
-	 	,String cOMPANYADDRESS
-	 	,String cOMPANYDETAIL
-	 	,String cOMPANYSTATUE
-	 	,String lOGINNAME
-	 	,String pASSWORD
-	 	,String cREATETIME
-	 	,String uPDTIME
-	 	,String cITYID
-	 	,String cITYCODE
-	 	,String cITYNAME
-	 	,String cITYPARENT
-	 	,String cITYDETAIL
-	 	,String cITYSTATUE
+		String companyid
+	 	,String companycode
+	 	,String username
+	 	,String companyphone
+	 	,String companyshop
+	 	,String companycity
+	 	,String companyaddress
+	 	,String companydetail
+	 	,String companystatue
+	 	,String loginname
+	 	,String password
+	 	,String createtime
+	 	,String updtime
+	 	,String cityid
+	 	,String citycode
+	 	,String cityname
+	 	,String cityparent
+	 	,String citydetail
+	 	,String citystatue
 	 	,String cityparentname
 		 ){
 		super();
-		this.cOMPANYID = cOMPANYID;
-	 	this.cOMPANYCODE = cOMPANYCODE;
-	 	this.uSERNAME = uSERNAME;
-	 	this.cOMPANYPHONE = cOMPANYPHONE;
-	 	this.cOMPANYSHOP = cOMPANYSHOP;
-	 	this.cOMPANYCITY = cOMPANYCITY;
-	 	this.cOMPANYADDRESS = cOMPANYADDRESS;
-	 	this.cOMPANYDETAIL = cOMPANYDETAIL;
-	 	this.cOMPANYSTATUE = cOMPANYSTATUE;
-	 	this.lOGINNAME = lOGINNAME;
-	 	this.pASSWORD = pASSWORD;
-	 	this.cREATETIME = cREATETIME;
-	 	this.uPDTIME = uPDTIME;
-	 	this.cITYID = cITYID;
-	 	this.cITYCODE = cITYCODE;
-	 	this.cITYNAME = cITYNAME;
-	 	this.cITYPARENT = cITYPARENT;
-	 	this.cITYDETAIL = cITYDETAIL;
-	 	this.cITYSTATUE = cITYSTATUE;
+		this.companyid = companyid;
+	 	this.companycode = companycode;
+	 	this.username = username;
+	 	this.companyphone = companyphone;
+	 	this.companyshop = companyshop;
+	 	this.companycity = companycity;
+	 	this.companyaddress = companyaddress;
+	 	this.companydetail = companydetail;
+	 	this.companystatue = companystatue;
+	 	this.loginname = loginname;
+	 	this.password = password;
+	 	this.createtime = createtime;
+	 	this.updtime = updtime;
+	 	this.cityid = cityid;
+	 	this.citycode = citycode;
+	 	this.cityname = cityname;
+	 	this.cityparent = cityparent;
+	 	this.citydetail = citydetail;
+	 	this.citystatue = citystatue;
 	 	this.cityparentname = cityparentname;
 	}
 }

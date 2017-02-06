@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 商品 实体类
+ * goods 实体类
  *@author ZhangRuiLong
  */
 public class Goods
@@ -64,13 +64,13 @@ public class Goods
     */
    private String goodsbrand;   
    /**
-    * 种类(用来搜索用,有时候陪在小类里面.比如 裸价商品)
+    * 种类
     */
    private String goodstype;   
    /**
     * 顺序
     */
-   private Integer goodsorder;   
+   private String goodsorder;   
    /**
     * 重量
     */
@@ -315,7 +315,7 @@ public class Goods
 	}	   
 
 	/**
-	 *设置"种类(用来搜索用,有时候陪在小类里面.比如 裸价商品)"属性
+	 *设置"种类"属性
 	 *@param goodstype 实体的Goodstype属性
 	 */
 	public void setGoodstype(String goodstype)
@@ -324,7 +324,7 @@ public class Goods
 	}
 	
 	/**
-	 *获取"种类(用来搜索用,有时候陪在小类里面.比如 裸价商品)"属性
+	 *获取"种类"属性
 	 */
 	public String getGoodstype()
 	{
@@ -335,7 +335,7 @@ public class Goods
 	 *设置"顺序"属性
 	 *@param goodsorder 实体的Goodsorder属性
 	 */
-	public void setGoodsorder(Integer goodsorder)
+	public void setGoodsorder(String goodsorder)
 	{
 		this.goodsorder = goodsorder;
 	}
@@ -343,7 +343,7 @@ public class Goods
 	/**
 	 *获取"顺序"属性
 	 */
-	public Integer getGoodsorder()
+	public String getGoodsorder()
 	{
 		return this.goodsorder;
 	}	   
@@ -384,7 +384,7 @@ public class Goods
 	 	,String updor
 	 	,String goodsbrand
 	 	,String goodstype
-	 	,Integer goodsorder
+	 	,String goodsorder
 	 	,String goodsweight
 		 ){
 		super();

@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 收藏 逻辑层
+ * collect 逻辑层
  *@author ZhangRuiLong
  */
 public class CollectAction extends BaseActionDao {

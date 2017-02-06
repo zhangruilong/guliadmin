@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 客户 实体类的常量
+ * customer 实体类的常量
  *@author ZhangRuiLong
  */
 public class CustomerPoco
@@ -9,7 +9,7 @@ public class CustomerPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "客户";
+   public static String NAME = "customer";
    /**
     * 实体表名
     */
@@ -24,10 +24,10 @@ public class CustomerPoco
    public static String[] CHINESENAME = {
    		"客户ID",
 	 	"编码",
-	 	"姓名(联系人名)",
+	 	"姓名",
 	 	"手机",
 	 	"密码",
-	 	"店铺(客户名)",
+	 	"店铺",
 	 	"城市",
 	 	"县",
 	 	"街道地址",

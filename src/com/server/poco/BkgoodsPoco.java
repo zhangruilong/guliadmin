@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 年货和组合商品 实体类的常量
+ * bkgoods 实体类的常量
  *@author ZhangRuiLong
  */
 public class BkgoodsPoco
@@ -9,7 +9,7 @@ public class BkgoodsPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "促销区商品";
+   public static String NAME = "bkgoods";
    /**
     * 实体表名
     */
@@ -40,10 +40,10 @@ public class BkgoodsPoco
 	 	"顺序",
 	 	"客户范围",
 	 	"品牌",
-	 	"总限购",
+	 	"全部限量",
 	 	"剩余数量",
 	 	"重量",
-	 	"分类",
+	 	"类型(秒杀,买赠等)",
 	 	"修改时间",
 	 	"修改人",
 	};

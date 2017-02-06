@@ -44,11 +44,11 @@ public class Warrantout
     */
    private String warrantoutinswho;   
    /**
-    * 更新时间
+    * 修改时间
     */
    private String warrantoutupdwhen;   
    /**
-    * 更新人
+    * 修改人
     */
    private String warrantoutupdwho;   
     //属性方法	    
@@ -206,7 +206,7 @@ public class Warrantout
 	}	   
 
 	/**
-	 *设置"更新时间"属性
+	 *设置"修改时间"属性
 	 *@param warrantoutupdwhen 实体的Warrantoutupdwhen属性
 	 */
 	public void setWarrantoutupdwhen(String warrantoutupdwhen)
@@ -215,7 +215,7 @@ public class Warrantout
 	}
 	
 	/**
-	 *获取"更新时间"属性
+	 *获取"修改时间"属性
 	 */
 	public String getWarrantoutupdwhen()
 	{
@@ -223,7 +223,7 @@ public class Warrantout
 	}	   
 
 	/**
-	 *设置"更新人"属性
+	 *设置"修改人"属性
 	 *@param warrantoutupdwho 实体的Warrantoutupdwho属性
 	 */
 	public void setWarrantoutupdwho(String warrantoutupdwho)
@@ -232,7 +232,7 @@ public class Warrantout
 	}
 	
 	/**
-	 *获取"更新人"属性
+	 *获取"修改人"属性
 	 */
 	public String getWarrantoutupdwho()
 	{

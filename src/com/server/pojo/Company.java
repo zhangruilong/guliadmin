@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 经销商 实体类
+ * company 实体类
  *@author ZhangRuiLong
  */
 public class Company
@@ -16,7 +16,7 @@ public class Company
     */
    private String companycode;   
    /**
-    * 姓名(联系人名)
+    * 姓名
     */
    private String username;   
    /**
@@ -24,7 +24,7 @@ public class Company
     */
    private String companyphone;   
    /**
-    * 店铺(供应商名)
+    * 店铺
     */
    private String companyshop;   
    /**
@@ -52,7 +52,7 @@ public class Company
     */
    private String password;   
    /**
-    * 创建时间(服务区域)
+    * 创建时间
     */
    private String createtime;   
    /**
@@ -95,7 +95,7 @@ public class Company
 	}	   
 
 	/**
-	 *设置"姓名(联系人名)"属性
+	 *设置"姓名"属性
 	 *@param username 实体的Username属性
 	 */
 	public void setUsername(String username)
@@ -104,7 +104,7 @@ public class Company
 	}
 	
 	/**
-	 *获取"姓名(联系人名)"属性
+	 *获取"姓名"属性
 	 */
 	public String getUsername()
 	{
@@ -129,7 +129,7 @@ public class Company
 	}	   
 
 	/**
-	 *设置"店铺(供应商名)"属性
+	 *设置"店铺"属性
 	 *@param companyshop 实体的Companyshop属性
 	 */
 	public void setCompanyshop(String companyshop)
@@ -138,7 +138,7 @@ public class Company
 	}
 	
 	/**
-	 *获取"店铺(供应商名)"属性
+	 *获取"店铺"属性
 	 */
 	public String getCompanyshop()
 	{
@@ -248,7 +248,7 @@ public class Company
 	}	   
 
 	/**
-	 *设置"创建时间(服务区域)"属性
+	 *设置"创建时间"属性
 	 *@param createtime 实体的Createtime属性
 	 */
 	public void setCreatetime(String createtime)
@@ -257,7 +257,7 @@ public class Company
 	}
 	
 	/**
-	 *获取"创建时间(服务区域)"属性
+	 *获取"创建时间"属性
 	 */
 	public String getCreatetime()
 	{

@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 年货和组合商品 实体类
+ * bkgoods 实体类
  *@author ZhangRuiLong
  */
 public class Bkgoods
@@ -46,7 +46,7 @@ public class Bkgoods
    /**
     * 限量
     */
-   private Integer bkgoodsnum;   
+   private String bkgoodsnum;   
    /**
     * 小类名称
     */
@@ -70,7 +70,7 @@ public class Bkgoods
    /**
     * 顺序
     */
-   private Integer bkgoodsseq;   
+   private String bkgoodsseq;   
    /**
     * 客户范围
     */
@@ -80,19 +80,19 @@ public class Bkgoods
     */
    private String bkgoodsbrand;   
    /**
-    * 总限购
+    * 全部限量
     */
-   private Integer bkgoodsallnum;   
+   private String bkgoodsallnum;   
    /**
     * 剩余数量
     */
-   private Integer bkgoodssurplus;   
+   private String bkgoodssurplus;   
    /**
     * 重量
     */
    private String bkgoodsweight;   
    /**
-    * 分类
+    * 类型(秒杀,买赠等)
     */
    private String bkgoodstype;   
    /**
@@ -261,7 +261,7 @@ public class Bkgoods
 	 *设置"限量"属性
 	 *@param bkgoodsnum 实体的Bkgoodsnum属性
 	 */
-	public void setBkgoodsnum(Integer bkgoodsnum)
+	public void setBkgoodsnum(String bkgoodsnum)
 	{
 		this.bkgoodsnum = bkgoodsnum;
 	}
@@ -269,7 +269,7 @@ public class Bkgoods
 	/**
 	 *获取"限量"属性
 	 */
-	public Integer getBkgoodsnum()
+	public String getBkgoodsnum()
 	{
 		return this.bkgoodsnum;
 	}	   
@@ -363,7 +363,7 @@ public class Bkgoods
 	 *设置"顺序"属性
 	 *@param bkgoodsseq 实体的Bkgoodsseq属性
 	 */
-	public void setBkgoodsseq(Integer bkgoodsseq)
+	public void setBkgoodsseq(String bkgoodsseq)
 	{
 		this.bkgoodsseq = bkgoodsseq;
 	}
@@ -371,7 +371,7 @@ public class Bkgoods
 	/**
 	 *获取"顺序"属性
 	 */
-	public Integer getBkgoodsseq()
+	public String getBkgoodsseq()
 	{
 		return this.bkgoodsseq;
 	}	   
@@ -411,18 +411,18 @@ public class Bkgoods
 	}	   
 
 	/**
-	 *设置"总限购"属性
+	 *设置"全部限量"属性
 	 *@param bkgoodsallnum 实体的Bkgoodsallnum属性
 	 */
-	public void setBkgoodsallnum(Integer bkgoodsallnum)
+	public void setBkgoodsallnum(String bkgoodsallnum)
 	{
 		this.bkgoodsallnum = bkgoodsallnum;
 	}
 	
 	/**
-	 *获取"总限购"属性
+	 *获取"全部限量"属性
 	 */
-	public Integer getBkgoodsallnum()
+	public String getBkgoodsallnum()
 	{
 		return this.bkgoodsallnum;
 	}	   
@@ -431,7 +431,7 @@ public class Bkgoods
 	 *设置"剩余数量"属性
 	 *@param bkgoodssurplus 实体的Bkgoodssurplus属性
 	 */
-	public void setBkgoodssurplus(Integer bkgoodssurplus)
+	public void setBkgoodssurplus(String bkgoodssurplus)
 	{
 		this.bkgoodssurplus = bkgoodssurplus;
 	}
@@ -439,7 +439,7 @@ public class Bkgoods
 	/**
 	 *获取"剩余数量"属性
 	 */
-	public Integer getBkgoodssurplus()
+	public String getBkgoodssurplus()
 	{
 		return this.bkgoodssurplus;
 	}	   
@@ -462,7 +462,7 @@ public class Bkgoods
 	}	   
 
 	/**
-	 *设置"分类"属性
+	 *设置"类型(秒杀,买赠等)"属性
 	 *@param bkgoodstype 实体的Bkgoodstype属性
 	 */
 	public void setBkgoodstype(String bkgoodstype)
@@ -471,7 +471,7 @@ public class Bkgoods
 	}
 	
 	/**
-	 *获取"分类"属性
+	 *获取"类型(秒杀,买赠等)"属性
 	 */
 	public String getBkgoodstype()
 	{
@@ -525,17 +525,17 @@ public class Bkgoods
 	 	,String bkgoodsunit
 	 	,Float bkgoodsprice
 	 	,Float bkgoodsorgprice
-	 	,Integer bkgoodsnum
+	 	,String bkgoodsnum
 	 	,String bkgoodsclass
 	 	,String bkgoodsimage
 	 	,String bkgoodsstatue
 	 	,String bkcreatetime
 	 	,String bkcreator
-	 	,Integer bkgoodsseq
+	 	,String bkgoodsseq
 	 	,String bkgoodsscope
 	 	,String bkgoodsbrand
-	 	,Integer bkgoodsallnum
-	 	,Integer bkgoodssurplus
+	 	,String bkgoodsallnum
+	 	,String bkgoodssurplus
 	 	,String bkgoodsweight
 	 	,String bkgoodstype
 	 	,String bkgoodsupdtime

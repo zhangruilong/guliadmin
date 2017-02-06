@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 标品库 实体类的常量
+ * scant 实体类的常量
  *@author ZhangRuiLong
  */
 public class ScantPoco
@@ -9,7 +9,7 @@ public class ScantPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "标品库";
+   public static String NAME = "scant";
    /**
     * 实体表名
     */

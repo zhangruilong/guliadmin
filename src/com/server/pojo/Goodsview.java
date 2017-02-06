@@ -8,160 +8,156 @@ import java.sql.Date;
 public class Goodsview
 {
    /**
-    * goodsid,主键
+    * 商品ID,主键
     */
    private String goodsid; 
    /**
-    * goodscompany
+    * 经销商ID
     */
    private String goodscompany;   
    /**
-    * goodscode
+    * 编码
     */
    private String goodscode;   
    /**
-    * goodsname
+    * 名称
     */
    private String goodsname;   
    /**
-    * goodsdetail
+    * 描述
     */
    private String goodsdetail;   
    /**
-    * goodsunits
+    * 规格
     */
    private String goodsunits;   
    /**
-    * goodsclass
+    * 小类ID
     */
    private String goodsclass;   
    /**
-    * goodsimage
+    * 图片
     */
    private String goodsimage;   
    /**
-    * goodsstatue
+    * 状态
     */
    private String goodsstatue;   
    /**
-    * createtime
+    * 创建时间
     */
    private String createtime;   
    /**
-    * updtime
+    * 修改时间
     */
    private String updtime;   
    /**
-    * creator
+    * 创建人
     */
    private String creator;   
    /**
-    * updor
+    * 修改人
     */
    private String updor;   
    /**
-    * goodsbrand
+    * 品牌
     */
    private String goodsbrand;   
    /**
-    * goodstype
+    * 种类
     */
    private String goodstype;   
    /**
-    * goodsorder
+    * 顺序
     */
-   private Integer goodsorder;   
+   private String goodsorder;   
    /**
-    * goodsweight
-    */
-   private String goodsweight;   
-   /**
-    * goodsclassid
+    * 大小类ID
     */
    private String goodsclassid;   
    /**
-    * goodsclasscode
+    * 编码
     */
    private String goodsclasscode;   
    /**
-    * goodsclassname
+    * 名称
     */
    private String goodsclassname;   
    /**
-    * goodsclassparent
+    * 父类
     */
    private String goodsclassparent;   
    /**
-    * goodsclassdetail
+    * 图标
     */
    private String goodsclassdetail;   
    /**
-    * goodsclassstatue
+    * 状态
     */
    private String goodsclassstatue;   
    /**
-    * goodsclasscity
+    * 城市(用逗号分开)
     */
    private String goodsclasscity;   
    /**
-    * goodsclassorder
+    * 顺序
     */
    private String goodsclassorder;   
    /**
-    * goodsclasscompany
+    * 经销商(用逗号分开)
     */
    private String goodsclasscompany;   
    /**
-    * companyshop
+    * 店铺
     */
    private String companyshop;   
    /**
-    * companycity
+    * 城市和县ID
     */
    private String companycity;   
    /**
-    * companyaddress
+    * 街道地址
     */
    private String companyaddress;   
    /**
-    * companydetail
+    * 描述
     */
    private String companydetail;   
    /**
-    * companystatue
+    * 状态
     */
    private String companystatue;   
    /**
-    * pricesid
+    * 价格体系ID
     */
    private String pricesid;   
    /**
-    * pricesclass
+    * 分类
     */
    private String pricesclass;   
    /**
-    * priceslevel
+    * 等级
     */
-   private Integer priceslevel;   
+   private String priceslevel;   
    /**
-    * pricesprice
+    * 单品价
     */
    private Float pricesprice;   
    /**
-    * pricesunit
+    * 单品单位
     */
    private String pricesunit;   
    /**
-    * pricesprice2
+    * 套装价
     */
    private Float pricesprice2;   
    /**
-    * pricesunit2
+    * 套装单位
     */
    private String pricesunit2;   
     //属性方法	    
      /**
-	 *设置主键"goodsid"属性
+	 *设置主键"商品ID"属性
 	 *@param goodsid 实体的Goodsid属性
 	 */
 	public void setGoodsid(String goodsid)
@@ -170,7 +166,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取主键"goodsid"属性
+	 *获取主键"商品ID"属性
 	 */
 	public String getGoodsid()
 	{
@@ -178,7 +174,7 @@ public class Goodsview
 	}
 
 	/**
-	 *设置"goodscompany"属性
+	 *设置"经销商ID"属性
 	 *@param goodscompany 实体的Goodscompany属性
 	 */
 	public void setGoodscompany(String goodscompany)
@@ -187,7 +183,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodscompany"属性
+	 *获取"经销商ID"属性
 	 */
 	public String getGoodscompany()
 	{
@@ -195,7 +191,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodscode"属性
+	 *设置"编码"属性
 	 *@param goodscode 实体的Goodscode属性
 	 */
 	public void setGoodscode(String goodscode)
@@ -204,7 +200,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodscode"属性
+	 *获取"编码"属性
 	 */
 	public String getGoodscode()
 	{
@@ -212,7 +208,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsname"属性
+	 *设置"名称"属性
 	 *@param goodsname 实体的Goodsname属性
 	 */
 	public void setGoodsname(String goodsname)
@@ -221,7 +217,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsname"属性
+	 *获取"名称"属性
 	 */
 	public String getGoodsname()
 	{
@@ -229,7 +225,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsdetail"属性
+	 *设置"描述"属性
 	 *@param goodsdetail 实体的Goodsdetail属性
 	 */
 	public void setGoodsdetail(String goodsdetail)
@@ -238,7 +234,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsdetail"属性
+	 *获取"描述"属性
 	 */
 	public String getGoodsdetail()
 	{
@@ -246,7 +242,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsunits"属性
+	 *设置"规格"属性
 	 *@param goodsunits 实体的Goodsunits属性
 	 */
 	public void setGoodsunits(String goodsunits)
@@ -255,7 +251,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsunits"属性
+	 *获取"规格"属性
 	 */
 	public String getGoodsunits()
 	{
@@ -263,7 +259,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsclass"属性
+	 *设置"小类ID"属性
 	 *@param goodsclass 实体的Goodsclass属性
 	 */
 	public void setGoodsclass(String goodsclass)
@@ -272,7 +268,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclass"属性
+	 *获取"小类ID"属性
 	 */
 	public String getGoodsclass()
 	{
@@ -280,7 +276,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsimage"属性
+	 *设置"图片"属性
 	 *@param goodsimage 实体的Goodsimage属性
 	 */
 	public void setGoodsimage(String goodsimage)
@@ -289,7 +285,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsimage"属性
+	 *获取"图片"属性
 	 */
 	public String getGoodsimage()
 	{
@@ -297,7 +293,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsstatue"属性
+	 *设置"状态"属性
 	 *@param goodsstatue 实体的Goodsstatue属性
 	 */
 	public void setGoodsstatue(String goodsstatue)
@@ -306,7 +302,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsstatue"属性
+	 *获取"状态"属性
 	 */
 	public String getGoodsstatue()
 	{
@@ -314,7 +310,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"createtime"属性
+	 *设置"创建时间"属性
 	 *@param createtime 实体的Createtime属性
 	 */
 	public void setCreatetime(String createtime)
@@ -323,7 +319,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"createtime"属性
+	 *获取"创建时间"属性
 	 */
 	public String getCreatetime()
 	{
@@ -331,7 +327,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"updtime"属性
+	 *设置"修改时间"属性
 	 *@param updtime 实体的Updtime属性
 	 */
 	public void setUpdtime(String updtime)
@@ -340,7 +336,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"updtime"属性
+	 *获取"修改时间"属性
 	 */
 	public String getUpdtime()
 	{
@@ -348,7 +344,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"creator"属性
+	 *设置"创建人"属性
 	 *@param creator 实体的Creator属性
 	 */
 	public void setCreator(String creator)
@@ -357,7 +353,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"creator"属性
+	 *获取"创建人"属性
 	 */
 	public String getCreator()
 	{
@@ -365,7 +361,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"updor"属性
+	 *设置"修改人"属性
 	 *@param updor 实体的Updor属性
 	 */
 	public void setUpdor(String updor)
@@ -374,7 +370,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"updor"属性
+	 *获取"修改人"属性
 	 */
 	public String getUpdor()
 	{
@@ -382,7 +378,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsbrand"属性
+	 *设置"品牌"属性
 	 *@param goodsbrand 实体的Goodsbrand属性
 	 */
 	public void setGoodsbrand(String goodsbrand)
@@ -391,7 +387,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsbrand"属性
+	 *获取"品牌"属性
 	 */
 	public String getGoodsbrand()
 	{
@@ -399,7 +395,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodstype"属性
+	 *设置"种类"属性
 	 *@param goodstype 实体的Goodstype属性
 	 */
 	public void setGoodstype(String goodstype)
@@ -408,7 +404,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodstype"属性
+	 *获取"种类"属性
 	 */
 	public String getGoodstype()
 	{
@@ -416,41 +412,24 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsorder"属性
+	 *设置"顺序"属性
 	 *@param goodsorder 实体的Goodsorder属性
 	 */
-	public void setGoodsorder(Integer goodsorder)
+	public void setGoodsorder(String goodsorder)
 	{
 		this.goodsorder = goodsorder;
 	}
 	
 	/**
-	 *获取"goodsorder"属性
+	 *获取"顺序"属性
 	 */
-	public Integer getGoodsorder()
+	public String getGoodsorder()
 	{
 		return this.goodsorder;
 	}	   
 
 	/**
-	 *设置"goodsweight"属性
-	 *@param goodsweight 实体的Goodsweight属性
-	 */
-	public void setGoodsweight(String goodsweight)
-	{
-		this.goodsweight = goodsweight;
-	}
-	
-	/**
-	 *获取"goodsweight"属性
-	 */
-	public String getGoodsweight()
-	{
-		return this.goodsweight;
-	}	   
-
-	/**
-	 *设置"goodsclassid"属性
+	 *设置"大小类ID"属性
 	 *@param goodsclassid 实体的Goodsclassid属性
 	 */
 	public void setGoodsclassid(String goodsclassid)
@@ -459,7 +438,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclassid"属性
+	 *获取"大小类ID"属性
 	 */
 	public String getGoodsclassid()
 	{
@@ -467,7 +446,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsclasscode"属性
+	 *设置"编码"属性
 	 *@param goodsclasscode 实体的Goodsclasscode属性
 	 */
 	public void setGoodsclasscode(String goodsclasscode)
@@ -476,7 +455,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclasscode"属性
+	 *获取"编码"属性
 	 */
 	public String getGoodsclasscode()
 	{
@@ -484,7 +463,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsclassname"属性
+	 *设置"名称"属性
 	 *@param goodsclassname 实体的Goodsclassname属性
 	 */
 	public void setGoodsclassname(String goodsclassname)
@@ -493,7 +472,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclassname"属性
+	 *获取"名称"属性
 	 */
 	public String getGoodsclassname()
 	{
@@ -501,7 +480,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsclassparent"属性
+	 *设置"父类"属性
 	 *@param goodsclassparent 实体的Goodsclassparent属性
 	 */
 	public void setGoodsclassparent(String goodsclassparent)
@@ -510,7 +489,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclassparent"属性
+	 *获取"父类"属性
 	 */
 	public String getGoodsclassparent()
 	{
@@ -518,7 +497,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsclassdetail"属性
+	 *设置"图标"属性
 	 *@param goodsclassdetail 实体的Goodsclassdetail属性
 	 */
 	public void setGoodsclassdetail(String goodsclassdetail)
@@ -527,7 +506,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclassdetail"属性
+	 *获取"图标"属性
 	 */
 	public String getGoodsclassdetail()
 	{
@@ -535,7 +514,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsclassstatue"属性
+	 *设置"状态"属性
 	 *@param goodsclassstatue 实体的Goodsclassstatue属性
 	 */
 	public void setGoodsclassstatue(String goodsclassstatue)
@@ -544,7 +523,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclassstatue"属性
+	 *获取"状态"属性
 	 */
 	public String getGoodsclassstatue()
 	{
@@ -552,7 +531,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsclasscity"属性
+	 *设置"城市(用逗号分开)"属性
 	 *@param goodsclasscity 实体的Goodsclasscity属性
 	 */
 	public void setGoodsclasscity(String goodsclasscity)
@@ -561,7 +540,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclasscity"属性
+	 *获取"城市(用逗号分开)"属性
 	 */
 	public String getGoodsclasscity()
 	{
@@ -569,7 +548,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsclassorder"属性
+	 *设置"顺序"属性
 	 *@param goodsclassorder 实体的Goodsclassorder属性
 	 */
 	public void setGoodsclassorder(String goodsclassorder)
@@ -578,7 +557,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclassorder"属性
+	 *获取"顺序"属性
 	 */
 	public String getGoodsclassorder()
 	{
@@ -586,7 +565,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"goodsclasscompany"属性
+	 *设置"经销商(用逗号分开)"属性
 	 *@param goodsclasscompany 实体的Goodsclasscompany属性
 	 */
 	public void setGoodsclasscompany(String goodsclasscompany)
@@ -595,7 +574,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"goodsclasscompany"属性
+	 *获取"经销商(用逗号分开)"属性
 	 */
 	public String getGoodsclasscompany()
 	{
@@ -603,7 +582,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"companyshop"属性
+	 *设置"店铺"属性
 	 *@param companyshop 实体的Companyshop属性
 	 */
 	public void setCompanyshop(String companyshop)
@@ -612,7 +591,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"companyshop"属性
+	 *获取"店铺"属性
 	 */
 	public String getCompanyshop()
 	{
@@ -620,7 +599,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"companycity"属性
+	 *设置"城市和县ID"属性
 	 *@param companycity 实体的Companycity属性
 	 */
 	public void setCompanycity(String companycity)
@@ -629,7 +608,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"companycity"属性
+	 *获取"城市和县ID"属性
 	 */
 	public String getCompanycity()
 	{
@@ -637,7 +616,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"companyaddress"属性
+	 *设置"街道地址"属性
 	 *@param companyaddress 实体的Companyaddress属性
 	 */
 	public void setCompanyaddress(String companyaddress)
@@ -646,7 +625,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"companyaddress"属性
+	 *获取"街道地址"属性
 	 */
 	public String getCompanyaddress()
 	{
@@ -654,7 +633,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"companydetail"属性
+	 *设置"描述"属性
 	 *@param companydetail 实体的Companydetail属性
 	 */
 	public void setCompanydetail(String companydetail)
@@ -663,7 +642,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"companydetail"属性
+	 *获取"描述"属性
 	 */
 	public String getCompanydetail()
 	{
@@ -671,7 +650,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"companystatue"属性
+	 *设置"状态"属性
 	 *@param companystatue 实体的Companystatue属性
 	 */
 	public void setCompanystatue(String companystatue)
@@ -680,7 +659,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"companystatue"属性
+	 *获取"状态"属性
 	 */
 	public String getCompanystatue()
 	{
@@ -688,7 +667,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"pricesid"属性
+	 *设置"价格体系ID"属性
 	 *@param pricesid 实体的Pricesid属性
 	 */
 	public void setPricesid(String pricesid)
@@ -697,7 +676,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"pricesid"属性
+	 *获取"价格体系ID"属性
 	 */
 	public String getPricesid()
 	{
@@ -705,7 +684,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"pricesclass"属性
+	 *设置"分类"属性
 	 *@param pricesclass 实体的Pricesclass属性
 	 */
 	public void setPricesclass(String pricesclass)
@@ -714,7 +693,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"pricesclass"属性
+	 *获取"分类"属性
 	 */
 	public String getPricesclass()
 	{
@@ -722,24 +701,24 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"priceslevel"属性
+	 *设置"等级"属性
 	 *@param priceslevel 实体的Priceslevel属性
 	 */
-	public void setPriceslevel(Integer priceslevel)
+	public void setPriceslevel(String priceslevel)
 	{
 		this.priceslevel = priceslevel;
 	}
 	
 	/**
-	 *获取"priceslevel"属性
+	 *获取"等级"属性
 	 */
-	public Integer getPriceslevel()
+	public String getPriceslevel()
 	{
 		return this.priceslevel;
 	}	   
 
 	/**
-	 *设置"pricesprice"属性
+	 *设置"单品价"属性
 	 *@param pricesprice 实体的Pricesprice属性
 	 */
 	public void setPricesprice(Float pricesprice)
@@ -748,7 +727,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"pricesprice"属性
+	 *获取"单品价"属性
 	 */
 	public Float getPricesprice()
 	{
@@ -756,7 +735,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"pricesunit"属性
+	 *设置"单品单位"属性
 	 *@param pricesunit 实体的Pricesunit属性
 	 */
 	public void setPricesunit(String pricesunit)
@@ -765,7 +744,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"pricesunit"属性
+	 *获取"单品单位"属性
 	 */
 	public String getPricesunit()
 	{
@@ -773,7 +752,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"pricesprice2"属性
+	 *设置"套装价"属性
 	 *@param pricesprice2 实体的Pricesprice2属性
 	 */
 	public void setPricesprice2(Float pricesprice2)
@@ -782,7 +761,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"pricesprice2"属性
+	 *获取"套装价"属性
 	 */
 	public Float getPricesprice2()
 	{
@@ -790,7 +769,7 @@ public class Goodsview
 	}	   
 
 	/**
-	 *设置"pricesunit2"属性
+	 *设置"套装单位"属性
 	 *@param pricesunit2 实体的Pricesunit2属性
 	 */
 	public void setPricesunit2(String pricesunit2)
@@ -799,7 +778,7 @@ public class Goodsview
 	}
 	
 	/**
-	 *获取"pricesunit2"属性
+	 *获取"套装单位"属性
 	 */
 	public String getPricesunit2()
 	{
@@ -825,8 +804,7 @@ public class Goodsview
 	 	,String updor
 	 	,String goodsbrand
 	 	,String goodstype
-	 	,Integer goodsorder
-	 	,String goodsweight
+	 	,String goodsorder
 	 	,String goodsclassid
 	 	,String goodsclasscode
 	 	,String goodsclassname
@@ -843,7 +821,7 @@ public class Goodsview
 	 	,String companystatue
 	 	,String pricesid
 	 	,String pricesclass
-	 	,Integer priceslevel
+	 	,String priceslevel
 	 	,Float pricesprice
 	 	,String pricesunit
 	 	,Float pricesprice2
@@ -866,7 +844,6 @@ public class Goodsview
 	 	this.goodsbrand = goodsbrand;
 	 	this.goodstype = goodstype;
 	 	this.goodsorder = goodsorder;
-	 	this.goodsweight = goodsweight;
 	 	this.goodsclassid = goodsclassid;
 	 	this.goodsclasscode = goodsclasscode;
 	 	this.goodsclassname = goodsclassname;

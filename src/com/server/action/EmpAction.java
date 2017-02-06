@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 业务员 逻辑层
+ * emp 逻辑层
  *@author ZhangRuiLong
  */
 public class EmpAction extends BaseActionDao {

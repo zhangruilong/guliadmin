@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 订单 实体类
+ * orderm 实体类
  *@author ZhangRuiLong
  */
 public class Orderm
@@ -26,7 +26,7 @@ public class Orderm
    /**
     * 种类数
     */
-   private Integer ordermnum;   
+   private String ordermnum;   
    /**
     * 下单金额
     */
@@ -44,7 +44,7 @@ public class Orderm
     */
    private String ordermstatue;   
    /**
-    * 备注(客户留言)
+    * 备注
     */
    private String ordermdetail;   
    /**
@@ -72,11 +72,11 @@ public class Orderm
     */
    private String updor;   
    /**
-    * 业务员ID(订单源)
+    * 业务员ID
     */
    private String ordermemp;   
    /**
-    * 店铺名称
+    * 客户名称
     */
    private String ordermcusshop;   
    /**
@@ -164,7 +164,7 @@ public class Orderm
 	 *设置"种类数"属性
 	 *@param ordermnum 实体的Ordermnum属性
 	 */
-	public void setOrdermnum(Integer ordermnum)
+	public void setOrdermnum(String ordermnum)
 	{
 		this.ordermnum = ordermnum;
 	}
@@ -172,7 +172,7 @@ public class Orderm
 	/**
 	 *获取"种类数"属性
 	 */
-	public Integer getOrdermnum()
+	public String getOrdermnum()
 	{
 		return this.ordermnum;
 	}	   
@@ -246,7 +246,7 @@ public class Orderm
 	}	   
 
 	/**
-	 *设置"备注(客户留言)"属性
+	 *设置"备注"属性
 	 *@param ordermdetail 实体的Ordermdetail属性
 	 */
 	public void setOrdermdetail(String ordermdetail)
@@ -255,7 +255,7 @@ public class Orderm
 	}
 	
 	/**
-	 *获取"备注(客户留言)"属性
+	 *获取"备注"属性
 	 */
 	public String getOrdermdetail()
 	{
@@ -365,7 +365,7 @@ public class Orderm
 	}	   
 
 	/**
-	 *设置"业务员ID(订单源)"属性
+	 *设置"业务员ID"属性
 	 *@param ordermemp 实体的Ordermemp属性
 	 */
 	public void setOrdermemp(String ordermemp)
@@ -374,7 +374,7 @@ public class Orderm
 	}
 	
 	/**
-	 *获取"业务员ID(订单源)"属性
+	 *获取"业务员ID"属性
 	 */
 	public String getOrdermemp()
 	{
@@ -382,7 +382,7 @@ public class Orderm
 	}	   
 
 	/**
-	 *设置"店铺名称"属性
+	 *设置"客户名称"属性
 	 *@param ordermcusshop 实体的Ordermcusshop属性
 	 */
 	public void setOrdermcusshop(String ordermcusshop)
@@ -391,7 +391,7 @@ public class Orderm
 	}
 	
 	/**
-	 *获取"店铺名称"属性
+	 *获取"客户名称"属性
 	 */
 	public String getOrdermcusshop()
 	{
@@ -457,7 +457,7 @@ public class Orderm
 	 	,String ordermcustomer
 	 	,String ordermcompany
 	 	,String ordermcode
-	 	,Integer ordermnum
+	 	,String ordermnum
 	 	,Float ordermmoney
 	 	,Float ordermrightmoney
 	 	,String ordermway

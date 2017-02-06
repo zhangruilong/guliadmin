@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 微信首页区表 实体类的常量
+ * indexarea 实体类的常量
  *@author ZhangRuiLong
  */
 public class IndexareaPoco
@@ -9,7 +9,7 @@ public class IndexareaPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "微信首页区表";
+   public static String NAME = "indexarea";
    /**
     * 实体表名
     */
@@ -22,15 +22,15 @@ public class IndexareaPoco
     * 实体中文字段
     */
    public static String[] CHINESENAME = {
-   		"id",
-	 	"编码",
-	 	"名称",
-	 	"描述",
-	 	"状态",
-	 	"供应商id",
-	 	"顺序",
-	 	"图片",
-	 	"路径",
+   		"",
+	 	"",
+	 	"",
+	 	"",
+	 	"",
+	 	"",
+	 	"",
+	 	"",
+	 	"",
 	};
 	/**
 	 * 实体英文字段

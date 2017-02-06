@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 我的地址 逻辑层
+ * address 逻辑层
  *@author ZhangRuiLong
  */
 public class AddressAction extends BaseActionDao {

@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 大小类 实体类
+ * goodsclass 实体类
  *@author ZhangRuiLong
  */
 public class Goodsclass

@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 订单 实体类的常量
+ * orderm 实体类的常量
  *@author ZhangRuiLong
  */
 public class OrdermPoco
@@ -9,7 +9,7 @@ public class OrdermPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "订单";
+   public static String NAME = "orderm";
    /**
     * 实体表名
     */
@@ -31,15 +31,15 @@ public class OrdermPoco
 	 	"实际金额",
 	 	"支付方式",
 	 	"状态",
-	 	"备注(客户留言)",
+	 	"备注",
 	 	"下单时间",
 	 	"联系人",
 	 	"手机",
 	 	"地址",
 	 	"修改时间",
 	 	"修改人",
-	 	"业务员ID(订单源)",
-	 	"店铺名称",
+	 	"业务员ID",
+	 	"客户名称",
 	 	"客户等级",
 	 	"客户类型",
 	 	"打印次数",

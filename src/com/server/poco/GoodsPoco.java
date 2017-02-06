@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 商品 实体类的常量
+ * goods 实体类的常量
  *@author ZhangRuiLong
  */
 public class GoodsPoco
@@ -9,7 +9,7 @@ public class GoodsPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "商品";
+   public static String NAME = "goods";
    /**
     * 实体表名
     */
@@ -36,7 +36,7 @@ public class GoodsPoco
 	 	"创建人",
 	 	"修改人",
 	 	"品牌",
-	 	"种类(用来搜索用,有时候陪在小类里面.比如 裸价商品)",
+	 	"种类",
 	 	"顺序",
 	 	"重量",
 	};

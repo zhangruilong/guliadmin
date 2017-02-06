@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 客户 实体类
+ * customer 实体类
  *@author ZhangRuiLong
  */
 public class Customer
@@ -16,7 +16,7 @@ public class Customer
     */
    private String customercode;   
    /**
-    * 姓名(联系人名)
+    * 姓名
     */
    private String customername;   
    /**
@@ -28,7 +28,7 @@ public class Customer
     */
    private String customerpsw;   
    /**
-    * 店铺(客户名)
+    * 店铺
     */
    private String customershop;   
    /**
@@ -50,7 +50,7 @@ public class Customer
    /**
     * 等级
     */
-   private Integer customerlevel;   
+   private String customerlevel;   
    /**
     * openid
     */
@@ -107,7 +107,7 @@ public class Customer
 	}	   
 
 	/**
-	 *设置"姓名(联系人名)"属性
+	 *设置"姓名"属性
 	 *@param customername 实体的Customername属性
 	 */
 	public void setCustomername(String customername)
@@ -116,7 +116,7 @@ public class Customer
 	}
 	
 	/**
-	 *获取"姓名(联系人名)"属性
+	 *获取"姓名"属性
 	 */
 	public String getCustomername()
 	{
@@ -158,7 +158,7 @@ public class Customer
 	}	   
 
 	/**
-	 *设置"店铺(客户名)"属性
+	 *设置"店铺"属性
 	 *@param customershop 实体的Customershop属性
 	 */
 	public void setCustomershop(String customershop)
@@ -167,7 +167,7 @@ public class Customer
 	}
 	
 	/**
-	 *获取"店铺(客户名)"属性
+	 *获取"店铺"属性
 	 */
 	public String getCustomershop()
 	{
@@ -246,7 +246,7 @@ public class Customer
 	 *设置"等级"属性
 	 *@param customerlevel 实体的Customerlevel属性
 	 */
-	public void setCustomerlevel(Integer customerlevel)
+	public void setCustomerlevel(String customerlevel)
 	{
 		this.customerlevel = customerlevel;
 	}
@@ -254,7 +254,7 @@ public class Customer
 	/**
 	 *获取"等级"属性
 	 */
-	public Integer getCustomerlevel()
+	public String getCustomerlevel()
 	{
 		return this.customerlevel;
 	}	   
@@ -358,7 +358,7 @@ public class Customer
 	 	,String customerxian
 	 	,String customeraddress
 	 	,String customertype
-	 	,Integer customerlevel
+	 	,String customerlevel
 	 	,String openid
 	 	,String customerdetail
 	 	,String customerstatue

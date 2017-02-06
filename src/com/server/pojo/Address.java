@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 我的地址 实体类
+ * address 实体类
  *@author ZhangRuiLong
  */
 public class Address
@@ -28,9 +28,9 @@ public class Address
     */
    private String addressaddress;   
    /**
-    * 是否默认(1默认,0不是默认)
+    * 是否默认
     */
-   private Integer addressture;   
+   private String addressture;   
     //属性方法	    
      /**
 	 *设置主键"我的地址ID"属性
@@ -118,18 +118,18 @@ public class Address
 	}	   
 
 	/**
-	 *设置"是否默认(1默认,0不是默认)"属性
+	 *设置"是否默认"属性
 	 *@param addressture 实体的Addressture属性
 	 */
-	public void setAddressture(Integer addressture)
+	public void setAddressture(String addressture)
 	{
 		this.addressture = addressture;
 	}
 	
 	/**
-	 *获取"是否默认(1默认,0不是默认)"属性
+	 *获取"是否默认"属性
 	 */
-	public Integer getAddressture()
+	public String getAddressture()
 	{
 		return this.addressture;
 	}	   
@@ -143,7 +143,7 @@ public class Address
 	 	,String addressconnect
 	 	,String addressphone
 	 	,String addressaddress
-	 	,Integer addressture
+	 	,String addressture
 		 ){
 		super();
 		this.addressid = addressid;

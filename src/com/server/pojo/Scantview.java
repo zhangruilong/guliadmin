@@ -10,447 +10,447 @@ public class Scantview
    /**
     * 标品ID,主键
     */
-   private String sCANTID; 
+   private String scantid; 
    /**
     * 编码
     */
-   private String sCANTCODE;   
+   private String scantcode;   
    /**
     * 名称
     */
-   private String sCANTNAME;   
+   private String scantname;   
    /**
     * 描述
     */
-   private String sCANTDETAIL;   
+   private String scantdetail;   
    /**
     * 规格
     */
-   private String sCANTUNITS;   
+   private String scantunits;   
    /**
     * 小类ID
     */
-   private String sCANTCLASS;   
+   private String scantclass;   
    /**
     * 图片
     */
-   private String sCANTIMAGE;   
+   private String scantimage;   
    /**
     * 品牌
     */
-   private String sCANTBRAND;   
+   private String scantbrand;   
    /**
     * 种类
     */
-   private String sCANTTYPE;   
+   private String scanttype;   
    /**
     * 状态
     */
-   private String sCANTSTATUE;   
+   private String scantstatue;   
    /**
     * 大小类ID
     */
-   private String gOODSCLASSID;   
+   private String goodsclassid;   
    /**
     * 编码
     */
-   private String gOODSCLASSCODE;   
+   private String goodsclasscode;   
    /**
     * 名称
     */
-   private String gOODSCLASSNAME;   
+   private String goodsclassname;   
    /**
     * 父类
     */
-   private String gOODSCLASSPARENT;   
+   private String goodsclassparent;   
    /**
     * 图标
     */
-   private String gOODSCLASSDETAIL;   
+   private String goodsclassdetail;   
    /**
     * 状态
     */
-   private String gOODSCLASSSTATUE;   
+   private String goodsclassstatue;   
    /**
     * 城市(用逗号分开)
     */
-   private String gOODSCLASSCITY;   
+   private String goodsclasscity;   
    /**
     * 顺序
     */
-   private String gOODSCLASSORDER;   
+   private String goodsclassorder;   
    /**
     * 经销商(用逗号分开)
     */
-   private String gOODSCLASSCOMPANY;   
+   private String goodsclasscompany;   
     //属性方法	    
      /**
 	 *设置主键"标品ID"属性
-	 *@param sCANTID 实体的SCANTID属性
+	 *@param scantid 实体的Scantid属性
 	 */
-	public void setSCANTID(String sCANTID)
+	public void setScantid(String scantid)
 	{
-		this.sCANTID = sCANTID;
+		this.scantid = scantid;
 	}
 	
 	/**
 	 *获取主键"标品ID"属性
 	 */
-	public String getSCANTID()
+	public String getScantid()
 	{
-		return this.sCANTID;
+		return this.scantid;
 	}
 
 	/**
 	 *设置"编码"属性
-	 *@param sCANTCODE 实体的SCANTCODE属性
+	 *@param scantcode 实体的Scantcode属性
 	 */
-	public void setSCANTCODE(String sCANTCODE)
+	public void setScantcode(String scantcode)
 	{
-		this.sCANTCODE = sCANTCODE;
+		this.scantcode = scantcode;
 	}
 	
 	/**
 	 *获取"编码"属性
 	 */
-	public String getSCANTCODE()
+	public String getScantcode()
 	{
-		return this.sCANTCODE;
+		return this.scantcode;
 	}	   
 
 	/**
 	 *设置"名称"属性
-	 *@param sCANTNAME 实体的SCANTNAME属性
+	 *@param scantname 实体的Scantname属性
 	 */
-	public void setSCANTNAME(String sCANTNAME)
+	public void setScantname(String scantname)
 	{
-		this.sCANTNAME = sCANTNAME;
+		this.scantname = scantname;
 	}
 	
 	/**
 	 *获取"名称"属性
 	 */
-	public String getSCANTNAME()
+	public String getScantname()
 	{
-		return this.sCANTNAME;
+		return this.scantname;
 	}	   
 
 	/**
 	 *设置"描述"属性
-	 *@param sCANTDETAIL 实体的SCANTDETAIL属性
+	 *@param scantdetail 实体的Scantdetail属性
 	 */
-	public void setSCANTDETAIL(String sCANTDETAIL)
+	public void setScantdetail(String scantdetail)
 	{
-		this.sCANTDETAIL = sCANTDETAIL;
+		this.scantdetail = scantdetail;
 	}
 	
 	/**
 	 *获取"描述"属性
 	 */
-	public String getSCANTDETAIL()
+	public String getScantdetail()
 	{
-		return this.sCANTDETAIL;
+		return this.scantdetail;
 	}	   
 
 	/**
 	 *设置"规格"属性
-	 *@param sCANTUNITS 实体的SCANTUNITS属性
+	 *@param scantunits 实体的Scantunits属性
 	 */
-	public void setSCANTUNITS(String sCANTUNITS)
+	public void setScantunits(String scantunits)
 	{
-		this.sCANTUNITS = sCANTUNITS;
+		this.scantunits = scantunits;
 	}
 	
 	/**
 	 *获取"规格"属性
 	 */
-	public String getSCANTUNITS()
+	public String getScantunits()
 	{
-		return this.sCANTUNITS;
+		return this.scantunits;
 	}	   
 
 	/**
 	 *设置"小类ID"属性
-	 *@param sCANTCLASS 实体的SCANTCLASS属性
+	 *@param scantclass 实体的Scantclass属性
 	 */
-	public void setSCANTCLASS(String sCANTCLASS)
+	public void setScantclass(String scantclass)
 	{
-		this.sCANTCLASS = sCANTCLASS;
+		this.scantclass = scantclass;
 	}
 	
 	/**
 	 *获取"小类ID"属性
 	 */
-	public String getSCANTCLASS()
+	public String getScantclass()
 	{
-		return this.sCANTCLASS;
+		return this.scantclass;
 	}	   
 
 	/**
 	 *设置"图片"属性
-	 *@param sCANTIMAGE 实体的SCANTIMAGE属性
+	 *@param scantimage 实体的Scantimage属性
 	 */
-	public void setSCANTIMAGE(String sCANTIMAGE)
+	public void setScantimage(String scantimage)
 	{
-		this.sCANTIMAGE = sCANTIMAGE;
+		this.scantimage = scantimage;
 	}
 	
 	/**
 	 *获取"图片"属性
 	 */
-	public String getSCANTIMAGE()
+	public String getScantimage()
 	{
-		return this.sCANTIMAGE;
+		return this.scantimage;
 	}	   
 
 	/**
 	 *设置"品牌"属性
-	 *@param sCANTBRAND 实体的SCANTBRAND属性
+	 *@param scantbrand 实体的Scantbrand属性
 	 */
-	public void setSCANTBRAND(String sCANTBRAND)
+	public void setScantbrand(String scantbrand)
 	{
-		this.sCANTBRAND = sCANTBRAND;
+		this.scantbrand = scantbrand;
 	}
 	
 	/**
 	 *获取"品牌"属性
 	 */
-	public String getSCANTBRAND()
+	public String getScantbrand()
 	{
-		return this.sCANTBRAND;
+		return this.scantbrand;
 	}	   
 
 	/**
 	 *设置"种类"属性
-	 *@param sCANTTYPE 实体的SCANTTYPE属性
+	 *@param scanttype 实体的Scanttype属性
 	 */
-	public void setSCANTTYPE(String sCANTTYPE)
+	public void setScanttype(String scanttype)
 	{
-		this.sCANTTYPE = sCANTTYPE;
+		this.scanttype = scanttype;
 	}
 	
 	/**
 	 *获取"种类"属性
 	 */
-	public String getSCANTTYPE()
+	public String getScanttype()
 	{
-		return this.sCANTTYPE;
+		return this.scanttype;
 	}	   
 
 	/**
 	 *设置"状态"属性
-	 *@param sCANTSTATUE 实体的SCANTSTATUE属性
+	 *@param scantstatue 实体的Scantstatue属性
 	 */
-	public void setSCANTSTATUE(String sCANTSTATUE)
+	public void setScantstatue(String scantstatue)
 	{
-		this.sCANTSTATUE = sCANTSTATUE;
+		this.scantstatue = scantstatue;
 	}
 	
 	/**
 	 *获取"状态"属性
 	 */
-	public String getSCANTSTATUE()
+	public String getScantstatue()
 	{
-		return this.sCANTSTATUE;
+		return this.scantstatue;
 	}	   
 
 	/**
 	 *设置"大小类ID"属性
-	 *@param gOODSCLASSID 实体的GOODSCLASSID属性
+	 *@param goodsclassid 实体的Goodsclassid属性
 	 */
-	public void setGOODSCLASSID(String gOODSCLASSID)
+	public void setGoodsclassid(String goodsclassid)
 	{
-		this.gOODSCLASSID = gOODSCLASSID;
+		this.goodsclassid = goodsclassid;
 	}
 	
 	/**
 	 *获取"大小类ID"属性
 	 */
-	public String getGOODSCLASSID()
+	public String getGoodsclassid()
 	{
-		return this.gOODSCLASSID;
+		return this.goodsclassid;
 	}	   
 
 	/**
 	 *设置"编码"属性
-	 *@param gOODSCLASSCODE 实体的GOODSCLASSCODE属性
+	 *@param goodsclasscode 实体的Goodsclasscode属性
 	 */
-	public void setGOODSCLASSCODE(String gOODSCLASSCODE)
+	public void setGoodsclasscode(String goodsclasscode)
 	{
-		this.gOODSCLASSCODE = gOODSCLASSCODE;
+		this.goodsclasscode = goodsclasscode;
 	}
 	
 	/**
 	 *获取"编码"属性
 	 */
-	public String getGOODSCLASSCODE()
+	public String getGoodsclasscode()
 	{
-		return this.gOODSCLASSCODE;
+		return this.goodsclasscode;
 	}	   
 
 	/**
 	 *设置"名称"属性
-	 *@param gOODSCLASSNAME 实体的GOODSCLASSNAME属性
+	 *@param goodsclassname 实体的Goodsclassname属性
 	 */
-	public void setGOODSCLASSNAME(String gOODSCLASSNAME)
+	public void setGoodsclassname(String goodsclassname)
 	{
-		this.gOODSCLASSNAME = gOODSCLASSNAME;
+		this.goodsclassname = goodsclassname;
 	}
 	
 	/**
 	 *获取"名称"属性
 	 */
-	public String getGOODSCLASSNAME()
+	public String getGoodsclassname()
 	{
-		return this.gOODSCLASSNAME;
+		return this.goodsclassname;
 	}	   
 
 	/**
 	 *设置"父类"属性
-	 *@param gOODSCLASSPARENT 实体的GOODSCLASSPARENT属性
+	 *@param goodsclassparent 实体的Goodsclassparent属性
 	 */
-	public void setGOODSCLASSPARENT(String gOODSCLASSPARENT)
+	public void setGoodsclassparent(String goodsclassparent)
 	{
-		this.gOODSCLASSPARENT = gOODSCLASSPARENT;
+		this.goodsclassparent = goodsclassparent;
 	}
 	
 	/**
 	 *获取"父类"属性
 	 */
-	public String getGOODSCLASSPARENT()
+	public String getGoodsclassparent()
 	{
-		return this.gOODSCLASSPARENT;
+		return this.goodsclassparent;
 	}	   
 
 	/**
 	 *设置"图标"属性
-	 *@param gOODSCLASSDETAIL 实体的GOODSCLASSDETAIL属性
+	 *@param goodsclassdetail 实体的Goodsclassdetail属性
 	 */
-	public void setGOODSCLASSDETAIL(String gOODSCLASSDETAIL)
+	public void setGoodsclassdetail(String goodsclassdetail)
 	{
-		this.gOODSCLASSDETAIL = gOODSCLASSDETAIL;
+		this.goodsclassdetail = goodsclassdetail;
 	}
 	
 	/**
 	 *获取"图标"属性
 	 */
-	public String getGOODSCLASSDETAIL()
+	public String getGoodsclassdetail()
 	{
-		return this.gOODSCLASSDETAIL;
+		return this.goodsclassdetail;
 	}	   
 
 	/**
 	 *设置"状态"属性
-	 *@param gOODSCLASSSTATUE 实体的GOODSCLASSSTATUE属性
+	 *@param goodsclassstatue 实体的Goodsclassstatue属性
 	 */
-	public void setGOODSCLASSSTATUE(String gOODSCLASSSTATUE)
+	public void setGoodsclassstatue(String goodsclassstatue)
 	{
-		this.gOODSCLASSSTATUE = gOODSCLASSSTATUE;
+		this.goodsclassstatue = goodsclassstatue;
 	}
 	
 	/**
 	 *获取"状态"属性
 	 */
-	public String getGOODSCLASSSTATUE()
+	public String getGoodsclassstatue()
 	{
-		return this.gOODSCLASSSTATUE;
+		return this.goodsclassstatue;
 	}	   
 
 	/**
 	 *设置"城市(用逗号分开)"属性
-	 *@param gOODSCLASSCITY 实体的GOODSCLASSCITY属性
+	 *@param goodsclasscity 实体的Goodsclasscity属性
 	 */
-	public void setGOODSCLASSCITY(String gOODSCLASSCITY)
+	public void setGoodsclasscity(String goodsclasscity)
 	{
-		this.gOODSCLASSCITY = gOODSCLASSCITY;
+		this.goodsclasscity = goodsclasscity;
 	}
 	
 	/**
 	 *获取"城市(用逗号分开)"属性
 	 */
-	public String getGOODSCLASSCITY()
+	public String getGoodsclasscity()
 	{
-		return this.gOODSCLASSCITY;
+		return this.goodsclasscity;
 	}	   
 
 	/**
 	 *设置"顺序"属性
-	 *@param gOODSCLASSORDER 实体的GOODSCLASSORDER属性
+	 *@param goodsclassorder 实体的Goodsclassorder属性
 	 */
-	public void setGOODSCLASSORDER(String gOODSCLASSORDER)
+	public void setGoodsclassorder(String goodsclassorder)
 	{
-		this.gOODSCLASSORDER = gOODSCLASSORDER;
+		this.goodsclassorder = goodsclassorder;
 	}
 	
 	/**
 	 *获取"顺序"属性
 	 */
-	public String getGOODSCLASSORDER()
+	public String getGoodsclassorder()
 	{
-		return this.gOODSCLASSORDER;
+		return this.goodsclassorder;
 	}	   
 
 	/**
 	 *设置"经销商(用逗号分开)"属性
-	 *@param gOODSCLASSCOMPANY 实体的GOODSCLASSCOMPANY属性
+	 *@param goodsclasscompany 实体的Goodsclasscompany属性
 	 */
-	public void setGOODSCLASSCOMPANY(String gOODSCLASSCOMPANY)
+	public void setGoodsclasscompany(String goodsclasscompany)
 	{
-		this.gOODSCLASSCOMPANY = gOODSCLASSCOMPANY;
+		this.goodsclasscompany = goodsclasscompany;
 	}
 	
 	/**
 	 *获取"经销商(用逗号分开)"属性
 	 */
-	public String getGOODSCLASSCOMPANY()
+	public String getGoodsclasscompany()
 	{
-		return this.gOODSCLASSCOMPANY;
+		return this.goodsclasscompany;
 	}	   
 	public Scantview() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	public Scantview(
-		String sCANTID
-	 	,String sCANTCODE
-	 	,String sCANTNAME
-	 	,String sCANTDETAIL
-	 	,String sCANTUNITS
-	 	,String sCANTCLASS
-	 	,String sCANTIMAGE
-	 	,String sCANTBRAND
-	 	,String sCANTTYPE
-	 	,String sCANTSTATUE
-	 	,String gOODSCLASSID
-	 	,String gOODSCLASSCODE
-	 	,String gOODSCLASSNAME
-	 	,String gOODSCLASSPARENT
-	 	,String gOODSCLASSDETAIL
-	 	,String gOODSCLASSSTATUE
-	 	,String gOODSCLASSCITY
-	 	,String gOODSCLASSORDER
-	 	,String gOODSCLASSCOMPANY
+		String scantid
+	 	,String scantcode
+	 	,String scantname
+	 	,String scantdetail
+	 	,String scantunits
+	 	,String scantclass
+	 	,String scantimage
+	 	,String scantbrand
+	 	,String scanttype
+	 	,String scantstatue
+	 	,String goodsclassid
+	 	,String goodsclasscode
+	 	,String goodsclassname
+	 	,String goodsclassparent
+	 	,String goodsclassdetail
+	 	,String goodsclassstatue
+	 	,String goodsclasscity
+	 	,String goodsclassorder
+	 	,String goodsclasscompany
 		 ){
 		super();
-		this.sCANTID = sCANTID;
-	 	this.sCANTCODE = sCANTCODE;
-	 	this.sCANTNAME = sCANTNAME;
-	 	this.sCANTDETAIL = sCANTDETAIL;
-	 	this.sCANTUNITS = sCANTUNITS;
-	 	this.sCANTCLASS = sCANTCLASS;
-	 	this.sCANTIMAGE = sCANTIMAGE;
-	 	this.sCANTBRAND = sCANTBRAND;
-	 	this.sCANTTYPE = sCANTTYPE;
-	 	this.sCANTSTATUE = sCANTSTATUE;
-	 	this.gOODSCLASSID = gOODSCLASSID;
-	 	this.gOODSCLASSCODE = gOODSCLASSCODE;
-	 	this.gOODSCLASSNAME = gOODSCLASSNAME;
-	 	this.gOODSCLASSPARENT = gOODSCLASSPARENT;
-	 	this.gOODSCLASSDETAIL = gOODSCLASSDETAIL;
-	 	this.gOODSCLASSSTATUE = gOODSCLASSSTATUE;
-	 	this.gOODSCLASSCITY = gOODSCLASSCITY;
-	 	this.gOODSCLASSORDER = gOODSCLASSORDER;
-	 	this.gOODSCLASSCOMPANY = gOODSCLASSCOMPANY;
+		this.scantid = scantid;
+	 	this.scantcode = scantcode;
+	 	this.scantname = scantname;
+	 	this.scantdetail = scantdetail;
+	 	this.scantunits = scantunits;
+	 	this.scantclass = scantclass;
+	 	this.scantimage = scantimage;
+	 	this.scantbrand = scantbrand;
+	 	this.scanttype = scanttype;
+	 	this.scantstatue = scantstatue;
+	 	this.goodsclassid = goodsclassid;
+	 	this.goodsclasscode = goodsclasscode;
+	 	this.goodsclassname = goodsclassname;
+	 	this.goodsclassparent = goodsclassparent;
+	 	this.goodsclassdetail = goodsclassdetail;
+	 	this.goodsclassstatue = goodsclassstatue;
+	 	this.goodsclasscity = goodsclasscity;
+	 	this.goodsclassorder = goodsclassorder;
+	 	this.goodsclasscompany = goodsclasscompany;
 	}
 }
 

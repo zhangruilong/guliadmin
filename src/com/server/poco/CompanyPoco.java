@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 经销商 实体类的常量
+ * company 实体类的常量
  *@author ZhangRuiLong
  */
 public class CompanyPoco
@@ -9,7 +9,7 @@ public class CompanyPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "经销商";
+   public static String NAME = "company";
    /**
     * 实体表名
     */
@@ -24,16 +24,16 @@ public class CompanyPoco
    public static String[] CHINESENAME = {
    		"经销商ID",
 	 	"编码",
-	 	"姓名(联系人名)",
+	 	"姓名",
 	 	"手机",
-	 	"店铺(供应商名)",
+	 	"店铺",
 	 	"城市和县ID",
 	 	"街道地址",
 	 	"描述",
 	 	"状态",
 	 	"账号",
 	 	"密码",
-	 	"创建时间(服务区域)",
+	 	"创建时间",
 	 	"修改时间",
 	};
 	/**

@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 价格体系 实体类
+ * prices 实体类
  *@author ZhangRuiLong
  */
 public class Prices
@@ -22,7 +22,7 @@ public class Prices
    /**
     * 等级
     */
-   private Integer priceslevel;   
+   private String priceslevel;   
    /**
     * 单品价
     */
@@ -48,7 +48,7 @@ public class Prices
     */
    private String updtime;   
    /**
-    * 创建人
+    * 状态
     */
    private String creator;   
    /**
@@ -111,7 +111,7 @@ public class Prices
 	 *设置"等级"属性
 	 *@param priceslevel 实体的Priceslevel属性
 	 */
-	public void setPriceslevel(Integer priceslevel)
+	public void setPriceslevel(String priceslevel)
 	{
 		this.priceslevel = priceslevel;
 	}
@@ -119,7 +119,7 @@ public class Prices
 	/**
 	 *获取"等级"属性
 	 */
-	public Integer getPriceslevel()
+	public String getPriceslevel()
 	{
 		return this.priceslevel;
 	}	   
@@ -227,7 +227,7 @@ public class Prices
 	}	   
 
 	/**
-	 *设置"创建人"属性
+	 *设置"状态"属性
 	 *@param creator 实体的Creator属性
 	 */
 	public void setCreator(String creator)
@@ -236,7 +236,7 @@ public class Prices
 	}
 	
 	/**
-	 *获取"创建人"属性
+	 *获取"状态"属性
 	 */
 	public String getCreator()
 	{
@@ -267,7 +267,7 @@ public class Prices
 		String pricesid
 	 	,String pricesgoods
 	 	,String pricesclass
-	 	,Integer priceslevel
+	 	,String priceslevel
 	 	,Float pricesprice
 	 	,String pricesunit
 	 	,Float pricesprice2

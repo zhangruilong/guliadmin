@@ -36,11 +36,11 @@ public class Largecuspriceview
     */
    private String largecuspricecreator;   
    /**
-    * 
+    * 修改人
     */
    private String largecusupdtime;   
    /**
-    * 
+    * 修改时间
     */
    private String largecusupdor;   
    /**
@@ -192,7 +192,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置""属性
+	 *设置"修改人"属性
 	 *@param largecusupdtime 实体的Largecusupdtime属性
 	 */
 	public void setLargecusupdtime(String largecusupdtime)
@@ -201,7 +201,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取""属性
+	 *获取"修改人"属性
 	 */
 	public String getLargecusupdtime()
 	{
@@ -209,7 +209,7 @@ public class Largecuspriceview
 	}	   
 
 	/**
-	 *设置""属性
+	 *设置"修改时间"属性
 	 *@param largecusupdor 实体的Largecusupdor属性
 	 */
 	public void setLargecusupdor(String largecusupdor)
@@ -218,7 +218,7 @@ public class Largecuspriceview
 	}
 	
 	/**
-	 *获取""属性
+	 *获取"修改时间"属性
 	 */
 	public String getLargecusupdor()
 	{

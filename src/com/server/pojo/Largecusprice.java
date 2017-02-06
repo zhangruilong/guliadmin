@@ -8,19 +8,19 @@ import java.sql.Date;
 public class Largecusprice
 {
    /**
-    * 供应商大客户商品价格id,主键
+    * ID,主键
     */
    private String largecuspriceid; 
    /**
-    * 供应商id
+    * 供应商
     */
    private String largecuspricecompany;   
    /**
-    * 客户id
+    * 客户
     */
    private String largecuspricecustomer;   
    /**
-    * 商品id
+    * 商品
     */
    private String largecuspricegoods;   
    /**
@@ -28,7 +28,7 @@ public class Largecusprice
     */
    private String largecuspriceprice;   
    /**
-    * 供应商大客户商品价格描述
+    * 描述
     */
    private String largecuspricedetail;   
    /**
@@ -44,24 +44,24 @@ public class Largecusprice
     */
    private String largecuspriceprice2;   
    /**
-    * 单品单位
+    * 单品价单位
     */
    private String largecuspriceunit;   
    /**
-    * 套装单位
+    * 套装价单位
     */
    private String largecuspriceunit2;   
    /**
-    * 修改时间
+    * 修改人
     */
    private String largecusupdtime;   
    /**
-    * 修改人
+    * 修改时间
     */
    private String largecusupdor;   
     //属性方法	    
      /**
-	 *设置主键"供应商大客户商品价格id"属性
+	 *设置主键"ID"属性
 	 *@param largecuspriceid 实体的Largecuspriceid属性
 	 */
 	public void setLargecuspriceid(String largecuspriceid)
@@ -70,7 +70,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取主键"供应商大客户商品价格id"属性
+	 *获取主键"ID"属性
 	 */
 	public String getLargecuspriceid()
 	{
@@ -78,7 +78,7 @@ public class Largecusprice
 	}
 
 	/**
-	 *设置"供应商id"属性
+	 *设置"供应商"属性
 	 *@param largecuspricecompany 实体的Largecuspricecompany属性
 	 */
 	public void setLargecuspricecompany(String largecuspricecompany)
@@ -87,7 +87,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"供应商id"属性
+	 *获取"供应商"属性
 	 */
 	public String getLargecuspricecompany()
 	{
@@ -95,7 +95,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"客户id"属性
+	 *设置"客户"属性
 	 *@param largecuspricecustomer 实体的Largecuspricecustomer属性
 	 */
 	public void setLargecuspricecustomer(String largecuspricecustomer)
@@ -104,7 +104,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"客户id"属性
+	 *获取"客户"属性
 	 */
 	public String getLargecuspricecustomer()
 	{
@@ -112,7 +112,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"商品id"属性
+	 *设置"商品"属性
 	 *@param largecuspricegoods 实体的Largecuspricegoods属性
 	 */
 	public void setLargecuspricegoods(String largecuspricegoods)
@@ -121,7 +121,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"商品id"属性
+	 *获取"商品"属性
 	 */
 	public String getLargecuspricegoods()
 	{
@@ -146,7 +146,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"供应商大客户商品价格描述"属性
+	 *设置"描述"属性
 	 *@param largecuspricedetail 实体的Largecuspricedetail属性
 	 */
 	public void setLargecuspricedetail(String largecuspricedetail)
@@ -155,7 +155,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"供应商大客户商品价格描述"属性
+	 *获取"描述"属性
 	 */
 	public String getLargecuspricedetail()
 	{
@@ -214,7 +214,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"单品单位"属性
+	 *设置"单品价单位"属性
 	 *@param largecuspriceunit 实体的Largecuspriceunit属性
 	 */
 	public void setLargecuspriceunit(String largecuspriceunit)
@@ -223,7 +223,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"单品单位"属性
+	 *获取"单品价单位"属性
 	 */
 	public String getLargecuspriceunit()
 	{
@@ -231,7 +231,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"套装单位"属性
+	 *设置"套装价单位"属性
 	 *@param largecuspriceunit2 实体的Largecuspriceunit2属性
 	 */
 	public void setLargecuspriceunit2(String largecuspriceunit2)
@@ -240,7 +240,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"套装单位"属性
+	 *获取"套装价单位"属性
 	 */
 	public String getLargecuspriceunit2()
 	{
@@ -248,7 +248,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"修改时间"属性
+	 *设置"修改人"属性
 	 *@param largecusupdtime 实体的Largecusupdtime属性
 	 */
 	public void setLargecusupdtime(String largecusupdtime)
@@ -257,7 +257,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"修改时间"属性
+	 *获取"修改人"属性
 	 */
 	public String getLargecusupdtime()
 	{
@@ -265,7 +265,7 @@ public class Largecusprice
 	}	   
 
 	/**
-	 *设置"修改人"属性
+	 *设置"修改时间"属性
 	 *@param largecusupdor 实体的Largecusupdor属性
 	 */
 	public void setLargecusupdor(String largecusupdor)
@@ -274,7 +274,7 @@ public class Largecusprice
 	}
 	
 	/**
-	 *获取"修改人"属性
+	 *获取"修改时间"属性
 	 */
 	public String getLargecusupdor()
 	{

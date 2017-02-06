@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 城市和县及街道 实体类
+ * city 实体类
  *@author ZhangRuiLong
  */
 public class City

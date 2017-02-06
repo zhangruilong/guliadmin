@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 收藏 实体类
+ * collect 实体类
  *@author ZhangRuiLong
  */
 public class Collect

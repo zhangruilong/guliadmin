@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 订单详细 实体类
+ * orderd 实体类
  *@author ZhangRuiLong
  */
 public class Orderd
@@ -50,7 +50,7 @@ public class Orderd
    /**
     * 数量
     */
-   private Integer orderdnum;   
+   private String orderdnum;   
    /**
     * 下单金额
     */
@@ -60,19 +60,19 @@ public class Orderd
     */
    private Float orderdrightmoney;   
    /**
-    * 重量
+    * 
     */
    private String orderdweight;   
    /**
-    * 商品id
+    * 
     */
    private String orderdgoods;   
    /**
-    * 订单备注
+    * 
     */
    private String orderdnote;   
    /**
-    * 订单商品品牌
+    * 
     */
    private String orderdbrand;   
     //属性方法	    
@@ -250,7 +250,7 @@ public class Orderd
 	 *设置"数量"属性
 	 *@param orderdnum 实体的Orderdnum属性
 	 */
-	public void setOrderdnum(Integer orderdnum)
+	public void setOrderdnum(String orderdnum)
 	{
 		this.orderdnum = orderdnum;
 	}
@@ -258,7 +258,7 @@ public class Orderd
 	/**
 	 *获取"数量"属性
 	 */
-	public Integer getOrderdnum()
+	public String getOrderdnum()
 	{
 		return this.orderdnum;
 	}	   
@@ -298,7 +298,7 @@ public class Orderd
 	}	   
 
 	/**
-	 *设置"重量"属性
+	 *设置""属性
 	 *@param orderdweight 实体的Orderdweight属性
 	 */
 	public void setOrderdweight(String orderdweight)
@@ -307,7 +307,7 @@ public class Orderd
 	}
 	
 	/**
-	 *获取"重量"属性
+	 *获取""属性
 	 */
 	public String getOrderdweight()
 	{
@@ -315,7 +315,7 @@ public class Orderd
 	}	   
 
 	/**
-	 *设置"商品id"属性
+	 *设置""属性
 	 *@param orderdgoods 实体的Orderdgoods属性
 	 */
 	public void setOrderdgoods(String orderdgoods)
@@ -324,7 +324,7 @@ public class Orderd
 	}
 	
 	/**
-	 *获取"商品id"属性
+	 *获取""属性
 	 */
 	public String getOrderdgoods()
 	{
@@ -332,7 +332,7 @@ public class Orderd
 	}	   
 
 	/**
-	 *设置"订单备注"属性
+	 *设置""属性
 	 *@param orderdnote 实体的Orderdnote属性
 	 */
 	public void setOrderdnote(String orderdnote)
@@ -341,7 +341,7 @@ public class Orderd
 	}
 	
 	/**
-	 *获取"订单备注"属性
+	 *获取""属性
 	 */
 	public String getOrderdnote()
 	{
@@ -349,7 +349,7 @@ public class Orderd
 	}	   
 
 	/**
-	 *设置"订单商品品牌"属性
+	 *设置""属性
 	 *@param orderdbrand 实体的Orderdbrand属性
 	 */
 	public void setOrderdbrand(String orderdbrand)
@@ -358,7 +358,7 @@ public class Orderd
 	}
 	
 	/**
-	 *获取"订单商品品牌"属性
+	 *获取""属性
 	 */
 	public String getOrderdbrand()
 	{
@@ -379,7 +379,7 @@ public class Orderd
 	 	,Float orderdprice
 	 	,String orderdunit
 	 	,String orderdclass
-	 	,Integer orderdnum
+	 	,String orderdnum
 	 	,Float orderdmoney
 	 	,Float orderdrightmoney
 	 	,String orderdweight

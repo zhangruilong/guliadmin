@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 订单 逻辑层
+ * orderm 逻辑层
  *@author ZhangRuiLong
  */
 public class OrdermAction extends BaseActionDao {

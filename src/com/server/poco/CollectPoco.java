@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 收藏 实体类的常量
+ * collect 实体类的常量
  *@author ZhangRuiLong
  */
 public class CollectPoco
@@ -9,7 +9,7 @@ public class CollectPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "收藏";
+   public static String NAME = "collect";
    /**
     * 实体表名
     */

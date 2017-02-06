@@ -2,34 +2,34 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 客户反馈意见 实体类
+ * feedback 实体类
  *@author ZhangRuiLong
  */
 public class Feedback
 {
    /**
-    * 客户反馈id,主键
+    * ,主键
     */
    private String feedbackid; 
    /**
-    * 内容
+    * 
     */
    private String feedbackdetail;   
    /**
-    * 客户id
+    * 
     */
    private String feedbackcustomer;   
    /**
-    * 反馈时间
+    * 
     */
    private String feedbacktime;   
    /**
-    * 反馈状态
+    * 
     */
    private String feedbackstate;   
     //属性方法	    
      /**
-	 *设置主键"客户反馈id"属性
+	 *设置主键""属性
 	 *@param feedbackid 实体的Feedbackid属性
 	 */
 	public void setFeedbackid(String feedbackid)
@@ -38,7 +38,7 @@ public class Feedback
 	}
 	
 	/**
-	 *获取主键"客户反馈id"属性
+	 *获取主键""属性
 	 */
 	public String getFeedbackid()
 	{
@@ -46,7 +46,7 @@ public class Feedback
 	}
 
 	/**
-	 *设置"内容"属性
+	 *设置""属性
 	 *@param feedbackdetail 实体的Feedbackdetail属性
 	 */
 	public void setFeedbackdetail(String feedbackdetail)
@@ -55,7 +55,7 @@ public class Feedback
 	}
 	
 	/**
-	 *获取"内容"属性
+	 *获取""属性
 	 */
 	public String getFeedbackdetail()
 	{
@@ -63,7 +63,7 @@ public class Feedback
 	}	   
 
 	/**
-	 *设置"客户id"属性
+	 *设置""属性
 	 *@param feedbackcustomer 实体的Feedbackcustomer属性
 	 */
 	public void setFeedbackcustomer(String feedbackcustomer)
@@ -72,7 +72,7 @@ public class Feedback
 	}
 	
 	/**
-	 *获取"客户id"属性
+	 *获取""属性
 	 */
 	public String getFeedbackcustomer()
 	{
@@ -80,7 +80,7 @@ public class Feedback
 	}	   
 
 	/**
-	 *设置"反馈时间"属性
+	 *设置""属性
 	 *@param feedbacktime 实体的Feedbacktime属性
 	 */
 	public void setFeedbacktime(String feedbacktime)
@@ -89,7 +89,7 @@ public class Feedback
 	}
 	
 	/**
-	 *获取"反馈时间"属性
+	 *获取""属性
 	 */
 	public String getFeedbacktime()
 	{
@@ -97,7 +97,7 @@ public class Feedback
 	}	   
 
 	/**
-	 *设置"反馈状态"属性
+	 *设置""属性
 	 *@param feedbackstate 实体的Feedbackstate属性
 	 */
 	public void setFeedbackstate(String feedbackstate)
@@ -106,7 +106,7 @@ public class Feedback
 	}
 	
 	/**
-	 *获取"反馈状态"属性
+	 *获取""属性
 	 */
 	public String getFeedbackstate()
 	{

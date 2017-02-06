@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * COMPANYVIEW 逻辑层
+ * companyview 逻辑层
  *@author ZhangRuiLong
  */
 public class CompanyviewAction extends BaseActionDao {
@@ -32,8 +32,8 @@ public class CompanyviewAction extends BaseActionDao {
 		json = json.replace("\"\"", "null");
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Companyview temp:cuss){
-			if(CommonUtil.isNull(temp.getCOMPANYID()))
-				temp.setCOMPANYID(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getCompanyid()))
+				temp.setCompanyid(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);
@@ -64,8 +64,8 @@ public class CompanyviewAction extends BaseActionDao {
 		String json = FileUtil.impExcel(fileinfo.getPath(),CompanyviewPoco.FIELDNAME); 
 		if(CommonUtil.isNotEmpty(json)) cuss = CommonConst.GSON.fromJson(json, TYPE);
 		for(Companyview temp:cuss){
-			if(CommonUtil.isNull(temp.getCOMPANYID()))
-				temp.setCOMPANYID(CommonUtil.getNewId());
+			if(CommonUtil.isNull(temp.getCompanyid()))
+				temp.setCompanyid(CommonUtil.getNewId());
 			result = insSingle(temp);
 		}
 		responsePW(response, result);

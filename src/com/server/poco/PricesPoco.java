@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 价格体系 实体类的常量
+ * prices 实体类的常量
  *@author ZhangRuiLong
  */
 public class PricesPoco
@@ -9,7 +9,7 @@ public class PricesPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "价格体系";
+   public static String NAME = "prices";
    /**
     * 实体表名
     */
@@ -32,7 +32,7 @@ public class PricesPoco
 	 	"套装单位",
 	 	"创建时间",
 	 	"修改时间",
-	 	"创建人",
+	 	"状态",
 	 	"修改人",
 	};
 	/**

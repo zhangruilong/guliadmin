@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 大小类 实体类的常量
+ * goodsclass 实体类的常量
  *@author ZhangRuiLong
  */
 public class GoodsclassPoco
@@ -9,7 +9,7 @@ public class GoodsclassPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "大小类";
+   public static String NAME = "goodsclass";
    /**
     * 实体表名
     */

@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 客户反馈意见 实体类的常量
+ * feedback 实体类的常量
  *@author ZhangRuiLong
  */
 public class FeedbackPoco
@@ -9,7 +9,7 @@ public class FeedbackPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "客户反馈意见";
+   public static String NAME = "feedback";
    /**
     * 实体表名
     */
@@ -22,11 +22,11 @@ public class FeedbackPoco
     * 实体中文字段
     */
    public static String[] CHINESENAME = {
-   		"客户反馈id",
-	 	"内容",
-	 	"客户id",
-	 	"反馈时间",
-	 	"反馈状态",
+   		"",
+	 	"",
+	 	"",
+	 	"",
+	 	"",
 	};
 	/**
 	 * 实体英文字段

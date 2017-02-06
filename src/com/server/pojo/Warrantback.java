@@ -44,11 +44,11 @@ public class Warrantback
     */
    private String warrantbackinswhen;   
    /**
-    * 更新时间
+    * 修改人
     */
    private String warrantbackupdwho;   
    /**
-    * 更新时间
+    * 修改时间
     */
    private String warrantbackupdwhen;   
     //属性方法	    
@@ -206,7 +206,7 @@ public class Warrantback
 	}	   
 
 	/**
-	 *设置"更新时间"属性
+	 *设置"修改人"属性
 	 *@param warrantbackupdwho 实体的Warrantbackupdwho属性
 	 */
 	public void setWarrantbackupdwho(String warrantbackupdwho)
@@ -215,7 +215,7 @@ public class Warrantback
 	}
 	
 	/**
-	 *获取"更新时间"属性
+	 *获取"修改人"属性
 	 */
 	public String getWarrantbackupdwho()
 	{
@@ -223,7 +223,7 @@ public class Warrantback
 	}	   
 
 	/**
-	 *设置"更新时间"属性
+	 *设置"修改时间"属性
 	 *@param warrantbackupdwhen 实体的Warrantbackupdwhen属性
 	 */
 	public void setWarrantbackupdwhen(String warrantbackupdwhen)
@@ -232,7 +232,7 @@ public class Warrantback
 	}
 	
 	/**
-	 *获取"更新时间"属性
+	 *获取"修改时间"属性
 	 */
 	public String getWarrantbackupdwhen()
 	{

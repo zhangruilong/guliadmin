@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 经销商和客户 实体类的常量
+ * ccustomer 实体类的常量
  *@author ZhangRuiLong
  */
 public class CcustomerPoco
@@ -9,7 +9,7 @@ public class CcustomerPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "经销商和客户";
+   public static String NAME = "ccustomer";
    /**
     * 实体表名
     */
@@ -25,9 +25,9 @@ public class CcustomerPoco
    		"经销商和客户ID",
 	 	"经销商ID",
 	 	"客户ID",
-	 	"描述(关系等级)",
-	 	"创建时间(业务员名)",
-	 	"创建人(是否大客户:1是大客户)",
+	 	"客户等级",
+	 	"客户经理",
+	 	"大客户",
 	 	"修改时间",
 	 	"修改人",
 	};

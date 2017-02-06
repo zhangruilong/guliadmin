@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 业务员 实体类
+ * emp 实体类
  *@author ZhangRuiLong
  */
 public class Emp

@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 城市和县及街道 实体类的常量
+ * city 实体类的常量
  *@author ZhangRuiLong
  */
 public class CityPoco
@@ -9,7 +9,7 @@ public class CityPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "城市和县及街道";
+   public static String NAME = "city";
    /**
     * 实体表名
     */

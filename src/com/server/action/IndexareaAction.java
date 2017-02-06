@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 微信首页区表 逻辑层
+ * indexarea 逻辑层
  *@author ZhangRuiLong
  */
 public class IndexareaAction extends BaseActionDao {

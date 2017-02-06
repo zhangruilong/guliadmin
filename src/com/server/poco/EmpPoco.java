@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 业务员 实体类的常量
+ * emp 实体类的常量
  *@author ZhangRuiLong
  */
 public class EmpPoco
@@ -9,7 +9,7 @@ public class EmpPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "业务员";
+   public static String NAME = "emp";
    /**
     * 实体表名
     */

@@ -44,11 +44,11 @@ public class Warrantcheck
     */
    private String warrantcheckinswhen;   
    /**
-    * 更新人
+    * 修改人
     */
    private String warrantcheckupdwho;   
    /**
-    * 更新时间
+    * 修改时间
     */
    private String warrantcheckupdwhen;   
     //属性方法	    
@@ -206,7 +206,7 @@ public class Warrantcheck
 	}	   
 
 	/**
-	 *设置"更新人"属性
+	 *设置"修改人"属性
 	 *@param warrantcheckupdwho 实体的Warrantcheckupdwho属性
 	 */
 	public void setWarrantcheckupdwho(String warrantcheckupdwho)
@@ -215,7 +215,7 @@ public class Warrantcheck
 	}
 	
 	/**
-	 *获取"更新人"属性
+	 *获取"修改人"属性
 	 */
 	public String getWarrantcheckupdwho()
 	{
@@ -223,7 +223,7 @@ public class Warrantcheck
 	}	   
 
 	/**
-	 *设置"更新时间"属性
+	 *设置"修改时间"属性
 	 *@param warrantcheckupdwhen 实体的Warrantcheckupdwhen属性
 	 */
 	public void setWarrantcheckupdwhen(String warrantcheckupdwhen)
@@ -232,7 +232,7 @@ public class Warrantcheck
 	}
 	
 	/**
-	 *获取"更新时间"属性
+	 *获取"修改时间"属性
 	 */
 	public String getWarrantcheckupdwhen()
 	{

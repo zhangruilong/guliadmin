@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 经销商和客户 逻辑层
+ * ccustomer 逻辑层
  *@author ZhangRuiLong
  */
 public class CcustomerAction extends BaseActionDao {

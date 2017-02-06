@@ -22,22 +22,22 @@ public class LargecuspriceviewPoco
     * 实体中文字段
     */
    public static String[] CHINESENAME = {
-   		"largecuspriceid",
-	 	"largecuspricecompany",
-	 	"largecuspriceprice",
-	 	"largecuspriceunit",
-	 	"largecuspricedetail",
-	 	"largecuspricecreatetime",
-	 	"largecuspricecreator",
-	 	"largecusupdtime",
-	 	"largecusupdor",
-	 	"largecuspricecustomer",
-	 	"goodsid",
-	 	"goodscompany",
-	 	"goodscode",
-	 	"goodsname",
-	 	"goodsunits",
-	 	"goodsclassname",
+   		"ID",
+	 	"供应商",
+	 	"单品价",
+	 	"单品价单位",
+	 	"描述",
+	 	"创建时间",
+	 	"创建人",
+	 	"修改人",
+	 	"修改时间",
+	 	"客户",
+	 	"商品ID",
+	 	"经销商ID",
+	 	"编码",
+	 	"名称",
+	 	"规格",
+	 	"名称",
 	};
 	/**
 	 * 实体英文字段

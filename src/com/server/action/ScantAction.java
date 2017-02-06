@@ -17,7 +17,7 @@ import com.system.tools.util.FileUtil;
 import com.system.tools.pojo.Pageinfo;
 
 /**
- * 标品库 逻辑层
+ * scant 逻辑层
  *@author ZhangRuiLong
  */
 public class ScantAction extends BaseActionDao {

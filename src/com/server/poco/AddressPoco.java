@@ -1,7 +1,7 @@
 package com.server.poco;
 
 /**
- * 我的地址 实体类的常量
+ * address 实体类的常量
  *@author ZhangRuiLong
  */
 public class AddressPoco
@@ -9,7 +9,7 @@ public class AddressPoco
    /**
     * 实体中文名
     */
-   public static String NAME = "我的地址";
+   public static String NAME = "address";
    /**
     * 实体表名
     */
@@ -27,7 +27,7 @@ public class AddressPoco
 	 	"联系人",
 	 	"手机",
 	 	"地址",
-	 	"是否默认(1默认,0不是默认)",
+	 	"是否默认",
 	};
 	/**
 	 * 实体英文字段

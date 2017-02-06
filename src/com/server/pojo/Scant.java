@@ -2,7 +2,7 @@ package com.server.pojo;
 
 import java.sql.Date;
 /**
- * 标品库 实体类
+ * scant 实体类
  *@author ZhangRuiLong
  */
 public class Scant
