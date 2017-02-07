@@ -26,103 +26,103 @@ public class Collectview
    /**
     * 商品ID
     */
-   private String gOODSID;   
+   private String goodsid;   
    /**
     * 经销商ID
     */
-   private String gOODSCOMPANY;   
+   private String goodscompany;   
    /**
     * 编码
     */
-   private String gOODSCODE;   
+   private String goodscode;   
    /**
     * 名称
     */
-   private String gOODSNAME;   
+   private String goodsname;   
    /**
     * 描述
     */
-   private String gOODSDETAIL;   
+   private String goodsdetail;   
    /**
     * 规格
     */
-   private String gOODSUNITS;   
+   private String goodsunits;   
    /**
     * 小类ID
     */
-   private String gOODSCLASS;   
+   private String goodsclass;   
    /**
     * 图片
     */
-   private String gOODSIMAGE;   
+   private String goodsimage;   
    /**
     * 状态
     */
-   private String gOODSSTATUE;   
+   private String goodsstatue;   
    /**
     * 创建时间
     */
-   private String cREATETIME;   
+   private String createtime;   
    /**
     * 修改时间
     */
-   private String uPDTIME;   
+   private String updtime;   
    /**
     * 创建人
     */
-   private String cREATOR;   
+   private String creator;   
    /**
     * 修改人
     */
-   private String uPDOR;   
+   private String updor;   
    /**
     * 品牌
     */
-   private String gOODSBRAND;   
+   private String goodsbrand;   
    /**
     * 种类
     */
-   private String gOODSTYPE;   
+   private String goodstype;   
    /**
     * 顺序
     */
-   private Integer gOODSORDER;   
+   private Integer goodsorder;   
    /**
     * 大小类ID
     */
-   private String gOODSCLASSID;   
+   private String goodsclassid;   
    /**
     * 编码
     */
-   private String gOODSCLASSCODE;   
+   private String goodsclasscode;   
    /**
     * 名称
     */
-   private String gOODSCLASSNAME;   
+   private String goodsclassname;   
    /**
     * 父类
     */
-   private String gOODSCLASSPARENT;   
+   private String goodsclassparent;   
    /**
     * 图标
     */
-   private String gOODSCLASSDETAIL;   
+   private String goodsclassdetail;   
    /**
     * 状态
     */
-   private String gOODSCLASSSTATUE;   
+   private String goodsclassstatue;   
    /**
     * 城市(用逗号分开)
     */
-   private String gOODSCLASSCITY;   
+   private String goodsclasscity;   
    /**
     * 顺序
     */
-   private String gOODSCLASSORDER;   
+   private String goodsclassorder;   
    /**
     * 经销商(用逗号分开)
     */
-   private String gOODSCLASSCOMPANY;   
+   private String goodsclasscompany;   
    /**
     * 店铺
     */
@@ -242,427 +242,427 @@ public class Collectview
 
 	/**
 	 *设置"商品ID"属性
-	 *@param gOODSID 实体的GOODSID属性
+	 *@param goodsid 实体的Goodsid属性
 	 */
-	public void setGOODSID(String gOODSID)
+	public void setGoodsid(String goodsid)
 	{
-		this.gOODSID = gOODSID;
+		this.goodsid = goodsid;
 	}
 	
 	/**
 	 *获取"商品ID"属性
 	 */
-	public String getGOODSID()
+	public String getGoodsid()
 	{
-		return this.gOODSID;
+		return this.goodsid;
 	}	   
 
 	/**
 	 *设置"经销商ID"属性
-	 *@param gOODSCOMPANY 实体的GOODSCOMPANY属性
+	 *@param goodscompany 实体的Goodscompany属性
 	 */
-	public void setGOODSCOMPANY(String gOODSCOMPANY)
+	public void setGoodscompany(String goodscompany)
 	{
-		this.gOODSCOMPANY = gOODSCOMPANY;
+		this.goodscompany = goodscompany;
 	}
 	
 	/**
 	 *获取"经销商ID"属性
 	 */
-	public String getGOODSCOMPANY()
+	public String getGoodscompany()
 	{
-		return this.gOODSCOMPANY;
+		return this.goodscompany;
 	}	   
 
 	/**
 	 *设置"编码"属性
-	 *@param gOODSCODE 实体的GOODSCODE属性
+	 *@param goodscode 实体的Goodscode属性
 	 */
-	public void setGOODSCODE(String gOODSCODE)
+	public void setGoodscode(String goodscode)
 	{
-		this.gOODSCODE = gOODSCODE;
+		this.goodscode = goodscode;
 	}
 	
 	/**
 	 *获取"编码"属性
 	 */
-	public String getGOODSCODE()
+	public String getGoodscode()
 	{
-		return this.gOODSCODE;
+		return this.goodscode;
 	}	   
 
 	/**
 	 *设置"名称"属性
-	 *@param gOODSNAME 实体的GOODSNAME属性
+	 *@param goodsname 实体的Goodsname属性
 	 */
-	public void setGOODSNAME(String gOODSNAME)
+	public void setGoodsname(String goodsname)
 	{
-		this.gOODSNAME = gOODSNAME;
+		this.goodsname = goodsname;
 	}
 	
 	/**
 	 *获取"名称"属性
 	 */
-	public String getGOODSNAME()
+	public String getGoodsname()
 	{
-		return this.gOODSNAME;
+		return this.goodsname;
 	}	   
 
 	/**
 	 *设置"描述"属性
-	 *@param gOODSDETAIL 实体的GOODSDETAIL属性
+	 *@param goodsdetail 实体的Goodsdetail属性
 	 */
-	public void setGOODSDETAIL(String gOODSDETAIL)
+	public void setGoodsdetail(String goodsdetail)
 	{
-		this.gOODSDETAIL = gOODSDETAIL;
+		this.goodsdetail = goodsdetail;
 	}
 	
 	/**
 	 *获取"描述"属性
 	 */
-	public String getGOODSDETAIL()
+	public String getGoodsdetail()
 	{
-		return this.gOODSDETAIL;
+		return this.goodsdetail;
 	}	   
 
 	/**
 	 *设置"规格"属性
-	 *@param gOODSUNITS 实体的GOODSUNITS属性
+	 *@param goodsunits 实体的Goodsunits属性
 	 */
-	public void setGOODSUNITS(String gOODSUNITS)
+	public void setGoodsunits(String goodsunits)
 	{
-		this.gOODSUNITS = gOODSUNITS;
+		this.goodsunits = goodsunits;
 	}
 	
 	/**
 	 *获取"规格"属性
 	 */
-	public String getGOODSUNITS()
+	public String getGoodsunits()
 	{
-		return this.gOODSUNITS;
+		return this.goodsunits;
 	}	   
 
 	/**
 	 *设置"小类ID"属性
-	 *@param gOODSCLASS 实体的GOODSCLASS属性
+	 *@param goodsclass 实体的Goodsclass属性
 	 */
-	public void setGOODSCLASS(String gOODSCLASS)
+	public void setGoodsclass(String goodsclass)
 	{
-		this.gOODSCLASS = gOODSCLASS;
+		this.goodsclass = goodsclass;
 	}
 	
 	/**
 	 *获取"小类ID"属性
 	 */
-	public String getGOODSCLASS()
+	public String getGoodsclass()
 	{
-		return this.gOODSCLASS;
+		return this.goodsclass;
 	}	   
 
 	/**
 	 *设置"图片"属性
-	 *@param gOODSIMAGE 实体的GOODSIMAGE属性
+	 *@param goodsimage 实体的Goodsimage属性
 	 */
-	public void setGOODSIMAGE(String gOODSIMAGE)
+	public void setGoodsimage(String goodsimage)
 	{
-		this.gOODSIMAGE = gOODSIMAGE;
+		this.goodsimage = goodsimage;
 	}
 	
 	/**
 	 *获取"图片"属性
 	 */
-	public String getGOODSIMAGE()
+	public String getGoodsimage()
 	{
-		return this.gOODSIMAGE;
+		return this.goodsimage;
 	}	   
 
 	/**
 	 *设置"状态"属性
-	 *@param gOODSSTATUE 实体的GOODSSTATUE属性
+	 *@param goodsstatue 实体的Goodsstatue属性
 	 */
-	public void setGOODSSTATUE(String gOODSSTATUE)
+	public void setGoodsstatue(String goodsstatue)
 	{
-		this.gOODSSTATUE = gOODSSTATUE;
+		this.goodsstatue = goodsstatue;
 	}
 	
 	/**
 	 *获取"状态"属性
 	 */
-	public String getGOODSSTATUE()
+	public String getGoodsstatue()
 	{
-		return this.gOODSSTATUE;
+		return this.goodsstatue;
 	}	   
 
 	/**
 	 *设置"创建时间"属性
-	 *@param cREATETIME 实体的CREATETIME属性
+	 *@param createtime 实体的Createtime属性
 	 */
-	public void setCREATETIME(String cREATETIME)
+	public void setCreatetime(String createtime)
 	{
-		this.cREATETIME = cREATETIME;
+		this.createtime = createtime;
 	}
 	
 	/**
 	 *获取"创建时间"属性
 	 */
-	public String getCREATETIME()
+	public String getCreatetime()
 	{
-		return this.cREATETIME;
+		return this.createtime;
 	}	   
 
 	/**
 	 *设置"修改时间"属性
-	 *@param uPDTIME 实体的UPDTIME属性
+	 *@param updtime 实体的Updtime属性
 	 */
-	public void setUPDTIME(String uPDTIME)
+	public void setUpdtime(String updtime)
 	{
-		this.uPDTIME = uPDTIME;
+		this.updtime = updtime;
 	}
 	
 	/**
 	 *获取"修改时间"属性
 	 */
-	public String getUPDTIME()
+	public String getUpdtime()
 	{
-		return this.uPDTIME;
+		return this.updtime;
 	}	   
 
 	/**
 	 *设置"创建人"属性
-	 *@param cREATOR 实体的CREATOR属性
+	 *@param creator 实体的Creator属性
 	 */
-	public void setCREATOR(String cREATOR)
+	public void setCreator(String creator)
 	{
-		this.cREATOR = cREATOR;
+		this.creator = creator;
 	}
 	
 	/**
 	 *获取"创建人"属性
 	 */
-	public String getCREATOR()
+	public String getCreator()
 	{
-		return this.cREATOR;
+		return this.creator;
 	}	   
 
 	/**
 	 *设置"修改人"属性
-	 *@param uPDOR 实体的UPDOR属性
+	 *@param updor 实体的Updor属性
 	 */
-	public void setUPDOR(String uPDOR)
+	public void setUpdor(String updor)
 	{
-		this.uPDOR = uPDOR;
+		this.updor = updor;
 	}
 	
 	/**
 	 *获取"修改人"属性
 	 */
-	public String getUPDOR()
+	public String getUpdor()
 	{
-		return this.uPDOR;
+		return this.updor;
 	}	   
 
 	/**
 	 *设置"品牌"属性
-	 *@param gOODSBRAND 实体的GOODSBRAND属性
+	 *@param goodsbrand 实体的Goodsbrand属性
 	 */
-	public void setGOODSBRAND(String gOODSBRAND)
+	public void setGoodsbrand(String goodsbrand)
 	{
-		this.gOODSBRAND = gOODSBRAND;
+		this.goodsbrand = goodsbrand;
 	}
 	
 	/**
 	 *获取"品牌"属性
 	 */
-	public String getGOODSBRAND()
+	public String getGoodsbrand()
 	{
-		return this.gOODSBRAND;
+		return this.goodsbrand;
 	}	   
 
 	/**
 	 *设置"种类"属性
-	 *@param gOODSTYPE 实体的GOODSTYPE属性
+	 *@param goodstype 实体的Goodstype属性
 	 */
-	public void setGOODSTYPE(String gOODSTYPE)
+	public void setGoodstype(String goodstype)
 	{
-		this.gOODSTYPE = gOODSTYPE;
+		this.goodstype = goodstype;
 	}
 	
 	/**
 	 *获取"种类"属性
 	 */
-	public String getGOODSTYPE()
+	public String getGoodstype()
 	{
-		return this.gOODSTYPE;
+		return this.goodstype;
 	}	   
 
 	/**
 	 *设置"顺序"属性
-	 *@param gOODSORDER 实体的GOODSORDER属性
+	 *@param goodsorder 实体的Goodsorder属性
 	 */
-	public void setGOODSORDER(Integer gOODSORDER)
+	public void setGoodsorder(Integer goodsorder)
 	{
-		this.gOODSORDER = gOODSORDER;
+		this.goodsorder = goodsorder;
 	}
 	
 	/**
 	 *获取"顺序"属性
 	 */
-	public Integer getGOODSORDER()
+	public Integer getGoodsorder()
 	{
-		return this.gOODSORDER;
+		return this.goodsorder;
 	}	   
 
 	/**
 	 *设置"大小类ID"属性
-	 *@param gOODSCLASSID 实体的GOODSCLASSID属性
+	 *@param goodsclassid 实体的Goodsclassid属性
 	 */
-	public void setGOODSCLASSID(String gOODSCLASSID)
+	public void setGoodsclassid(String goodsclassid)
 	{
-		this.gOODSCLASSID = gOODSCLASSID;
+		this.goodsclassid = goodsclassid;
 	}
 	
 	/**
 	 *获取"大小类ID"属性
 	 */
-	public String getGOODSCLASSID()
+	public String getGoodsclassid()
 	{
-		return this.gOODSCLASSID;
+		return this.goodsclassid;
 	}	   
 
 	/**
 	 *设置"编码"属性
-	 *@param gOODSCLASSCODE 实体的GOODSCLASSCODE属性
+	 *@param goodsclasscode 实体的Goodsclasscode属性
 	 */
-	public void setGOODSCLASSCODE(String gOODSCLASSCODE)
+	public void setGoodsclasscode(String goodsclasscode)
 	{
-		this.gOODSCLASSCODE = gOODSCLASSCODE;
+		this.goodsclasscode = goodsclasscode;
 	}
 	
 	/**
 	 *获取"编码"属性
 	 */
-	public String getGOODSCLASSCODE()
+	public String getGoodsclasscode()
 	{
-		return this.gOODSCLASSCODE;
+		return this.goodsclasscode;
 	}	   
 
 	/**
 	 *设置"名称"属性
-	 *@param gOODSCLASSNAME 实体的GOODSCLASSNAME属性
+	 *@param goodsclassname 实体的Goodsclassname属性
 	 */
-	public void setGOODSCLASSNAME(String gOODSCLASSNAME)
+	public void setGoodsclassname(String goodsclassname)
 	{
-		this.gOODSCLASSNAME = gOODSCLASSNAME;
+		this.goodsclassname = goodsclassname;
 	}
 	
 	/**
 	 *获取"名称"属性
 	 */
-	public String getGOODSCLASSNAME()
+	public String getGoodsclassname()
 	{
-		return this.gOODSCLASSNAME;
+		return this.goodsclassname;
 	}	   
 
 	/**
 	 *设置"父类"属性
-	 *@param gOODSCLASSPARENT 实体的GOODSCLASSPARENT属性
+	 *@param goodsclassparent 实体的Goodsclassparent属性
 	 */
-	public void setGOODSCLASSPARENT(String gOODSCLASSPARENT)
+	public void setGoodsclassparent(String goodsclassparent)
 	{
-		this.gOODSCLASSPARENT = gOODSCLASSPARENT;
+		this.goodsclassparent = goodsclassparent;
 	}
 	
 	/**
 	 *获取"父类"属性
 	 */
-	public String getGOODSCLASSPARENT()
+	public String getGoodsclassparent()
 	{
-		return this.gOODSCLASSPARENT;
+		return this.goodsclassparent;
 	}	   
 
 	/**
 	 *设置"图标"属性
-	 *@param gOODSCLASSDETAIL 实体的GOODSCLASSDETAIL属性
+	 *@param goodsclassdetail 实体的Goodsclassdetail属性
 	 */
-	public void setGOODSCLASSDETAIL(String gOODSCLASSDETAIL)
+	public void setGoodsclassdetail(String goodsclassdetail)
 	{
-		this.gOODSCLASSDETAIL = gOODSCLASSDETAIL;
+		this.goodsclassdetail = goodsclassdetail;
 	}
 	
 	/**
 	 *获取"图标"属性
 	 */
-	public String getGOODSCLASSDETAIL()
+	public String getGoodsclassdetail()
 	{
-		return this.gOODSCLASSDETAIL;
+		return this.goodsclassdetail;
 	}	   
 
 	/**
 	 *设置"状态"属性
-	 *@param gOODSCLASSSTATUE 实体的GOODSCLASSSTATUE属性
+	 *@param goodsclassstatue 实体的Goodsclassstatue属性
 	 */
-	public void setGOODSCLASSSTATUE(String gOODSCLASSSTATUE)
+	public void setGoodsclassstatue(String goodsclassstatue)
 	{
-		this.gOODSCLASSSTATUE = gOODSCLASSSTATUE;
+		this.goodsclassstatue = goodsclassstatue;
 	}
 	
 	/**
 	 *获取"状态"属性
 	 */
-	public String getGOODSCLASSSTATUE()
+	public String getGoodsclassstatue()
 	{
-		return this.gOODSCLASSSTATUE;
+		return this.goodsclassstatue;
 	}	   
 
 	/**
 	 *设置"城市(用逗号分开)"属性
-	 *@param gOODSCLASSCITY 实体的GOODSCLASSCITY属性
+	 *@param goodsclasscity 实体的Goodsclasscity属性
 	 */
-	public void setGOODSCLASSCITY(String gOODSCLASSCITY)
+	public void setGoodsclasscity(String goodsclasscity)
 	{
-		this.gOODSCLASSCITY = gOODSCLASSCITY;
+		this.goodsclasscity = goodsclasscity;
 	}
 	
 	/**
 	 *获取"城市(用逗号分开)"属性
 	 */
-	public String getGOODSCLASSCITY()
+	public String getGoodsclasscity()
 	{
-		return this.gOODSCLASSCITY;
+		return this.goodsclasscity;
 	}	   
 
 	/**
 	 *设置"顺序"属性
-	 *@param gOODSCLASSORDER 实体的GOODSCLASSORDER属性
+	 *@param goodsclassorder 实体的Goodsclassorder属性
 	 */
-	public void setGOODSCLASSORDER(String gOODSCLASSORDER)
+	public void setGoodsclassorder(String goodsclassorder)
 	{
-		this.gOODSCLASSORDER = gOODSCLASSORDER;
+		this.goodsclassorder = goodsclassorder;
 	}
 	
 	/**
 	 *获取"顺序"属性
 	 */
-	public String getGOODSCLASSORDER()
+	public String getGoodsclassorder()
 	{
-		return this.gOODSCLASSORDER;
+		return this.goodsclassorder;
 	}	   
 
 	/**
 	 *设置"经销商(用逗号分开)"属性
-	 *@param gOODSCLASSCOMPANY 实体的GOODSCLASSCOMPANY属性
+	 *@param goodsclasscompany 实体的Goodsclasscompany属性
 	 */
-	public void setGOODSCLASSCOMPANY(String gOODSCLASSCOMPANY)
+	public void setGoodsclasscompany(String goodsclasscompany)
 	{
-		this.gOODSCLASSCOMPANY = gOODSCLASSCOMPANY;
+		this.goodsclasscompany = goodsclasscompany;
 	}
 	
 	/**
 	 *获取"经销商(用逗号分开)"属性
 	 */
-	public String getGOODSCLASSCOMPANY()
+	public String getGoodsclasscompany()
 	{
-		return this.gOODSCLASSCOMPANY;
+		return this.goodsclasscompany;
 	}	   
 
 	/**
@@ -877,31 +877,31 @@ public class Collectview
 	 	,String collectcustomer
 	 	,String collectdetail
 	 	,String collectcreatetime
-	 	,String gOODSID
-	 	,String gOODSCOMPANY
-	 	,String gOODSCODE
-	 	,String gOODSNAME
-	 	,String gOODSDETAIL
-	 	,String gOODSUNITS
-	 	,String gOODSCLASS
-	 	,String gOODSIMAGE
-	 	,String gOODSSTATUE
-	 	,String cREATETIME
-	 	,String uPDTIME
-	 	,String cREATOR
-	 	,String uPDOR
-	 	,String gOODSBRAND
-	 	,String gOODSTYPE
-	 	,Integer gOODSORDER
-	 	,String gOODSCLASSID
-	 	,String gOODSCLASSCODE
-	 	,String gOODSCLASSNAME
-	 	,String gOODSCLASSPARENT
-	 	,String gOODSCLASSDETAIL
-	 	,String gOODSCLASSSTATUE
-	 	,String gOODSCLASSCITY
-	 	,String gOODSCLASSORDER
-	 	,String gOODSCLASSCOMPANY
+	 	,String goodsid
+	 	,String goodscompany
+	 	,String goodscode
+	 	,String goodsname
+	 	,String goodsdetail
+	 	,String goodsunits
+	 	,String goodsclass
+	 	,String goodsimage
+	 	,String goodsstatue
+	 	,String createtime
+	 	,String updtime
+	 	,String creator
+	 	,String updor
+	 	,String goodsbrand
+	 	,String goodstype
+	 	,Integer goodsorder
+	 	,String goodsclassid
+	 	,String goodsclasscode
+	 	,String goodsclassname
+	 	,String goodsclassparent
+	 	,String goodsclassdetail
+	 	,String goodsclassstatue
+	 	,String goodsclasscity
+	 	,String goodsclassorder
+	 	,String goodsclasscompany
 	 	,String companyshop
 	 	,String companycity
 	 	,String companyaddress
@@ -920,31 +920,31 @@ public class Collectview
 	 	this.collectcustomer = collectcustomer;
 	 	this.collectdetail = collectdetail;
 	 	this.collectcreatetime = collectcreatetime;
-	 	this.gOODSID = gOODSID;
-	 	this.gOODSCOMPANY = gOODSCOMPANY;
-	 	this.gOODSCODE = gOODSCODE;
-	 	this.gOODSNAME = gOODSNAME;
-	 	this.gOODSDETAIL = gOODSDETAIL;
-	 	this.gOODSUNITS = gOODSUNITS;
-	 	this.gOODSCLASS = gOODSCLASS;
-	 	this.gOODSIMAGE = gOODSIMAGE;
-	 	this.gOODSSTATUE = gOODSSTATUE;
-	 	this.cREATETIME = cREATETIME;
-	 	this.uPDTIME = uPDTIME;
-	 	this.cREATOR = cREATOR;
-	 	this.uPDOR = uPDOR;
-	 	this.gOODSBRAND = gOODSBRAND;
-	 	this.gOODSTYPE = gOODSTYPE;
-	 	this.gOODSORDER = gOODSORDER;
-	 	this.gOODSCLASSID = gOODSCLASSID;
-	 	this.gOODSCLASSCODE = gOODSCLASSCODE;
-	 	this.gOODSCLASSNAME = gOODSCLASSNAME;
-	 	this.gOODSCLASSPARENT = gOODSCLASSPARENT;
-	 	this.gOODSCLASSDETAIL = gOODSCLASSDETAIL;
-	 	this.gOODSCLASSSTATUE = gOODSCLASSSTATUE;
-	 	this.gOODSCLASSCITY = gOODSCLASSCITY;
-	 	this.gOODSCLASSORDER = gOODSCLASSORDER;
-	 	this.gOODSCLASSCOMPANY = gOODSCLASSCOMPANY;
+	 	this.goodsid = goodsid;
+	 	this.goodscompany = goodscompany;
+	 	this.goodscode = goodscode;
+	 	this.goodsname = goodsname;
+	 	this.goodsdetail = goodsdetail;
+	 	this.goodsunits = goodsunits;
+	 	this.goodsclass = goodsclass;
+	 	this.goodsimage = goodsimage;
+	 	this.goodsstatue = goodsstatue;
+	 	this.createtime = createtime;
+	 	this.updtime = updtime;
+	 	this.creator = creator;
+	 	this.updor = updor;
+	 	this.goodsbrand = goodsbrand;
+	 	this.goodstype = goodstype;
+	 	this.goodsorder = goodsorder;
+	 	this.goodsclassid = goodsclassid;
+	 	this.goodsclasscode = goodsclasscode;
+	 	this.goodsclassname = goodsclassname;
+	 	this.goodsclassparent = goodsclassparent;
+	 	this.goodsclassdetail = goodsclassdetail;
+	 	this.goodsclassstatue = goodsclassstatue;
+	 	this.goodsclasscity = goodsclasscity;
+	 	this.goodsclassorder = goodsclassorder;
+	 	this.goodsclasscompany = goodsclasscompany;
 	 	this.companyshop = companyshop;
 	 	this.companycity = companycity;
 	 	this.companyaddress = companyaddress;
