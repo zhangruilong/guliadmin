@@ -16,30 +16,6 @@ public class Ccustomerview
     */
    private String ccustomercompany;   
    /**
-    * 客户等级
-    */
-   private String ccustomerdetail;   
-   /**
-    * 客户经理
-    */
-   private String createtime;   
-   /**
-    * 大客户
-    */
-   private String creator;   
-   /**
-    * 修改时间
-    */
-   private String ccustomerupdtime;   
-   /**
-    * 修改人
-    */
-   private String ccustomerupdor;   
-   /**
-    * 客户ID
-    */
-   private String customerid;   
-   /**
     * 编码
     */
    private String customercode;   
@@ -52,9 +28,9 @@ public class Ccustomerview
     */
    private String customerphone;   
    /**
-    * 密码
+    * 客户经理
     */
-   private String customerpsw;   
+   private String createtime;   
    /**
     * 店铺
     */
@@ -76,6 +52,34 @@ public class Ccustomerview
     */
    private String customertype;   
    /**
+    * 客户等级
+    */
+   private String ccustomerdetail;   
+   /**
+    * 修改人
+    */
+   private String ccustomerupdor;   
+   /**
+    * 修改时间
+    */
+   private String ccustomerupdtime;   
+   /**
+    * 创建时间
+    */
+   private String cuscreatetime;   
+   /**
+    * 大客户
+    */
+   private String creator;   
+   /**
+    * 客户ID
+    */
+   private String customerid;   
+   /**
+    * 密码
+    */
+   private String customerpsw;   
+   /**
     * 等级
     */
    private Integer customerlevel;   
@@ -91,10 +95,6 @@ public class Ccustomerview
     * 状态
     */
    private String customerstatue;   
-   /**
-    * 创建时间
-    */
-   private String cuscreatetime;   
    /**
     * 修改时间
     */
