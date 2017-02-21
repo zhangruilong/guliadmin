@@ -72,6 +72,10 @@ public class Goodsview
     */
    private Integer goodsorder;   
    /**
+    * 重量
+    */
+   private String goodsweight;   
+   /**
     * 大小类ID
     */
    private String goodsclassid;   
@@ -428,6 +432,22 @@ public class Goodsview
 		return this.goodsorder;
 	}	   
 
+	/**
+	 *设置"重量"属性
+	 *@param goodsweight 实体的Goodsweight属性
+	 */
+	public void setGoodsweight(String goodsweight)
+	{
+		this.goodsweight = goodsweight;
+	}
+	
+	/**
+	 *获取"重量"属性
+	 */
+	public String getGoodsweight()
+	{
+		return this.goodsweight;
+	}	   
 	/**
 	 *设置"大小类ID"属性
 	 *@param goodsclassid 实体的Goodsclassid属性

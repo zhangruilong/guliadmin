@@ -22,7 +22,7 @@ public class WarrantcheckPoco
     * 实体中文字段
     */
    public static String[] CHINESENAME = {
-   		"",
+   		"主键",
 	 	"仓库",
 	 	"商品",
 	 	"应有数量",
