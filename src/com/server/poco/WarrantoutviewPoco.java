@@ -38,7 +38,6 @@ public class WarrantoutviewPoco
 	 	"商品名称",
 	 	"规格",
 	 	"名称",
-	 	"名称",
 	};
 	/**
 	 * 实体英文字段
@@ -59,7 +58,6 @@ public class WarrantoutviewPoco
 	 	"goodscode",
 	 	"goodsname",
 	 	"goodsunits",
-	 	"goodsclassname",
 	 	"storehousename",
    };
    /**
@@ -85,7 +83,6 @@ public class WarrantoutviewPoco
 	 	"goodscode",
 	 	"goodsname",
 	 	"goodsunits",
-	 	"goodsclassname",
 	 	"storehousename",
    };
 }

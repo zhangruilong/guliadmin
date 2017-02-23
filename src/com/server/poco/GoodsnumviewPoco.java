@@ -31,7 +31,6 @@ public class GoodsnumviewPoco
 	 	"商品名称",
 	 	"规格",
 	 	"名称",
-	 	"名称",
 	};
 	/**
 	 * 实体英文字段
@@ -45,7 +44,6 @@ public class GoodsnumviewPoco
 	 	"goodscode",
 	 	"goodsname",
 	 	"goodsunits",
-	 	"goodsclassname",
 	 	"storehousename",
    };
    /**
@@ -64,7 +62,6 @@ public class GoodsnumviewPoco
 	 	"goodscode",
 	 	"goodsname",
 	 	"goodsunits",
-	 	"goodsclassname",
 	 	"storehousename",
    };
 }

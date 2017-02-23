@@ -42,10 +42,6 @@ public class Goodsnumview
    /**
     * 名称
     */
-   private String goodsclassname;   
-   /**
-    * 名称
-    */
    private String storehousename;   
     //属性方法	    
      /**
@@ -186,23 +182,6 @@ public class Goodsnumview
 
 	/**
 	 *设置"名称"属性
-	 *@param goodsclassname 实体的Goodsclassname属性
-	 */
-	public void setGoodsclassname(String goodsclassname)
-	{
-		this.goodsclassname = goodsclassname;
-	}
-	
-	/**
-	 *获取"名称"属性
-	 */
-	public String getGoodsclassname()
-	{
-		return this.goodsclassname;
-	}	   
-
-	/**
-	 *设置"名称"属性
 	 *@param storehousename 实体的Storehousename属性
 	 */
 	public void setStorehousename(String storehousename)
@@ -230,7 +209,6 @@ public class Goodsnumview
 	 	,String goodscode
 	 	,String goodsname
 	 	,String goodsunits
-	 	,String goodsclassname
 	 	,String storehousename
 		 ){
 		super();
@@ -242,7 +220,6 @@ public class Goodsnumview
 	 	this.goodscode = goodscode;
 	 	this.goodsname = goodsname;
 	 	this.goodsunits = goodsunits;
-	 	this.goodsclassname = goodsclassname;
 	 	this.storehousename = storehousename;
 	}
 }
