@@ -20,6 +20,22 @@ public class Warrantcheckview
     */
    private String warrantcheckgoods;   
    /**
+    * 商品编号
+    */
+   private String goodscode;   
+   /**
+    * 商品名称
+    */
+   private String goodsname;   
+   /**
+    * 规格
+    */
+   private String goodsunits;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
+   /**
     * 应有数量
     */
    private String warrantchecknumorg;   
@@ -36,41 +52,29 @@ public class Warrantcheckview
     */
    private String warrantcheckdetail;   
    /**
-    * 创建人
-    */
-   private String warrantcheckinswho;   
-   /**
     * 创建时间
     */
    private String warrantcheckinswhen;   
    /**
-    * 修改人
+    * 创建人
     */
-   private String warrantcheckupdwho;   
+   private String warrantcheckinswho;   
    /**
     * 修改时间
     */
    private String warrantcheckupdwhen;   
    /**
+    * 修改人
+    */
+   private String warrantcheckupdwho;   
+   /**
     * 商品ID
     */
    private String goodsid;   
    /**
-    * 商品编号
+    * 经销商ID
     */
-   private String goodscode;   
-   /**
-    * 商品名称
-    */
-   private String goodsname;   
-   /**
-    * 规格
-    */
-   private String goodsunits;   
-   /**
-    * 名称
-    */
-   private String storehousename;   
+   private String goodscompany;   
     //属性方法	    
      /**
 	 *设置主键"主键"属性
@@ -277,6 +281,23 @@ public class Warrantcheckview
 	}	   
 
 	/**
+	 *设置"经销商ID"属性
+	 *@param goodscompany 实体的Goodscompany属性
+	 */
+	public void setGoodscompany(String goodscompany)
+	{
+		this.goodscompany = goodscompany;
+	}
+	
+	/**
+	 *获取"经销商ID"属性
+	 */
+	public String getGoodscompany()
+	{
+		return this.goodscompany;
+	}	   
+
+	/**
 	 *设置"商品编号"属性
 	 *@param goodscode 实体的Goodscode属性
 	 */
@@ -360,6 +381,7 @@ public class Warrantcheckview
 	 	,String warrantcheckupdwho
 	 	,String warrantcheckupdwhen
 	 	,String goodsid
+	 	,String goodscompany
 	 	,String goodscode
 	 	,String goodsname
 	 	,String goodsunits
@@ -378,6 +400,7 @@ public class Warrantcheckview
 	 	this.warrantcheckupdwho = warrantcheckupdwho;
 	 	this.warrantcheckupdwhen = warrantcheckupdwhen;
 	 	this.goodsid = goodsid;
+	 	this.goodscompany = goodscompany;
 	 	this.goodscode = goodscode;
 	 	this.goodsname = goodsname;
 	 	this.goodsunits = goodsunits;

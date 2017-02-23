@@ -36,9 +36,11 @@ public class WarrantinviewPoco
 	 	"修改时间",
 	 	"修改人",
 	 	"商品ID",
+	 	"经销商ID",
 	 	"商品编号",
 	 	"商品名称",
 	 	"规格",
+	 	"名称",
 	 	"名称",
 	};
 	/**
@@ -59,10 +61,12 @@ public class WarrantinviewPoco
 	 	"warrantinupdwhen",
 	 	"warrantinupdwho",
 	 	"goodsid",
+	 	"goodscompany",
 	 	"goodscode",
 	 	"goodsname",
 	 	"goodsunits",
 	 	"storehousename",
+	 	"suppliername",
    };
    /**
     * 实体排序
@@ -86,10 +90,12 @@ public class WarrantinviewPoco
 	 	"warrantinupdwhen",
 	 	"warrantinupdwho",
 	 	"goodsid",
+	 	"goodscompany",
 	 	"goodscode",
 	 	"goodsname",
 	 	"goodsunits",
 	 	"storehousename",
+	 	"suppliername",
    };
 }
 

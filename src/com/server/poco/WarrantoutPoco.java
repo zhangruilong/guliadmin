@@ -23,6 +23,7 @@ public class WarrantoutPoco
     */
    public static String[] CHINESENAME = {
    		"ID",
+	 	"经销商ID",
 	 	"仓库",
 	 	"商品",
 	 	"数量",
@@ -33,12 +34,21 @@ public class WarrantoutPoco
 	 	"创建人",
 	 	"修改时间",
 	 	"修改人",
+	 	"商品编码",
+	 	"商品名称",
+	 	"规格",
+	 	"其他类别",
+	 	"小类",
+	 	"单位",
+	 	"重量",
+	 	"订单备注",
 	};
 	/**
 	 * 实体英文字段
 	 */
    public static final String[] FIELDNAME = {
    		"idwarrantout",
+	 	"warrantoutcompany",
 	 	"warrantoutstore",
 	 	"warrantoutgoods",
 	 	"warrantoutnum",
@@ -49,6 +59,14 @@ public class WarrantoutPoco
 	 	"warrantoutinswho",
 	 	"warrantoutupdwhen",
 	 	"warrantoutupdwho",
+	 	"warrantoutgcode",
+	 	"warrantoutgname",
+	 	"warrantoutgunits",
+	 	"warrantoutgtype",
+	 	"warrantoutggclass",
+	 	"warrantoutgunit",
+	 	"warrantoutgweight",
+	 	"warrantoutordnote",
    };
    /**
     * 实体排序
@@ -59,6 +77,7 @@ public class WarrantoutPoco
 	 */
    public static final String[] QUERYFIELDNAME = {
    		"idwarrantout",
+	 	"warrantoutcompany",
 	 	"warrantoutstore",
 	 	"warrantoutgoods",
 	 	"warrantoutnum",
@@ -69,6 +88,14 @@ public class WarrantoutPoco
 	 	"warrantoutinswho",
 	 	"warrantoutupdwhen",
 	 	"warrantoutupdwho",
+	 	"warrantoutgcode",
+	 	"warrantoutgname",
+	 	"warrantoutgunits",
+	 	"warrantoutgtype",
+	 	"warrantoutggclass",
+	 	"warrantoutgunit",
+	 	"warrantoutgweight",
+	 	"warrantoutordnote",
    };
 }
 

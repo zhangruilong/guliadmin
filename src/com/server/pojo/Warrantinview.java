@@ -24,6 +24,26 @@ public class Warrantinview
     */
    private String warrantingoods;   
    /**
+    * 商品编号
+    */
+   private String goodscode;   
+   /**
+    * 商品名称
+    */
+   private String goodsname;   
+   /**
+    * 规格
+    */
+   private String goodsunits;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
+   /**
+    * 名称
+    */
+   private String suppliername;   
+   /**
     * 进货价
     */
    private String warrantinprice;   
@@ -64,21 +84,9 @@ public class Warrantinview
     */
    private String goodsid;   
    /**
-    * 商品编号
+    * 经销商ID
     */
-   private String goodscode;   
-   /**
-    * 商品名称
-    */
-   private String goodsname;   
-   /**
-    * 规格
-    */
-   private String goodsunits;   
-   /**
-    * 名称
-    */
-   private String storehousename;   
+   private String goodscompany;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -319,6 +327,23 @@ public class Warrantinview
 	}	   
 
 	/**
+	 *设置"经销商ID"属性
+	 *@param goodscompany 实体的Goodscompany属性
+	 */
+	public void setGoodscompany(String goodscompany)
+	{
+		this.goodscompany = goodscompany;
+	}
+	
+	/**
+	 *获取"经销商ID"属性
+	 */
+	public String getGoodscompany()
+	{
+		return this.goodscompany;
+	}	   
+
+	/**
 	 *设置"商品编号"属性
 	 *@param goodscode 实体的Goodscode属性
 	 */
@@ -385,6 +410,23 @@ public class Warrantinview
 	{
 		return this.storehousename;
 	}	   
+
+	/**
+	 *设置"名称"属性
+	 *@param suppliername 实体的Suppliername属性
+	 */
+	public void setSuppliername(String suppliername)
+	{
+		this.suppliername = suppliername;
+	}
+	
+	/**
+	 *获取"名称"属性
+	 */
+	public String getSuppliername()
+	{
+		return this.suppliername;
+	}	   
 	public Warrantinview() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -404,10 +446,12 @@ public class Warrantinview
 	 	,String warrantinupdwhen
 	 	,String warrantinupdwho
 	 	,String goodsid
+	 	,String goodscompany
 	 	,String goodscode
 	 	,String goodsname
 	 	,String goodsunits
 	 	,String storehousename
+	 	,String suppliername
 		 ){
 		super();
 		this.idwarrantin = idwarrantin;
@@ -424,10 +468,12 @@ public class Warrantinview
 	 	this.warrantinupdwhen = warrantinupdwhen;
 	 	this.warrantinupdwho = warrantinupdwho;
 	 	this.goodsid = goodsid;
+	 	this.goodscompany = goodscompany;
 	 	this.goodscode = goodscode;
 	 	this.goodsname = goodsname;
 	 	this.goodsunits = goodsunits;
 	 	this.storehousename = storehousename;
+	 	this.suppliername = suppliername;
 	}
 }
 

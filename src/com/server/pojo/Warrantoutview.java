@@ -12,6 +12,10 @@ public class Warrantoutview
     */
    private String idwarrantout; 
    /**
+    * 经销商ID
+    */
+   private String warrantoutcompany;   
+   /**
     * 仓库
     */
    private String warrantoutstore;   
@@ -52,9 +56,45 @@ public class Warrantoutview
     */
    private String warrantoutupdwho;   
    /**
+    * 商品编码
+    */
+   private String warrantoutgcode;   
+   /**
+    * 商品名称
+    */
+   private String warrantoutgname;   
+   /**
+    * 规格
+    */
+   private String warrantoutgunits;   
+   /**
+    * 其他类别
+    */
+   private String warrantoutgtype;   
+   /**
+    * 小类
+    */
+   private String warrantoutggclass;   
+   /**
+    * 单位
+    */
+   private String warrantoutgunit;   
+   /**
+    * 重量
+    */
+   private String warrantoutgweight;   
+   /**
+    * 订单备注
+    */
+   private String warrantoutordnote;   
+   /**
     * 商品ID
     */
    private String goodsid;   
+   /**
+    * 经销商ID
+    */
+   private String goodscompany;   
    /**
     * 商品编号
     */
@@ -88,6 +128,23 @@ public class Warrantoutview
 	{
 		return this.idwarrantout;
 	}
+
+	/**
+	 *设置"经销商ID"属性
+	 *@param warrantoutcompany 实体的Warrantoutcompany属性
+	 */
+	public void setWarrantoutcompany(String warrantoutcompany)
+	{
+		this.warrantoutcompany = warrantoutcompany;
+	}
+	
+	/**
+	 *获取"经销商ID"属性
+	 */
+	public String getWarrantoutcompany()
+	{
+		return this.warrantoutcompany;
+	}	   
 
 	/**
 	 *设置"仓库"属性
@@ -260,6 +317,142 @@ public class Warrantoutview
 	}	   
 
 	/**
+	 *设置"商品编码"属性
+	 *@param warrantoutgcode 实体的Warrantoutgcode属性
+	 */
+	public void setWarrantoutgcode(String warrantoutgcode)
+	{
+		this.warrantoutgcode = warrantoutgcode;
+	}
+	
+	/**
+	 *获取"商品编码"属性
+	 */
+	public String getWarrantoutgcode()
+	{
+		return this.warrantoutgcode;
+	}	   
+
+	/**
+	 *设置"商品名称"属性
+	 *@param warrantoutgname 实体的Warrantoutgname属性
+	 */
+	public void setWarrantoutgname(String warrantoutgname)
+	{
+		this.warrantoutgname = warrantoutgname;
+	}
+	
+	/**
+	 *获取"商品名称"属性
+	 */
+	public String getWarrantoutgname()
+	{
+		return this.warrantoutgname;
+	}	   
+
+	/**
+	 *设置"规格"属性
+	 *@param warrantoutgunits 实体的Warrantoutgunits属性
+	 */
+	public void setWarrantoutgunits(String warrantoutgunits)
+	{
+		this.warrantoutgunits = warrantoutgunits;
+	}
+	
+	/**
+	 *获取"规格"属性
+	 */
+	public String getWarrantoutgunits()
+	{
+		return this.warrantoutgunits;
+	}	   
+
+	/**
+	 *设置"其他类别"属性
+	 *@param warrantoutgtype 实体的Warrantoutgtype属性
+	 */
+	public void setWarrantoutgtype(String warrantoutgtype)
+	{
+		this.warrantoutgtype = warrantoutgtype;
+	}
+	
+	/**
+	 *获取"其他类别"属性
+	 */
+	public String getWarrantoutgtype()
+	{
+		return this.warrantoutgtype;
+	}	   
+
+	/**
+	 *设置"小类"属性
+	 *@param warrantoutggclass 实体的Warrantoutggclass属性
+	 */
+	public void setWarrantoutggclass(String warrantoutggclass)
+	{
+		this.warrantoutggclass = warrantoutggclass;
+	}
+	
+	/**
+	 *获取"小类"属性
+	 */
+	public String getWarrantoutggclass()
+	{
+		return this.warrantoutggclass;
+	}	   
+
+	/**
+	 *设置"单位"属性
+	 *@param warrantoutgunit 实体的Warrantoutgunit属性
+	 */
+	public void setWarrantoutgunit(String warrantoutgunit)
+	{
+		this.warrantoutgunit = warrantoutgunit;
+	}
+	
+	/**
+	 *获取"单位"属性
+	 */
+	public String getWarrantoutgunit()
+	{
+		return this.warrantoutgunit;
+	}	   
+
+	/**
+	 *设置"重量"属性
+	 *@param warrantoutgweight 实体的Warrantoutgweight属性
+	 */
+	public void setWarrantoutgweight(String warrantoutgweight)
+	{
+		this.warrantoutgweight = warrantoutgweight;
+	}
+	
+	/**
+	 *获取"重量"属性
+	 */
+	public String getWarrantoutgweight()
+	{
+		return this.warrantoutgweight;
+	}	   
+
+	/**
+	 *设置"订单备注"属性
+	 *@param warrantoutordnote 实体的Warrantoutordnote属性
+	 */
+	public void setWarrantoutordnote(String warrantoutordnote)
+	{
+		this.warrantoutordnote = warrantoutordnote;
+	}
+	
+	/**
+	 *获取"订单备注"属性
+	 */
+	public String getWarrantoutordnote()
+	{
+		return this.warrantoutordnote;
+	}	   
+
+	/**
 	 *设置"商品ID"属性
 	 *@param goodsid 实体的Goodsid属性
 	 */
@@ -274,6 +467,23 @@ public class Warrantoutview
 	public String getGoodsid()
 	{
 		return this.goodsid;
+	}	   
+
+	/**
+	 *设置"经销商ID"属性
+	 *@param goodscompany 实体的Goodscompany属性
+	 */
+	public void setGoodscompany(String goodscompany)
+	{
+		this.goodscompany = goodscompany;
+	}
+	
+	/**
+	 *获取"经销商ID"属性
+	 */
+	public String getGoodscompany()
+	{
+		return this.goodscompany;
 	}	   
 
 	/**
@@ -349,6 +559,7 @@ public class Warrantoutview
 	}
 	public Warrantoutview(
 		String idwarrantout
+	 	,String warrantoutcompany
 	 	,String warrantoutstore
 	 	,String warrantoutgoods
 	 	,String warrantoutnum
@@ -359,7 +570,16 @@ public class Warrantoutview
 	 	,String warrantoutinswho
 	 	,String warrantoutupdwhen
 	 	,String warrantoutupdwho
+	 	,String warrantoutgcode
+	 	,String warrantoutgname
+	 	,String warrantoutgunits
+	 	,String warrantoutgtype
+	 	,String warrantoutggclass
+	 	,String warrantoutgunit
+	 	,String warrantoutgweight
+	 	,String warrantoutordnote
 	 	,String goodsid
+	 	,String goodscompany
 	 	,String goodscode
 	 	,String goodsname
 	 	,String goodsunits
@@ -367,6 +587,7 @@ public class Warrantoutview
 		 ){
 		super();
 		this.idwarrantout = idwarrantout;
+	 	this.warrantoutcompany = warrantoutcompany;
 	 	this.warrantoutstore = warrantoutstore;
 	 	this.warrantoutgoods = warrantoutgoods;
 	 	this.warrantoutnum = warrantoutnum;
@@ -377,7 +598,16 @@ public class Warrantoutview
 	 	this.warrantoutinswho = warrantoutinswho;
 	 	this.warrantoutupdwhen = warrantoutupdwhen;
 	 	this.warrantoutupdwho = warrantoutupdwho;
+	 	this.warrantoutgcode = warrantoutgcode;
+	 	this.warrantoutgname = warrantoutgname;
+	 	this.warrantoutgunits = warrantoutgunits;
+	 	this.warrantoutgtype = warrantoutgtype;
+	 	this.warrantoutggclass = warrantoutggclass;
+	 	this.warrantoutgunit = warrantoutgunit;
+	 	this.warrantoutgweight = warrantoutgweight;
+	 	this.warrantoutordnote = warrantoutordnote;
 	 	this.goodsid = goodsid;
+	 	this.goodscompany = goodscompany;
 	 	this.goodscode = goodscode;
 	 	this.goodsname = goodsname;
 	 	this.goodsunits = goodsunits;

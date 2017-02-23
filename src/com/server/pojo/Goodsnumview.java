@@ -16,18 +16,6 @@ public class Goodsnumview
     */
    private String goodsnumgoods;   
    /**
-    * 数量
-    */
-   private String goodsnumnum;   
-   /**
-    * 仓库
-    */
-   private String goodsnumstore;   
-   /**
-    * 商品ID
-    */
-   private String goodsid;   
-   /**
     * 商品编号
     */
    private String goodscode;   
@@ -40,9 +28,29 @@ public class Goodsnumview
     */
    private String goodsunits;   
    /**
+    * 数量
+    */
+   private String goodsnumnum;   
+   /**
     * 名称
     */
    private String storehousename;   
+   /**
+    * 仓库
+    */
+   private String goodsnumstore;   
+   /**
+    * 商品ID
+    */
+   private String goodsid;   
+   /**
+    * 经销商ID
+    */
+   private String goodscompany;   
+   /**
+    * 创建时间
+    */
+   private String createtime;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -130,6 +138,40 @@ public class Goodsnumview
 	}	   
 
 	/**
+	 *设置"经销商ID"属性
+	 *@param goodscompany 实体的Goodscompany属性
+	 */
+	public void setGoodscompany(String goodscompany)
+	{
+		this.goodscompany = goodscompany;
+	}
+	
+	/**
+	 *获取"经销商ID"属性
+	 */
+	public String getGoodscompany()
+	{
+		return this.goodscompany;
+	}	   
+
+	/**
+	 *设置"创建时间"属性
+	 *@param createtime 实体的Createtime属性
+	 */
+	public void setCreatetime(String createtime)
+	{
+		this.createtime = createtime;
+	}
+	
+	/**
+	 *获取"创建时间"属性
+	 */
+	public String getCreatetime()
+	{
+		return this.createtime;
+	}	   
+
+	/**
 	 *设置"商品编号"属性
 	 *@param goodscode 实体的Goodscode属性
 	 */
@@ -206,6 +248,8 @@ public class Goodsnumview
 	 	,String goodsnumnum
 	 	,String goodsnumstore
 	 	,String goodsid
+	 	,String goodscompany
+	 	,String createtime
 	 	,String goodscode
 	 	,String goodsname
 	 	,String goodsunits
@@ -217,6 +261,8 @@ public class Goodsnumview
 	 	this.goodsnumnum = goodsnumnum;
 	 	this.goodsnumstore = goodsnumstore;
 	 	this.goodsid = goodsid;
+	 	this.goodscompany = goodscompany;
+	 	this.createtime = createtime;
 	 	this.goodscode = goodscode;
 	 	this.goodsname = goodsname;
 	 	this.goodsunits = goodsunits;
