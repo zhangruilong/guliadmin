@@ -22,7 +22,7 @@ public class WarrantcheckviewPoco
     * 实体中文字段
     */
    public static String[] CHINESENAME = {
-   		"",
+   		"主键",
 	 	"仓库",
 	 	"商品",
 	 	"应有数量",
@@ -35,12 +35,12 @@ public class WarrantcheckviewPoco
 	 	"修改时间",
 	 	"商品ID",
 	 	"经销商ID",
-	 	"编码",
-	 	"名称",
+	 	"商品编号",
+	 	"商品名称",
 	 	"描述",
 	 	"规格",
 	 	"小类ID",
-	 	"图片",
+	 	"图片路径",
 	 	"状态",
 	 	"创建时间",
 	 	"修改时间",
@@ -50,6 +50,7 @@ public class WarrantcheckviewPoco
 	 	"种类",
 	 	"顺序",
 	 	"重量",
+	 	"名称",
 	 	"名称",
 	};
 	/**
@@ -85,6 +86,7 @@ public class WarrantcheckviewPoco
 	 	"goodsorder",
 	 	"goodsweight",
 	 	"goodsclassname",
+	 	"storehousename",
    };
    /**
     * 实体排序
@@ -123,6 +125,7 @@ public class WarrantcheckviewPoco
 	 	"goodsorder",
 	 	"goodsweight",
 	 	"goodsclassname",
+	 	"storehousename",
    };
 }
 

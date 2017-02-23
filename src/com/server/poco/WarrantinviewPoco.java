@@ -23,8 +23,8 @@ public class WarrantinviewPoco
     */
    public static String[] CHINESENAME = {
    		"ID",
-	 	"仓库",
-	 	"供货单位",
+	 	"仓库ID",
+	 	"供货单位ID",
 	 	"商品",
 	 	"进货价",
 	 	"数量",
@@ -37,12 +37,12 @@ public class WarrantinviewPoco
 	 	"修改人",
 	 	"商品ID",
 	 	"经销商ID",
-	 	"编码",
-	 	"名称",
+	 	"商品编号",
+	 	"商品名称",
 	 	"描述",
 	 	"规格",
 	 	"小类ID",
-	 	"图片",
+	 	"图片路径",
 	 	"状态",
 	 	"创建时间",
 	 	"修改时间",
@@ -52,6 +52,7 @@ public class WarrantinviewPoco
 	 	"种类",
 	 	"顺序",
 	 	"重量",
+	 	"名称",
 	 	"名称",
 	};
 	/**
@@ -89,6 +90,7 @@ public class WarrantinviewPoco
 	 	"goodsorder",
 	 	"goodsweight",
 	 	"goodsclassname",
+	 	"storehousename",
    };
    /**
     * 实体排序
@@ -129,6 +131,7 @@ public class WarrantinviewPoco
 	 	"goodsorder",
 	 	"goodsweight",
 	 	"goodsclassname",
+	 	"storehousename",
    };
 }
 

@@ -8,7 +8,7 @@ import java.sql.Date;
 public class Warrantcheckview
 {
    /**
-    * ,主键
+    * 主键,主键
     */
    private String idwarrantcheck; 
    /**
@@ -60,11 +60,11 @@ public class Warrantcheckview
     */
    private String goodscompany;   
    /**
-    * 编码
+    * 商品编号
     */
    private String goodscode;   
    /**
-    * 名称
+    * 商品名称
     */
    private String goodsname;   
    /**
@@ -80,7 +80,7 @@ public class Warrantcheckview
     */
    private String goodsclass;   
    /**
-    * 图片
+    * 图片路径
     */
    private String goodsimage;   
    /**
@@ -123,9 +123,13 @@ public class Warrantcheckview
     * 名称
     */
    private String goodsclassname;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
     //属性方法	    
      /**
-	 *设置主键""属性
+	 *设置主键"主键"属性
 	 *@param idwarrantcheck 实体的Idwarrantcheck属性
 	 */
 	public void setIdwarrantcheck(String idwarrantcheck)
@@ -134,7 +138,7 @@ public class Warrantcheckview
 	}
 	
 	/**
-	 *获取主键""属性
+	 *获取主键"主键"属性
 	 */
 	public String getIdwarrantcheck()
 	{
@@ -346,7 +350,7 @@ public class Warrantcheckview
 	}	   
 
 	/**
-	 *设置"编码"属性
+	 *设置"商品编号"属性
 	 *@param goodscode 实体的Goodscode属性
 	 */
 	public void setGoodscode(String goodscode)
@@ -355,7 +359,7 @@ public class Warrantcheckview
 	}
 	
 	/**
-	 *获取"编码"属性
+	 *获取"商品编号"属性
 	 */
 	public String getGoodscode()
 	{
@@ -363,7 +367,7 @@ public class Warrantcheckview
 	}	   
 
 	/**
-	 *设置"名称"属性
+	 *设置"商品名称"属性
 	 *@param goodsname 实体的Goodsname属性
 	 */
 	public void setGoodsname(String goodsname)
@@ -372,7 +376,7 @@ public class Warrantcheckview
 	}
 	
 	/**
-	 *获取"名称"属性
+	 *获取"商品名称"属性
 	 */
 	public String getGoodsname()
 	{
@@ -431,7 +435,7 @@ public class Warrantcheckview
 	}	   
 
 	/**
-	 *设置"图片"属性
+	 *设置"图片路径"属性
 	 *@param goodsimage 实体的Goodsimage属性
 	 */
 	public void setGoodsimage(String goodsimage)
@@ -440,7 +444,7 @@ public class Warrantcheckview
 	}
 	
 	/**
-	 *获取"图片"属性
+	 *获取"图片路径"属性
 	 */
 	public String getGoodsimage()
 	{
@@ -616,6 +620,23 @@ public class Warrantcheckview
 	{
 		return this.goodsclassname;
 	}	   
+
+	/**
+	 *设置"名称"属性
+	 *@param storehousename 实体的Storehousename属性
+	 */
+	public void setStorehousename(String storehousename)
+	{
+		this.storehousename = storehousename;
+	}
+	
+	/**
+	 *获取"名称"属性
+	 */
+	public String getStorehousename()
+	{
+		return this.storehousename;
+	}	   
 	public Warrantcheckview() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -650,6 +671,7 @@ public class Warrantcheckview
 	 	,Integer goodsorder
 	 	,String goodsweight
 	 	,String goodsclassname
+	 	,String storehousename
 		 ){
 		super();
 		this.idwarrantcheck = idwarrantcheck;
@@ -681,6 +703,7 @@ public class Warrantcheckview
 	 	this.goodsorder = goodsorder;
 	 	this.goodsweight = goodsweight;
 	 	this.goodsclassname = goodsclassname;
+	 	this.storehousename = storehousename;
 	}
 }
 

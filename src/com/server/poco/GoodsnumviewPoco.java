@@ -23,17 +23,17 @@ public class GoodsnumviewPoco
     */
    public static String[] CHINESENAME = {
    		"ID",
-	 	"商品",
+	 	"商品ID",
 	 	"数量",
 	 	"仓库",
 	 	"商品ID",
 	 	"经销商ID",
-	 	"编码",
-	 	"名称",
+	 	"商品编号",
+	 	"商品名称",
 	 	"描述",
 	 	"规格",
 	 	"小类ID",
-	 	"图片",
+	 	"图片路径",
 	 	"状态",
 	 	"创建时间",
 	 	"修改时间",
@@ -43,6 +43,7 @@ public class GoodsnumviewPoco
 	 	"种类",
 	 	"顺序",
 	 	"大小类ID",
+	 	"名称",
 	 	"名称",
 	};
 	/**
@@ -71,6 +72,7 @@ public class GoodsnumviewPoco
 	 	"goodsorder",
 	 	"goodsclassid",
 	 	"goodsclassname",
+	 	"storehousename",
    };
    /**
     * 实体排序
@@ -102,6 +104,7 @@ public class GoodsnumviewPoco
 	 	"goodsorder",
 	 	"goodsclassid",
 	 	"goodsclassname",
+	 	"storehousename",
    };
 }
 

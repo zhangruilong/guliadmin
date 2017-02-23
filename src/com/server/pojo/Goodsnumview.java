@@ -12,7 +12,7 @@ public class Goodsnumview
     */
    private String idgoodsnum; 
    /**
-    * 商品
+    * 商品ID
     */
    private String goodsnumgoods;   
    /**
@@ -32,11 +32,11 @@ public class Goodsnumview
     */
    private String goodscompany;   
    /**
-    * 编码
+    * 商品编号
     */
    private String goodscode;   
    /**
-    * 名称
+    * 商品名称
     */
    private String goodsname;   
    /**
@@ -52,7 +52,7 @@ public class Goodsnumview
     */
    private String goodsclass;   
    /**
-    * 图片
+    * 图片路径
     */
    private String goodsimage;   
    /**
@@ -95,6 +95,10 @@ public class Goodsnumview
     * 名称
     */
    private String goodsclassname;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -114,7 +118,7 @@ public class Goodsnumview
 	}
 
 	/**
-	 *设置"商品"属性
+	 *设置"商品ID"属性
 	 *@param goodsnumgoods 实体的Goodsnumgoods属性
 	 */
 	public void setGoodsnumgoods(String goodsnumgoods)
@@ -123,7 +127,7 @@ public class Goodsnumview
 	}
 	
 	/**
-	 *获取"商品"属性
+	 *获取"商品ID"属性
 	 */
 	public String getGoodsnumgoods()
 	{
@@ -199,7 +203,7 @@ public class Goodsnumview
 	}	   
 
 	/**
-	 *设置"编码"属性
+	 *设置"商品编号"属性
 	 *@param goodscode 实体的Goodscode属性
 	 */
 	public void setGoodscode(String goodscode)
@@ -208,7 +212,7 @@ public class Goodsnumview
 	}
 	
 	/**
-	 *获取"编码"属性
+	 *获取"商品编号"属性
 	 */
 	public String getGoodscode()
 	{
@@ -216,7 +220,7 @@ public class Goodsnumview
 	}	   
 
 	/**
-	 *设置"名称"属性
+	 *设置"商品名称"属性
 	 *@param goodsname 实体的Goodsname属性
 	 */
 	public void setGoodsname(String goodsname)
@@ -225,7 +229,7 @@ public class Goodsnumview
 	}
 	
 	/**
-	 *获取"名称"属性
+	 *获取"商品名称"属性
 	 */
 	public String getGoodsname()
 	{
@@ -284,7 +288,7 @@ public class Goodsnumview
 	}	   
 
 	/**
-	 *设置"图片"属性
+	 *设置"图片路径"属性
 	 *@param goodsimage 实体的Goodsimage属性
 	 */
 	public void setGoodsimage(String goodsimage)
@@ -293,7 +297,7 @@ public class Goodsnumview
 	}
 	
 	/**
-	 *获取"图片"属性
+	 *获取"图片路径"属性
 	 */
 	public String getGoodsimage()
 	{
@@ -469,6 +473,23 @@ public class Goodsnumview
 	{
 		return this.goodsclassname;
 	}	   
+
+	/**
+	 *设置"名称"属性
+	 *@param storehousename 实体的Storehousename属性
+	 */
+	public void setStorehousename(String storehousename)
+	{
+		this.storehousename = storehousename;
+	}
+	
+	/**
+	 *获取"名称"属性
+	 */
+	public String getStorehousename()
+	{
+		return this.storehousename;
+	}	   
 	public Goodsnumview() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -496,6 +517,7 @@ public class Goodsnumview
 	 	,Integer goodsorder
 	 	,String goodsclassid
 	 	,String goodsclassname
+	 	,String storehousename
 		 ){
 		super();
 		this.idgoodsnum = idgoodsnum;
@@ -520,6 +542,7 @@ public class Goodsnumview
 	 	this.goodsorder = goodsorder;
 	 	this.goodsclassid = goodsclassid;
 	 	this.goodsclassname = goodsclassname;
+	 	this.storehousename = storehousename;
 	}
 }
 

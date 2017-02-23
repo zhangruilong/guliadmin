@@ -12,11 +12,11 @@ public class Warrantinview
     */
    private String idwarrantin; 
    /**
-    * 仓库
+    * 仓库ID
     */
    private String warrantinstore;   
    /**
-    * 供货单位
+    * 供货单位ID
     */
    private String warrantinfrom;   
    /**
@@ -68,11 +68,11 @@ public class Warrantinview
     */
    private String goodscompany;   
    /**
-    * 编码
+    * 商品编号
     */
    private String goodscode;   
    /**
-    * 名称
+    * 商品名称
     */
    private String goodsname;   
    /**
@@ -88,7 +88,7 @@ public class Warrantinview
     */
    private String goodsclass;   
    /**
-    * 图片
+    * 图片路径
     */
    private String goodsimage;   
    /**
@@ -131,6 +131,10 @@ public class Warrantinview
     * 名称
     */
    private String goodsclassname;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -150,7 +154,7 @@ public class Warrantinview
 	}
 
 	/**
-	 *设置"仓库"属性
+	 *设置"仓库ID"属性
 	 *@param warrantinstore 实体的Warrantinstore属性
 	 */
 	public void setWarrantinstore(String warrantinstore)
@@ -159,7 +163,7 @@ public class Warrantinview
 	}
 	
 	/**
-	 *获取"仓库"属性
+	 *获取"仓库ID"属性
 	 */
 	public String getWarrantinstore()
 	{
@@ -167,7 +171,7 @@ public class Warrantinview
 	}	   
 
 	/**
-	 *设置"供货单位"属性
+	 *设置"供货单位ID"属性
 	 *@param warrantinfrom 实体的Warrantinfrom属性
 	 */
 	public void setWarrantinfrom(String warrantinfrom)
@@ -176,7 +180,7 @@ public class Warrantinview
 	}
 	
 	/**
-	 *获取"供货单位"属性
+	 *获取"供货单位ID"属性
 	 */
 	public String getWarrantinfrom()
 	{
@@ -388,7 +392,7 @@ public class Warrantinview
 	}	   
 
 	/**
-	 *设置"编码"属性
+	 *设置"商品编号"属性
 	 *@param goodscode 实体的Goodscode属性
 	 */
 	public void setGoodscode(String goodscode)
@@ -397,7 +401,7 @@ public class Warrantinview
 	}
 	
 	/**
-	 *获取"编码"属性
+	 *获取"商品编号"属性
 	 */
 	public String getGoodscode()
 	{
@@ -405,7 +409,7 @@ public class Warrantinview
 	}	   
 
 	/**
-	 *设置"名称"属性
+	 *设置"商品名称"属性
 	 *@param goodsname 实体的Goodsname属性
 	 */
 	public void setGoodsname(String goodsname)
@@ -414,7 +418,7 @@ public class Warrantinview
 	}
 	
 	/**
-	 *获取"名称"属性
+	 *获取"商品名称"属性
 	 */
 	public String getGoodsname()
 	{
@@ -473,7 +477,7 @@ public class Warrantinview
 	}	   
 
 	/**
-	 *设置"图片"属性
+	 *设置"图片路径"属性
 	 *@param goodsimage 实体的Goodsimage属性
 	 */
 	public void setGoodsimage(String goodsimage)
@@ -482,7 +486,7 @@ public class Warrantinview
 	}
 	
 	/**
-	 *获取"图片"属性
+	 *获取"图片路径"属性
 	 */
 	public String getGoodsimage()
 	{
@@ -658,6 +662,23 @@ public class Warrantinview
 	{
 		return this.goodsclassname;
 	}	   
+
+	/**
+	 *设置"名称"属性
+	 *@param storehousename 实体的Storehousename属性
+	 */
+	public void setStorehousename(String storehousename)
+	{
+		this.storehousename = storehousename;
+	}
+	
+	/**
+	 *获取"名称"属性
+	 */
+	public String getStorehousename()
+	{
+		return this.storehousename;
+	}	   
 	public Warrantinview() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -694,6 +715,7 @@ public class Warrantinview
 	 	,Integer goodsorder
 	 	,String goodsweight
 	 	,String goodsclassname
+	 	,String storehousename
 		 ){
 		super();
 		this.idwarrantin = idwarrantin;
@@ -727,6 +749,7 @@ public class Warrantinview
 	 	this.goodsorder = goodsorder;
 	 	this.goodsweight = goodsweight;
 	 	this.goodsclassname = goodsclassname;
+	 	this.storehousename = storehousename;
 	}
 }
 
