@@ -24,6 +24,22 @@ public class Warrantoutview
     */
    private String warrantoutgoods;   
    /**
+    * 商品编码
+    */
+   private String warrantoutgcode;   
+   /**
+    * 商品名称
+    */
+   private String warrantoutgname;   
+   /**
+    * 规格
+    */
+   private String warrantoutgunits;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
+   /**
     * 数量
     */
    private String warrantoutnum;   
@@ -55,18 +71,6 @@ public class Warrantoutview
     * 修改人
     */
    private String warrantoutupdwho;   
-   /**
-    * 商品编码
-    */
-   private String warrantoutgcode;   
-   /**
-    * 商品名称
-    */
-   private String warrantoutgname;   
-   /**
-    * 规格
-    */
-   private String warrantoutgunits;   
    /**
     * 其他类别
     */
@@ -107,10 +111,6 @@ public class Warrantoutview
     * 规格
     */
    private String goodsunits;   
-   /**
-    * 名称
-    */
-   private String storehousename;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
