@@ -12,11 +12,11 @@ public class Warrantin
     */
    private String idwarrantin; 
    /**
-    * 仓库
+    * 仓库ID
     */
    private String warrantinstore;   
    /**
-    * 供货单位
+    * 供货单位ID
     */
    private String warrantinfrom;   
    /**
@@ -59,6 +59,10 @@ public class Warrantin
     * 修改人
     */
    private String warrantinupdwho;   
+   /**
+    * 进货金额
+    */
+   private String warrantinmoney;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -78,7 +82,7 @@ public class Warrantin
 	}
 
 	/**
-	 *设置"仓库"属性
+	 *设置"仓库ID"属性
 	 *@param warrantinstore 实体的Warrantinstore属性
 	 */
 	public void setWarrantinstore(String warrantinstore)
@@ -87,7 +91,7 @@ public class Warrantin
 	}
 	
 	/**
-	 *获取"仓库"属性
+	 *获取"仓库ID"属性
 	 */
 	public String getWarrantinstore()
 	{
@@ -95,7 +99,7 @@ public class Warrantin
 	}	   
 
 	/**
-	 *设置"供货单位"属性
+	 *设置"供货单位ID"属性
 	 *@param warrantinfrom 实体的Warrantinfrom属性
 	 */
 	public void setWarrantinfrom(String warrantinfrom)
@@ -104,7 +108,7 @@ public class Warrantin
 	}
 	
 	/**
-	 *获取"供货单位"属性
+	 *获取"供货单位ID"属性
 	 */
 	public String getWarrantinfrom()
 	{
@@ -280,6 +284,23 @@ public class Warrantin
 	{
 		return this.warrantinupdwho;
 	}	   
+
+	/**
+	 *设置"进货金额"属性
+	 *@param warrantinmoney 实体的Warrantinmoney属性
+	 */
+	public void setWarrantinmoney(String warrantinmoney)
+	{
+		this.warrantinmoney = warrantinmoney;
+	}
+	
+	/**
+	 *获取"进货金额"属性
+	 */
+	public String getWarrantinmoney()
+	{
+		return this.warrantinmoney;
+	}	   
 	public Warrantin() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -298,6 +319,7 @@ public class Warrantin
 	 	,String warrantininswho
 	 	,String warrantinupdwhen
 	 	,String warrantinupdwho
+	 	,String warrantinmoney
 		 ){
 		super();
 		this.idwarrantin = idwarrantin;
@@ -313,6 +335,7 @@ public class Warrantin
 	 	this.warrantininswho = warrantininswho;
 	 	this.warrantinupdwhen = warrantinupdwhen;
 	 	this.warrantinupdwho = warrantinupdwho;
+	 	this.warrantinmoney = warrantinmoney;
 	}
 }
 

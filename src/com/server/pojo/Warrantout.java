@@ -87,6 +87,14 @@ public class Warrantout
     * 订单备注
     */
    private String warrantoutordnote;   
+   /**
+    * 销售单价
+    */
+   private String warrantoutprice;   
+   /**
+    * 销售金额
+    */
+   private String warrantoutmoney;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -427,6 +435,40 @@ public class Warrantout
 	{
 		return this.warrantoutordnote;
 	}	   
+
+	/**
+	 *设置"销售单价"属性
+	 *@param warrantoutprice 实体的Warrantoutprice属性
+	 */
+	public void setWarrantoutprice(String warrantoutprice)
+	{
+		this.warrantoutprice = warrantoutprice;
+	}
+	
+	/**
+	 *获取"销售单价"属性
+	 */
+	public String getWarrantoutprice()
+	{
+		return this.warrantoutprice;
+	}	   
+
+	/**
+	 *设置"销售金额"属性
+	 *@param warrantoutmoney 实体的Warrantoutmoney属性
+	 */
+	public void setWarrantoutmoney(String warrantoutmoney)
+	{
+		this.warrantoutmoney = warrantoutmoney;
+	}
+	
+	/**
+	 *获取"销售金额"属性
+	 */
+	public String getWarrantoutmoney()
+	{
+		return this.warrantoutmoney;
+	}	   
 	public Warrantout() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -452,6 +494,8 @@ public class Warrantout
 	 	,String warrantoutgunit
 	 	,String warrantoutgweight
 	 	,String warrantoutordnote
+	 	,String warrantoutprice
+	 	,String warrantoutmoney
 		 ){
 		super();
 		this.idwarrantout = idwarrantout;
@@ -474,6 +518,8 @@ public class Warrantout
 	 	this.warrantoutgunit = warrantoutgunit;
 	 	this.warrantoutgweight = warrantoutgweight;
 	 	this.warrantoutordnote = warrantoutordnote;
+	 	this.warrantoutprice = warrantoutprice;
+	 	this.warrantoutmoney = warrantoutmoney;
 	}
 }
 

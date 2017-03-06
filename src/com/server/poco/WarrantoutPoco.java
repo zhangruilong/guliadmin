@@ -42,6 +42,8 @@ public class WarrantoutPoco
 	 	"单位",
 	 	"重量",
 	 	"订单备注",
+	 	"销售单价",
+	 	"销售金额",
 	};
 	/**
 	 * 实体英文字段
@@ -67,6 +69,8 @@ public class WarrantoutPoco
 	 	"warrantoutgunit",
 	 	"warrantoutgweight",
 	 	"warrantoutordnote",
+	 	"warrantoutprice",
+	 	"warrantoutmoney",
    };
    /**
     * 实体排序
@@ -96,6 +100,8 @@ public class WarrantoutPoco
 	 	"warrantoutgunit",
 	 	"warrantoutgweight",
 	 	"warrantoutordnote",
+	 	"warrantoutprice",
+	 	"warrantoutmoney",
    };
 }
 

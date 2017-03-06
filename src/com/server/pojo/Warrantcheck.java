@@ -8,7 +8,7 @@ import java.sql.Date;
 public class Warrantcheck
 {
    /**
-    * ,主键
+    * 主键,主键
     */
    private String idwarrantcheck; 
    /**
@@ -51,9 +51,13 @@ public class Warrantcheck
     * 修改时间
     */
    private String warrantcheckupdwhen;   
+   /**
+    * 盘点人
+    */
+   private String warrantcheckor;   
     //属性方法	    
      /**
-	 *设置主键""属性
+	 *设置主键"主键"属性
 	 *@param idwarrantcheck 实体的Idwarrantcheck属性
 	 */
 	public void setIdwarrantcheck(String idwarrantcheck)
@@ -62,7 +66,7 @@ public class Warrantcheck
 	}
 	
 	/**
-	 *获取主键""属性
+	 *获取主键"主键"属性
 	 */
 	public String getIdwarrantcheck()
 	{
@@ -238,6 +242,23 @@ public class Warrantcheck
 	{
 		return this.warrantcheckupdwhen;
 	}	   
+
+	/**
+	 *设置"盘点人"属性
+	 *@param warrantcheckor 实体的Warrantcheckor属性
+	 */
+	public void setWarrantcheckor(String warrantcheckor)
+	{
+		this.warrantcheckor = warrantcheckor;
+	}
+	
+	/**
+	 *获取"盘点人"属性
+	 */
+	public String getWarrantcheckor()
+	{
+		return this.warrantcheckor;
+	}	   
 	public Warrantcheck() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -254,6 +275,7 @@ public class Warrantcheck
 	 	,String warrantcheckinswhen
 	 	,String warrantcheckupdwho
 	 	,String warrantcheckupdwhen
+	 	,String warrantcheckor
 		 ){
 		super();
 		this.idwarrantcheck = idwarrantcheck;
@@ -267,6 +289,7 @@ public class Warrantcheck
 	 	this.warrantcheckinswhen = warrantcheckinswhen;
 	 	this.warrantcheckupdwho = warrantcheckupdwho;
 	 	this.warrantcheckupdwhen = warrantcheckupdwhen;
+	 	this.warrantcheckor = warrantcheckor;
 	}
 }
 

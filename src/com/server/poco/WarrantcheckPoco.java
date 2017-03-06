@@ -33,6 +33,7 @@ public class WarrantcheckPoco
 	 	"创建时间",
 	 	"修改人",
 	 	"修改时间",
+	 	"盘点人",
 	};
 	/**
 	 * 实体英文字段
@@ -49,6 +50,7 @@ public class WarrantcheckPoco
 	 	"warrantcheckinswhen",
 	 	"warrantcheckupdwho",
 	 	"warrantcheckupdwhen",
+	 	"warrantcheckor",
    };
    /**
     * 实体排序
@@ -69,6 +71,7 @@ public class WarrantcheckPoco
 	 	"warrantcheckinswhen",
 	 	"warrantcheckupdwho",
 	 	"warrantcheckupdwhen",
+	 	"warrantcheckor",
    };
 }
 

@@ -90,4 +90,11 @@ public class WarrantinAction extends BaseActionDao {
 		result = CommonConst.GSON.toJson(pageinfo);
 		responsePW(response, result);
 	}
+	//查询LIMIT条
+	public void selLimit(HttpServletRequest request, HttpServletResponse response){
+		Queryinfo queryinfo = getQueryinfo(request, Warrantin.class, WarrantinPoco.QUERYFIELDNAME, WarrantinPoco.ORDER, TYPE, CommonConst.LIMIT);
+		Pageinfo pageinfo = new Pageinfo(0, selQuery(queryinfo));
+		result = CommonConst.GSON.toJson(pageinfo);
+		responsePW(response, result);
+	}
 }

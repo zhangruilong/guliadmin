@@ -90,4 +90,11 @@ public class WarrantcheckviewAction extends BaseActionDao {
 		result = CommonConst.GSON.toJson(pageinfo);
 		responsePW(response, result);
 	}
+	//查询LIMIT条
+	public void selLimit(HttpServletRequest request, HttpServletResponse response){
+		Queryinfo queryinfo = getQueryinfo(request, Warrantcheckview.class, WarrantcheckviewPoco.QUERYFIELDNAME, WarrantcheckviewPoco.ORDER, TYPE, CommonConst.LIMIT);
+		Pageinfo pageinfo = new Pageinfo(0, selQuery(queryinfo));
+		result = CommonConst.GSON.toJson(pageinfo);
+		responsePW(response, result);
+	}
 }

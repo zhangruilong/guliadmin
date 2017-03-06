@@ -24,22 +24,6 @@ public class Warrantoutview
     */
    private String warrantoutgoods;   
    /**
-    * 商品编码
-    */
-   private String warrantoutgcode;   
-   /**
-    * 商品名称
-    */
-   private String warrantoutgname;   
-   /**
-    * 规格
-    */
-   private String warrantoutgunits;   
-   /**
-    * 名称
-    */
-   private String storehousename;   
-   /**
     * 数量
     */
    private String warrantoutnum;   
@@ -72,6 +56,18 @@ public class Warrantoutview
     */
    private String warrantoutupdwho;   
    /**
+    * 商品编码
+    */
+   private String warrantoutgcode;   
+   /**
+    * 商品名称
+    */
+   private String warrantoutgname;   
+   /**
+    * 规格
+    */
+   private String warrantoutgunits;   
+   /**
     * 其他类别
     */
    private String warrantoutgtype;   
@@ -92,6 +88,14 @@ public class Warrantoutview
     */
    private String warrantoutordnote;   
    /**
+    * 销售单价
+    */
+   private String warrantoutprice;   
+   /**
+    * 销售金额
+    */
+   private String warrantoutmoney;   
+   /**
     * 商品ID
     */
    private String goodsid;   
@@ -111,6 +115,10 @@ public class Warrantoutview
     * 规格
     */
    private String goodsunits;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -453,6 +461,40 @@ public class Warrantoutview
 	}	   
 
 	/**
+	 *设置"销售单价"属性
+	 *@param warrantoutprice 实体的Warrantoutprice属性
+	 */
+	public void setWarrantoutprice(String warrantoutprice)
+	{
+		this.warrantoutprice = warrantoutprice;
+	}
+	
+	/**
+	 *获取"销售单价"属性
+	 */
+	public String getWarrantoutprice()
+	{
+		return this.warrantoutprice;
+	}	   
+
+	/**
+	 *设置"销售金额"属性
+	 *@param warrantoutmoney 实体的Warrantoutmoney属性
+	 */
+	public void setWarrantoutmoney(String warrantoutmoney)
+	{
+		this.warrantoutmoney = warrantoutmoney;
+	}
+	
+	/**
+	 *获取"销售金额"属性
+	 */
+	public String getWarrantoutmoney()
+	{
+		return this.warrantoutmoney;
+	}	   
+
+	/**
 	 *设置"商品ID"属性
 	 *@param goodsid 实体的Goodsid属性
 	 */
@@ -578,6 +620,8 @@ public class Warrantoutview
 	 	,String warrantoutgunit
 	 	,String warrantoutgweight
 	 	,String warrantoutordnote
+	 	,String warrantoutprice
+	 	,String warrantoutmoney
 	 	,String goodsid
 	 	,String goodscompany
 	 	,String goodscode
@@ -606,6 +650,8 @@ public class Warrantoutview
 	 	this.warrantoutgunit = warrantoutgunit;
 	 	this.warrantoutgweight = warrantoutgweight;
 	 	this.warrantoutordnote = warrantoutordnote;
+	 	this.warrantoutprice = warrantoutprice;
+	 	this.warrantoutmoney = warrantoutmoney;
 	 	this.goodsid = goodsid;
 	 	this.goodscompany = goodscompany;
 	 	this.goodscode = goodscode;

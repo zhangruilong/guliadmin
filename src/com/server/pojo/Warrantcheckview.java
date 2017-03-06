@@ -20,22 +20,6 @@ public class Warrantcheckview
     */
    private String warrantcheckgoods;   
    /**
-    * 商品编号
-    */
-   private String goodscode;   
-   /**
-    * 商品名称
-    */
-   private String goodsname;   
-   /**
-    * 规格
-    */
-   private String goodsunits;   
-   /**
-    * 名称
-    */
-   private String storehousename;   
-   /**
     * 应有数量
     */
    private String warrantchecknumorg;   
@@ -52,21 +36,25 @@ public class Warrantcheckview
     */
    private String warrantcheckdetail;   
    /**
+    * 创建人
+    */
+   private String warrantcheckinswho;   
+   /**
     * 创建时间
     */
    private String warrantcheckinswhen;   
    /**
-    * 创建人
+    * 修改人
     */
-   private String warrantcheckinswho;   
+   private String warrantcheckupdwho;   
    /**
     * 修改时间
     */
    private String warrantcheckupdwhen;   
    /**
-    * 修改人
+    * 盘点人
     */
-   private String warrantcheckupdwho;   
+   private String warrantcheckor;   
    /**
     * 商品ID
     */
@@ -75,6 +63,22 @@ public class Warrantcheckview
     * 经销商ID
     */
    private String goodscompany;   
+   /**
+    * 商品编号
+    */
+   private String goodscode;   
+   /**
+    * 商品名称
+    */
+   private String goodsname;   
+   /**
+    * 规格
+    */
+   private String goodsunits;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
     //属性方法	    
      /**
 	 *设置主键"主键"属性
@@ -264,6 +268,23 @@ public class Warrantcheckview
 	}	   
 
 	/**
+	 *设置"盘点人"属性
+	 *@param warrantcheckor 实体的Warrantcheckor属性
+	 */
+	public void setWarrantcheckor(String warrantcheckor)
+	{
+		this.warrantcheckor = warrantcheckor;
+	}
+	
+	/**
+	 *获取"盘点人"属性
+	 */
+	public String getWarrantcheckor()
+	{
+		return this.warrantcheckor;
+	}	   
+
+	/**
 	 *设置"商品ID"属性
 	 *@param goodsid 实体的Goodsid属性
 	 */
@@ -380,6 +401,7 @@ public class Warrantcheckview
 	 	,String warrantcheckinswhen
 	 	,String warrantcheckupdwho
 	 	,String warrantcheckupdwhen
+	 	,String warrantcheckor
 	 	,String goodsid
 	 	,String goodscompany
 	 	,String goodscode
@@ -399,6 +421,7 @@ public class Warrantcheckview
 	 	this.warrantcheckinswhen = warrantcheckinswhen;
 	 	this.warrantcheckupdwho = warrantcheckupdwho;
 	 	this.warrantcheckupdwhen = warrantcheckupdwhen;
+	 	this.warrantcheckor = warrantcheckor;
 	 	this.goodsid = goodsid;
 	 	this.goodscompany = goodscompany;
 	 	this.goodscode = goodscode;

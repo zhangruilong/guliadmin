@@ -23,8 +23,8 @@ public class WarrantinPoco
     */
    public static String[] CHINESENAME = {
    		"ID",
-	 	"仓库",
-	 	"供货单位",
+	 	"仓库ID",
+	 	"供货单位ID",
 	 	"商品",
 	 	"进货价",
 	 	"数量",
@@ -35,6 +35,7 @@ public class WarrantinPoco
 	 	"创建人",
 	 	"修改时间",
 	 	"修改人",
+	 	"进货金额",
 	};
 	/**
 	 * 实体英文字段
@@ -53,6 +54,7 @@ public class WarrantinPoco
 	 	"warrantininswho",
 	 	"warrantinupdwhen",
 	 	"warrantinupdwho",
+	 	"warrantinmoney",
    };
    /**
     * 实体排序
@@ -75,6 +77,7 @@ public class WarrantinPoco
 	 	"warrantininswho",
 	 	"warrantinupdwhen",
 	 	"warrantinupdwho",
+	 	"warrantinmoney",
    };
 }
 

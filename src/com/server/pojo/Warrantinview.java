@@ -24,26 +24,6 @@ public class Warrantinview
     */
    private String warrantingoods;   
    /**
-    * 商品编号
-    */
-   private String goodscode;   
-   /**
-    * 商品名称
-    */
-   private String goodsname;   
-   /**
-    * 规格
-    */
-   private String goodsunits;   
-   /**
-    * 名称
-    */
-   private String storehousename;   
-   /**
-    * 名称
-    */
-   private String suppliername;   
-   /**
     * 进货价
     */
    private String warrantinprice;   
@@ -80,6 +60,10 @@ public class Warrantinview
     */
    private String warrantinupdwho;   
    /**
+    * 进货金额
+    */
+   private String warrantinmoney;   
+   /**
     * 商品ID
     */
    private String goodsid;   
@@ -87,6 +71,26 @@ public class Warrantinview
     * 经销商ID
     */
    private String goodscompany;   
+   /**
+    * 商品编号
+    */
+   private String goodscode;   
+   /**
+    * 商品名称
+    */
+   private String goodsname;   
+   /**
+    * 规格
+    */
+   private String goodsunits;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
+   /**
+    * 名称
+    */
+   private String suppliername;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -310,6 +314,23 @@ public class Warrantinview
 	}	   
 
 	/**
+	 *设置"进货金额"属性
+	 *@param warrantinmoney 实体的Warrantinmoney属性
+	 */
+	public void setWarrantinmoney(String warrantinmoney)
+	{
+		this.warrantinmoney = warrantinmoney;
+	}
+	
+	/**
+	 *获取"进货金额"属性
+	 */
+	public String getWarrantinmoney()
+	{
+		return this.warrantinmoney;
+	}	   
+
+	/**
 	 *设置"商品ID"属性
 	 *@param goodsid 实体的Goodsid属性
 	 */
@@ -445,6 +466,7 @@ public class Warrantinview
 	 	,String warrantininswho
 	 	,String warrantinupdwhen
 	 	,String warrantinupdwho
+	 	,String warrantinmoney
 	 	,String goodsid
 	 	,String goodscompany
 	 	,String goodscode
@@ -467,6 +489,7 @@ public class Warrantinview
 	 	this.warrantininswho = warrantininswho;
 	 	this.warrantinupdwhen = warrantinupdwhen;
 	 	this.warrantinupdwho = warrantinupdwho;
+	 	this.warrantinmoney = warrantinmoney;
 	 	this.goodsid = goodsid;
 	 	this.goodscompany = goodscompany;
 	 	this.goodscode = goodscode;
