@@ -20,6 +20,22 @@ public class Warrantcheckview
     */
    private String warrantcheckgoods;   
    /**
+    * 商品编号
+    */
+   private String goodscode;   
+   /**
+    * 商品名称
+    */
+   private String goodsname;   
+   /**
+    * 规格
+    */
+   private String goodsunits;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
+   /**
     * 应有数量
     */
    private String warrantchecknumorg;   
@@ -27,6 +43,10 @@ public class Warrantcheckview
     * 现有数量
     */
    private String warrantchecknumnow;   
+   /**
+    * 盘点人
+    */
+   private String warrantcheckor;   
    /**
     * 状态
     */
@@ -52,10 +72,6 @@ public class Warrantcheckview
     */
    private String warrantcheckupdwhen;   
    /**
-    * 盘点人
-    */
-   private String warrantcheckor;   
-   /**
     * 商品ID
     */
    private String goodsid;   
@@ -63,22 +79,6 @@ public class Warrantcheckview
     * 经销商ID
     */
    private String goodscompany;   
-   /**
-    * 商品编号
-    */
-   private String goodscode;   
-   /**
-    * 商品名称
-    */
-   private String goodsname;   
-   /**
-    * 规格
-    */
-   private String goodsunits;   
-   /**
-    * 名称
-    */
-   private String storehousename;   
     //属性方法	    
      /**
 	 *设置主键"主键"属性

@@ -24,7 +24,27 @@ public class Warrantinview
     */
    private String warrantingoods;   
    /**
-    * 进货价
+    * 商品编号
+    */
+   private String goodscode;   
+   /**
+    * 商品名称
+    */
+   private String goodsname;   
+   /**
+    * 规格
+    */
+   private String goodsunits;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
+   /**
+    * 名称
+    */
+   private String suppliername;   
+   /**
+    * 进货单价
     */
    private String warrantinprice;   
    /**
@@ -32,7 +52,11 @@ public class Warrantinview
     */
    private String warrantinnum;   
    /**
-    * 检验员
+    * 进货金额
+    */
+   private String warrantinmoney;   
+   /**
+    * 核验人
     */
    private String warrantinwho;   
    /**
@@ -60,10 +84,6 @@ public class Warrantinview
     */
    private String warrantinupdwho;   
    /**
-    * 进货金额
-    */
-   private String warrantinmoney;   
-   /**
     * 商品ID
     */
    private String goodsid;   
@@ -71,26 +91,6 @@ public class Warrantinview
     * 经销商ID
     */
    private String goodscompany;   
-   /**
-    * 商品编号
-    */
-   private String goodscode;   
-   /**
-    * 商品名称
-    */
-   private String goodsname;   
-   /**
-    * 规格
-    */
-   private String goodsunits;   
-   /**
-    * 名称
-    */
-   private String storehousename;   
-   /**
-    * 名称
-    */
-   private String suppliername;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性

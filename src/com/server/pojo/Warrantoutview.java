@@ -1,6 +1,7 @@
 package com.server.pojo;
 
-import java.sql.Date;
+import java.sql.Timestamp;
+import java.math.BigDecimal;
 /**
  * warrantoutview 实体类
  *@author ZhangRuiLong
@@ -24,9 +25,33 @@ public class Warrantoutview
     */
    private String warrantoutgoods;   
    /**
+    * 商品编码
+    */
+   private String warrantoutgcode;   
+   /**
+    * 商品名称
+    */
+   private String warrantoutgname;   
+   /**
+    * 规格
+    */
+   private String warrantoutgunits;   
+   /**
+    * 名称
+    */
+   private String storehousename;   
+   /**
     * 数量
     */
    private String warrantoutnum;   
+   /**
+    * 销售单价
+    */
+   private String warrantoutprice;   
+   /**
+    * 销售金额
+    */
+   private String warrantoutmoney;   
    /**
     * 状态
     */
@@ -56,18 +81,6 @@ public class Warrantoutview
     */
    private String warrantoutupdwho;   
    /**
-    * 商品编码
-    */
-   private String warrantoutgcode;   
-   /**
-    * 商品名称
-    */
-   private String warrantoutgname;   
-   /**
-    * 规格
-    */
-   private String warrantoutgunits;   
-   /**
     * 其他类别
     */
    private String warrantoutgtype;   
@@ -87,14 +100,6 @@ public class Warrantoutview
     * 订单备注
     */
    private String warrantoutordnote;   
-   /**
-    * 销售单价
-    */
-   private String warrantoutprice;   
-   /**
-    * 销售金额
-    */
-   private String warrantoutmoney;   
    /**
     * 商品ID
     */
@@ -116,9 +121,13 @@ public class Warrantoutview
     */
    private String goodsunits;   
    /**
-    * 名称
+    * ID
     */
-   private String storehousename;   
+   private String idgoodsnum;   
+   /**
+    * 数量
+    */
+   private String goodsnumnum;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -595,6 +604,40 @@ public class Warrantoutview
 	{
 		return this.storehousename;
 	}	   
+
+	/**
+	 *设置"ID"属性
+	 *@param idgoodsnum 实体的Idgoodsnum属性
+	 */
+	public void setIdgoodsnum(String idgoodsnum)
+	{
+		this.idgoodsnum = idgoodsnum;
+	}
+	
+	/**
+	 *获取"ID"属性
+	 */
+	public String getIdgoodsnum()
+	{
+		return this.idgoodsnum;
+	}	   
+
+	/**
+	 *设置"数量"属性
+	 *@param goodsnumnum 实体的Goodsnumnum属性
+	 */
+	public void setGoodsnumnum(String goodsnumnum)
+	{
+		this.goodsnumnum = goodsnumnum;
+	}
+	
+	/**
+	 *获取"数量"属性
+	 */
+	public String getGoodsnumnum()
+	{
+		return this.goodsnumnum;
+	}	   
 	public Warrantoutview() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -628,6 +671,8 @@ public class Warrantoutview
 	 	,String goodsname
 	 	,String goodsunits
 	 	,String storehousename
+	 	,String idgoodsnum
+	 	,String goodsnumnum
 		 ){
 		super();
 		this.idwarrantout = idwarrantout;
@@ -658,6 +703,8 @@ public class Warrantoutview
 	 	this.goodsname = goodsname;
 	 	this.goodsunits = goodsunits;
 	 	this.storehousename = storehousename;
+	 	this.idgoodsnum = idgoodsnum;
+	 	this.goodsnumnum = goodsnumnum;
 	}
 }
 
