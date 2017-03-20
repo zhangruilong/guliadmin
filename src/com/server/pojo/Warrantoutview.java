@@ -1,105 +1,115 @@
 package com.server.pojo;
 
-import java.sql.Timestamp;
-import java.math.BigDecimal;
 /**
  * warrantoutview 实体类
  *@author ZhangRuiLong
  */
 public class Warrantoutview
 {
+	/**
+	    * ID,主键
+	    */
+	   private String idwarrantout; 
+	   /**
+	    * 经销商ID
+	    */
+	   private String warrantoutcompany;   
+	   /**
+	    * 仓库
+	    */
+	   private String warrantoutstore;   
+	   /**
+	    * 商品
+	    */
+	   private String warrantoutgoods;   
+	   /**
+	    * 商品编码
+	    */
+	   private String warrantoutgcode;   
+	   /**
+	    * 商品名称
+	    */
+	   private String warrantoutgname;   
+	   /**
+	    * 规格
+	    */
+	   private String warrantoutgunits;   
+	   /**
+	    * 名称
+	    */
+	   private String storehousename;   
+	   /**
+	    * 数量
+	    */
+	   private String warrantoutnum;   
+	   /**
+	    * 销售单价
+	    */
+	   private String warrantoutprice;   
+	   /**
+	    * 销售金额
+	    */
+	   private String warrantoutmoney;   
+	   /**
+	    * 状态
+	    */
+	   private String warrantoutstatue;   
+	   /**
+	    * 描述
+	    */
+	   private String warrantoutdetail;   
+	   /**
+	    * 领货人
+	    */
+	   private String warrantoutwho;   
+	   /**
+	    * 创建时间
+	    */
+	   private String warrantoutinswhen;   
+	   /**
+	    * 创建人
+	    */
+	   private String warrantoutinswho;   
+	   /**
+	    * 修改时间
+	    */
+	   private String warrantoutupdwhen;   
+	   /**
+	    * 修改人
+	    */
+	   private String warrantoutupdwho;   
+	   /**
+	    * 其他类别
+	    */
+	   private String warrantoutgtype;   
+	   /**
+	    * 小类
+	    */
+	   private String warrantoutggclass;   
+	   /**
+	    * 单位
+	    */
+	   private String warrantoutgunit;   
+	   /**
+	    * 重量
+	    */
+	   private String warrantoutgweight;   
+	   /**
+	    * 订单备注
+	    */
+	   private String warrantoutordnote;   
    /**
-    * ID,主键
+    * 客户ID
     */
-   private String idwarrantout; 
+   private String warrantoutcusid;   
    /**
-    * 经销商ID
+    * 客户名称
     */
-   private String warrantoutcompany;   
+   private String warrantoutcusname;   
    /**
-    * 仓库
+    * 订单总表ID
     */
-   private String warrantoutstore;   
-   /**
-    * 商品
-    */
-   private String warrantoutgoods;   
-   /**
-    * 商品编码
-    */
-   private String warrantoutgcode;   
-   /**
-    * 商品名称
-    */
-   private String warrantoutgname;   
-   /**
-    * 规格
-    */
-   private String warrantoutgunits;   
-   /**
-    * 名称
-    */
-   private String storehousename;   
-   /**
-    * 数量
-    */
-   private String warrantoutnum;   
-   /**
-    * 销售单价
-    */
-   private String warrantoutprice;   
-   /**
-    * 销售金额
-    */
-   private String warrantoutmoney;   
-   /**
-    * 状态
-    */
-   private String warrantoutstatue;   
-   /**
-    * 描述
-    */
-   private String warrantoutdetail;   
-   /**
-    * 领货人
-    */
-   private String warrantoutwho;   
-   /**
-    * 创建时间
-    */
-   private String warrantoutinswhen;   
-   /**
-    * 创建人
-    */
-   private String warrantoutinswho;   
-   /**
-    * 修改时间
-    */
-   private String warrantoutupdwhen;   
-   /**
-    * 修改人
-    */
-   private String warrantoutupdwho;   
-   /**
-    * 其他类别
-    */
-   private String warrantoutgtype;   
-   /**
-    * 小类
-    */
-   private String warrantoutggclass;   
-   /**
-    * 单位
-    */
-   private String warrantoutgunit;   
-   /**
-    * 重量
-    */
-   private String warrantoutgweight;   
-   /**
-    * 订单备注
-    */
-   private String warrantoutordnote;   
+   private String warrantoutodm;   
    /**
     * 商品ID
     */
@@ -504,6 +514,57 @@ public class Warrantoutview
 	}	   
 
 	/**
+	 *设置"客户ID"属性
+	 *@param warrantoutcusid 实体的Warrantoutcusid属性
+	 */
+	public void setWarrantoutcusid(String warrantoutcusid)
+	{
+		this.warrantoutcusid = warrantoutcusid;
+	}
+	
+	/**
+	 *获取"客户ID"属性
+	 */
+	public String getWarrantoutcusid()
+	{
+		return this.warrantoutcusid;
+	}	   
+
+	/**
+	 *设置"客户名称"属性
+	 *@param warrantoutcusname 实体的Warrantoutcusname属性
+	 */
+	public void setWarrantoutcusname(String warrantoutcusname)
+	{
+		this.warrantoutcusname = warrantoutcusname;
+	}
+	
+	/**
+	 *获取"客户名称"属性
+	 */
+	public String getWarrantoutcusname()
+	{
+		return this.warrantoutcusname;
+	}	   
+
+	/**
+	 *设置"订单总表ID"属性
+	 *@param warrantoutodm 实体的Warrantoutodm属性
+	 */
+	public void setWarrantoutodm(String warrantoutodm)
+	{
+		this.warrantoutodm = warrantoutodm;
+	}
+	
+	/**
+	 *获取"订单总表ID"属性
+	 */
+	public String getWarrantoutodm()
+	{
+		return this.warrantoutodm;
+	}	   
+
+	/**
 	 *设置"商品ID"属性
 	 *@param goodsid 实体的Goodsid属性
 	 */
@@ -665,6 +726,8 @@ public class Warrantoutview
 	 	,String warrantoutordnote
 	 	,String warrantoutprice
 	 	,String warrantoutmoney
+	 	,String warrantoutcusid
+	 	,String warrantoutcusname
 	 	,String goodsid
 	 	,String goodscompany
 	 	,String goodscode
@@ -697,6 +760,8 @@ public class Warrantoutview
 	 	this.warrantoutordnote = warrantoutordnote;
 	 	this.warrantoutprice = warrantoutprice;
 	 	this.warrantoutmoney = warrantoutmoney;
+	 	this.warrantoutcusid = warrantoutcusid;
+	 	this.warrantoutcusname = warrantoutcusname;
 	 	this.goodsid = goodsid;
 	 	this.goodscompany = goodscompany;
 	 	this.goodscode = goodscode;

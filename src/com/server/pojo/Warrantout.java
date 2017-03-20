@@ -1,6 +1,7 @@
 package com.server.pojo;
 
-import java.sql.Date;
+import java.sql.Timestamp;
+import java.math.BigDecimal;
 /**
  * warrantout 实体类
  *@author ZhangRuiLong
@@ -95,6 +96,18 @@ public class Warrantout
     * 销售金额
     */
    private String warrantoutmoney;   
+   /**
+    * 客户ID
+    */
+   private String warrantoutcusid;   
+   /**
+    * 客户名称
+    */
+   private String warrantoutcusname;   
+   /**
+    * 订单总表ID
+    */
+   private String warrantoutodm;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -469,6 +482,57 @@ public class Warrantout
 	{
 		return this.warrantoutmoney;
 	}	   
+
+	/**
+	 *设置"客户ID"属性
+	 *@param warrantoutcusid 实体的Warrantoutcusid属性
+	 */
+	public void setWarrantoutcusid(String warrantoutcusid)
+	{
+		this.warrantoutcusid = warrantoutcusid;
+	}
+	
+	/**
+	 *获取"客户ID"属性
+	 */
+	public String getWarrantoutcusid()
+	{
+		return this.warrantoutcusid;
+	}	   
+
+	/**
+	 *设置"客户名称"属性
+	 *@param warrantoutcusname 实体的Warrantoutcusname属性
+	 */
+	public void setWarrantoutcusname(String warrantoutcusname)
+	{
+		this.warrantoutcusname = warrantoutcusname;
+	}
+	
+	/**
+	 *获取"客户名称"属性
+	 */
+	public String getWarrantoutcusname()
+	{
+		return this.warrantoutcusname;
+	}	   
+
+	/**
+	 *设置"订单总表ID"属性
+	 *@param warrantoutodm 实体的Warrantoutodm属性
+	 */
+	public void setWarrantoutodm(String warrantoutodm)
+	{
+		this.warrantoutodm = warrantoutodm;
+	}
+	
+	/**
+	 *获取"订单总表ID"属性
+	 */
+	public String getWarrantoutodm()
+	{
+		return this.warrantoutodm;
+	}	   
 	public Warrantout() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -496,6 +560,9 @@ public class Warrantout
 	 	,String warrantoutordnote
 	 	,String warrantoutprice
 	 	,String warrantoutmoney
+	 	,String warrantoutcusid
+	 	,String warrantoutcusname
+	 	,String warrantoutodm
 		 ){
 		super();
 		this.idwarrantout = idwarrantout;
@@ -520,6 +587,9 @@ public class Warrantout
 	 	this.warrantoutordnote = warrantoutordnote;
 	 	this.warrantoutprice = warrantoutprice;
 	 	this.warrantoutmoney = warrantoutmoney;
+	 	this.warrantoutcusid = warrantoutcusid;
+	 	this.warrantoutcusname = warrantoutcusname;
+	 	this.warrantoutodm = warrantoutodm;
 	}
 }
 

@@ -44,6 +44,9 @@ public class WarrantoutPoco
 	 	"订单备注",
 	 	"销售单价",
 	 	"销售金额",
+	 	"客户ID",
+	 	"客户名称",
+	 	"订单总表ID",
 	};
 	/**
 	 * 实体英文字段
@@ -71,6 +74,9 @@ public class WarrantoutPoco
 	 	"warrantoutordnote",
 	 	"warrantoutprice",
 	 	"warrantoutmoney",
+	 	"warrantoutcusid",
+	 	"warrantoutcusname",
+	 	"warrantoutodm",
    };
    /**
     * 实体排序
@@ -102,6 +108,9 @@ public class WarrantoutPoco
 	 	"warrantoutordnote",
 	 	"warrantoutprice",
 	 	"warrantoutmoney",
+	 	"warrantoutcusid",
+	 	"warrantoutcusname",
+	 	"warrantoutodm",
    };
 }
 
