@@ -98,6 +98,10 @@ public class Warrantoutview
 	    * 订单备注
 	    */
 	   private String warrantoutordnote;   
+	   /**
+	    * 订单的打印次数
+	    */
+	   private String warrantoutprint;   
    /**
     * 客户ID
     */
@@ -511,6 +515,23 @@ public class Warrantoutview
 	public String getWarrantoutmoney()
 	{
 		return this.warrantoutmoney;
+	}	   
+
+	/**
+	 *设置"订单的打印次数"属性
+	 *@param warrantoutprint 实体的Warrantoutprint属性
+	 */
+	public void setWarrantoutprint(String warrantoutprint)
+	{
+		this.warrantoutprint = warrantoutprint;
+	}
+	
+	/**
+	 *获取"订单的打印次数"属性
+	 */
+	public String getWarrantoutprint()
+	{
+		return this.warrantoutprint;
 	}	   
 
 	/**

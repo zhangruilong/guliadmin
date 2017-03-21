@@ -108,6 +108,10 @@ public class Warrantout
     * 订单总表ID
     */
    private String warrantoutodm;   
+   /**
+    * 订单的打印次数
+    */
+   private String warrantoutprint;   
     //属性方法	    
      /**
 	 *设置主键"ID"属性
@@ -533,6 +537,23 @@ public class Warrantout
 	{
 		return this.warrantoutodm;
 	}	   
+
+	/**
+	 *设置"订单的打印次数"属性
+	 *@param warrantoutprint 实体的Warrantoutprint属性
+	 */
+	public void setWarrantoutprint(String warrantoutprint)
+	{
+		this.warrantoutprint = warrantoutprint;
+	}
+	
+	/**
+	 *获取"订单的打印次数"属性
+	 */
+	public String getWarrantoutprint()
+	{
+		return this.warrantoutprint;
+	}	   
 	public Warrantout() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -563,6 +584,7 @@ public class Warrantout
 	 	,String warrantoutcusid
 	 	,String warrantoutcusname
 	 	,String warrantoutodm
+	 	,String warrantoutprint
 		 ){
 		super();
 		this.idwarrantout = idwarrantout;
@@ -590,6 +612,7 @@ public class Warrantout
 	 	this.warrantoutcusid = warrantoutcusid;
 	 	this.warrantoutcusname = warrantoutcusname;
 	 	this.warrantoutodm = warrantoutodm;
+	 	this.warrantoutprint = warrantoutprint;
 	}
 }
 

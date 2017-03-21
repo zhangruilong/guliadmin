@@ -47,6 +47,7 @@ public class WarrantoutPoco
 	 	"客户ID",
 	 	"客户名称",
 	 	"订单总表ID",
+	 	"订单的打印次数",
 	};
 	/**
 	 * 实体英文字段
@@ -77,6 +78,7 @@ public class WarrantoutPoco
 	 	"warrantoutcusid",
 	 	"warrantoutcusname",
 	 	"warrantoutodm",
+	 	"warrantoutprint",
    };
    /**
     * 实体排序
@@ -111,6 +113,7 @@ public class WarrantoutPoco
 	 	"warrantoutcusid",
 	 	"warrantoutcusname",
 	 	"warrantoutodm",
+	 	"warrantoutprint",
    };
 }
 
