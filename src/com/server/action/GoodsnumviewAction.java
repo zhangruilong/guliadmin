@@ -79,6 +79,7 @@ public class GoodsnumviewAction extends BaseActionDao {
 	//查询所有
 	public void selAll(HttpServletRequest request, HttpServletResponse response){
 		Queryinfo queryinfo = getQueryinfo(request, Goodsnumview.class, GoodsnumviewPoco.QUERYFIELDNAME, GoodsnumviewPoco.ORDER, TYPE);
+		queryinfo.setOrder(null);
 		Pageinfo pageinfo = new Pageinfo(0, selAll(queryinfo));
 		result = CommonConst.GSON.toJson(pageinfo);
 		responsePW(response, result);
